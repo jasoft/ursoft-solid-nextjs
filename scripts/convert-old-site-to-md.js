@@ -84,6 +84,21 @@ function htmlToMarkdown(fragment) {
   s = s.replace(/<script[\s\S]*?<\/script>/gi, '');
   s = s.replace(/<style[\s\S]*?<\/style>/gi, '');
   s = s.replace(/<br\s*\/>/gi, '\n');
+  const nameFromUrl = (u) => {
+    try {
+      const p = u.split('?')[0].split('#')[0];
+      const b = p.split('/').filter(Boolean).pop() || '';
+      return b.replace(/\.[a-zA-Z0-9]+$/, '') || b || 'image';
+    } catch { return 'image'; }
+  };
+  s = s.replace(/<a[^>]*href=["']([^"']+)["'][^>]*>\s*<img[^>]*src=["']([^"']+)["'][^>]*alt=["']([^"']*)["'][^>]*>\s*<\/a>/gi,
+    (_, href, src, alt) => `[![${stripTags(alt) || nameFromUrl(src)}](${absolutize(src)})](${absolutize(href)})`);
+  s = s.replace(/<a[^>]*href=["']([^"']+)["'][^>]*>\s*<img[^>]*alt=["']([^"']*)["'][^>]*src=["']([^"']+)["'][^>]*>\s*<\/a>/gi,
+    (_, href, alt, src) => `[![${stripTags(alt) || nameFromUrl(src)}](${absolutize(src)})](${absolutize(href)})`);
+  s = s.replace(/<img[^>]*alt=["']([^"']*)["'][^>]*src=["']([^"']+)["'][^>]*>/gi,
+    (_, alt, src) => `![${stripTags(alt) || nameFromUrl(src)}](${absolutize(src)})`);
+  s = s.replace(/<img[^>]*src=["']([^"']+)["'][^>]*alt=["']([^"']*)["'][^>]*>/gi,
+    (_, src, alt) => `![${stripTags(alt) || nameFromUrl(src)}](${absolutize(src)})`);
   s = s.replace(/<h1[^>]*>([\s\S]*?)<\/h1>/gi, (_, a) => `# ${stripTags(a)}\n\n`);
   s = s.replace(/<h2[^>]*>([\s\S]*?)<\/h2>/gi, (_, a) => `## ${stripTags(a)}\n\n`);
   s = s.replace(/<h3[^>]*>([\s\S]*?)<\/h3>/gi, (_, a) => `### ${stripTags(a)}\n\n`);
@@ -103,12 +118,6 @@ function htmlToMarkdown(fragment) {
   s = s.replace(/<a[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi, (_, href, text) => {
     const t = stripTags(text) || href;
     return `[${t}](${absolutize(href)})`;
-  });
-  s = s.replace(/<img[^>]*alt=["']([^"']*)["'][^>]*src=["']([^"']+)["'][^>]*>/gi, (_, alt, src) => {
-    return `![${stripTags(alt)}](${absolutize(src)})`;
-  });
-  s = s.replace(/<img[^>]*src=["']([^"']+)["'][^>]*alt=["']([^"']*)["'][^>]*>/gi, (_, src, alt) => {
-    return `![${stripTags(alt)}](${absolutize(src)})`;
   });
   s = s.replace(/<li[^>]*>([\s\S]*?)<\/li>/gi, (_, a) => `\n- ${stripTags(a)}`);
   s = s.replace(/<ul[^>]*>([\s\S]*?)<\/ul>/gi, (_, a) => `${a}\n\n`);
