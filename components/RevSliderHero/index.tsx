@@ -6,7 +6,7 @@ import { Download } from "lucide-react";
 
 const RevSliderHero = () => {
   return (
-    <section className="relative h-[900px] overflow-hidden bg-[#336699]">
+    <section className="relative mt-[90px] h-[900px] overflow-hidden bg-[#336699]">
       <div className="max-w-c-1390 relative z-10 mx-auto h-full px-4 md:px-8 2xl:px-0">
         <div className="flex h-full flex-col items-center lg:flex-row">
           {/* Left Content */}
