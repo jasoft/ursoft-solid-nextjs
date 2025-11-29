@@ -28,18 +28,30 @@
   --color-zumthor: #edf5ff;
   --color-socialicon: #d1d8e0;
 
-  --text-metatitle: 12px, 20px;
-  --text-sectiontitle: 14px, 22px;
-  --text-regular: 16px, 26px;
-  --text-metatitle3: 18px, 26px;
-  --text-metatitle2: 20px, 32px;
-  --text-para2: 22px, 35px;
-  --text-itemtitle: 26px, 32px;
-  --text-itemtitle2: 24px, 32px;
-  --text-hero: 44px, 58px;
-  --text-sectiontitle3: 44px, 55px;
-  --text-sectiontitle2: 40px, 52px;
-  --text-sectiontitle4: 34px, 48px;
+  --text-metatitle: 12px;
+  --text-metatitle--line-height: 20px;
+  --text-sectiontitle: 14px;
+  --text-sectiontitle--line-height: 22px;
+  --text-regular: 16px;
+  --text-regular--line-height: 26px;
+  --text-metatitle3: 18px;
+  --text-metatitle3--line-height: 26px;
+  --text-metatitle2: 20px;
+  --text-metatitle2--line-height: 32px;
+  --text-para2: 22px;
+  --text-para2--line-height: 35px;
+  --text-itemtitle: 26px;
+  --text-itemtitle--line-height: 32px;
+  --text-itemtitle2: 24px;
+  --text-itemtitle2--line-height: 32px;
+  --text-hero: 44px;
+  --text-hero--line-height: 58px;
+  --text-sectiontitle3: 44px;
+  --text-sectiontitle3--line-height: 55px;
+  --text-sectiontitle2: 40px;
+  --text-sectiontitle2--line-height: 52px;
+  --text-sectiontitle4: 34px;
+  --text-sectiontitle4--line-height: 48px;
 
   --container-c-1390: 86.875rem;
   --container-c-1315: 82.188rem;
@@ -138,6 +150,10 @@
 
   #supportCheckbox:checked ~ div span {
     @apply opacity-100;
+  }
+
+  .shadow-strong-dark {
+    box-shadow: 0 16px 44px rgba(0, 0, 0, 0.28);
   }
 }
 

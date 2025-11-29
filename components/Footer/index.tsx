@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { footerCompanyDescription } from "@/app/content";
 
 const Footer = () => {
   return (
@@ -30,34 +31,24 @@ const Footer = () => {
               >
                 <a href="/" className="relative">
                   <Image
-                    width={110}
-                    height={80}
-                    src="/images/logo/logo-light.svg"
+                    width={150}
+                    height={31}
+                    src="/images/logo/site-logo.png"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
-                    width={110}
-                    height={80}
-                    src="/images/logo/logo-dark.svg"
+                    width={150}
+                    height={31}
+                    src="/images/logo/site-logo.png"
                     alt="Logo"
                     className="hidden dark:block"
                   />
                 </a>
 
-                <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <p className="mb-10 mt-5">{footerCompanyDescription}</p>
 
-                <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
-                  contact
-                </p>
-                <a
-                  href="#"
-                  className="text-itemtitle font-medium text-black dark:text-white"
-                >
-                  hello@solid.com
-                </a>
+                
               </motion.div>
 
               <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
@@ -85,36 +76,16 @@ const Footer = () => {
 
                   <ul>
                     <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Home
-                      </a>
+                      <a href="/" className="mb-3 inline-block hover:text-primary">Home</a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Product
-                      </a>
+                      <a href="/features" className="mb-3 inline-block hover:text-primary">Features</a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Careers
-                      </a>
+                      <a href="/download" className="mb-3 inline-block hover:text-primary">Download</a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Pricing
-                      </a>
+                      <a href="/pricing" className="mb-3 inline-block hover:text-primary">Pricing</a>
                     </li>
                   </ul>
                 </motion.div>
@@ -143,36 +114,16 @@ const Footer = () => {
 
                   <ul>
                     <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Company
-                      </a>
+                      <a href="/support" className="mb-3 inline-block hover:text-primary">Support</a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Press media
-                      </a>
+                      <a href="/privacy" className="mb-3 inline-block hover:text-primary">Privacy Policy</a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Our Blog
-                      </a>
+                      <a href="/refund-policy" className="mb-3 inline-block hover:text-primary">Refund Policy</a>
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Contact Us
-                      </a>
+                      <a href="/delivery-policy" className="mb-3 inline-block hover:text-primary">Delivery Policy</a>
                     </li>
                   </ul>
                 </motion.div>
@@ -264,21 +215,10 @@ const Footer = () => {
               className="animate_top"
             >
               <ul className="flex items-center gap-8">
-                <li>
-                  <a href="#" className="hover:text-primary">
-                    English
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">
-                    Support
-                  </a>
-                </li>
+                <li><a href="/" className="hover:text-primary">Home</a></li>
+                <li><a href="/order" className="hover:text-primary">Order</a></li>
+                <li><a href="/support" className="hover:text-primary">Support</a></li>
+                <li><a href="/privacy" className="hover:text-primary">Privacy Policy</a></li>
               </ul>
             </motion.div>
 
@@ -300,9 +240,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
-              </p>
+              <p>&copy; {new Date().getFullYear()} URSoft, Inc.</p>
             </motion.div>
 
             <motion.div
