@@ -6,7 +6,17 @@ import { Download } from "lucide-react";
 
 const RevSliderHero = () => {
   return (
-    <section className="relative h-[900px] overflow-hidden bg-[#336699]">
+    <section className="relative h-[900px] overflow-hidden bg-[#235699]">
+      {/* Mayfair 渐变覆盖层 */}
+      <div
+        className="pointer-events-none absolute inset-0 z-0"
+        style={{
+          background:
+            "radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.8), rgba(255, 200, 200, 0.6), rgb(17, 17, 17) 40%)",
+          mixBlendMode: "overlay",
+          opacity: 0.4,
+        }}
+      />
       <div className="max-w-c-1390 relative z-10 mx-auto h-full px-4 md:px-8 2xl:px-0">
         <div className="flex h-full flex-col items-center lg:flex-row">
           {/* Left Content */}
@@ -44,7 +54,7 @@ const RevSliderHero = () => {
               initial="hidden"
               animate="visible"
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="mb-10 text-2xl leading-[40px] font-medium tracking-[1px] md:text-3xl lg:text-[47px]"
+              className="mt-10 mb-10 text-2xl leading-[40px] font-medium tracking-[1px] md:text-3xl lg:text-[47px]"
               style={{ fontFamily: "'Roboto', sans-serif" }}
             >
               Uninstall any unwanted app <br />
@@ -64,7 +74,7 @@ const RevSliderHero = () => {
             >
               <Link
                 href="https://www.ursoftware.com/dlds/yusetup.exe"
-                className="inline-flex items-center gap-3 rounded-xl bg-[#ffbd1f] px-14 py-4 text-[22px] font-bold text-[#282828] shadow-[0_11px_11px_rgba(0,0,0,0.2)] transition-all duration-100 hover:scale-110 hover:bg-[#ffbd1f] hover:brightness-110"
+                className="mt-20 inline-flex items-center gap-3 rounded-xl bg-[#ffbd1f] px-14 py-4 text-[22px] font-bold text-[#282828] shadow-[0_11px_11px_rgba(0,0,0,0.2)] transition-all duration-100 hover:scale-110 hover:bg-[#ffbd1f] hover:brightness-110"
               >
                 <span>DOWNLOAD NOW</span>
                 <Download className="h-5 w-5" />

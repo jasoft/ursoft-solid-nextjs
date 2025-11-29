@@ -9,10 +9,9 @@ export const metadata: Metadata = {
 
 export default function FeaturesPage() {
   return (
-    <main className="pt-40 pb-20">
+    <main>
       <Feature />
       <CTA />
     </main>
   );
 }
-

@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import RevSliderHero from "@/components/RevSliderHero";
-import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
 import About from "@/components/About";
@@ -29,7 +28,6 @@ export const metadata: Metadata = {
     "Windows",
   ],
   formatDetection: { telephone: false },
-  themeColor: "#ffffff",
   openGraph: {
     title:
       "Your Uninstaller! - Uninstall Software, any unwanted app Completely.",
@@ -41,8 +39,8 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/images/logo/site-logo.png",
-    apple: "/images/logo/site-logo.png",
+    icon: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 
@@ -50,7 +48,6 @@ export default function Home() {
   return (
     <main>
       <RevSliderHero />
-      <Hero />
       <Brands />
       <About />
       <Feature />

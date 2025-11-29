@@ -5,12 +5,13 @@ import { pricingIntro } from "@/app/content";
 
 export const metadata: Metadata = {
   title: "Order - Your Uninstaller! 7",
-  description: "Choose a license and download instantly. Safe uninstall with deep system cleanup included.",
+  description:
+    "Choose a license and download instantly. Safe uninstall with deep system cleanup included.",
 };
 
 export default function OrderPage() {
   return (
-    <main className="pt-40 pb-20">
+    <main>
       <Pricing />
       <section className="mt-15">
         <div className="mx-auto max-w-[980px] px-4 text-center md:px-8">
@@ -22,7 +23,7 @@ export default function OrderPage() {
           </p>
           <ul className="mx-auto grid grid-cols-1 gap-2 text-left sm:grid-cols-2">
             {pricingIntro.bullets.map((b, i) => (
-              <li key={i} className="text-black dark:text-manatee">
+              <li key={i} className="dark:text-manatee text-black">
                 {b}
               </li>
             ))}
@@ -47,4 +48,3 @@ export default function OrderPage() {
     </main>
   );
 }
-
