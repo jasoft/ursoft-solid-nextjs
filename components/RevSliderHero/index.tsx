@@ -6,7 +6,7 @@ import { Download } from "lucide-react";
 
 const RevSliderHero = () => {
   return (
-    <section className="relative mt-[90px] h-[900px] overflow-hidden bg-[#336699]">
+    <section className="relative h-[900px] overflow-hidden bg-[#336699]">
       <div className="max-w-c-1390 relative z-10 mx-auto h-full px-4 md:px-8 2xl:px-0">
         <div className="flex h-full flex-col items-center lg:flex-row">
           {/* Left Content */}
@@ -18,7 +18,7 @@ const RevSliderHero = () => {
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.8 }}
-            className="z-20 w-full pt-[150px] text-white lg:mt-[80px] lg:w-1/2 lg:pt-0"
+            className="z-20 w-full pt-[120px] text-white lg:mt-[40px] lg:w-1/2 lg:pt-0"
           >
             {/* Main Title */}
             <motion.h1
@@ -98,7 +98,7 @@ const RevSliderHero = () => {
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="absolute top-[104px] right-[-585px] hidden lg:block"
+            className="absolute top-[30px] right-[-585px] hidden lg:block"
           >
             <Image
               src="/images/hero/laptop-slider.png"
