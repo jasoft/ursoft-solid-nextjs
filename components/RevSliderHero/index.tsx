@@ -6,12 +6,9 @@ import { Download } from "lucide-react";
 
 const RevSliderHero = () => {
   return (
-    <section className="relative min-h-[600px] lg:min-h-[700px] overflow-hidden bg-[#336699]">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#336699] via-[#2d5a8a] to-[#1e3d5c]" />
-
-      <div className="relative z-10 mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 pt-35 md:pt-40 lg:pt-45">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start">
+    <section className="relative h-[900px] overflow-hidden bg-[#336699]">
+      <div className="max-w-c-1390 relative z-10 mx-auto h-full px-4 md:px-8 2xl:px-0">
+        <div className="flex h-full flex-col items-center lg:flex-row">
           {/* Left Content */}
           <motion.div
             variants={{
@@ -21,7 +18,7 @@ const RevSliderHero = () => {
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.8 }}
-            className="w-full lg:w-1/2 text-white z-20"
+            className="z-20 w-full pt-[150px] text-white lg:mt-[80px] lg:w-1/2 lg:pt-0"
           >
             {/* Main Title */}
             <motion.h1
@@ -32,7 +29,7 @@ const RevSliderHero = () => {
               initial="hidden"
               animate="visible"
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-medium uppercase tracking-tight mb-4"
+              className="mb-4 text-4xl leading-[70px] font-medium tracking-[-1px] uppercase md:text-5xl lg:text-[61px]"
               style={{ fontFamily: "'Poppins', sans-serif" }}
             >
               Your Uninstaller! 7
@@ -47,7 +44,7 @@ const RevSliderHero = () => {
               initial="hidden"
               animate="visible"
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-2xl md:text-3xl lg:text-4xl font-light tracking-wide mb-8 leading-relaxed"
+              className="mb-10 text-2xl leading-[40px] font-medium tracking-[1px] md:text-3xl lg:text-[47px]"
               style={{ fontFamily: "'Roboto', sans-serif" }}
             >
               Uninstall any unwanted app <br />
@@ -67,7 +64,7 @@ const RevSliderHero = () => {
             >
               <Link
                 href="https://www.ursoftware.com/dlds/yusetup.exe"
-                className="inline-flex items-center gap-3 bg-[#ffbd1f] text-[#282828] px-10 py-4 rounded-xl text-xl font-bold shadow-lg hover:bg-[#ffc933] hover:scale-105 transition-all duration-200"
+                className="inline-flex items-center gap-3 rounded-xl bg-[#ffbd1f] px-14 py-4 text-[22px] font-bold text-[#282828] shadow-[0_11px_11px_rgba(0,0,0,0.2)] transition-all duration-100 hover:scale-110 hover:bg-[#ffbd1f] hover:brightness-110"
               >
                 <span>DOWNLOAD NOW</span>
                 <Download className="h-5 w-5" />
@@ -83,7 +80,7 @@ const RevSliderHero = () => {
               initial="hidden"
               animate="visible"
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="text-sm text-gray-200 tracking-wide leading-6"
+              className="text-sm leading-6 tracking-[1px] text-[#e5e5e5]"
               style={{ fontFamily: "'Roboto', sans-serif" }}
             >
               Supports Windows 11/10/8/7/Vista/XP
@@ -101,19 +98,17 @@ const RevSliderHero = () => {
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="w-full lg:w-1/2 lg:absolute lg:right-[-200px] lg:top-1/2 lg:-translate-y-1/2"
+            className="absolute top-[104px] right-[-585px] hidden lg:block"
           >
-            <div className="relative w-full max-w-[700px] lg:max-w-[900px] mx-auto lg:mx-0">
-              <Image
-                src="/images/hero/laptop-slider.png"
-                alt="Your Uninstaller! 7 - Windows Uninstaller Software"
-                width={1400}
-                height={850}
-                className="w-full h-auto object-contain"
-                priority
-                unoptimized
-              />
-            </div>
+            <Image
+              src="/images/hero/laptop-slider.png"
+              alt="Your Uninstaller! 7 - Windows Uninstaller Software"
+              width={1400}
+              height={850}
+              className="h-[850px] w-[1400px] object-contain"
+              priority
+              unoptimized
+            />
           </motion.div>
         </div>
       </div>
@@ -122,4 +117,3 @@ const RevSliderHero = () => {
 };
 
 export default RevSliderHero;
-
