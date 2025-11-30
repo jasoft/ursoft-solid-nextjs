@@ -7,8 +7,8 @@ import { footerCompanyDescription, footerContent } from "@/app/content";
 const Footer = () => {
   return (
     <>
-      <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
-        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+      <footer className="border-stroke dark:border-strokedark dark:bg-blacksection border-t bg-white">
+        <div className="max-w-c-1390 mx-auto px-4 md:px-8 2xl:px-0">
           {/* <!-- Footer Top --> */}
           <div className="py-20 lg:py-25">
             <div className="flex flex-wrap gap-8 lg:justify-between lg:gap-0">
@@ -47,9 +47,7 @@ const Footer = () => {
                   />
                 </a>
 
-                <p className="mb-10 mt-5">{footerCompanyDescription}</p>
-
-                
+                <p className="mt-5 mb-10">{footerCompanyDescription}</p>
               </motion.div>
 
               <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
@@ -69,17 +67,24 @@ const Footer = () => {
                   whileInView="visible"
                   transition={{ duration: 1, delay: 0.1 }}
                   viewport={{ once: true }}
-                  className="animate_top w-full md:w-auto max-w-[420px] flex-shrink-0"
+                  className="animate_top w-full max-w-[420px] flex-shrink-0 md:w-auto"
                 >
                   {(() => {
                     const section = footerContent.sections[0];
                     return (
                       <>
-                        <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">{section.title}</h4>
+                        <h4 className="text-itemtitle2 mb-9 font-medium text-black dark:text-white">
+                          {section.title}
+                        </h4>
                         <ul>
-                          {section.links.map((l, i) => (
+                          {section.links?.map((l, i) => (
                             <li key={i}>
-                              <a href={l.href} className="mb-3 inline-block hover:text-primary">{l.label}</a>
+                              <a
+                                href={l.href}
+                                className="hover:text-primary mb-3 inline-block"
+                              >
+                                {l.label}
+                              </a>
                             </li>
                           ))}
                         </ul>
@@ -110,11 +115,18 @@ const Footer = () => {
                     const section = footerContent.sections[1];
                     return (
                       <>
-                        <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">{section.title}</h4>
+                        <h4 className="text-itemtitle2 mb-9 font-medium text-black dark:text-white">
+                          {section.title}
+                        </h4>
                         <ul>
-                          {section.links.map((l, i) => (
+                          {section.links?.map((l, i) => (
                             <li key={i}>
-                              <a href={l.href} className="mb-3 inline-block hover:text-primary">{l.label}</a>
+                              <a
+                                href={l.href}
+                                className="hover:text-primary mb-3 inline-block"
+                              >
+                                {l.label}
+                              </a>
                             </li>
                           ))}
                         </ul>
@@ -145,9 +157,17 @@ const Footer = () => {
                     const section = footerContent.sections[2];
                     return (
                       <>
-                        <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">{section.title}</h4>
+                        <h4 className="text-itemtitle2 mb-9 font-medium text-black dark:text-white">
+                          {section.title}
+                        </h4>
                         <p className="mb-0">{section.description}</p>
-                        <NewsletterEmbed uid={section.embed.uid} src={section.embed.src} className="-mt-4"/>
+                        {section.embed && (
+                          <NewsletterEmbed
+                            uid={section.embed.uid}
+                            src={section.embed.src}
+                            className="-mt-4"
+                          />
+                        )}
                       </>
                     );
                   })()}
@@ -158,7 +178,7 @@ const Footer = () => {
           {/* <!-- Footer Top --> */}
 
           {/* <!-- Footer Bottom --> */}
-          <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0">
+          <div className="border-stroke dark:border-strokedark flex flex-col flex-wrap items-center justify-center gap-5 border-t py-7 lg:flex-row lg:justify-between lg:gap-0">
             <motion.div
               variants={{
                 hidden: {
@@ -179,7 +199,11 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-8">
                 {footerContent.bottomLinks.map((l, i) => (
-                  <li key={i}><a href={l.href} className="hover:text-primary">{l.label}</a></li>
+                  <li key={i}>
+                    <a href={l.href} className="hover:text-primary">
+                      {l.label}
+                    </a>
+                  </li>
                 ))}
               </ul>
             </motion.div>
@@ -202,7 +226,9 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>&copy; {new Date().getFullYear()} {footerContent.copyrightBrand}</p>
+              <p>
+                &copy; {new Date().getFullYear()} {footerContent.copyrightBrand}
+              </p>
             </motion.div>
 
             <motion.div
@@ -227,7 +253,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label={footerContent.socialAriaLabel}>
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -251,7 +277,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label={footerContent.socialAriaLabel}>
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -275,7 +301,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label={footerContent.socialAriaLabel}>
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -299,7 +325,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label={footerContent.socialAriaLabel}>
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="hover:fill-primary fill-[#D1D8E0] transition-all duration-300"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"

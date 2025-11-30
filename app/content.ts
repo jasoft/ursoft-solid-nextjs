@@ -450,7 +450,8 @@ export const footerContent = {
 export const headerMenu = [
   { id: 1, title: "Home", newTab: false, path: "/" },
   { id: 2, title: "Features", newTab: false, path: "/features" },
-  { id: 2.05, title: "Order", newTab: false, path: "/order" },
+  { id: 2.05, title: "Download", newTab: false, path: "/download" },
+  { id: 2.06, title: "Order", newTab: false, path: "/order" },
   { id: 2.1, title: "Blog", newTab: false, path: "/blog" },
   { id: 2.3, title: "Docs", newTab: false, path: "/docs" },
   {
@@ -607,6 +608,11 @@ export const siteMetadata = {
   docs: {
     title: "Docs Page - Solid SaaS Boilerplate",
     description: "This is Docs page for Solid Pro",
+  },
+  download: {
+    title: "Free Download - Your Uninstaller! 7",
+    description:
+      "Download Your Uninstaller! 7 - the most powerful uninstaller for Windows. 21-day free trial with all features.",
   },
 };
 
