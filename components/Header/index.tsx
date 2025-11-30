@@ -39,7 +39,7 @@ const Header = () => {
                 width={431}
                 height={90}
                 className="hidden dark:block"
-                unoptimized
+                priority
               />
               <Image
                 src="/images/logo/site-logo.png"
@@ -47,7 +47,7 @@ const Header = () => {
                 width={431}
                 height={90}
                 className="dark:hidden"
-                unoptimized
+                priority
               />
             </a>
 
@@ -137,7 +137,7 @@ const Header = () => {
                 width={431}
                 height={90}
                 className="hidden dark:block"
-                unoptimized
+                loading="lazy"
               />
               <Image
                 src="/images/logo/site-logo.png"
@@ -145,7 +145,7 @@ const Header = () => {
                 width={431}
                 height={90}
                 className="dark:hidden"
-                unoptimized
+                loading="lazy"
               />
             </a>
 

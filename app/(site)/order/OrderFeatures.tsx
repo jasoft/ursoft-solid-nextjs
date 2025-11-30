@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { pricingIntro } from "@/app/content";
+import { pricingIntro, pricingImageAlt } from "@/app/content";
 import {
   Trash2,
   HardDrive,
@@ -86,28 +86,27 @@ export default function OrderFeatures() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="flex flex-col items-center justify-center gap-6 rounded-2xl border border-stroke bg-white p-6 shadow-sm sm:flex-row dark:border-strokedark dark:bg-blacksection"
+          className="rounded-2xl border border-stroke bg-white p-8 shadow-solid-3 dark:border-strokedark dark:bg-blacksection"
         >
-          <div className="flex items-center gap-3">
-            <CreditCard className="h-6 w-6 text-primary" />
-            <Image
-              src="/images/pricing/payment.png"
-              alt="Payments"
-              width={128}
-              height={32}
-              className="h-8 w-auto"
-            />
-          </div>
-          <div className="h-px w-full bg-stroke sm:h-10 sm:w-px dark:bg-strokedark" />
-          <div className="flex items-center gap-3 rounded-full bg-green-50 px-5 py-2.5 dark:bg-green-900/20">
-            <ShieldCheck className="h-5 w-5 text-green-600 dark:text-green-400" />
-            <span className="font-semibold text-green-700 dark:text-green-400">
-              {pricingIntro.guarantee}
-            </span>
+          <div className="grid items-center gap-8 md:grid-cols-2">
+            <div className="flex items-center justify-center">
+              <Image
+                src="/images/pricing/guarantee.png"
+                alt={pricingImageAlt.guarantee}
+                width={512}
+                height={256}
+                className="h-16 w-auto md:h-20"
+              />
+            </div>
+            <div className="text-center md:text-left">
+              <div className="inline-flex items-center gap-2 rounded-full bg-green-50 px-5 py-2.5 text-sm font-semibold text-green-700 dark:bg-green-900/20 dark:text-green-400">
+                <ShieldCheck className="h-16 w-16" />
+                <span className="text-xl">{pricingIntro.guarantee}</span>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>
     </section>
   );
 }
-

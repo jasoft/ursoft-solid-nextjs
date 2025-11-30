@@ -249,7 +249,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <ul className="flex items-center gap-5">
+              {false && (<ul className="flex items-center gap-5">
                 <li>
                   <a href="#" aria-label={footerContent.socialAriaLabel}>
                     <svg
@@ -342,7 +342,7 @@ const Footer = () => {
                     </svg>
                   </a>
                 </li>
-              </ul>
+              </ul>)}
             </motion.div>
           </div>
           {/* <!-- Footer Bottom --> */}

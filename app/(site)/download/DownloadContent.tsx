@@ -159,6 +159,8 @@ export default function DownloadContent() {
                       src={s.src}
                       alt={s.alt}
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      quality={95}
                       className="object-cover transition-transform group-hover:scale-105"
                     />
                   </div>
@@ -176,13 +178,13 @@ export default function DownloadContent() {
       {activeImage && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 p-4">
           <div className="relative w-[92vw] max-w-5xl">
-            <button onClick={() => setActiveImage(null)} aria-label={downloadPageContent.gallery.modal.closeAriaLabel} className="absolute right-3 top-3 rounded-full bg白/90 p-2 text黑 shadow hover:bg白">
+            <button onClick={() => setActiveImage(null)} aria-label={downloadPageContent.gallery.modal.closeAriaLabel} className="absolute right-3 top-3 rounded-full bg-white/90 p-2 text-black shadow hover:bg-white">
               <X className="h-5 w-5" />
             </button>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg黑">
-              <Image src={activeImage.src} alt={activeImage.alt} fill className="object-contain" />
+            <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-black">
+              <Image src={activeImage.src} alt={activeImage.alt} fill sizes="(max-width: 768px) 100vw, 92vw" quality={95} className="object-contain" />
             </div>
-            <div className="mt-3 text-center text-black dark:text白">
+            <div className="mt-3 text-center text-black dark:text-white">
               <h3 className="font-medium">{activeImage.title}</h3>
             </div>
           </div>

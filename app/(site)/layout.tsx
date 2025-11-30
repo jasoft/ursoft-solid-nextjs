@@ -1,10 +1,11 @@
-"use client";
+import type { Metadata } from "next";
+import { site } from "../content";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Lines from "@/components/Lines";
 import ScrollToTop from "@/components/ScrollToTop";
-import { ThemeProvider } from "next-themes";
+import Providers from "@/components/Providers";
 import { Inter } from "next/font/google";
 import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
@@ -19,19 +20,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning className={`dark:bg-black ${inter.className}`}>
-        <ThemeProvider
-          enableSystem={false}
-          attribute="class"
-          defaultTheme="light"
-        >
+        <Providers>
           <Lines />
           <Header />
-          <ToasterContext />
           {children}
           <Footer />
           <ScrollToTop />
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
+};

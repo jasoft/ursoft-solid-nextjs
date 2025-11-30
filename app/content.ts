@@ -38,6 +38,10 @@ export const pricingIntro = {
   guarantee: "30-day money-back guarantee!",
 };
 
+export const pricingImageAlt = {
+  guarantee: "Guarantee",
+};
+
 export const importantFeatures = [
   {
     title: "Keeping your PC clean has always been challenging.",
@@ -203,6 +207,7 @@ export const supportContent = {
   ],
   lostKeyUrl: "https://cms.ursoftware.com/orders/lostkey",
   lostKeyButtonLabel: "Get My Key",
+  lostKeyHint: 'Lost your registration key? Click "Get My Key" for instant retrieval.',
 };
 
 export const pricingOptions = [
@@ -274,7 +279,7 @@ export const downloadPageContent = {
   gallery: {
     title: "Screenshots Gallery",
     items: [
-      { src: "/images/download/yu_main.png", alt: "Main Interface", title: "Main Interface" },
+      { src: "/images/download/yu_main_hd.png", alt: "Main Interface", title: "Main Interface" },
       { src: "/images/download/yu_uninstallmodes.png", alt: "Uninstall Modes", title: "Uninstall Modes" },
       { src: "/images/download/yu_scanning.png", alt: "Scanning", title: "Deep Scanning" },
       { src: "/images/download/yu_startup.png", alt: "Startup Manager", title: "Startup Manager" },
@@ -657,3 +662,18 @@ export const revSliderContent = {
   versionInfo: "Supports Windows 11/10/8/7/Vista/XP",
   laptopAlt: "Your Uninstaller! 7 - Windows Uninstaller Software",
 };
+
+export const site = {
+  url: "https://www.ursoftware.com",
+};
+
+export const seoRoutes = [
+  "/",
+  "/features",
+  "/download",
+  "/order",
+  "/support",
+  "/privacy",
+  "/refund-policy",
+  "/delivery-policy",
+];
