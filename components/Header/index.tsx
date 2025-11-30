@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <>
       {/* 原始 Header - 静态定位，会被滚出屏幕 */}
-      <header className="relative z-50 w-full bg-white py-7 dark:bg-black">
+      <header className="relative z-50 w-full bg-white py-4 dark:bg-black">
         <div className="max-w-c-1390 relative mx-auto items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
           <div className="flex w-full items-center justify-between xl:w-1/4">
             <a href="/">
@@ -38,7 +38,7 @@ const Header = () => {
                 alt={headerContent.logoAlt}
                 width={431}
                 height={90}
-                className="hidden dark:block"
+                className="hidden dark:block h-10 w-auto"
                 priority
               />
               <Image
@@ -46,7 +46,7 @@ const Header = () => {
                 alt={headerContent.logoAlt}
                 width={431}
                 height={90}
-                className="dark:hidden"
+                className="dark:hidden h-10 w-auto"
                 priority
               />
             </a>
@@ -136,7 +136,7 @@ const Header = () => {
                 alt={headerContent.logoAlt}
                 width={431}
                 height={90}
-                className="hidden dark:block"
+                className="hidden dark:block h-8 w-auto"
                 loading="lazy"
               />
               <Image
@@ -144,7 +144,7 @@ const Header = () => {
                 alt={headerContent.logoAlt}
                 width={431}
                 height={90}
-                className="dark:hidden"
+                className="dark:hidden h-8 w-auto"
                 loading="lazy"
               />
             </a>
