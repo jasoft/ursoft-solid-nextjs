@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "npx --yes serve out -l 3000",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "prebuild": "npm run optimize:images",
     "lint": "next lint"
   },
   "dependencies": {
@@ -29,6 +31,10 @@
     "baseline-browser-mapping": "^2.8.32",
     "eslint": "^9.24.0",
     "eslint-config-next": "16.0.5",
+    "imagemin": "^9.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-svgo": "^11.0.1",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
