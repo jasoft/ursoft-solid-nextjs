@@ -22,8 +22,8 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         }}
         initial="hidden"
         whileInView="visible"
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.4 }}
+        viewport={{ once: true, amount: 0.01 }}
         className="animate_top shadow-solid-3 hover:shadow-solid-4 dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark z-40 rounded-lg border border-white bg-white p-7.5 transition-all xl:p-12.5"
       >
         <div className="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-gray-100">

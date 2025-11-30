@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import menuData from "./menuData";
+import { headerMenu, headerContent } from "@/app/content";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
@@ -36,7 +36,7 @@ const Header = () => {
             <a href="/">
               <Image
                 src="/images/logo/site-logo.png"
-                alt="logo"
+                alt={headerContent.logoAlt}
                 width={431}
                 height={90}
                 className="hidden dark:block"
@@ -44,7 +44,7 @@ const Header = () => {
               />
               <Image
                 src="/images/logo/site-logo.png"
-                alt="logo"
+                alt={headerContent.logoAlt}
                 width={431}
                 height={90}
                 className="dark:hidden"
@@ -54,7 +54,7 @@ const Header = () => {
 
             {/* <!-- Hamburger Toggle BTN --> */}
             <button
-              aria-label="hamburger Toggler"
+              aria-label={headerContent.hamburgerAriaLabel}
               className="block xl:hidden"
               onClick={() => setNavigationOpen(!navigationOpen)}
             >
@@ -101,7 +101,7 @@ const Header = () => {
           >
             <nav>
               <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
-                {menuData.map((menuItem, key) => (
+                {headerMenu.map((menuItem, key) => (
                   <li
                     key={key}
                     className={menuItem.submenu && "group relative"}
@@ -169,7 +169,7 @@ const Header = () => {
             <a href="/">
               <Image
                 src="/images/logo/site-logo.png"
-                alt="logo"
+                alt={headerContent.logoAlt}
                 width={431}
                 height={90}
                 className="hidden dark:block"
@@ -177,7 +177,7 @@ const Header = () => {
               />
               <Image
                 src="/images/logo/site-logo.png"
-                alt="logo"
+                alt={headerContent.logoAlt}
                 width={431}
                 height={90}
                 className="dark:hidden"
@@ -187,7 +187,7 @@ const Header = () => {
 
             {/* <!-- Hamburger Toggle BTN --> */}
             <button
-              aria-label="hamburger Toggler"
+              aria-label={headerContent.hamburgerAriaLabel}
               className="block xl:hidden"
               onClick={() => setNavigationOpen(!navigationOpen)}
             >
@@ -235,7 +235,7 @@ const Header = () => {
           >
             <nav>
               <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
-                {menuData.map((menuItem, key) => (
+                {headerMenu.map((menuItem, key) => (
                   <li
                     key={key}
                     className={menuItem.submenu && "group relative"}

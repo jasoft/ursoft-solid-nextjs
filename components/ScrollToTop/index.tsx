@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { accessibilityTexts } from "@/app/content";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,11 +33,11 @@ export default function ScrollToTop() {
       {isVisible && (
         <div
           onClick={scrollToTop}
-          aria-label="scroll to top"
+          aria-label={accessibilityTexts.scrollToTopAria}
           className="hover:shadow-signUp rounded-xs bg-primary hover:bg-primary/80 flex h-10 w-10 cursor-pointer items-center justify-center text-white shadow-md transition duration-300 ease-in-out"
         >
           <span className="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
-          <span className="sr-only">scroll to top</span>
+          <span className="sr-only">{accessibilityTexts.scrollToTopSrOnly}</span>
         </div>
       )}
     </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Download } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { heroData } from "@/app/content";
+import { heroData, heroAlt } from "@/app/content";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
@@ -46,14 +46,14 @@ const Hero = () => {
               <div className="relative 2xl:-mr-7.5">
                 <Image
                   src="/images/shape/shape-02.svg"
-                  alt="shape"
+                  alt={heroAlt.shape}
                   width={36.9}
                   height={36.7}
                   className="absolute right-0 bottom-0 z-10"
                 />
                 <Image
                   src="/images/shape/shape-03.svg"
-                  alt="shape"
+                  alt={heroAlt.shape}
                   width={21.64}
                   height={21.66}
                   className="absolute -right-6.5 bottom-0 z-1"
@@ -62,7 +62,7 @@ const Hero = () => {
                   <Image
                     className="shadow-amber-50"
                     src={heroData.image}
-                    alt="Hero"
+                    alt={heroAlt.hero}
                     fill
                     priority
                   />

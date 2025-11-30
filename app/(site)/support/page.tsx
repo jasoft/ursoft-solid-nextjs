@@ -1,13 +1,11 @@
 import React from "react";
 import Contact from "@/components/Contact";
-import { supportContent } from "@/app/content";
+import { supportContent, siteMetadata } from "@/app/content";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Support - Your Uninstaller! 7",
-
-  // other metadata
-  description: "This is Support page for Your Uninstaller! 7"
+  title: siteMetadata.support.title,
+  description: siteMetadata.support.description,
 };
 
 const SupportPage = () => {
@@ -26,7 +24,7 @@ const SupportPage = () => {
           href={supportContent.lostKeyUrl}
           className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white hover:opacity-90 dark:bg-white dark:text-black"
         >
-          Get My Key
+          {supportContent.lostKeyButtonLabel}
         </a>
       </div>
       <Contact />

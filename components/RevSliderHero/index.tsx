@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
+import { revSliderContent } from "@/app/content";
 
 const RevSliderHero = () => {
   return (
@@ -42,7 +43,7 @@ const RevSliderHero = () => {
               className="mb-4 text-4xl leading-[70px] font-medium tracking-[-1px] uppercase md:text-5xl lg:text-[61px]"
               style={{ fontFamily: "'Poppins', sans-serif" }}
             >
-              Your Uninstaller! 7
+              {revSliderContent.title}
             </motion.h1>
 
             {/* Subtitle */}
@@ -57,8 +58,12 @@ const RevSliderHero = () => {
               className="mt-10 mb-10 text-2xl leading-[40px] font-medium tracking-[1px] md:text-3xl lg:text-[47px]"
               style={{ fontFamily: "'Roboto', sans-serif" }}
             >
-              Uninstall any unwanted app <br />
-              completely!
+              {revSliderContent.subtitle.split("\n").map((line, i) => (
+                <span key={i}>
+                  {line}
+                  {i === 0 && <br />}
+                </span>
+              ))}
             </motion.h2>
 
             {/* Download Button */}
@@ -73,10 +78,10 @@ const RevSliderHero = () => {
               className="mb-6"
             >
               <Link
-                href="https://www.ursoftware.com/dlds/yusetup.exe"
+                href={revSliderContent.downloadUrl}
                 className="mt-20 inline-flex items-center gap-3 rounded-xl bg-[#ffbd1f] px-14 py-4 text-[22px] font-bold text-[#282828] shadow-[0_11px_11px_rgba(0,0,0,0.2)] transition-all duration-100 hover:scale-110 hover:bg-[#ffbd1f] hover:brightness-110"
               >
-                <span>DOWNLOAD NOW</span>
+                <span>{revSliderContent.downloadLabel}</span>
                 <Download className="h-5 w-5" />
               </Link>
             </motion.div>
@@ -93,9 +98,12 @@ const RevSliderHero = () => {
               className="text-sm leading-6 tracking-[1px] text-[#e5e5e5]"
               style={{ fontFamily: "'Roboto', sans-serif" }}
             >
-              Supports Windows 11/10/8/7/Vista/XP
-              <br />
-              Current Version: 7.5
+              {revSliderContent.versionInfo.split("\n").map((line, i) => (
+                <span key={i}>
+                  {line}
+                  {i === 0 && <br />}
+                </span>
+              ))}
             </motion.p>
           </motion.div>
 
@@ -112,7 +120,7 @@ const RevSliderHero = () => {
           >
             <Image
               src="/images/hero/laptop-slider.png"
-              alt="Your Uninstaller! 7 - Windows Uninstaller Software"
+              alt={revSliderContent.laptopAlt}
               width={1400}
               height={850}
               className="h-[850px] w-[1400px] object-contain"

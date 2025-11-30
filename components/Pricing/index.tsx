@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
-import { pricingHeader } from "@/app/content";
-import { pricingOptions } from "@/app/content";
+import { pricingHeader, pricingOptions, pricingLabels } from "@/app/content";
 // static pricing only
 
 const Pricing = () => {
@@ -53,7 +52,7 @@ const Pricing = () => {
                           {b}
                           {highlight ? (
                             <span className="ml-2 inline-flex items-center rounded-full bg-primary/10 px-2 py-0.5 text-xs text-primary">
-                              Lifetime upgrades
+                              {pricingLabels.lifetimeTag}
                             </span>
                           ) : null}
                         </li>
@@ -65,9 +64,7 @@ const Pricing = () => {
                   href={plan.buyUrl || "/order"}
                   className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
                 >
-                  <span className="duration-300 group-hover/btn:pr-2">
-                    Buy Now
-                  </span>
+                  <span className="duration-300 group-hover/btn:pr-2">{pricingLabels.buyButton}</span>
                   <svg
                     width="14"
                     height="14"

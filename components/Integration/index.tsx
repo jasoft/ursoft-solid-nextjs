@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
-import { integrationHeader, integrationIcons } from "@/app/content";
+import { integrationHeader, integrationIcons, integrationAlt } from "@/app/content";
 
 const Integration = () => {
   return (
@@ -28,14 +28,14 @@ const Integration = () => {
               height={400}
               sizes="(max-width: 768px) 100vw"
               src="/images/shape/shape-dotted-light.svg"
-              alt="Dotted"
+              alt={integrationAlt.dotted}
               className="dark:hidden"
               style={{ position: "static" }}
             />
             <Image
               fill
               src="/images/shape/shape-dotted-dark.svg"
-              alt="Dotted"
+              alt={integrationAlt.dotted}
               className="hidden dark:block"
             />
           </div>

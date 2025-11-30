@@ -27,8 +27,8 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
         }}
         initial="hidden"
         whileInView="visible"
-        transition={{ duration: 1, delay: 0.1 }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.05 }}
+        viewport={{ once: true, amount: 0.01 }}
         className="animate_top mx-auto text-center"
       >
         <div className="bg-zumthor dark:border-strokedark dark:bg-blacksection mb-4 inline-block rounded-full px-4.5 py-1.5 dark:border">

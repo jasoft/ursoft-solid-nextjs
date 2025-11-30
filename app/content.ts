@@ -33,7 +33,8 @@ export const pricingIntro = {
     "Automatically update to the latest version",
     "Premium Technical Support",
   ],
-  keyDelivery: "You will receive an email containing your license key within 5 minutes after the payment.",
+  keyDelivery:
+    "You will receive an email containing your license key within 5 minutes after the payment.",
   guarantee: "30-day money-back guarantee!",
 };
 
@@ -190,17 +191,7 @@ export const downloadContent = {
     "Your Uninstaller also manages applications installed on your PC; you can lock applications from accident removal, change default icons, write comments, save registration keys, and always know newly installed programs.",
     "Uninstalling programs has never been this easy: right-click on an icon on the desktop and select uninstall; it will be removed, no more actions. Try all the capabilities of Your Uninstaller!",
   ],
-  gallery: [
-    "https://ursoftware.com/wp-content/uploads/2023/03/yu_main.png",
-    "https://ursoftware.com/wp-content/uploads/2023/03/yu_uninstallmodes.png",
-    "https://ursoftware.com/wp-content/uploads/2023/03/yu_scanning.png",
-    "https://ursoftware.com/wp-content/uploads/2023/03/yu_deleting.png",
-    "https://ursoftware.com/wp-content/uploads/2023/03/yu_startup.png",
-    "https://ursoftware.com/wp-content/uploads/2023/03/yu_startmenu.png",
-    "https://ursoftware.com/wp-content/uploads/2023/03/yu_shredder.png",
-    "https://ursoftware.com/wp-content/uploads/2023/03/yu_junkfound.png",
-    "https://ursoftware.com/wp-content/uploads/2023/03/yu_diskcleaner.png",
-  ],
+  gallery: [],
 };
 
 export const supportContent = {
@@ -211,6 +202,7 @@ export const supportContent = {
     "Your message will be carefully handled by our experienced staff, the response normally is within 48 hours.",
   ],
   lostKeyUrl: "https://cms.ursoftware.com/orders/lostkey",
+  lostKeyButtonLabel: "Get My Key",
 };
 
 export const pricingOptions = [
@@ -223,7 +215,8 @@ export const pricingOptions = [
       "Get major upgrades at 50% cost.",
       "Allow to install on one PC.",
     ],
-    buyUrl: "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=36254&recommendation=YUFP&cfg=defaultsource",
+    buyUrl:
+      "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=36254&recommendation=YUFP&cfg=defaultsource",
   },
   {
     price: "$39.99",
@@ -234,7 +227,8 @@ export const pricingOptions = [
       "Get major upgrades at 50% cost.",
       "You can install it on 3 computers! Even share with your friends.",
     ],
-    buyUrl: "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=100687&cfg=defaultsource",
+    buyUrl:
+      "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=100687&cfg=defaultsource",
   },
   {
     price: "$99.99",
@@ -244,7 +238,8 @@ export const pricingOptions = [
       "All upgrades are free! Including major and minor.",
       "No computer based limitation. Install it on any number of computers you own.",
     ],
-    buyUrl: "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=248979",
+    buyUrl:
+      "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=248979",
   },
 ];
 
@@ -266,8 +261,125 @@ export const installedContent = {
 };
 
 export const privacyContent = {
-  title: "Privacy",
-  body: `We are committed to protecting your privacy and the privacy of information you provide to us. URSoft,Inc will never sell, rent, lease or even disclose customer information to third parties. Other terms of URSoft,Inc' privacy policy are as follows: Information Collection...`,
+  title: "Privacy Policy",
+  body: `We are committed to protecting your privacy and the privacy of information you provide to us. **URSoft,Inc will never sell, rent, lease or even disclose customer information to third parties.** Other terms of URSoft,Inc' privacy policy are as follows:
+
+**Information Collection** When you engage in activities on our Web site like ordering or registering products, downloading trial versions of software or software updates, requesting technical support, or signing up for special offers or newsletters, URSoft may ask you to provide us with information. Information we ask you to provide when purchasing or ordering will only be the information necessary to process your purchase or order. When fulfilling an order we will ask for your name, email address, address (for shipping purposes), telephone number and credit card number, type and expiration date. We will use this information only for matters related to your order unless you request otherwise. Your credit card information will be maintained only for a period reasonably necessary to ensure payment has been received.
+
+Additional information we may ask you to provide when choosing to engage in other activities on our website or within our products may include name, mailing address, telephone number, facsimile numbers, e-mail address, and other demographic information that will enable us to better understand the requirements of our customers and to continue to provide high quality products and service. This information request will be optional and required only to engage in certain activities. By choosing to enter the requested information when prompted, you may be eligible to receive demonstration versions of new software, extended functionality, user tips and product information, newsletters and special offers.
+
+Any information you post to a chat room or public bulletin is available to all users of that site.
+
+**How We Use Your Information** Any information collected will be used only by URSoft,Inc to improve our products, services and website. URSoft,Inc uses information for internal purposes only and does not sell, lease or rent information to third parties. URSoft,Inc may use information it has collected to provide you with notices which you indicate would be of use or interest to you. This may include notice of an ability to extend a products trial period, newsletters, website update notices, notification of the availability of new products, product updates as well as information on promotions and special offers. You will be entitled to elect not to receive any further notices.
+
+If you enter into a trial period of URSoft software, we may contact you via email to provide additional information on our products and to survey you on your satisfaction with our software. We may also contact you to provide advance notice of termination of the trial period. Email is our preferred method of communication and we value the privilege to use it.
+
+URSoft,Inc may profile Web site activity and compile data in aggregate form in order to better understand user activities and the success of various ad campaigns. This information is important to us as it enables us to continue to provide products specific to our customer's interests. Site visitor behavior information is compiled in aggregate and does not represent individually identifiable information.
+
+URSoft,Inc may hire certain outside contractors to perform services on our behalf (such as packaging & shipping). We will only provide those companies the personal information they need to complete the desired service. They are not permitted to use customer information for any other purpose.
+
+**Security of Your Personal Information** URSoft,Inc takes the protection of the personal information you provide very seriously. Personal information collected is stored in password-controlled servers with limited access.
+
+Information submitted to URSoft may be transferred across national boundaries to or from our staff in other countries. Internal data is shared through secured transmissions and maintained in secured databases. URSoft,Inc will only disclose information if required to do so by law, legal process or if in good faith it is deemed necessary for the public interest.
+
+URSoft,Inc may link website visitors to websites operated by third parties who are select partners of URSoft,Inc. URSoft,Inc attempts to select reputable partners but does not guarantee the security of any personal information disclosed on those sites.
+
+**Privacy Issues and Concerns** If you have any questions or concerns regarding our online privacy policy contact us by email at privacy@ursoftware.com
+
+**Cookies** Cookies are a feature of your web browser that allows websites to transfer bits of information to your computer for record-keeping purposes. You may be able to set your web browser to notify you when you receive a cookie or to not accept cookies at all. A cookie stored on your computer can be used to "remember" things that will improve the efficiency of your online experience. A cookie is not a piece of code and cannot be used to run programs or deliver viruses to your computer. URSoft,Inc uses cookies on its websites to help us publish content relevant to our customers needs and wants.`,
+};
+
+export const refundContent = {
+  title: "Refund Policy",
+  body: `Thank you for shopping at Ursoftware!
+
+We offer refund and/or exchange within the first 30 days of your purchase, if 30 days have passed since your purchase, you will not be offered a refund and/or exchange of any kind.
+
+**Eligibility for Refunds and Exchanges**
+
+*    Your item must be unused and in the same condition that you received it.
+*   The item must be in the original packaging.
+*    To complete your return, we require a receipt or proof of purchase.
+*    Only regular priced items may be refunded, sale items cannot be refunded.
+*    If the item in question was marked as a gift when purchased and shipped directly to you, you will receive a gift credit for the value of your return.
+
+**Exchanges**_(if applicable)_
+
+We only replace items if they are defective or damaged. If you need to exchange it for the same item, send us an email at (Add Relevant Email Address) and send your item to: (Relevant Address).
+
+**Exempt Goods**
+
+The following are exempt from refunds:
+
+*   Gift cards
+*   Some health and personal care items
+
+**Partial refunds are granted**_(if applicable)_
+
+*    Any item not in its original condition, is damaged or missing parts for reasons not due to our error.
+*   Any item that is returned more than 30 days after delivery.
+
+Once your return is received and inspected, we will send you an email to notify you that we have received your returned item. We will also notify you of the approval or rejection of your refund.
+
+If you are approved, then your refund will be processed, and a credit will automatically be applied to your credit card or original method of payment, within a certain amount of days.
+
+**Late or missing refunds**
+
+*    If you have not received a refund yet, first check your bank account again. Then contact your credit card company, it may take some time before your refund is officially posted.
+*    If you have done all of this and you still have not received your refund yet, please contact us at (email and or phone number)
+
+**Shipping**
+
+*    Please do not send the product back to the manufacturer. It must be sent to the following Address (Relevant Address).
+*    You will be responsible for paying for your own shipping costs for returning your item.
+*    Shipping costs are non-refundable! If you receive a refund, the cost of return shipping will be deducted from your refund.
+*    Depending on where you live, the time it may take for your exchanged product to reach you, may vary.
+*    Please see, we cannot guarantee that we will receive your returned item.`,
+};
+
+export const deliveryContent = {
+  title: "Delivery Policy",
+  body: `## 1. Scope
+This Delivery Policy ("Policy") applies to all customers who purchase licenses or downloads of **"Your Uninstaller"** via our website.
+
+## 2. Delivery Method
+- Upon successful payment and order confirmation, the software will be delivered electronically.
+- The customer will receive an email containing a download link (or license key / activation instructions), enabling immediate access to the product.
+- No physical media (CD/USB) will be shipped unless explicitly specified.
+
+## 3. Timing of Delivery
+- Delivery (i.e. email with download link / license) is typically initiated within **5 minutes** of payment confirmation.
+- In rare cases (e.g. payment system delays or manual review), delivery may take up to **24 hours**.
+- If you do not receive the delivery email within the expected timeframe, please contact our support team (see Section 8).
+
+## 4. License & Activation
+- For licensed copies, the email will include instructions for activation (e.g. license key, account instructions).
+- Use of the software is subject to our **License Agreement / End-User License Terms**.
+
+## 5. Updates and Upgrades
+- Once delivered, the customer is entitled to download any minor updates or patches for the same major release free of charge (e.g. from version 5.1 to 5.2).
+- Major upgrades (e.g. from version 5.1 to version 6.0) may require the purchase of a separate license or upgrade fee.
+
+## 6. Refunds, Returns & Cancellations
+- Because the product is delivered electronically and becomes immediately accessible, we treat all sales as **final** after delivery.
+- We offer a **30-day money-back guarantee**. Refunds or cancellations are only considered within this period, under exceptional circumstances (e.g. we failed to provide a working license key, or there is a proven defect preventing installation).
+- To request a refund or report a problem, you must contact our support within **30 days** of delivery, provide proof of purchase, and fully uninstall the software.
+
+## 7. Delivery Issues
+- If the delivery email is not received (e.g. due to spam filters), the customer is responsible for checking spam/junk mail and providing a valid email address.
+- If requested, we will resend the download link or license key.
+- We do not assume liability for delays caused by external factors (e.g. email provider, internet outage).
+
+## 8. Support & Contact Information
+If you experience any issue with delivery, or have not received your software within the stated timeframe, please contact our support team:
+
+Email: **support@ursoftware.com**
+Subject line: "Delivery Issue – Your Uninstaller"
+
+Please include your order number, date of purchase, and the email address used for purchase.
+
+## 9. Changes to This Policy
+We reserve the right to modify this Delivery Policy at any time. The latest version will always be available on our website. Changes will apply to new purchases from the date the revised policy is posted.`,
 };
 
 export const notFoundContent = {
@@ -293,3 +405,216 @@ export const integrationIcons = [
 
 export const footerCompanyDescription =
   "We help Windows users keep PCs clean, fast and secure. Your Uninstaller fully removes apps, clears registry and disk leftovers, manages startup items, and protects privacy with secure shredding. Simple, reliable, and backed by updates and support, it turns maintenance into one click so people stay productive.";
+
+export const footerContent = {
+  logoAlt: "URSoft logo",
+  sections: [
+    {
+      title: "Quick Links",
+      links: [
+        { label: "Home", href: "/" },
+        { label: "Features", href: "/features" },
+        { label: "Download", href: "/download" },
+        { label: "Order", href: "/order" },
+      ],
+    },
+    {
+      title: "Support",
+      links: [
+        { label: "Support", href: "/support" },
+        { label: "Privacy Policy", href: "/privacy" },
+        { label: "Refund Policy", href: "/refund-policy" },
+        { label: "Delivery Policy", href: "/delivery-policy" },
+      ],
+    },
+    {
+      title: "Newsletter",
+      description: "Stay up to date with the latest news and updates.",
+      embed: {
+        uid: "489ef797fa",
+        src: "https://ursoftware.kit.com/489ef797fa/index.js",
+      },
+    },
+  ],
+  bottomLinks: [
+    { label: "Home", href: "/" },
+    { label: "Order", href: "/order" },
+    { label: "Support", href: "/support" },
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Delivery Policy", href: "/delivery-policy" },
+  ],
+  copyrightBrand: "URSoft, Inc.",
+  socialAriaLabel: "social icon",
+};
+
+export const headerMenu = [
+  { id: 1, title: "Home", newTab: false, path: "/" },
+  { id: 2, title: "Features", newTab: false, path: "/features" },
+  { id: 2.05, title: "Order", newTab: false, path: "/order" },
+  { id: 2.1, title: "Blog", newTab: false, path: "/blog" },
+  { id: 2.3, title: "Docs", newTab: false, path: "/docs" },
+  {
+    id: 3,
+    title: "Pages",
+    newTab: false,
+    submenu: [
+      { id: 31, title: "Blog Grid", newTab: false, path: "/blog" },
+      { id: 34, title: "Sign In", newTab: false, path: "/auth/signin" },
+      { id: 35, title: "Sign Up", newTab: false, path: "/auth/signup" },
+      { id: 35.0, title: "Docs", newTab: false, path: "/docs" },
+      { id: 35.1, title: "Support", newTab: false, path: "/support" },
+      { id: 35.2, title: "Order", newTab: false, path: "/order" },
+      { id: 36, title: "404", newTab: false, path: "/error" },
+    ],
+  },
+  { id: 4, title: "Support", newTab: false, path: "/support" },
+];
+
+export const headerContent = {
+  logoAlt: "logo",
+  hamburgerAriaLabel: "hamburger Toggler",
+};
+
+export const ctaAlt = {
+  shape: "Saly",
+  arrow: "Arrow",
+};
+
+export const pricingLabels = {
+  lifetimeTag: "Lifetime upgrades",
+  buyButton: "Buy Now",
+};
+
+export const contactTexts = {
+  formTitle: "Send a message",
+  namePlaceholder: "First and Last",
+  emailPlaceholder: "your.email@domain.tld",
+  subjectLabel: "Choose",
+  subjectOptions: [
+    { value: "Pre-purchase Questions", label: "Pre-purchase Questions" },
+    { value: "Lost Key", label: "Lost Key" },
+    { value: "Technical Inquiries", label: "Technical Inquiries" },
+    { value: "Other", label: "Other" },
+  ],
+  messagePlaceholder: "Enter your message here...",
+  sendButton: "Send Message",
+  sendAriaLabel: "send message",
+  sidebar: {
+    title: "Find us",
+    locationTitle: "Our Loaction",
+    locationValue: "290 Maryam Springs 260, Courbevoie, Paris, France",
+    emailTitle: "Email Address",
+    emailValue: "yourmail@domainname.com",
+    phoneTitle: "Phone Number",
+    phoneValue: "+009 42334 6343 843",
+  },
+};
+
+export const faqHeaderContent = {
+  badge: "OUR FAQS",
+  title: "Frequently Asked",
+  titleEmphasis: "Questions",
+  moreLabel: "Know More",
+};
+
+export const faqItems = [
+  {
+    id: 1,
+    quest: "Lorem ipsum dolor sit amet, consectetur",
+    ans: "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.",
+  },
+  {
+    id: 2,
+    quest: "Lorem ipsum dolor sit amet, consectetur",
+    ans: "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.",
+  },
+  {
+    id: 3,
+    quest: "Lorem ipsum dolor sit amet, consectetur",
+    ans: "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences.",
+  },
+];
+
+export const accessibilityTexts = {
+  scrollToTopAria: "scroll to top",
+  scrollToTopSrOnly: "scroll to top",
+};
+
+export const heroAlt = {
+  shape: "shape",
+  hero: "Hero",
+};
+
+export const funFactAlt = {
+  man: "Man",
+  doodle: "Doodle",
+  dotted: "Dotted",
+};
+
+export const integrationAlt = {
+  dotted: "Dotted",
+};
+
+export const siteMetadata = {
+  home: {
+    title:
+      "Your Uninstaller! - Uninstall Software, any unwanted app Completely.",
+    description:
+      "Your Uninstaller! - Free download, award winning uninstaller suite to remove programs, uninstall software completely and easily. Remove every trace of unwanted programs.",
+    keywords: [
+      "Your Uninstaller!",
+      "uninstall",
+      "uninstaller",
+      "uninstall program",
+      "uninstaller software",
+      "add remove",
+      "add remove programs",
+      "cleanup",
+      "registry",
+      "Windows",
+    ],
+    openGraph: {
+      url: "https://www.ursoftware.com/",
+      siteName: "Your Uninstaller!",
+      image: "/images/logo/site-logo.png",
+    },
+  },
+  features: {
+    title: "Features - Your Uninstaller! 7",
+    description: "Core features of Your Uninstaller! 7",
+  },
+  order: {
+    title: "Order - Your Uninstaller! 7",
+    description:
+      "Choose a license and download instantly. Safe uninstall with deep system cleanup included.",
+  },
+  support: {
+    title: "Support - Your Uninstaller! 7",
+    description: "This is Support page for Your Uninstaller! 7",
+  },
+  privacy: {
+    title: "Privacy Policy - Your Uninstaller! 7",
+    description: "Privacy Policy of URSoft, Inc.",
+  },
+  refundPolicy: {
+    title: "Refund Policy - Your Uninstaller! 7",
+    description: "30-day money-back guarantee and refund instructions.",
+  },
+  deliveryPolicy: {
+    title: "Delivery Policy - Your Uninstaller! 7",
+    description: "Electronic delivery timing, license activation and support.",
+  },
+  docs: {
+    title: "Docs Page - Solid SaaS Boilerplate",
+    description: "This is Docs page for Solid Pro",
+  },
+};
+
+export const revSliderContent = {
+  title: "Your Uninstaller! 7",
+  subtitle: "Uninstall any unwanted app \ncompletely!",
+  downloadLabel: "DOWNLOAD NOW",
+  downloadUrl: "https://www.ursoftware.com/dlds/yusetup.exe",
+  versionInfo: "Supports Windows 11/10/8/7/Vista/XP",
+  laptopAlt: "Your Uninstaller! 7 - Windows Uninstaller Software",
+};

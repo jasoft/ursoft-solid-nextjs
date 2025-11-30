@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import { contactTexts } from "@/app/content";
 
 const Contact = () => {
   /**
@@ -56,16 +57,14 @@ const Contact = () => {
               viewport={{ once: true }}
               className="animate_top w-full rounded-lg bg-white p-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-15"
             >
-              <h2 className="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-                Send a message
-              </h2>
+              <h2 className="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">{contactTexts.formTitle}</h2>
 
               <form action="https://formspree.io/f/mvoezadk" method="POST" acceptCharset="utf-8">
                 <div className="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
                   <input
                     type="text"
                     id="full-name"
-                    placeholder="First and Last"
+                    placeholder={contactTexts.namePlaceholder}
                     name="name"
                     required
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
@@ -74,7 +73,7 @@ const Contact = () => {
                   <input
                     type="email"
                     id="email-address"
-                    placeholder="your.email@domain.tld"
+                    placeholder={contactTexts.emailPlaceholder}
                     name="_replyto"
                     required
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
@@ -88,18 +87,17 @@ const Contact = () => {
                     required
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus-visible:outline-hidden dark:border-strokedark dark:focus:border-manatee lg:w-1/2"
                   >
-                    <option value="No Subject">Choose</option>
-                    <option value="Pre-purchase Questions">Pre-purchase Questions</option>
-                    <option value="Lost Key">Lost Key</option>
-                    <option value="Technical Inquiries">Technical Inquiries</option>
-                    <option value="Other">Other</option>
+                    <option value="No Subject">{contactTexts.subjectLabel}</option>
+                    {contactTexts.subjectOptions.map((opt, i) => (
+                      <option key={i} value={opt.value}>{opt.label}</option>
+                    ))}
                   </select>
                 </div>
 
                 <div className="mb-11.5 flex">
                   <textarea
                     id="message"
-                    placeholder="Enter your message here..."
+                    placeholder={contactTexts.messagePlaceholder}
                     rows={4}
                     name="message"
                     required
@@ -109,11 +107,11 @@ const Contact = () => {
 
                 <div className="flex flex-wrap gap-4 xl:justify-between ">
                   <button
-                    aria-label="send message"
+                    aria-label={contactTexts.sendAriaLabel}
                     className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark"
                     type="submit"
                   >
-                    Send Message
+                    {contactTexts.sendButton}
                     <svg
                       className="fill-white"
                       width="14"
@@ -150,30 +148,22 @@ const Contact = () => {
               viewport={{ once: true }}
               className="animate_top w-full md:w-2/5 md:p-7.5 lg:w-[26%] xl:pt-15"
             >
-              <h2 className="mb-12.5 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-                Find us
-              </h2>
+              <h2 className="mb-12.5 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">{contactTexts.sidebar.title}</h2>
 
               <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Our Loaction
-                </h3>
-                <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
+                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">{contactTexts.sidebar.locationTitle}</h3>
+                <p>{contactTexts.sidebar.locationValue}</p>
               </div>
               <div className="5 mb-7">
-                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Email Address
-                </h3>
+                <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">{contactTexts.sidebar.emailTitle}</h3>
                 <p>
-                  <a href="#">yourmail@domainname.com</a>
+                  <a href="#">{contactTexts.sidebar.emailValue}</a>
                 </p>
               </div>
               <div>
-                <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Phone Number
-                </h4>
+                <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">{contactTexts.sidebar.phoneTitle}</h4>
                 <p>
-                  <a href="#">+009 42334 6343 843</a>
+                  <a href="#">{contactTexts.sidebar.phoneValue}</a>
                 </p>
               </div>
             </motion.div>

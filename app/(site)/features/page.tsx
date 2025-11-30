@@ -1,15 +1,16 @@
 import Feature from "@/components/Features";
 import CTA from "@/components/CTA";
 import { Metadata } from "next";
+import { siteMetadata } from "@/app/content";
 
 export const metadata: Metadata = {
-  title: "Features - Your Uninstaller! 7",
-  description: "Core features of Your Uninstaller! 7",
+  title: siteMetadata.features.title,
+  description: siteMetadata.features.description,
 };
 
 export default function FeaturesPage() {
   return (
-    <main>
+    <main className="-mt-20">
       <Feature />
       <CTA />
     </main>

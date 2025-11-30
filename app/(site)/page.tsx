@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { siteMetadata } from "@/app/content";
 import RevSliderHero from "@/components/RevSliderHero";
 import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
@@ -12,30 +13,16 @@ import Contact from "@/components/Contact";
 import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
-  title: "Your Uninstaller! - Uninstall Software, any unwanted app Completely.",
-  description:
-    "Your Uninstaller! - Free download, award winning uninstaller suite to remove programs, uninstall software completely and easily. Remove every trace of unwanted programs.",
-  keywords: [
-    "Your Uninstaller!",
-    "uninstall",
-    "uninstaller",
-    "uninstall program",
-    "uninstaller software",
-    "add remove",
-    "add remove programs",
-    "cleanup",
-    "registry",
-    "Windows",
-  ],
+  title: siteMetadata.home.title,
+  description: siteMetadata.home.description,
+  keywords: siteMetadata.home.keywords,
   formatDetection: { telephone: false },
   openGraph: {
-    title:
-      "Your Uninstaller! - Uninstall Software, any unwanted app Completely.",
-    description:
-      "Your Uninstaller! - Free download, award winning uninstaller suite to remove programs, uninstall software completely and easily. Remove every trace of unwanted programs.",
-    url: "https://www.ursoftware.com/",
-    siteName: "Your Uninstaller!",
-    images: [{ url: "/images/logo/site-logo.png", width: 300, height: 300 }],
+    title: siteMetadata.home.title,
+    description: siteMetadata.home.description,
+    url: siteMetadata.home.openGraph.url,
+    siteName: siteMetadata.home.openGraph.siteName,
+    images: [{ url: siteMetadata.home.openGraph.image, width: 300, height: 300 }],
     type: "website",
   },
   icons: {

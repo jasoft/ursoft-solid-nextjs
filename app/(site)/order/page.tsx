@@ -1,12 +1,11 @@
 import Pricing from "@/components/Pricing";
 import { Metadata } from "next";
 import Image from "next/image";
-import { pricingIntro } from "@/app/content";
+import { pricingIntro, siteMetadata } from "@/app/content";
 
 export const metadata: Metadata = {
-  title: "Order - Your Uninstaller! 7",
-  description:
-    "Choose a license and download instantly. Safe uninstall with deep system cleanup included.",
+  title: siteMetadata.order.title,
+  description: siteMetadata.order.description,
 };
 
 export default function OrderPage() {

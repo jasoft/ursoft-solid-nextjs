@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ctaData } from "@/app/content";
+import { ctaData, ctaAlt, updateContent } from "@/app/content";
 
 const CTA = () => {
   return (
@@ -57,11 +57,11 @@ const CTA = () => {
                   width={299}
                   height={299}
                   src="/images/shape/shape-06.png"
-                  alt="Saly"
+                  alt={ctaAlt.shape}
                   className="hidden xl:block"
                 />
                 <a
-                  href="http://www.ursoftware.com/dlds/yusetup.exe"
+                  href={updateContent.downloadUrl}
                   className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white hover:opacity-90 dark:bg-white dark:text-black"
                 >
                   {ctaData.primaryButton}
@@ -69,14 +69,14 @@ const CTA = () => {
                     width={20}
                     height={20}
                     src="/images/icon/icon-arrow-dark.svg"
-                    alt="Arrow"
+                    alt={ctaAlt.arrow}
                     className="dark:hidden"
                   />
                   <Image
                     width={20}
                     height={20}
                     src="/images/icon/icon-arrow-light.svg"
-                    alt="Arrow"
+                    alt={ctaAlt.arrow}
                     className="hidden dark:block"
                   />
                 </a>
