@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function OrderPage() {
   return (
-    <main>
+    <main className="page-main-bg">
       <Pricing />
       <section className="mt-15">
         <div className="mx-auto max-w-[980px] px-4 text-center md:px-8">

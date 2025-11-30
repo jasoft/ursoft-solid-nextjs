@@ -135,6 +135,13 @@
 }
 
 @layer utilities {
+  .page-main-bg {
+    @apply relative overflow-hidden;
+    background-image: linear-gradient(to bottom, #2e70b8 3%, #ffffff 10%, #FFFFFF 100%);
+  }
+  .dark .page-main-bg {
+    background-image: linear-gradient(to bottom, #252A42 0%, #1c2136 100%);
+  }
   /* third-party libraries CSS */
 
   .testimonial-01 .swiper-pagination-bullet {

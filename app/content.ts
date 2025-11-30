@@ -248,6 +248,52 @@ export const updateContent = {
   downloadUrl: "https://www.ursoftware.com/dlds/yusetup.exe",
 };
 
+export const downloadPageContent = {
+  hero: {
+    title: "Your Uninstaller! 7",
+    description:
+      "The world's most popular uninstaller utility. Completely remove any program from your Windows PC - no trace left behind.",
+    downloadLabel: "Download Free Trial",
+    logoAlt: "Your Uninstaller Logo",
+    badges: {
+      os: "Windows 11/10/8/7",
+      trial: "21-day Free Trial",
+      secure: "Safe & Secure",
+    },
+  },
+  features: [
+    { title: "Complete Uninstall", desc: "Remove programs entirely" },
+    { title: "Registry Cleanup", desc: "Clean leftover entries" },
+    { title: "Fast & Efficient", desc: "Lightning-fast scanning" },
+    { title: "App Lock", desc: "Protect important apps" },
+  ],
+  description: {
+    title: "Why Choose Your Uninstaller?",
+    callout: "Right-click any desktop icon and select uninstall - it's that simple!",
+  },
+  gallery: {
+    title: "Screenshots Gallery",
+    items: [
+      { src: "/images/download/yu_main.png", alt: "Main Interface", title: "Main Interface" },
+      { src: "/images/download/yu_uninstallmodes.png", alt: "Uninstall Modes", title: "Uninstall Modes" },
+      { src: "/images/download/yu_scanning.png", alt: "Scanning", title: "Deep Scanning" },
+      { src: "/images/download/yu_startup.png", alt: "Startup Manager", title: "Startup Manager" },
+      { src: "/images/download/yu_diskcleaner.png", alt: "Disk Cleaner", title: "Disk Cleaner" },
+      { src: "/images/download/yu_shredder.png", alt: "File Shredder", title: "File Shredder" },
+    ],
+  },
+  cta: {
+    title: "Try Before You Buy",
+    description:
+      "We offer a 21-day trial period with all features. If you wish to use the software after that period, please purchase a license.",
+    primaryLabel: "Download Now",
+    secondaryLabel: "Purchase License",
+  },
+  assets: {
+    logo: "/images/download/yulogo_96.png",
+  },
+};
+
 export const installedContent = {
   tips: [
     "You can find the app to uninstall by typing part of its name in the top search bar.",

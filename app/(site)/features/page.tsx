@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function FeaturesPage() {
   return (
-    <main className="-mt-20">
+    <main className="-mt-20 page-main-bg">
       <Feature />
       <CTA />
     </main>

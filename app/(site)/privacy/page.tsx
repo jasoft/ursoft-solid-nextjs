@@ -20,14 +20,13 @@ function basicMdToHtml(md: string) {
 const PrivacyPage = () => {
   const html = basicMdToHtml(privacyContent.body);
   return (
-    <div className="pb-20 pt-40">
+    <main className="pb-20 pt-40 page-main-bg">
       <div className="mx-auto mb-10 max-w-c-1315 px-4 md:px-8 xl:px-0">
         <h1 className="mb-4 text-3xl font-bold text-black dark:text-white">{privacyContent.title}</h1>
         <article className="prose max-w-none dark:prose-invert" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-    </div>
+    </main>
   );
 };
 
 export default PrivacyPage;
-
