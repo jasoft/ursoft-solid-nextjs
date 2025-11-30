@@ -1,0 +1,10 @@
+#message={Your Uninstaller! 7.5.2025.1 is available! <br><br>Click "Yes" to get it.}
+
+#url=http://www.ursoftware.com/uninstaller/update/
+#moreinfourl=http://www.ursoftware.com/ur5update.htm
+
+#method=2 (use setup)
+
+#version=6.5.2013.1
+#allowsilentupdate=1
+#level=recommended (minor,must)

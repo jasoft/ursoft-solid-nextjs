@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Uninstaller – Update</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root { color-scheme: light dark }
+    * { box-sizing: border-box }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; background: Canvas; color: CanvasText }
+    .wrap { display: grid; place-items: center; min-height: 100vh; padding: 16px }
+    .card { width: 360px; max-width: 100%; background: Field; color: FieldText; border: 1px solid rgba(0,0,0,.1); border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.12); padding: 20px }
+    .logo { width: 72px; height: 72px; border-radius: 12px }
+    .head { display: flex; align-items: center; gap: 12px; margin-bottom: 8px }
+    h1 { font-size: 18px; margin: 0 }
+    .meta { font-size: 12px; opacity: .7; margin: 4px 0 12px }
+    .desc { font-size: 14px; margin: 0 0 12px }
+    .actions { display: flex; gap: 8px }
+    .btn { appearance: none; border: 0; border-radius: 8px; padding: 10px 14px; font-weight: 600; cursor: pointer }
+    .primary { background: #0070f3; color: #fff }
+    .secondary { background: transparent; color: inherit; border: 1px solid rgba(0,0,0,.15) }
+    .note { font-size: 12px; opacity: .75; margin-top: 10px }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="card" role="dialog" aria-modal="true" aria-label="Update Available">
+      <div class="head">
+        <img src="/images/download/yulogo_96.png" alt="Your Uninstaller Logo" class="logo">
+        <h1>New Version Available</h1>
+      </div>
+      <p id="date" class="meta"></p>
+      <p class="desc">Your download will start automatically. If it doesn’t, click the button below.</p>
+      <div class="actions">
+        <a class="btn primary" id="downloadBtn" href="/dlds/yusetup.exe" download>Download Latest Version</a>
+        <a class="btn secondary" href="/download">Learn More</a>
+      </div>
+      <p class="note">Windows 11/10/8/7 supported.</p>
+    </main>
+  </div>
+  <script>
+    const dateEl = document.getElementById('date');
+    dateEl.textContent = new Date().toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    const url = '/dlds/yusetup.exe';
+    const trigger = () => { const a = document.createElement('a'); a.href = url; a.setAttribute('download', 'yusetup.exe'); document.body.appendChild(a); a.click(); a.remove() };
+    const btn = document.getElementById('downloadBtn');
+    btn.addEventListener('click', e => {});
+    setTimeout(trigger, 800);
+  </script>
+</body>
+</html>
