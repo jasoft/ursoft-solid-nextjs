@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 
+const withMDX = require('@next/mdx')({ extension: /\.mdx?$/ });
+
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  images: {
-    unoptimized: true,
-  },
+  pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
+  images: { unoptimized: true },
 };
 
-module.exports = nextConfig;
+module.exports = withMDX(nextConfig);
