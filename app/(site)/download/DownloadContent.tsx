@@ -18,7 +18,9 @@ import {
   HardDrive,
   Lock,
   Sparkles,
+  X,
 } from "lucide-react";
+import { useState } from "react";
 
 const screenshots = downloadPageContent.gallery.items;
 
@@ -30,6 +32,7 @@ const features = downloadPageContent.features.map((f, i) => ({
 }));
 
 export default function DownloadContent() {
+  const [activeImage, setActiveImage] = useState<null | { src: string; alt: string; title: string }>(null);
   return (
     <main className="page-main-bg pb-20">
       {/* Hero Section */}
@@ -140,7 +143,7 @@ export default function DownloadContent() {
           <h2 className="mb-10 text-center text-3xl font-bold text-black dark:text-white">
             {downloadPageContent.gallery.title}
           </h2>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 px-2">
             {screenshots.map((s, i) => (
               <motion.div
                 key={i}
@@ -148,10 +151,10 @@ export default function DownloadContent() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: i * 0.05 }}
                 viewport={{ once: true, margin: "100px" }}
-                className="group border-stroke dark:border-strokedark dark:bg-blacksection overflow-hidden rounded-xl border bg-white shadow-sm transition-shadow hover:shadow-lg"
+                className="group border-stroke dark:border-strokedark dark:bg-blacksection overflow-hidden rounded-xl border bg-white p-4 shadow-sm transition-shadow hover:shadow-lg"
               >
-                <a href={s.src} target="_blank" rel="noopener noreferrer">
-                  <div className="relative aspect-[4/3] overflow-hidden">
+                <button onClick={() => setActiveImage(s)} aria-label={downloadPageContent.gallery.modal.closeAriaLabel} className="block w-full cursor-zoom-in">
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
                     <Image
                       src={s.src}
                       alt={s.alt}
@@ -159,17 +162,33 @@ export default function DownloadContent() {
                       className="object-cover transition-transform group-hover:scale-105"
                     />
                   </div>
-                  <div className="p-4 text-center">
+                  <div className="pt-4 text-center">
                     <h3 className="font-medium text-black dark:text-white">
                       {s.title}
                     </h3>
                   </div>
-                </a>
+                </button>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+      {activeImage && (
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 p-4">
+          <div className="relative w-[92vw] max-w-5xl">
+            <button onClick={() => setActiveImage(null)} aria-label={downloadPageContent.gallery.modal.closeAriaLabel} className="absolute right-3 top-3 rounded-full bg白/90 p-2 text黑 shadow hover:bg白">
+              <X className="h-5 w-5" />
+            </button>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg黑">
+              <Image src={activeImage.src} alt={activeImage.alt} fill className="object-contain" />
+            </div>
+            <div className="mt-3 text-center text-black dark:text白">
+              <h3 className="font-medium">{activeImage.title}</h3>
+            </div>
+          </div>
+          <button className="absolute inset-0 -z-10" onClick={() => setActiveImage(null)} aria-label={downloadPageContent.gallery.modal.closeAriaLabel} />
+        </motion.div>
+      )}
     </main>
   );
 }
