@@ -5,13 +5,14 @@ import { pricingHeader, pricingOptions, pricingLabels } from "@/app/content";
 // static pricing only
 
 const Pricing = () => {
-  
-
   return (
     <>
       {/* <!-- ===== Pricing Table Start ===== --> */}
-      <section id="pricing" className="overflow-hidden pb-20 pt-15 lg:pb-25 xl:pb-30">
-        <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
+      <section
+        id="pricing"
+        className="overflow-hidden pt-15 pb-20 lg:pb-25 xl:pb-30"
+      >
+        <div className="max-w-c-1315 mx-auto px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <div className="animate_top mx-auto text-center">
             <SectionHeader headerInfo={pricingHeader} />
@@ -23,7 +24,7 @@ const Pricing = () => {
           <div className="absolute -bottom-15 -z-1 h-full w-full">
             <Image
               fill
-              src="./images/shape/shape-dotted-light.svg"
+              src="/images/shape/shape-dotted-light.svg"
               alt="Dotted"
               className="dark:hidden"
             />
@@ -32,26 +33,30 @@ const Pricing = () => {
             {pricingOptions.map((plan, idx) => (
               <div
                 key={idx}
-                className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5"
+                className="animate_top group border-stroke shadow-solid-10 dark:border-strokedark dark:bg-blacksection relative rounded-lg border bg-white p-7.5 md:w-[45%] lg:w-1/3 xl:p-12.5 dark:shadow-none"
               >
-                <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+                <h3 className="xl:text-sectiontitle3 mb-7.5 text-3xl font-bold text-black dark:text-white">
                   {plan.price}
                 </h3>
-                <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
+                <h4 className="text-para2 mb-2.5 font-medium text-black dark:text-white">
                   {plan.title}
                 </h4>
-                <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
+                <div className="border-stroke dark:border-strokedark mt-9 border-t pt-9 pb-12.5">
                   <ul>
                     {plan.bullets.map((b, i) => {
                       const highlight = /All upgrades are free/i.test(b);
                       return (
                         <li
                           key={i}
-                          className={`mb-4 last:mb-0 ${highlight ? "text-primary font-semibold" : "text-black dark:text-manatee"}`}
+                          className={`mb-4 last:mb-0 ${
+                            highlight
+                              ? "text-primary font-semibold"
+                              : "dark:text-manatee text-black"
+                          }`}
                         >
                           {b}
                           {highlight ? (
-                            <span className="ml-2 inline-flex items-center rounded-full bg-primary/10 px-2 py-0.5 text-xs text-primary">
+                            <span className="bg-primary/10 text-primary ml-2 inline-flex items-center rounded-full px-2 py-0.5 text-xs">
                               {pricingLabels.lifetimeTag}
                             </span>
                           ) : null}
@@ -62,9 +67,11 @@ const Pricing = () => {
                 </div>
                 <a
                   href={plan.buyUrl || "/order"}
-                  className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
+                  className="group/btn text-primary dark:hover:text-primary inline-flex items-center gap-2.5 font-medium transition-all duration-300 dark:text-white"
                 >
-                  <span className="duration-300 group-hover/btn:pr-2">{pricingLabels.buyButton}</span>
+                  <span className="duration-300 group-hover/btn:pr-2">
+                    {pricingLabels.buyButton}
+                  </span>
                   <svg
                     width="14"
                     height="14"
@@ -80,7 +87,6 @@ const Pricing = () => {
               </div>
             ))}
           </div>
-
         </div>
       </section>
       {/* <!-- ===== Pricing Table End ===== --> */}
