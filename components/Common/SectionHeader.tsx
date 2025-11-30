@@ -14,21 +14,9 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
     <>
       {/* <!-- Section Title Start --> */}
       <motion.div
-        variants={{
-          hidden: {
-            opacity: 0,
-            y: -20,
-          },
-
-          visible: {
-            opacity: 1,
-            y: 0,
-          },
-        }}
-        initial="hidden"
-        whileInView="visible"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.05 }}
-        viewport={{ once: true, amount: 0.01 }}
         className="animate_top mx-auto text-center"
       >
         <div className="bg-zumthor dark:border-strokedark dark:bg-blacksection mb-4 inline-block rounded-full px-4.5 py-1.5 dark:border">
