@@ -63,43 +63,43 @@ export const importantFeatures = [
 export const featuresData = [
   {
     id: 1,
-    icon: "/images/features/feature_complete_64.png",
-    title: "Uninstall any installed program completely",
+    icon: "/images/features/complete-uninstall.svg",
+    title: "Complete Uninstallation",
     description:
       "Uninstall any installed program completely, even corrupted ones. The most exciting part of Your Uninstaller! is: eradicating every aspect of a program. With Your Uninstaller, it's easy to uninstall any installed program - no trace left.",
   },
   {
     id: 2,
-    icon: "/images/features/feature_fix_64.png",
-    title: "Fix invalid uninstalls in one click!",
+    icon: "/images/features/deep-scan.svg",
+    title: "Deep System Scan",
     description:
       "If you often install/uninstall software, you will inevitably experience corrupted programs. They stay on your program list and fail when you try to eliminate them. Let Your Uninstaller fix them.",
   },
   {
     id: 3,
-    icon: "/images/features/feature_search_64.png",
-    title: "Full system scan",
+    icon: "/images/features/file-shredder.svg",
+    title: "Secure File Shredder",
     description:
       "After standard uninstallation, Your Uninstaller scans the system for related traces and removes any 'junk artifacts.' You'd never even know you installed the program on your PC.",
   },
   {
     id: 4,
-    icon: "/images/features/feature_delete_64.png",
-    title: "Force removal of a program",
+    icon: "/images/features/startup-manager.svg",
+    title: "Startup Manager",
     description:
       "Some programs are tough to remove, incredibly old-fashioned non-conforming programs. They are not even problems for Your Uninstaller!",
   },
   {
     id: 5,
-    icon: "/images/features/feature_easy_64.png",
-    title: "Easy to Use.",
+    icon: "/images/features/disk-cleaner.svg",
+    title: "Disk Cleaner",
     description:
       "No expert knowledge is required. Usability is always foremost on our minds when we develop products. Your Uninstaller is straightforward to use. No hassles, no confusion.",
   },
   {
     id: 6,
-    icon: "/images/features/feature_windows_64.png",
-    title: "Various utilities to help Windows clean.",
+    icon: "/images/features/force-uninstall.svg",
+    title: "Force Uninstall",
     description:
       "Your Uninstaller supplies several well-designed utilities like Startup Manager, File Shredder, Disk Cleaner, and more. These tools provide excellent support to make Windows solid and fast.",
   },
@@ -215,6 +215,7 @@ export const pricingOptions = [
   {
     price: "$24.99",
     title: "Single PC License",
+    subtitle: "Perfect for individual users",
     bullets: [
       "Unlimited time. Pay and get it.",
       "All minor upgrade are free.",
@@ -227,6 +228,8 @@ export const pricingOptions = [
   {
     price: "$39.99",
     title: "3 PCs License",
+    subtitle: "Great for families",
+    badge: "Most Popular",
     bullets: [
       "Unlimited time. Pay and get it.",
       "All minor upgrade are free.",
@@ -239,6 +242,8 @@ export const pricingOptions = [
   {
     price: "$99.99",
     title: "Unlimited PCs License",
+    subtitle: "For businesses & power users",
+    badge: "Best Value",
     bullets: [
       "Unlimited time. Pay and get it.",
       "All upgrades are free! Including major and minor.",
@@ -578,6 +583,7 @@ export const ctaAlt = {
 export const pricingLabels = {
   lifetimeTag: "Lifetime upgrades",
   buyButton: "Buy Now",
+  oneTimeNote: "One-time payment",
 };
 
 export const contactTexts = {
