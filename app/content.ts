@@ -24,7 +24,7 @@ export const pricingHeader = {
 
 export const pricingIntro = {
   claimTitle: "Best Selling PC Uninstaller Software Worldwide",
-  claimStats: "Over 200,000,000 downloads worldwide",
+  claimStats: "Trusted by millions of users worldwide for over 20 years",
   bullets: [
     "Uninstall any app completely.",
     "Clean registry and disk junk left by other uninstallers.",
@@ -54,7 +54,7 @@ export const importantFeatures = [
   {
     title: "Find all traces left in a few clicks.",
     subTitle:
-      "With our exclusive data censoring technique, Your Uninstaller can find all junk files and registry entries related to a particular app.",
+      "With our advanced scanning algorithms, Your Uninstaller can find junk files and registry entries related to a particular app.",
     description:
       "By monitoring and analysing the install logs and application behaviors, Your Uninstaller knows all about the application you want to remove. It works like a charm to do its job.",
     image: "/images/important/junk_found-1.png",
@@ -404,50 +404,35 @@ URSoft,Inc may link website visitors to websites operated by third parties who a
 export const refundContent = {
   title: "Refund Policy",
   body: `# Refund Policy
-Thank you for shopping at Ursoftware!
 
-We offer refund and/or exchange within the first 30 days of your purchase, if 30 days have passed since your purchase, you will not be offered a refund and/or exchange of any kind.
+### 1. Scope
+This policy applies to all licenses of "Your Uninstaller!" purchased directly from our website.
 
-**Eligibility for Refunds and Exchanges**
+### 2. 30-Day Money-Back Guarantee
+We want you to be fully satisfied with your purchase. If you are not satisfied with the software for any reason, you may request a full refund within **30 days** of your purchase date.
 
-*    Your item must be unused and in the same condition that you received it.
-*   The item must be in the original packaging.
-*    To complete your return, we require a receipt or proof of purchase.
-*    Only regular priced items may be refunded, sale items cannot be refunded.
-*    If the item in question was marked as a gift when purchased and shipped directly to you, you will receive a gift credit for the value of your return.
+### 3. Eligible Reasons
+We will generally approve refund requests for the following reasons:
+- The software does not work on your computer as advertised.
+- You are unable to install or activate the software despite support assistance.
+- Accidental duplicate purchases.
 
-**Exchanges**_(if applicable)_
+### 4. Not Eligible
+Refunds may not be granted in the following cases:
+- Requests made more than 30 days after purchase.
+- "Change of mind" if the software has been fully activated and used without technical issues.
+- Purchases from unauthorized resellers.
+- Failure to provide purchase details (e.g., order ID, email).
 
-We only replace items if they are defective or damaged. If you need to exchange it for the same item, send us an email at (Add Relevant Email Address) and send your item to: (Relevant Address).
+### 5. How to Request a Refund
+To request a refund, please email us at **support@ursoftware.com** with the subject "Refund Request".
+Please include:
+- Your Order Number
+- The email address used for the purchase
+- A brief description of the reason for the refund
 
-**Exempt Goods**
-
-The following are exempt from refunds:
-
-*   Gift cards
-*   Some health and personal care items
-
-**Partial refunds are granted**_(if applicable)_
-
-*    Any item not in its original condition, is damaged or missing parts for reasons not due to our error.
-*   Any item that is returned more than 30 days after delivery.
-
-Once your return is received and inspected, we will send you an email to notify you that we have received your returned item. We will also notify you of the approval or rejection of your refund.
-
-If you are approved, then your refund will be processed, and a credit will automatically be applied to your credit card or original method of payment, within a certain amount of days.
-
-**Late or missing refunds**
-
-*    If you have not received a refund yet, first check your bank account again. Then contact your credit card company, it may take some time before your refund is officially posted.
-*    If you have done all of this and you still have not received your refund yet, please contact us at (email and or phone number)
-
-**Shipping**
-
-*    Please do not send the product back to the manufacturer. It must be sent to the following Address (Relevant Address).
-*    You will be responsible for paying for your own shipping costs for returning your item.
-*    Shipping costs are non-refundable! If you receive a refund, the cost of return shipping will be deducted from your refund.
-*    Depending on where you live, the time it may take for your exchanged product to reach you, may vary.
-*    Please see, we cannot guarantee that we will receive your returned item.`,
+### 6. Processing Time
+Once approved, your refund will be processed immediately. The credit may take **5–10 business days** to appear on your statement, depending on your bank or credit card issuer.`,
 };
 
 export const deliveryContent = {
@@ -476,9 +461,9 @@ This Delivery Policy ("Policy") applies to all customers who purchase licenses o
 - Major upgrades (e.g. from version 5.1 to version 6.0) may require the purchase of a separate license or upgrade fee.
 
 ### 6. Refunds, Returns & Cancellations
-- Because the product is delivered electronically and becomes immediately accessible, we treat all sales as **final** after delivery.
-- We offer a **30-day money-back guarantee**. Refunds or cancellations are only considered within this period, under exceptional circumstances (e.g. we failed to provide a working license key, or there is a proven defect preventing installation).
-- To request a refund or report a problem, you must contact our support within **30 days** of delivery, provide proof of purchase, and fully uninstall the software.
+- While digital licenses are generally non-returnable, we provide a **30-day money-back guarantee** to ensure your satisfaction.
+- If you encounter technical issues or are not satisfied, you may request a refund within **30 days** of purchase, subject to the conditions in our Refund Policy.
+- To request a refund, please contact our support team with your order details. Upon refund approval, you must uninstall the software and destroy all copies of the license key.
 
 ### 7. Delivery Issues
 - If the delivery email is not received (e.g. due to spam filters), the customer is responsible for checking spam/junk mail and providing a valid email address.
