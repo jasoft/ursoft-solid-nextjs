@@ -61,7 +61,7 @@ const RevSliderHero = () => {
           {/* Right Content - Laptop Image */}
           <div className="absolute top-[12px] right-[-420px] 2xl:right-[-585px] hidden lg:block">
             <Image
-              src="/images/hero/laptop-slider.png"
+              src={revSliderContent.laptopSrc}
               alt={revSliderContent.laptopAlt}
               width={1400}
               height={850}
