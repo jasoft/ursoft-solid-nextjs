@@ -5,7 +5,7 @@ export const heroData = {
   primaryButtonUrl: "https://www.ursoftware.com/dlds/yusetup.exe",
   description:
     "Supports Windows 11. Windows 10. Windows 8. Windows 7. \n\n Current Version: 7.5.0",
-  image: "/images/hero/hero-laptop.png",
+  image: "/images/hero/hero2.png",
 };
 
 export const featuresSection = {
