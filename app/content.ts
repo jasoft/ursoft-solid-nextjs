@@ -707,7 +707,7 @@ export const revSliderContent = {
   downloadLabel: "DOWNLOAD NOW",
   downloadUrl: "https://www.ursoftware.com/dlds/yusetup.exe",
   versionInfo: "Supports Windows 11/10/8/7/Vista/XP",
-  laptopSrc: "/images/hero/hero2.png",
+  laptopSrc: "/images/hero/hero2_1920_q90.webp",
   laptopAlt: "Your Uninstaller! 7 - Windows Uninstaller Software",
 };
 
