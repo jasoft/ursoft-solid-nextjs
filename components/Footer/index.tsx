@@ -2,9 +2,11 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import NewsletterEmbed from "@/components/NewsletterEmbed";
-import { footerCompanyDescription, footerContent } from "@/app/content";
+import { useContent } from "@/app/context/ContentContext";
 
 const Footer = () => {
+  const { footerCompanyDescription, footerContent } = useContent();
+
   return (
     <>
       <footer className="border-stroke dark:border-strokedark dark:bg-blacksection border-t bg-white">

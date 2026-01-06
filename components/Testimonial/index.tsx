@@ -1,28 +1,31 @@
 "use client";
 import SectionHeader from "../Common/SectionHeader";
-
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { motion } from "framer-motion";
 import SingleTestimonial from "./SingleTestimonial";
-import { testimonialHeader, testimonialData } from "@/app/content";
+import { useContent } from "@/app/context/ContentContext";
 
 const Testimonial = () => {
+  const { testimonialHeader, testimonialData } = useContent();
+
   return (
     <>
       <section>
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
-          {/* <!-- Section Title Start --> */}
-          <div className="animate_top mx-auto text-center">
-            <SectionHeader
-              headerInfo={testimonialHeader}
-            />
-          </div>
-          {/* <!-- Section Title End --> */}
+          {/* <!-- Section Title Start --> */ }
+          <SectionHeader
+            headerInfo={{
+              title: testimonialHeader.title,
+              subtitle: testimonialHeader.subtitle,
+              description: testimonialHeader.description,
+            }}
+          />
+          {/* <!-- Section Title End --> */ }
+
         </div>
 
         <motion.div

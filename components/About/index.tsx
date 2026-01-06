@@ -2,9 +2,11 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { importantFeatures } from "@/app/content";
+import { useContent } from "@/app/context/ContentContext";
 
 const About = () => {
+  const { importantFeatures } = useContent();
+
   return (
     <>
       {/* <!-- ===== Important Feature #1 Start ===== --> */}

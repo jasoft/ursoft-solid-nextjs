@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
-import { featuresData, featuresSection } from "@/app/content";
+import { useContent } from "@/app/context/ContentContext";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "../Common/SectionHeader";
 
 const Feature = () => {
+  const { featuresData, featuresSection } = useContent();
+
   return (
     <>
       {/* <!-- ===== Features Start ===== --> */}

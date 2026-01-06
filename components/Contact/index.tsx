@@ -1,21 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
-import { contactTexts, funFactAlt } from "@/app/content";
+import React, { useState, useEffect } from "react";
+import { useContent } from "@/app/context/ContentContext";
 
 const Contact = () => {
-  /**
-   * Source: https://www.joshwcomeau.com/react/the-perils-of-rehydration/
-   * Reason: To fix rehydration error
-   */
-  const [hasMounted, setHasMounted] = React.useState(false);
-  React.useEffect(() => {
-    setHasMounted(true);
-  }, []);
-  if (!hasMounted) {
-    return null;
-  }
+  const { contactTexts, funFactAlt } = useContent();
+  const [hasMounted, setHasMounted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
 
   return (
     <>

@@ -8,6 +8,8 @@ import Lines from "@/components/Lines";
 import Providers from "@/components/Providers";
 import ScrollToTop from "@/components/ScrollToTop";
 import { locales, normalizeLocale } from "@/lib/i18n";
+import { getDictionary } from "@/lib/dictionaries";
+import { ContentProvider } from "@/app/context/ContentContext";
 
 import { site } from "../content";
 import "../globals.css";
@@ -24,7 +26,7 @@ export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
-export default function LangLayout({
+export default async function LangLayout({
   children,
   params,
 }: {
@@ -32,17 +34,20 @@ export default function LangLayout({
   params: { lang: string };
 }) {
   const locale = normalizeLocale(params?.lang);
+  const content = await getDictionary(locale);
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body suppressHydrationWarning className={`dark:bg-black ${inter.className}`}>
         <Providers>
-          <Lines />
-          <LanguageRedirect />
-          <Header />
-          {children}
-          <Footer />
-          <ScrollToTop />
+          <ContentProvider content={content}>
+            <Lines />
+            <LanguageRedirect />
+            <Header />
+            {children}
+            <Footer />
+            <ScrollToTop />
+          </ContentProvider>
         </Providers>
       </body>
     </html>

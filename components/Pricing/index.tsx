@@ -1,25 +1,27 @@
 "use client";
+import React from "react";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
-import { pricingHeader, pricingOptions, pricingLabels } from "@/app/content";
-import { BadgeCheck } from "lucide-react";
-// static pricing only
+import { useContent } from "@/app/context/ContentContext";
 
 const Pricing = () => {
+  const { pricingHeader, pricingOptions, pricingLabels, pricingIntro, pricingImageAlt } = useContent();
+
   return (
     <>
-      {/* <!-- ===== Pricing Table Start ===== --> */}
-      <section
-        id="pricing"
-        className="overflow-hidden pt-15 pb-20 lg:pb-25 xl:pb-30"
-      >
-        <div className="max-w-c-1315 mx-auto px-4 md:px-8 xl:px-0">
-          {/* <!-- Section Title Start --> */}
-          <div className="animate_top mx-auto text-center">
-            <SectionHeader headerInfo={pricingHeader} />
-          </div>
-          {/* <!-- Section Title End --> */}
-        </div>
+      {/* <!-- ===== Pricing Start ===== --> */ }
+      <section className="overflow-hidden pt-15 pb-20 lg:pb-25 xl:pb-30">
+        <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
+          {/* <!-- Section Title Start --> */ }
+          <SectionHeader
+            headerInfo={{
+              title: pricingHeader.title,
+              subtitle: pricingHeader.subtitle,
+              description: pricingHeader.description,
+            }}
+          />
+          {/* <!-- Section Title End --> */ }
+
 
         <div className="relative mx-auto mt-15 max-w-[1207px] px-4 md:px-8 xl:mt-20 xl:px-0">
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">

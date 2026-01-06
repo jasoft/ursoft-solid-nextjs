@@ -4,9 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { headerMenu, headerContent } from "@/app/content";
+import { useContent } from "@/app/context/ContentContext";
 
 const Header = () => {
+  const { headerMenu, headerContent } = useContent();
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
 

@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
 import SingleBrand from "./SingleBrand";
-import { brandData } from "@/app/content";
+import { useContent } from "@/app/context/ContentContext";
 
 const Brands = () => {
+  const { brandData } = useContent();
+
   return (
     <>
       {/* <!-- ===== Clients Start ===== --> */}
