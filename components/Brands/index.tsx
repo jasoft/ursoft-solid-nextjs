@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import SingleBrand from "./SingleBrand";
-import brandData from "./brandData";
+import { brandData } from "@/app/content";
 
 const Brands = () => {
   return (

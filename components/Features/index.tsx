@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import featuresData from "./featuresData";
-import { featuresSection } from "@/app/content";
+import { featuresData, featuresSection } from "@/app/content";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "../Common/SectionHeader";
 

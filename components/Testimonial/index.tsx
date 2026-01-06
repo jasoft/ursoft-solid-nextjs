@@ -9,8 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { motion } from "framer-motion";
 import SingleTestimonial from "./SingleTestimonial";
-import { testimonialData } from "./testimonialData";
-import { testimonialHeader } from "@/app/content";
+import { testimonialHeader, testimonialData } from "@/app/content";
 
 const Testimonial = () => {
   return (

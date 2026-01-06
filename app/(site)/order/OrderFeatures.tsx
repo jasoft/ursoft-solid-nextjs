@@ -74,7 +74,7 @@ export default function OrderFeatures() {
             <div className="flex-1">
               <div className="mb-1 flex items-center justify-center gap-2 md:justify-start">
                 <Clock className="h-4 w-4 text-primary" />
-                <span className="text-sm font-semibold text-primary">Instant Delivery</span>
+                <span className="text-sm font-semibold text-primary">{pricingIntro.instantDeliveryLabel}</span>
               </div>
               <p className="text-black dark:text-white">{pricingIntro.keyDelivery}</p>
             </div>

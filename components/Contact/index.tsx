@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import { contactTexts } from "@/app/content";
+import { contactTexts, funFactAlt } from "@/app/content";
 
 const Contact = () => {
   /**
@@ -26,13 +26,13 @@ const Contact = () => {
           <div className="absolute bottom-[-255px] left-0 -z-1 h-full w-full">
             <Image
               src="./images/shape/shape-dotted-light.svg"
-              alt="Dotted"
+              alt={funFactAlt.dotted}
               className="dark:hidden"
               fill
             />
             <Image
               src="./images/shape/shape-dotted-dark.svg"
-              alt="Dotted"
+              alt={funFactAlt.dotted}
               className="hidden dark:block"
               fill
             />
