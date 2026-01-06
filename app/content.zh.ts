@@ -1,21 +1,11 @@
-// 中文内容（部分翻译，未覆盖的字段可回退英文）
-
-export const revSliderContent = {
-  title: "Your Uninstaller! 7",
-  subtitle: "彻底卸载任意不需要的应用！",
-  downloadLabel: "立即下载",
-  downloadUrl: "https://www.ursoftware.com/dlds/yusetup.exe",
-  versionInfo: "支持 Windows 11/10/8/7",
-  laptopSrc: "/images/hero/hero2_1920_q90.webp",
-  laptopAlt: "Your Uninstaller! 7 - Windows 卸载工具",
-};
+// app/content.zh.ts
 
 export const heroData = {
   title: "Your Uninstaller 7",
   subtitle: "彻底卸载任意不需要的应用。",
   primaryButton: "立即下载",
   primaryButtonUrl: "https://www.ursoftware.com/dlds/yusetup.exe",
-  description: "支持 Windows 11/10/8/7。\n\n 当前版本：7.5.0",
+  description: "支持 Windows 11 / 10 / 8 / 7.\n\n 当前版本：7.5.0",
   image: "/images/hero/hero2.png",
 };
 
@@ -23,24 +13,94 @@ export const featuresSection = {
   title: "功能特性",
   subtitle: "Your Uninstaller! 7 的核心功能",
   description:
-    "完整卸载、注册表清理、启动项管理、隐私粉碎与深度扫描——让 Windows 更干净、更安全、更快速。",
+    "完整卸载、注册表清理、启动项控制、隐私粉碎和深度扫描 —— 让 Windows 保持干净、安全且快速。",
+};
+
+export const pricingHeader = {
+  title: "价格方案",
+  subtitle: "简单、公平的授权",
+  description: "选择您的许可证并立即下载。包含安全卸载与深度系统清理功能。",
+};
+
+export const pricingIntro = {
+  claimTitle: "全球畅销的 PC 卸载软件",
+  claimStats: "20 多年来受到全球数百万用户的信赖",
+  bullets: [
+    "彻底卸载任何应用程序。",
+    "清理其他卸载程序留下的注册表和磁盘垃圾。",
+    "深度清理您的隐私数据。",
+    "让您的 PC 更快、更安全！",
+    "自动更新到最新版本",
+    "高级技术支持",
+  ],
+  keyDelivery: "付款后 5 分钟内您将通过电子邮件收到许可证密钥。",
+  instantDeliveryLabel: "即时交付",
+  guarantee: "30 天退款保证！",
+};
+
+export const brandData = [
+  {
+    id: 0.25,
+    name: "Client",
+    href: "#",
+    image: "/images/brand/brand-light-01.svg",
+    imageLight: "/images/brand/brand-dark-01.svg",
+  },
+  {
+    id: 0.3,
+    name: "Client",
+    href: "#",
+    image: "/images/brand/brand-light-02.svg",
+    imageLight: "/images/brand/brand-dark-02.svg",
+  },
+  {
+    id: 0.4,
+    name: "Client",
+    href: "#",
+    image: "/images/brand/brand-light-03.svg",
+    imageLight: "/images/brand/brand-dark-03.svg",
+  },
+  {
+    id: 0.5,
+    name: "Client",
+    href: "#",
+    image: "/images/brand/brand-light-04.svg",
+    imageLight: "/images/brand/brand-dark-04.svg",
+  },
+  {
+    id: 0.6,
+    name: "Client",
+    href: "#",
+    image: "/images/brand/brand-light-05.svg",
+    imageLight: "/images/brand/brand-dark-05.svg",
+  },
+  {
+    id: 0.7,
+    name: "Client",
+    href: "#",
+    image: "/images/brand/brand-light-06.svg",
+    imageLight: "/images/brand/brand-dark-06.svg",
+  },
+];
+
+export const pricingImageAlt = {
+  guarantee: "退款保证",
 };
 
 export const importantFeatures = [
   {
-    title: "让 PC 保持干净从未如此简单",
-    subTitle:
-      "多种卸载模式帮助你清除应用的每一个角落。",
+    title: "保持 PC 干净一直是个挑战。",
+    subTitle: "现在有了解决方案。多种卸载模式可以清除应用程序的每一个碎片。",
     description:
-      "Your Uninstaller 可以扫描整个系统以查找应用痕迹（耗时更长），或直接调用原生卸载程序；高度可定制。",
+      "Your Uninstaller 可以扫描整个系统以查找应用程序的所有痕迹（这需要更多时间），或者调用本机卸载程序。它高度可定制。",
     image: "/images/important/uninstall_modes-1.png",
   },
   {
-    title: "几次点击，清理所有残留",
+    title: "只需点击几下即可找到所有残留痕迹。",
     subTitle:
-      "基于高级扫描算法，精准发现与应用相关的垃圾文件与注册表项。",
+      "借助我们先进的扫描算法，Your Uninstaller 可以找到与特定应用程序相关的垃圾文件和注册表项。",
     description:
-      "通过监控安装日志与行为分析，Your Uninstaller 了解你要移除的应用——干净利落完成任务。",
+      "通过监控和分析安装日志及应用程序行为，Your Uninstaller 了解您要删除的应用程序的一切。它能完美地完成工作。",
     image: "/images/important/junk_found-1.png",
   },
 ];
@@ -49,117 +109,445 @@ export const featuresData = [
   {
     id: 1,
     icon: "/images/features/complete-uninstall.svg",
-    title: "完整卸载",
+    title: "完全卸载",
     description:
-      "彻底移除任意已安装程序，即便已损坏。最令人兴奋的是：不留任何痕迹。",
+      "完全卸载任何已安装的程序，即使是损坏的程序。Your Uninstaller! 最令人兴奋的部分是：根除程序的每一个方面。使用 Your Uninstaller，可以轻松卸载任何已安装的程序 —— 不留痕迹。",
   },
   {
     id: 2,
     icon: "/images/features/deep-scan.svg",
     title: "深度系统扫描",
     description:
-      "频繁安装/卸载会产生损坏项。Your Uninstaller 可修复并移除它们。",
+      "如果您经常安装/卸载软件，您不可避免地会遇到损坏的程序。它们停留在您的程序列表中，当您尝试消除它们时会失败。让 Your Uninstaller 来修复它们。",
   },
   {
     id: 3,
     icon: "/images/features/file-shredder.svg",
-    title: "安全文件粉碎",
+    title: "安全文件粉碎机",
     description:
-      "卸载后扫描系统并清理所有“残留垃圾”，仿佛它从未存在。",
+      "标准卸载后，Your Uninstaller 会扫描系统中的相关痕迹并删除任何“垃圾伪影”。您甚至不知道该程序曾安装在您的 PC 上。",
   },
   {
     id: 4,
     icon: "/images/features/startup-manager.svg",
-    title: "启动项管理",
+    title: "启动管理器",
     description:
-      "轻松管理开机启动项，系统更快更顺畅。",
+      "有些程序很难删除，是非常老式的违规程序。对于 Your Uninstaller 来说，这甚至都不是问题！",
   },
   {
     id: 5,
     icon: "/images/features/disk-cleaner.svg",
-    title: "磁盘清理",
+    title: "磁盘清理器",
     description:
-      "无需专家知识，界面直观易用，减少困惑与麻烦。",
+      "无需专业知识。开发产品时，易用性始终是我们首先考虑的。Your Uninstaller 非常易于使用。没有麻烦，没有困惑。",
   },
   {
     id: 6,
     icon: "/images/features/force-uninstall.svg",
-    title: "强力卸载",
+    title: "强制卸载",
     description:
-      "包含启动项管理、文件粉碎、磁盘清理等工具，全面维护系统稳定与性能。",
+      "Your Uninstaller 提供多种精心设计的实用工具，如启动管理器、文件粉碎机、磁盘清理器等。这些工具提供出色的支持，使 Windows 坚固且快速。",
+  },
+];
+
+export const funFactData = [
+  {
+    id: 1,
+    value: "67",
+    title: "安装日志分析模块",
+  },
+  {
+    id: 2,
+    value: "312,940",
+    title: "满意的客户",
+  },
+  {
+    id: 3,
+    value: "20",
+    title: "年开发经验",
   },
 ];
 
 export const funFactHeader = {
-  title: "值得全球 Windows 用户信赖",
-  description: "安全卸载、清理残留，让你的电脑长期保持干净与高速。",
+  title: "深受全球 Windows 用户信赖",
+  description: "安全卸载应用程序，清理残留物，并保持您的 PC 快速整洁。",
 };
 
 export const testimonialHeader = {
   title: "用户评价",
-  subtitle: "真实用户，真实效果",
+  subtitle: "真实用户。真实结果。",
   description:
-    "看看 Your Uninstaller 如何通过深度卸载与系统清理，让 Windows 更干净、更快速、更安全。",
+    "看看 Your Uninstaller 如何通过深度卸载和系统清理让 Windows 保持干净、快速和安全。",
 };
 
+export const testimonialData = [
+  {
+    id: 1,
+    name: "Riccardo S.",
+    designation: "Smart Computing",
+    image: "/images/user/user-01.png",
+    content:
+      "Your Uninstaller! 让您可以删除未出现在“添加/删除程序”列表中的程序。您还可以使用 Your Uninstaller! 从注册表中删除混乱（程序偶尔留下的不必要文件）。",
+  },
+  {
+    id: 2,
+    name: "Leena R.",
+    designation: "PC Plus",
+    image: "/images/user/user-02.png",
+    content:
+      "Your Uninstaller! 在一个巨大的可滚动窗口中向您显示所有程序图标，易于导航。如果您想在卸载程序并将其完全删除之前了解有关该程序的更多信息，只需点击两下即可。",
+  },
+  {
+    id: 3,
+    name: "Arturo Rivera",
+    designation: "用户",
+    image: "/images/user/user-01.png",
+    content:
+      "我已经使用你们的 Your Unistaller 好几年了，我认为这是一个很棒的产品！它绝对比 Windows 自带的要好得多。我祝贺你们开发出了很棒的产品，我真的推荐它！！！谢谢。",
+  },
+  {
+    id: 4,
+    name: "Anthony A. Newlin",
+    designation: "用户",
+    image: "/images/user/user-02.png",
+    content:
+      "最棒的。真的很棒。我强烈向每一个希望自己的电脑保持干净的人推荐 Your Uninstaller!！",
+  },
+  {
+    id: 5,
+    name: "Carrie R. Powell",
+    designation: "用户",
+    image: "/images/user/user-01.png",
+    content:
+      "它真的为我节省了时间和精力。Your Uninstaller! 正是我的电脑所缺少的。我也许可以为你们做销售。谢谢你们，继续保持好工作！",
+  },
+];
+
 export const ctaData = {
-  title: "免费试用 21 天",
+  title: "试用 21 天",
   description:
-    "试用版功能基本等同正式版，仅有少量限制。",
+    "免费下载并试用我们的软件三周。试用版除了极少数限制外，功能与完整版几乎相同。",
   primaryButton: "立即下载",
   secondaryButton: "立即购买",
 };
 
-export const pricingHeader = {
-  title: "价格与授权",
-  subtitle: "简单透明的许可方案",
-  description: "选择适合你的授权，立即下载使用。",
-};
-
-export const pricingIntro = {
-  claimTitle: "全球畅销的 PC 卸载软件",
-  claimStats: "二十余年持续更新，数百万用户信赖",
-  bullets: [
-    "彻底卸载任意应用",
-    "清理其他卸载器遗留的注册表与磁盘垃圾",
-    "深度清理隐私数据",
-    "让你的电脑更快更安全",
-    "自动更新至最新版本",
-    "专业技术支持",
+export const downloadContent = {
+  title: "免费下载 Your Uninstaller",
+  paragraphs: [
+    "Your Uninstaller 是全球最受欢迎的卸载实用程序，用于管理计算机上安装的所有程序。它支持 Windows 11（32 位和 64 位），并具有简单、干净的界面。",
+    "Your Uninstaller 按照您的思维方式工作，使卸载程序变得更容易、更快速、更高效且更彻底。凭借先进的系统扫描算法，Your Uninstaller! 可以轻松删除计算机上安装的任何程序 —— 完全彻底，不留痕迹。",
+    "Your Uninstaller 还可以管理 PC 上安装的应用程序；您可以锁定应用程序以防意外删除、更改默认图标、编写注释、保存注册密钥，并随时了解新安装的程序。",
+    "卸载程序从未如此简单：右键单击桌面上的图标并选择卸载；它将被删除，无需更多操作。尝试 Your Uninstaller! 的所有功能吧！",
   ],
-  keyDelivery: "付款后 5 分钟内将通过邮件发送注册码",
-  instantDeliveryLabel: "即时发送",
-  guarantee: "30 天无理由退款",
-};
-
-export const pricingLabels = {
-  lifetimeTag: "终身升级",
-  buyButton: "立即购买",
-  oneTimeNote: "一次性付款",
+  gallery: [],
 };
 
 export const supportContent = {
-  title: "联系我们与技术支持 – Your Uninstaller! 7",
+  title: "联系与支持 – Your Uninstaller! 7",
   intro: [
-    "很高兴收到你的消息！填写下方表单，我们会尽快回复。",
-    "URSoft 致力于为用户提供高质量的支持与协助，如遇到问题或有任何疑问，欢迎联系。",
-    "你的消息会由经验丰富的同事处理，通常在 48 小时内回复。",
+    "我们需要您的声音！请填写下表，我们会与您联系。",
+    "URSoft 致力于为用户和客户提供高质量的支持和帮助。当您遇到问题、有疑问或需要我们需要我们产品的任何其他帮助时，可以向我们寻求帮助。",
+    "您的信息将由我们要经验丰富的员工仔细处理，通常会在 48 小时内回复。",
   ],
   lostKeyUrl: "https://cms.ursoftware.com/orders/lostkey",
-  lostKeyButtonLabel: "找回注册码",
-  lostKeyHint: "丢失注册码？点击“找回注册码”即时找回。",
+  lostKeyButtonLabel: "找回密钥",
+  lostKeyHint: '丢失了注册密钥？点击“找回密钥”即可即时找回。',
 };
 
-export const headerMenu = [
-  { id: 1, title: "首页", newTab: false, path: "/" },
-  { id: 2, title: "功能", newTab: false, path: "/features" },
-  { id: 2.05, title: "下载", newTab: false, path: "/download" },
-  { id: 2.06, title: "购买", newTab: false, path: "/order" },
-  { id: 4, title: "支持", newTab: false, path: "/support" },
+export const pricingOptions = [
+  {
+    price: "$24.99",
+    title: "单 PC 许可证",
+    subtitle: "非常适合个人用户",
+    bullets: [
+      "无限期使用。付款即可获得。",
+      "所有次要升级均免费。",
+      "以 50% 的成本获得主要升级。",
+      "允许在一台 PC 上安装。",
+    ],
+    buyUrl:
+      "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=36254&recommendation=YUFP&cfg=defaultsource",
+  },
+  {
+    price: "$39.99",
+    title: "3 PCs 许可证",
+    subtitle: "非常适合家庭",
+    badge: "最受欢迎",
+    bullets: [
+      "无限期使用。付款即可获得。",
+      "所有次要升级均免费。",
+      "以 50% 的成本获得主要升级。",
+      "您可以将其安装在 3 台计算机上！甚至可以与您的朋友分享。",
+    ],
+    buyUrl: "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=100687&cfg=defaultsource",
+  },
+  {
+    price: "$99.99",
+    title: "无限 PCs 许可证",
+    subtitle: "适用于企业和高级用户",
+    badge: "超值之选",
+    bullets: [
+      "无限期使用。付款即可获得。",
+      "所有升级均免费！包括主要和次要升级。",
+      "没有基于计算机的限制。将其安装在您拥有的任意数量的计算机上。",
+    ],
+    buyUrl: "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=248979",
+  },
 ];
 
+export const updateContent = {
+  title: "新版本可用！",
+  downloadUrl: "https://www.ursoftware.com/dlds/yusetup.exe",
+};
+
+export const downloadPageContent = {
+  hero: {
+    title: "Your Uninstaller! 7",
+    description:
+      "全球最受欢迎的卸载实用程序。从您的 Windows PC 中完全删除任何程序 —— 不留任何痕迹。",
+    downloadLabel: "下载免费试用版",
+    logoAlt: "Your Uninstaller Logo",
+    badges: {
+      os: "Windows 11/10/8/7",
+      trial: "21 天免费试用",
+      secure: "安全可靠",
+    },
+  },
+  features: [
+    { title: "完全卸载", desc: "彻底删除程序" },
+    { title: "注册表清理", desc: "清理残留条目" },
+    { title: "快速高效", desc: "闪电般的扫描速度" },
+    { title: "应用锁", desc: "保护重要应用" },
+  ],
+  description: {
+    title: "为什么选择 Your Uninstaller？",
+    callout: "右键单击任何桌面图标并选择卸载 —— 就这么简单！",
+  },
+  gallery: {
+    title: "截图库",
+    items: [
+      {
+        src: "/images/download/yu_main_hd.png",
+        alt: "主界面",
+        title: "主界面",
+      },
+      {
+        src: "/images/download/yu_uninstallmodes.png",
+        alt: "卸载模式",
+        title: "卸载模式",
+      },
+      {
+        src: "/images/download/yu_scanning.png",
+        alt: "扫描中",
+        title: "深度扫描",
+      },
+      {
+        src: "/images/download/yu_startup.png",
+        alt: "启动管理器",
+        title: "启动管理器",
+      },
+      {
+        src: "/images/download/yu_diskcleaner.png",
+        alt: "磁盘清理器",
+        title: "磁盘清理器",
+      },
+      {
+        src: "/images/download/yu_shredder.png",
+        alt: "文件粉碎机",
+        title: "文件粉碎机",
+      },
+    ],
+    modal: {
+      closeAriaLabel: "关闭",
+    },
+  },
+  cta: {
+    title: "购买前试用",
+    description:
+      "我们提供包含所有功能的 21 天试用期。如果您希望在该期限后使用该软件，请购买许可证。",
+    primaryLabel: "立即下载",
+    secondaryLabel: "购买许可证",
+  },
+  assets: {
+    logo: "/images/download/yulogo_96.png",
+  },
+};
+
+export const installedContent = {
+  tips: [
+    "您可以通过在顶部搜索栏中输入部分名称来找到要卸载的应用程序。",
+    "猎人模式允许您瞄准程序并开始卸载它。",
+    "您可以在“选项”菜单中关闭还原点创建。",
+    "有多种级别的卸载模式，正常模式几乎总是有效，超级模式仅建议用于一些非常烦人的软件，因为它比平时花费更长的时间。",
+    "文件粉碎机工具可以帮助您彻底擦除不需要的文件！没有找回的机会。它是 100% 不可恢复的。",
+    "启动管理器可以轻松添加新的启动项。",
+    "我们提供 30 天退款保证！不问任何问题。如果您不满意，可以申请退款。",
+  ],
+};
+
+export const installedMarkdown = `# 感谢您安装 Your Uninstaller! 
+
+### 如果您是 Your Uninstaller 的新用户，这里有一些有价值的提示给您：
+
+- 您可以通过在顶部搜索栏中输入部分名称来找到要卸载的应用程序。
+- **猎人模式** 允许您瞄准程序并开始卸载它。
+- 您可以在“选项”菜单中关闭还原点创建。
+- 有多种级别的卸载模式，**正常模式** 几乎总是有效，**超级模式** 仅建议用于一些非常烦人的软件，因为它比平时花费更长的时间。
+- **文件粉碎机** 工具可以帮助您彻底擦除不需要的文件！没有找回的机会。它是 100% 不可恢复的。
+- **启动管理器** 可以轻松添加新的启动项。
+- 我们提供 **30 天退款保证！** 不问任何问题。如果您不满意，可以申请退款。
+`;
+
+export const installedAssets = {
+  bannerSrc: "/images/installed/installed-banner.svg",
+  bannerAlt: "安装成功",
+};
+
+export const uninstallerUpdateMarkdown = `# 新版本可用！ 
+
+Uninstaller 的新版本可用。
+
+您的下载将在几秒钟内开始，只需安装下载的文件，您的软件就会更新到最新版本。如果没有，请点击下方按钮手动下载：
+
+[下载最新版本](https://www.ursoftware.com/dlds/yusetup.exe)`;
+
+export const privacyContent = {
+  title: "隐私政策",
+  body: `# 隐私政策
+  我们要致力于保护您的隐私以及您向我们提供的信息的隐私。**URSoft,Inc 绝不会向第三方出售、出租、租赁甚至披露客户信息。** URSoft,Inc 隐私政策的其他条款如下：
+
+**信息收集** 当您在我们的网站上进行活动（如订购或注册产品、下载软件试用版或软件更新、请求技术支持或注册特别优惠或时事通讯）时，URSoft 可能会要求您向我们提供信息。我们在购买或订购时要求您提供的信息仅为处理您的购买或订单所必需的信息。在履行订单时，我们会要求您提供姓名、电子邮件地址、地址（用于运输目的）、电话号码以及信用卡号码、类型和到期日期。除非您另有要求，否则我们将仅将此信息用于与您的订单相关的事宜。您的信用卡信息只会保留一段合理的时间，以确保收到付款。
+
+我们在您选择在我们的网站上或在我们的产品中进行其他活动时可能会要求您提供的其他信息包括姓名、邮寄地址、电话号码、传真号码、电子邮件地址以及其他人口统计信息，以便我们要更好地了解客户的需求并继续提供高质量的产品和服务。此信息请求将是可选的，仅在进行某些活动时需要。通过在提示时选择输入所需信息，您可能有资格获得新软件的演示版本、扩展功能、用户提示和产品信息、时事通讯和特别优惠。
+
+您在聊天室或公共公告板上发布的任何信息都可供该站点的所有用户使用。
+
+**我们如何使用您的信息** 收集的任何信息将仅由 URSoft,Inc 用于改进我们的产品、服务和网站。URSoft,Inc 仅将信息用于内部目的，不会向第三方出售、租赁或出租信息。URSoft,Inc 可能会使用其收集的信息向您提供您表示对您有用或感兴趣的通知。这可能包括能够延长产品试用期的通知、时事通讯、网站更新通知、新产品可用性通知、产品更新以及有关促销和特别优惠的信息。您将有权选择不再接收任何进一步的通知。
+
+如果您进入 URSoft 软件的试用期，我们可能会通过电子邮件与您联系，提供有关我们要产品的更多信息，并调查您对我们要软件的满意度。我们也可能会联系您，提前通知您试用期终止。电子邮件是我们首选的沟通方式，我们重视使用它的特权。
+
+URSoft,Inc 可能会分析网站活动并以汇总形式汇编数据，以便更好地了解用户活动和各种广告活动的成功。这些信息对我们很重要，因为它使我们能够继续提供针对客户兴趣的产品。网站访问者行为信息以汇总形式汇编，并不代表个人身份信息。
+
+URSoft,Inc 可能会聘请某些外部承包商代表我们要执行服务（例如包装和运输）。我们只会向这些公司提供完成所需服务所需的个人信息。他们不得将客户信息用于任何其他目的。
+
+**您的个人信息的安全性** URSoft,Inc 非常重视保护您提供的个人信息。收集的个人信息存储在访问受限的密码控制服务器中。
+
+提交给 URSoft 的信息可能会跨境传输给其他国家的员工或由其他国家的员工传输。内部数据通过安全传输共享并维护在安全数据库中。URSoft,Inc 仅在法律、法律程序要求或出于善意认为有必要为了公共利益时才会披露信息。
+
+URSoft,Inc 可能会将网站访问者链接到由作为 URSoft,Inc 精选合作伙伴的第三方运营的网站。URSoft,Inc 试图选择信誉良好的合作伙伴，但不保证在这些网站上披露的任何个人信息的安全性。
+
+**隐私问题和疑虑** 如果您对我们的在线隐私政策有任何疑问或疑虑，请通过电子邮件 privacy@ursoftware.com 联系我们。
+
+**Cookies** Cookies 是您的网络浏览器的一项功能，允许网站将少量信息传输到您的计算机以进行记录。您可以将网络浏览器设置为在收到 cookie 时通知您或根本不接受 cookie。存储在您计算机上的 cookie 可用于“记住”某些内容，从而提高您的在线体验效率。Cookie 不是一段代码，不能用于运行程序或向您的计算机发送病毒。URSoft,Inc 在其网站上使用 cookie 来帮助我们发布与我们要客户的需求和愿望相关的内容。`,
+};
+
+export const refundContent = {
+  title: "退款政策",
+  body: `# 退款政策
+
+### 1. 范围
+本政策适用于直接从我们要网站购买的所有“Your Uninstaller!”许可证。 
+
+### 2. 30 天退款保证
+我们要希望您对购买完全满意。如果您因任何原因对软件不满意，您可以在购买之日起 **30 天** 内申请全额退款。
+
+### 3. 符合条件的理由
+我们通常会因以下原因批准退款申请：
+- 软件在您的计算机上无法按广告宣传的那样工作。
+- 尽管有支持协助，您仍无法安装或激活软件。
+- 意外的重复购买。
+
+### 4. 不符合条件
+以下情况可能不予退款：
+- 购买超过 30 天后提出的请求。
+- 如果软件已完全激活并在没有技术问题的情况下使用，因“改变主意”而申请退款。
+- 从未经授权的经销商处购买。
+- 未提供购买详情（例如订单 ID、电子邮件）。
+
+### 5. 如何申请退款
+要申请退款，请发送电子邮件至 **support@ursoftware.com**，主题为“Refund Request”（退款申请）。
+请包括：
+- 您的订单号
+- 用于购买的电子邮件地址
+- 退款原因的简要说明
+
+### 6. 处理时间
+一旦获得批准，我们将立即处理您的退款。根据您的银行或信用卡发卡机构，信用额度可能需要 **5–10 个工作日** 才能出现在您的对账单上。`,
+};
+
+export const deliveryContent = {
+  title: "交付政策",
+  body: `
+# 交付政策
+### 1. 范围
+本交付政策（“政策”）适用于所有通过我们要网站购买 **“Your Uninstaller”** 许可证或下载的客户。
+
+### 2. 交付方式
+- 支付成功并确认订单后，软件将以电子方式交付。
+- 客户将收到一封包含下载链接（或许可证密钥/激活说明）的电子邮件，从而可以立即访问产品。
+- 除非明确说明，否则不会运送任何物理介质（CD/USB）。
+
+### 3. 交付时间
+- 交付（即包含下载链接/许可证的电子邮件）通常在付款确认后 **5 分钟** 内启动。
+- 在极少数情况下（例如支付系统延迟或人工审核），交付可能需要长达 **24 小时**。
+- 如果您在预期时间内未收到交付邮件，请联系我们的支持团队（见第 8 节）。
+
+### 4. 许可证和激活
+- 对于许可副本，电子邮件将包含激活说明（例如许可证密钥、帐户说明）。
+- 软件的使用受我们的 **许可协议/最终用户许可条款** 的约束。
+
+### 5. 更新和升级
+- 交付后，客户有权免费下载同一主要版本的任何次要更新或补丁（例如从 5.1 版本到 5.2 版本）。
+- 主要升级（例如从 5.1 版本到 6.0 版本）可能需要购买单独的许可证或支付升级费。
+
+### 6. 退款、退货和取消
+- 虽然数字许可证通常不可退货，但我们提供 **30 天退款保证** 以确保您的满意。
+- 如果您遇到技术问题或不满意，您可以在购买后 **30 天** 内申请退款，具体取决于我们的退款政策中的条件。
+- 要申请退款，请联系我们的支持团队并提供您的订单详情。退款批准后，您必须卸载软件并销毁所有许可证密钥副本。
+
+### 7. 交付问题
+- 如果未收到交付电子邮件（例如由于垃圾邮件过滤器），客户有责任检查垃圾邮件/垃圾邮件并提供有效的电子邮件地址。
+- 如果需要，我们将重新发送下载链接或许可证密钥。
+- 我们不对由外部因素（例如电子邮件提供商、互联网中断）造成的延误承担责任。
+
+### 8. 支持和联系信息
+如果您遇到任何交付问题，或者在规定的时间内未收到您的软件，请联系我们的支持团队：
+
+电子邮件：**support@ursoftware.com**
+主题行：“Delivery Issue – Your Uninstaller”
+
+请包括您的订单号、购买日期和用于购买的电子邮件地址。
+
+### 9. 本政策的变更
+我们保留随时修改本交付政策的权利。最新版本将始终在我们要网站上提供。变更将自修订政策发布之日起适用于新购买。`,
+};
+
+export const notFoundContent = {
+  title: "404 未找到",
+  body: "很抱歉，您正在寻找的页面不存在。",
+};
+
+export const integrationHeader = {
+  title: "Windows 系统优化",
+  subtitle: "干净、安全且快速",
+  description:
+    "完全卸载应用程序、清理注册表残留、清除垃圾、管理启动项并粉碎隐私痕迹 —— 尽在掌握。",
+};
+
+export const integrationIcons = [
+  { src: "/images/integration/windows.png", alt: "Windows" },
+  { src: "/images/integration/registry.png", alt: "注册表编辑器" },
+  { src: "/images/integration/cleanup.png", alt: "清理" },
+  { src: "/images/integration/startup.png", alt: "启动管理器" },
+  { src: "/images/integration/privacy.png", alt: "隐私与防护" },
+  { src: "/images/integration/speed.png", alt: "性能速度" },
+];
+
+export const footerCompanyDescription =
+  "我们帮助 Windows 用户保持 PC 干净、快速和安全。Your Uninstaller 完全移除应用程序、清除注册表和磁盘残留、管理启动项，并通过安全粉碎保护隐私。简单、可靠，并有更新和支持作为后盾，它让维护只需一次点击，让人们保持高效。";
+
 export const footerContent = {
-  logoAlt: "URSoft 标志",
+  logoAlt: "URSoft logo",
   sections: [
     {
       title: "快速链接",
@@ -180,8 +568,8 @@ export const footerContent = {
       ],
     },
     {
-      title: "订阅资讯",
-      description: "订阅产品更新与最新资讯。",
+      title: "通讯",
+      description: "及时了解最新消息和更新。",
       embed: {
         uid: "489ef797fa",
         src: "https://ursoftware.kit.com/489ef797fa/index.js",
@@ -196,6 +584,182 @@ export const footerContent = {
     { label: "交付政策", href: "/delivery-policy" },
   ],
   copyrightBrand: "URSoft, Inc.",
-  socialAriaLabel: "社交链接",
+  socialAriaLabel: "社交图标",
 };
 
+export const headerMenu = [
+  { id: 1, title: "首页", newTab: false, path: "/" },
+  { id: 2, title: "功能", newTab: false, path: "/features" },
+  { id: 2.05, title: "下载", newTab: false, path: "/download" },
+  { id: 2.06, title: "购买", newTab: false, path: "/order" },
+  { id: 4, title: "支持", newTab: false, path: "/support" },
+];
+
+export const headerContent = {
+  logoAlt: "logo",
+  hamburgerAriaLabel: "汉堡菜单切换",
+};
+
+export const ctaAlt = {
+  shape: "Saly",
+  arrow: "箭头",
+};
+
+export const pricingLabels = {
+  lifetimeTag: "终身升级",
+  buyButton: "立即购买",
+  oneTimeNote: "一次性付款",
+};
+
+export const contactTexts = {
+  formTitle: "发送消息",
+  namePlaceholder: "姓名",
+  emailPlaceholder: "your.email@domain.tld",
+  subjectLabel: "选择",
+  subjectOptions: [
+    { value: "Pre-purchase Questions", label: "购买前咨询" },
+    { value: "Lost Key", label: "丢失密钥" },
+    { value: "Technical Inquiries", label: "技术咨询" },
+    { value: "Other", label: "其他" },
+  ],
+  messagePlaceholder: "在此输入您的消息...",
+  sendButton: "发送消息",
+  sendAriaLabel: "发送消息",
+  sidebar: {
+    title: "找到我们",
+    locationTitle: "我们的位置",
+    locationValue: "290 Maryam Springs 260, Courbevoie, Paris, France",
+    emailTitle: "电子邮件地址",
+    emailValue: "yourmail@domainname.com",
+    phoneTitle: "电话号码",
+    phoneValue: "+009 42334 6343 843",
+  },
+};
+
+export const faqHeaderContent = {
+  badge: "常见问题",
+  title: "经常被问到的",
+  titleEmphasis: "问题",
+  moreLabel: "了解更多",
+};
+
+export const faqItems = [
+  {
+    id: 1,
+    quest: "Lorem ipsum dolor sit amet, consectetur",
+    ans: "我们要为初创企业和小型企业提供数字体验服务。我们通过创建品牌标识、数字体验来帮助我们的客户取得成功。",
+  },
+  {
+    id: 2,
+    quest: "Lorem ipsum dolor sit amet, consectetur",
+    ans: "我们要为初创企业和小型企业提供数字体验服务。我们通过创建品牌标识、数字体验来帮助我们的客户取得成功。",
+  },
+  {
+    id: 3,
+    quest: "Lorem ipsum dolor sit amet, consectetur",
+    ans: "我们要为初创企业和小型企业提供数字体验服务。我们通过创建品牌标识、数字体验来帮助我们的客户取得成功。",
+  },
+];
+
+export const accessibilityTexts = {
+  scrollToTopAria: "滚动到顶部",
+  scrollToTopSrOnly: "滚动到顶部",
+};
+
+export const heroAlt = {
+  shape: "形状",
+  hero: "Hero",
+};
+
+export const funFactAlt = {
+  man: "男人",
+  doodle: "涂鸦",
+  dotted: "点状",
+};
+
+export const integrationAlt = {
+  dotted: "点状",
+};
+
+export const siteMetadata = {
+  home: {
+    title: "Your Uninstaller! - 彻底卸载软件，任何不需要的应用。",
+    description:
+      "Your Uninstaller! - 免费下载，屡获殊荣的卸载程序套件，可完全轻松地删除程序，卸载软件。删除不需要的程序的每一个痕迹。",
+    keywords: [
+      "Your Uninstaller!",
+      "uninstall",
+      "uninstaller",
+      "uninstall program",
+      "uninstaller software",
+      "add remove",
+      "add remove programs",
+      "cleanup",
+      "registry",
+      "Windows",
+    ],
+    openGraph: {
+      url: "https://www.ursoftware.com/",
+      siteName: "Your Uninstaller!",
+      image: "/images/logo/site-logo.png",
+    },
+  },
+  features: {
+    title: "功能特性 - Your Uninstaller! 7",
+    description: "Your Uninstaller! 7 的核心功能",
+  },
+  order: {
+    title: "购买 - Your Uninstaller! 7",
+    description: "选择许可证并立即下载。包含安全卸载和深度系统清理。",
+  },
+  support: {
+    title: "支持 - Your Uninstaller! 7",
+    description: "这是 Your Uninstaller! 7 的支持页面",
+  },
+  privacy: {
+    title: "隐私政策 - Your Uninstaller! 7",
+    description: "URSoft, Inc. 的隐私政策",
+  },
+  refundPolicy: {
+    title: "退款政策 - Your Uninstaller! 7",
+    description: "30 天退款保证和退款说明。",
+  },
+  deliveryPolicy: {
+    title: "交付政策 - Your Uninstaller! 7",
+    description: "电子交付时间、许可证激活和支持。",
+  },
+  docs: {
+    title: "文档页面 - Solid SaaS Boilerplate",
+    description: "这是 Solid Pro 的文档页面",
+  },
+  download: {
+    title: "免费下载 - Your Uninstaller! 7",
+    description:
+      "下载 Your Uninstaller! 7 - Windows 最强大的卸载程序。包含所有功能的 21 天免费试用。",
+  },
+};
+
+export const revSliderContent = {
+  title: "Your Uninstaller! 7",
+  subtitle: "彻底卸载任意\n不需要的应用！",
+  downloadLabel: "立即下载",
+  downloadUrl: "https://www.ursoftware.com/dlds/yusetup.exe",
+  versionInfo: "支持 Windows 11/10/8/7/Vista/XP",
+  laptopSrc: "/images/hero/hero2_1920_q90.webp",
+  laptopAlt: "Your Uninstaller! 7 - Windows 卸载软件",
+};
+
+export const site = {
+  url: "https://www.ursoftware.com",
+};
+
+export const seoRoutes = [
+  "/",
+  "/features",
+  "/download",
+  "/order",
+  "/support",
+  "/privacy",
+  "/refund-policy",
+  "/delivery-policy",
+];
