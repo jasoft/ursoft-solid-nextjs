@@ -200,16 +200,16 @@
     "primaryButton": "DOWNLOAD NOW",
     "secondaryButton": "BUY NOW"
   },
-  "downloadContent": {
-    "title": "Free Download Your Uninstaller",
-    "paragraphs": [
-      "Your Uninstaller is the world's most popular uninstaller utility to manage all programs installed on your computer. It supports Windows 11 (32 and 64bit) and features a straightforward, clean interface.",
-      "Your Uninstaller works the way you think, making it easier to uninstall programs quickly, efficiently, and ultimately. With an advanced system scanning algorithm, Your Uninstaller! can easily remove any program installed on your computer - entirely, no trace left.",
-      "Your Uninstaller also manages applications installed on your PC; you can lock applications from accident removal, change default icons, write comments, save registration keys, and always know newly installed programs.",
-      "Uninstalling programs has never been this easy: right-click on an icon on the desktop and select uninstall; it will be removed, no more actions. Try all the capabilities of Your Uninstaller!"
-    ],
-    "gallery": []
-  },
+    "description": {
+      "title": "Why Choose Your Uninstaller?",
+      "callout": "Right-click any desktop icon and select uninstall - it's that simple!",
+      "paragraphs": [
+        "Your Uninstaller is the world's most popular uninstaller utility to manage all programs installed on your computer. It supports Windows 11 (32 and 64bit) and features a straightforward, clean interface.",
+        "Your Uninstaller works the way you think, making it easier to uninstall programs quickly, efficiently, and ultimately. With an advanced system scanning algorithm, Your Uninstaller! can easily remove any program installed on your computer - entirely, no trace left.",
+        "Your Uninstaller also manages applications installed on your PC; you can lock applications from accident removal, change default icons, write comments, save registration keys, and always know newly installed programs.",
+        "Uninstalling programs has never been this easy: right-click on an icon on the desktop and select uninstall; it will be removed, no more actions. Try all the capabilities of Your Uninstaller!"
+      ]
+    },
   "supportContent": {
     "title": "CONTACT AND SUPPORT – Your Uninstaller! 7",
     "intro": [
@@ -296,7 +296,13 @@
     ],
     "description": {
       "title": "Why Choose Your Uninstaller?",
-      "callout": "Right-click any desktop icon and select uninstall - it's that simple!"
+      "callout": "Right-click any desktop icon and select uninstall - it's that simple!",
+      "paragraphs": [
+        "Your Uninstaller is the world's most popular uninstaller utility to manage all programs installed on your computer. It supports Windows 11 (32 and 64bit) and features a straightforward, clean interface.",
+        "Your Uninstaller works the way you think, making it easier to uninstall programs quickly, efficiently, and ultimately. With an advanced system scanning algorithm, Your Uninstaller! can easily remove any program installed on your computer - entirely, no trace left.",
+        "Your Uninstaller also manages applications installed on your PC; you can lock applications from accident removal, change default icons, write comments, save registration keys, and always know newly installed programs.",
+        "Uninstalling programs has never been this easy: right-click on an icon on the desktop and select uninstall; it will be removed, no more actions. Try all the capabilities of Your Uninstaller!"
+      ]
     },
     "gallery": {
       "title": "Screenshots Gallery",
@@ -377,7 +383,8 @@
   },
   "notFoundContent": {
     "title": "404 Not Found",
-    "body": "We are sorry, but the page you are looking for does not exist."
+    "body": "We are sorry, but the page you are looking for does not exist.",
+    "homeButtonText": "Go to Home"
   },
   "integrationHeader": {
     "title": "System Optimization for Windows",
@@ -784,6 +791,39 @@
   },
   "site": {
     "url": "https://www.ursoftware.com"
+  },
+  "docsContent": {
+    "sidebar": {
+      "title": "Documentation",
+      "sections": [
+        {
+          "title": "Getting Started",
+          "links": [
+            {
+              "label": "Bootstrap Template",
+              "href": "/docs/bootstrap-template"
+            },
+            {
+              "label": "Tailwind Component",
+              "href": "/docs/tailwind-component"
+            },
+            {
+              "label": "Tailwind Template",
+              "href": "/docs/tailwind-template"
+            },
+            {
+              "label": "Contact Form",
+              "href": "/docs/contact-form"
+            },
+            {
+              "label": "Style Guide",
+              "href": "/docs/style-guide"
+            }
+          ]
+        }
+      ]
+    },
+    "body": "# Bootstrap Template\n\n## Example Heading\n\nThis is a paragraph under an example heading. It demonstrates how standard markdown content would appear.\n\n### Sub-heading\n\nAnother paragraph under a sub-heading. Markdown features like **bold**, *italic*, and `code` are supported.\n\n- List item 1\n- List item 2\n\n```javascript\n// Code block example\nconst greet = (name) => {\n  console.log(`Hello, ${name}!`);\n};\n\ngreet('World');\n```\n\n"
   },
   "seoRoutes": [
     "/",

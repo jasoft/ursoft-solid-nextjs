@@ -200,16 +200,16 @@
     "primaryButton": "立即下载",
     "secondaryButton": "立即购买"
   },
-  "downloadContent": {
-    "title": "免费下载 Your Uninstaller",
-    "paragraphs": [
-      "Your Uninstaller 是全球最受欢迎的卸载实用程序，用于管理计算机上安装的所有程序。它支持 Windows 11（32 位和 64 位），并具有简单、干净的界面。",
-      "Your Uninstaller 按照您的思维方式工作，使卸载程序变得更容易、更快速、更高效且更彻底。凭借先进的系统扫描算法，Your Uninstaller! 可以轻松删除计算机上安装的任何程序 —— 完全彻底，不留痕迹。",
-      "Your Uninstaller 还可以管理 PC 上安装的应用程序；您可以锁定应用程序以防意外删除、更改默认图标、编写注释、保存注册密钥，并随时了解新安装的程序。",
-      "卸载程序从未如此简单：右键单击桌面上的图标并选择卸载；它将被删除，无需更多操作。尝试 Your Uninstaller! 的所有功能吧！"
-    ],
-    "gallery": []
-  },
+    "description": {
+      "title": "为什么选择 Your Uninstaller？",
+      "callout": "右键单击任何桌面图标并选择卸载 —— 就这么简单！",
+      "paragraphs": [
+        "Your Uninstaller 是全球最受欢迎的卸载实用程序，用于管理计算机上安装的所有程序。它支持 Windows 11（32 位和 64 位），并具有简单、干净的界面。",
+        "Your Uninstaller 按照您的思维方式工作，使卸载程序变得更容易、更快速、更高效且更彻底。凭借先进的系统扫描算法，Your Uninstaller! 可以轻松删除计算机上安装的任何程序 —— 完全彻底，不留痕迹。",
+        "Your Uninstaller 还可以管理 PC 上安装的应用程序；您可以锁定应用程序以防意外删除、更改默认图标、编写注释、保存注册密钥，并随时了解新安装的程序。",
+        "卸载程序从未如此简单：右键单击桌面上的图标并选择卸载；它将被删除，无需更多操作。尝试 Your Uninstaller! 的所有功能吧！"
+      ]
+    },
   "supportContent": {
     "title": "联系与支持 – Your Uninstaller! 7",
     "intro": [
@@ -296,7 +296,13 @@
     ],
     "description": {
       "title": "为什么选择 Your Uninstaller？",
-      "callout": "右键单击任何桌面图标并选择卸载 —— 就这么简单！"
+      "callout": "右键单击任何桌面图标并选择卸载 —— 就这么简单！",
+      "paragraphs": [
+        "Your Uninstaller 是全球最受欢迎的卸载实用程序，用于管理计算机上安装的所有程序。它支持 Windows 11（32 位和 64 位），并具有简单、干净的界面。",
+        "Your Uninstaller 按照您的思维方式工作，使卸载程序变得更容易、更快速、更高效且更彻底。凭借先进的系统扫描算法，Your Uninstaller! 可以轻松删除计算机上安装的任何程序 —— 完全彻底，不留痕迹。",
+        "Your Uninstaller 还可以管理 PC 上安装的应用程序；您可以锁定应用程序以防意外删除、更改默认图标、编写注释、保存注册密钥，并随时了解新安装的程序。",
+        "卸载程序从未如此简单：右键单击桌面上的图标并选择卸载；它将被删除，无需更多操作。尝试 Your Uninstaller! 的所有功能吧！"
+      ]
     },
     "gallery": {
       "title": "截图库",
@@ -380,7 +386,8 @@
   },
   "notFoundContent": {
     "title": "404 未找到",
-    "body": "很抱歉，您正在寻找的页面不存在。"
+    "body": "很抱歉，您正在寻找的页面不存在。",
+    "homeButtonText": "返回首页"
   },
   "integrationHeader": {
     "title": "Windows 系统优化",
@@ -891,6 +898,39 @@
   },
   "site": {
     "url": "https://www.ursoftware.com"
+  },
+  "docsContent": {
+    "sidebar": {
+      "title": "文档",
+      "sections": [
+        {
+          "title": "入门",
+          "links": [
+            {
+              "label": "Bootstrap 模板",
+              "href": "/docs/bootstrap-template"
+            },
+            {
+              "label": "Tailwind 组件",
+              "href": "/docs/tailwind-component"
+            },
+            {
+              "label": "Tailwind 模板",
+              "href": "/docs/tailwind-template"
+            },
+            {
+              "label": "联系表单",
+              "href": "/docs/contact-form"
+            },
+            {
+              "label": "样式指南",
+              "href": "/docs/style-guide"
+            }
+          ]
+        }
+      ]
+    },
+    "body": "# Bootstrap 模板\n\n## 示例标题\n\n这是一个示例标题下的段落。它演示了标准 Markdown 内容的显示方式。\n\n### 副标题\n\n副标题下的另一个段落。支持 Markdown 功能，例如**粗体**、*斜体* 和 `代码`。\n\n- 列表项 1\n- 列表项 2\n\n```javascript\n// 代码块示例\nconst greet = (name) => {\n  console.log(`Hello, ${name}!`);\n};\n\ngreet('World');\n```\n\n"
   },
   "seoRoutes": [
     "/",

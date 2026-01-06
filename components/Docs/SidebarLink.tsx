@@ -1,36 +1,16 @@
 "use client";
 import Link from "next/link";
 
-const SidebarLink = () => {
+const SidebarLink = ({ link, activePath }: { link: any, activePath: string }) => {
   return (
-    <>
-      <li className="block">
-        <Link
-          href={`/docs`}
-          className={`flex w-full rounded-xs bg-stroke px-3 py-2 text-base text-black dark:bg-blackho dark:text-white`}
-        >
-          Introduction
-        </Link>
-        <Link
-          href={`/docs`}
-          className={`flex w-full rounded-xs px-3 py-2 text-base text-black dark:text-white `}
-        >
-          Bootstrap Template Guide
-        </Link>
-        <Link
-          href={`/docs`}
-          className={`flex w-full rounded-xs px-3 py-2 text-base text-black dark:text-white `}
-        >
-          Style Guide
-        </Link>
-        <Link
-          href={`/docs`}
-          className={`flex w-full rounded-xs px-3 py-2 text-base text-black dark:text-white `}
-        >
-          Using Tailwind Components
-        </Link>
-      </li>
-    </>
+    <Link
+      href={link.href}
+      className={`flex w-full rounded-xs px-3 py-2 text-base text-black dark:text-white ${
+        activePath === link.href ? "bg-stroke dark:bg-blackho" : ""
+      }`}
+    >
+      {link.label}
+    </Link>
   );
 };
 

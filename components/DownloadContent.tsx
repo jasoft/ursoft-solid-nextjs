@@ -3,11 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
-  downloadPageContent,
-  revSliderContent,
-  downloadContent,
-} from "@/app/content";
-import {
   Download,
   Shield,
   Zap,
@@ -22,17 +17,30 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-const screenshots = downloadPageContent.gallery.items;
+export default function DownloadContent({
+  downloadPageContent,
+  updateContent,
+  revSliderDownloadUrl,
+}: {
+  downloadPageContent: any;
+  updateContent: any;
+  revSliderDownloadUrl: string;
+}) {
+  const [activeImage, setActiveImage] = useState<null | {
+    src: string;
+    alt: string;
+    title: string;
+  }>(null);
 
-const featureIcons = [Trash2, HardDrive, Zap, Lock];
-const features = downloadPageContent.features.map((f, i) => ({
-  icon: featureIcons[i],
-  title: f.title,
-  desc: f.desc,
-}));
+  const screenshots = downloadPageContent.gallery.items;
 
-export default function DownloadContent() {
-  const [activeImage, setActiveImage] = useState<null | { src: string; alt: string; title: string }>(null);
+  const featureIcons = [Trash2, HardDrive, Zap, Lock];
+  const features = downloadPageContent.features.map((f: any, i: number) => ({
+    icon: featureIcons[i],
+    title: f.title,
+    desc: f.desc,
+  }));
+
   return (
     <main className="page-main-bg pb-20">
       {/* Hero Section */}
@@ -58,7 +66,7 @@ export default function DownloadContent() {
               {downloadPageContent.hero.description}
             </p>
             <motion.a
-              href={revSliderContent.downloadUrl}
+              href={revSliderDownloadUrl}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-3 rounded-full bg-[#ffbd1f] px-8 py-4 text-lg font-semibold text-[#282828] shadow-lg transition-shadow hover:brightness-110"
@@ -88,12 +96,13 @@ export default function DownloadContent() {
       <section className="py-16">
         <div className="mx-auto max-w-6xl px-4 md:px-8">
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-            {features.map((f, i) => (
+            {features.map((f: any, i: number) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
+                viewport={{ once: true }}
                 className="border-stroke shadow-solid-3 hover:shadow-solid-4 dark:border-strokedark dark:bg-blacksection rounded-xl border bg-white p-6 text-center"
               >
                 <f.icon className="text-primary mx-auto mb-3 h-8 w-8" />
@@ -116,6 +125,7 @@ export default function DownloadContent() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
             className="border-stroke dark:border-strokedark dark:bg-blacksection rounded-2xl border bg-white p-8 shadow-sm"
           >
             <div className="mb-6 flex items-center gap-3">
@@ -125,9 +135,11 @@ export default function DownloadContent() {
               </h2>
             </div>
             <div className="space-y-4 text-gray-600 dark:text-gray-300">
-              {downloadContent.paragraphs.slice(1, 3).map((t, i) => (
-                <p key={i}>{t}</p>
-              ))}
+              {downloadPageContent.description.paragraphs
+                .slice(1, 3)
+                .map((t: string, i: number) => (
+                  <p key={i}>{t}</p>
+                ))}
               <p className="text-primary flex items-center gap-2 font-medium">
                 <CheckCircle2 className="h-5 w-5" />
                 {downloadPageContent.description.callout}
@@ -144,7 +156,7 @@ export default function DownloadContent() {
             {downloadPageContent.gallery.title}
           </h2>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 px-2">
-            {screenshots.map((s, i) => (
+            {screenshots.map((s: any, i: number) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -153,7 +165,11 @@ export default function DownloadContent() {
                 viewport={{ once: true, margin: "100px" }}
                 className="group border-stroke dark:border-strokedark dark:bg-blacksection overflow-hidden rounded-xl border bg-white p-4 shadow-sm transition-shadow hover:shadow-lg"
               >
-                <button onClick={() => setActiveImage(s)} aria-label={downloadPageContent.gallery.modal.closeAriaLabel} className="block w-full cursor-zoom-in">
+                <button
+                  onClick={() => setActiveImage(s)}
+                  aria-label={downloadPageContent.gallery.modal.closeAriaLabel}
+                  className="block w-full cursor-zoom-in"
+                >
                   <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
                     <Image
                       src={s.src}
@@ -176,19 +192,38 @@ export default function DownloadContent() {
         </div>
       </section>
       {activeImage && (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 p-4">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 p-4"
+        >
           <div className="relative w-[92vw] max-w-5xl">
-            <button onClick={() => setActiveImage(null)} aria-label={downloadPageContent.gallery.modal.closeAriaLabel} className="absolute right-3 top-3 rounded-full bg-white/90 p-2 text-black shadow hover:bg-white">
+            <button
+              onClick={() => setActiveImage(null)}
+              aria-label={downloadPageContent.gallery.modal.closeAriaLabel}
+              className="absolute right-3 top-3 rounded-full bg-white/90 p-2 text-black shadow hover:bg-white"
+            >
               <X className="h-5 w-5" />
             </button>
             <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-black">
-              <Image src={activeImage.src} alt={activeImage.alt} fill sizes="(max-width: 768px) 100vw, 92vw" quality={95} className="object-contain" />
+              <Image
+                src={activeImage.src}
+                alt={activeImage.alt}
+                fill
+                sizes="(max-width: 768px) 100vw, 92vw"
+                quality={95}
+                className="object-contain"
+              />
             </div>
             <div className="mt-3 text-center text-black dark:text-white">
               <h3 className="font-medium">{activeImage.title}</h3>
             </div>
           </div>
-          <button className="absolute inset-0 -z-10" onClick={() => setActiveImage(null)} aria-label={downloadPageContent.gallery.modal.closeAriaLabel} />
+          <button
+            className="absolute inset-0 -z-10"
+            onClick={() => setActiveImage(null)}
+            aria-label={downloadPageContent.gallery.modal.closeAriaLabel}
+          />
         </motion.div>
       )}
     </main>
