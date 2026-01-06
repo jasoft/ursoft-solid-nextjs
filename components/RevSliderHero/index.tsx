@@ -3,11 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
-import { useContent } from "@/app/context/ContentContext";
 
-const RevSliderHero = () => {
-  const { revSliderContent } = useContent();
-
+const RevSliderHero = ({ revSliderContent }: { revSliderContent: any }) => {
   return (
     <section className="relative h-[640px] overflow-hidden bg-[#235699] md:h-[720px] lg:h-[820px] 2xl:h-[900px]">
       <div className="absolute inset-0 z-0">
