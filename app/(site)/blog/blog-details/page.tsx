@@ -1,7 +1,6 @@
-import RelatedPost from "@/components/Blog/RelatedPost";
-import SharePost from "@/components/Blog/SharePost";
 import { Metadata } from "next";
 import Image from "next/image";
+import { Suspense } from "react"; 
 
 export const metadata: Metadata = {
   title: "Blog Details Page - Solid SaaS Boilerplate",
@@ -72,7 +71,9 @@ const SingleBlogPage = async () => {
                 </ul>
               </div>
 
-              <RelatedPost />
+              <Suspense fallback={<div>Loading related posts...</div>}>
+                <RelatedPost />
+              </Suspense>
             </div>
 
             <div className="lg:w-2/3">
@@ -171,3 +172,4 @@ const SingleBlogPage = async () => {
 };
 
 export default SingleBlogPage;
+
