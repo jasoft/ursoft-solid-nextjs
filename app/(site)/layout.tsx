@@ -11,6 +11,8 @@ import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 import ToasterContext from "../context/ToastContext";
+import { ContentProvider } from "@/app/context/ContentContext";
+import * as defaultContent from "@/app/content";
 
 export default function RootLayout({
   children,
@@ -21,11 +23,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning className={`dark:bg-black ${inter.className}`}>
         <Providers>
-          <Lines />
-          <Header />
-          {children}
-          <Footer />
-          <ScrollToTop />
+          <ContentProvider content={defaultContent}>
+            <Lines />
+            <Header />
+            {children}
+            <Footer />
+            <ScrollToTop />
+          </ContentProvider>
         </Providers>
       </body>
     </html>

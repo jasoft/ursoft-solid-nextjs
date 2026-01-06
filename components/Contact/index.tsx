@@ -7,8 +7,14 @@ import { useContent } from "@/app/context/ContentContext";
 const Contact = () => {
   const { contactTexts, funFactAlt } = useContent();
   const [hasMounted, setHasMounted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return null;
+  }
 
   return (
     <>

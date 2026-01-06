@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
 import { useContent } from "@/app/context/ContentContext";
+import { BadgeCheck } from "lucide-react";
 
 const Pricing = () => {
   const { pricingHeader, pricingOptions, pricingLabels, pricingIntro, pricingImageAlt } = useContent();
@@ -21,7 +22,7 @@ const Pricing = () => {
             }}
           />
           {/* <!-- Section Title End --> */ }
-
+        </div>
 
         <div className="relative mx-auto mt-15 max-w-[1207px] px-4 md:px-8 xl:mt-20 xl:px-0">
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">
