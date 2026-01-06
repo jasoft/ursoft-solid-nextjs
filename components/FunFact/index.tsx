@@ -2,11 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useContent } from "@/app/context/ContentContext";
 
-const FunFact = () => {
-  const { funFactData, funFactHeader, funFactAlt } = useContent();
-
+const FunFact = ({ funFactData, funFactHeader, funFactAlt }: { funFactData: any[], funFactHeader: any, funFactAlt: any }) => {
   return (
     <>
       {/* <!-- ===== Funfact Start ===== --> */}
@@ -100,3 +97,4 @@ const FunFact = () => {
 };
 
 export default FunFact;
+"

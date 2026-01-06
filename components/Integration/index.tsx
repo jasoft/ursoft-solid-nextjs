@@ -2,11 +2,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
-import { useContent } from "@/app/context/ContentContext";
 
-const Integration = () => {
-  const { integrationHeader, integrationIcons, integrationAlt } = useContent();
-
+const Integration = ({ integrationHeader, integrationIcons, integrationAlt }: { integrationHeader: any, integrationIcons: any[], integrationAlt: any }) => {
   return (
     <>
       <section>
@@ -75,3 +72,4 @@ const Integration = () => {
 };
 
 export default Integration;
+"

@@ -2,11 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useContent } from "@/app/context/ContentContext";
 
-const About = () => {
-  const { importantFeatures } = useContent();
-
+const About = ({ importantFeatures }: { importantFeatures: any[] }) => {
   return (
     <>
       {/* <!-- ===== Important Feature #1 Start ===== --> */}
@@ -161,3 +158,4 @@ const About = () => {
 };
 
 export default About;
+"

@@ -2,16 +2,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+// Removed useState as data will now be passed via props
 
-const Signup = () => {
-  const [data, setData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    password: "",
-  });
-
+const Signup = ({ signupTexts }: { signupTexts: any }) => {
   return (
     <>
       {/* <!-- ===== SignUp Form Start ===== --> */}
@@ -52,7 +45,7 @@ const Signup = () => {
             className="animate_top rounded-lg bg-white px-7.5 pt-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black xl:px-15 xl:pt-15"
           >
             <h2 className="mb-15 text-center text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-              Create an Account
+              {signupTexts.title}
             </h2>
 
             <div className="flex items-center gap-8">
@@ -82,7 +75,7 @@ const Signup = () => {
                         fill="#FBBC05"
                       />
                       <path
-                        d="M10.2042 3.86663C11.6663 3.84438 13.0804 4.37803 14.1498 5.35558L17.0296 2.59996C15.1826 0.901848 12.7366 -0.0298855 10.2042 -3.6784e-05C8.3126 -0.000477834 6.45819 0.514732 4.8483 1.48798C3.2384 2.46124 1.93649 3.85416 1.08813 5.51101L4.38775 8.02225C4.79132 6.82005 5.56974 5.77231 6.61327 5.02675C7.6568 4.28118 8.91279 3.87541 10.2042 3.86663Z"
+                        d="M10.2042 3.86663C11.6663 3.84438 13.0804 4.37803 14.1498 5.35558L17.0296 2.59996C15.1826 0.901848 12.7366 -0.0298855 10.2042 -3.6784e-05C8.3126 -0.000477834 6.45819 0.514732 4.84830 1.48798C3.23840 2.46124 1.93649 3.85416 1.08813 5.51101L4.38775 8.02225C4.79132 6.82005 5.56974 5.77231 6.61327 5.02675C7.65680 4.28118 8.91279 3.87541 10.2042 3.86663Z"
                         fill="#EB4335"
                       />
                     </g>
@@ -129,10 +122,10 @@ const Signup = () => {
                   name="firstName"
                   type="text"
                   placeholder="First name"
-                  value={data.firstName}
-                  onChange={(e) =>
-                    setData({ ...data, [e.target.name]: e.target.value })
-                  }
+                  // value={data.firstName} // Removed
+                  // onChange={(e) =>
+                  //   setData({ ...data, [e.target.name]: e.target.value })
+                  // } // Removed
                   className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                 />
 
@@ -140,10 +133,10 @@ const Signup = () => {
                   name="lastName"
                   type="text"
                   placeholder="Last name"
-                  value={data.lastName}
-                  onChange={(e) =>
-                    setData({ ...data, [e.target.name]: e.target.value })
-                  }
+                  // value={data.lastName} // Removed
+                  // onChange={(e) =>
+                  //   setData({ ...data, [e.target.name]: e.target.value })
+                  // } // Removed
                   className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                 />
               </div>
@@ -153,10 +146,10 @@ const Signup = () => {
                   name="email"
                   type="email"
                   placeholder="Email address"
-                  value={data.email}
-                  onChange={(e) =>
-                    setData({ ...data, [e.target.name]: e.target.value })
-                  }
+                  // value={data.email} // Removed
+                  // onChange={(e) =>
+                  //   setData({ ...data, [e.target.name]: e.target.value })
+                  // } // Removed
                   className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                 />
 
@@ -164,15 +157,15 @@ const Signup = () => {
                   name="password"
                   type="password"
                   placeholder="Password"
-                  value={data.password}
-                  onChange={(e) =>
-                    setData({ ...data, [e.target.name]: e.target.value })
-                  }
+                  // value={data.password} // Removed
+                  // onChange={(e) =>
+                  //   setData({ ...data, [e.target.name]: e.target.value })
+                  // } // Removed
                   className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                 />
               </div>
 
-              <div className="flex flex-wrap gap-10 md:justify-between xl:gap-15">
+              <div className="flex flex-wrap items-center gap-10 md:justify-between xl:gap-15">
                 <div className="mb-4 flex items-center">
                   <input
                     id="default-checkbox"
@@ -200,7 +193,7 @@ const Signup = () => {
                     htmlFor="default-checkbox"
                     className="flex max-w-[425px] cursor-pointer select-none  pl-3"
                   >
-                    Keep me signed in
+                    {signupTexts.agreeTerms}
                   </label>
                 </div>
 
@@ -208,7 +201,7 @@ const Signup = () => {
                   aria-label="signup with email and password"
                   className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
                 >
-                  Create Account
+                  {signupTexts.buttonText}
                   <svg
                     className="fill-white"
                     width="14"
@@ -227,12 +220,12 @@ const Signup = () => {
 
               <div className="mt-12.5 border-t border-stroke py-5 text-center dark:border-strokedark">
                 <p>
-                  Already have an account?{" "}
+                  {signupTexts.signinLink.split("?")[0]}?{" "}
                   <Link
                     className="text-black hover:text-primary dark:text-white dark:hover:text-primary"
-                    href="/auth/signin"
+                    href={`/auth/signin`}
                   >
-                    Sign In
+                    {signupTexts.signinLink.split("?")[1]}
                   </Link>
                 </p>
               </div>

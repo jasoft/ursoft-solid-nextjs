@@ -2,11 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useContent } from "@/app/context/ContentContext";
 
-const CTA = () => {
-  const { ctaData, ctaAlt, updateContent } = useContent();
-
+const CTA = ({ ctaData, ctaAlt, updateContent }: { ctaData: any, ctaAlt: any, updateContent: any }) => {
   return (
     <>
       {/* <!-- ===== CTA Start ===== --> */}
@@ -93,3 +90,4 @@ const CTA = () => {
 };
 
 export default CTA;
+"

@@ -2,14 +2,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+// Removed useState as data will now be passed via props
 
-const Signin = () => {
-  const [data, setData] = useState({
-    email: "",
-    password: "",
-  });
-
+const Signin = ({ signinTexts }: { signinTexts: any }) => {
   return (
     <>
       {/* <!-- ===== SignIn Form Start ===== --> */}
@@ -50,7 +45,7 @@ const Signin = () => {
             className="animate_top rounded-lg bg-white px-7.5 pt-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black xl:px-15 xl:pt-15"
           >
             <h2 className="mb-15 text-center text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-              Login to Your Account
+              {signinTexts.title}
             </h2>
             <div className="flex flex-col">
               <div className="flex items-center gap-8">
@@ -80,7 +75,7 @@ const Signin = () => {
                           fill="#FBBC05"
                         />
                         <path
-                          d="M10.2042 3.86663C11.6663 3.84438 13.0804 4.37803 14.1498 5.35558L17.0296 2.59996C15.1826 0.901848 12.7366 -0.0298855 10.2042 -3.6784e-05C8.3126 -0.000477834 6.45819 0.514732 4.8483 1.48798C3.2384 2.46124 1.93649 3.85416 1.08813 5.51101L4.38775 8.02225C4.79132 6.82005 5.56974 5.77231 6.61327 5.02675C7.6568 4.28118 8.91279 3.87541 10.2042 3.86663Z"
+                          d="M10.2042 3.86663C11.6663 3.84438 13.0804 4.37803 14.1498 5.35558L17.0296 2.59996C15.1826 0.901848 12.7366 -0.0298855 10.2042 -3.6784e-05C8.3126 -0.000477834 6.45819 0.514732 4.8483 1.48798C3.23840 2.46124 1.93649 3.85416 1.08813 5.51101L4.38775 8.02225C4.79132 6.82005 5.56974 5.77231 6.61327 5.02675C7.65680 4.28118 8.91279 3.87541 10.2042 3.86663Z"
                           fill="#EB4335"
                         />
                       </g>
@@ -127,8 +122,8 @@ const Signin = () => {
                   type="text"
                   placeholder="Email"
                   name="email"
-                  value={data.email}
-                  onChange={(e) => setData({ ...data, email: e.target.value })}
+                  // value={data.email} // Removed
+                  // onChange={(e) => setData({ ...data, email: e.target.value })} // Removed
                   className="w-full border-b border-stroke bg-white! pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:bg-black! dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                 />
 
@@ -136,10 +131,10 @@ const Signin = () => {
                   type="password"
                   placeholder="Password"
                   name="password"
-                  value={data.password}
-                  onChange={(e) =>
-                    setData({ ...data, password: e.target.value })
-                  }
+                  // value={data.password} // Removed
+                  // onChange={(e) =>
+                  //   setData({ ...data, password: e.target.value })
+                  // } // Removed
                   className="w-full border-b border-stroke bg-white! pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:bg-black! dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                 />
               </div>
@@ -173,12 +168,12 @@ const Signin = () => {
                       htmlFor="default-checkbox"
                       className="flex max-w-[425px] cursor-pointer select-none pl-3"
                     >
-                      Keep me signed in
+                      {signinTexts.rememberMe}
                     </label>
                   </div>
 
                   <a href="#" className="hover:text-primary">
-                    Forgot Password?
+                    {signinTexts.forgotPassword}
                   </a>
                 </div>
 
@@ -186,7 +181,7 @@ const Signin = () => {
                   aria-label="login with email and password"
                   className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
                 >
-                  Log in
+                  {signinTexts.buttonText}
                   <svg
                     className="fill-white"
                     width="14"
@@ -205,12 +200,12 @@ const Signin = () => {
 
               <div className="mt-12.5 border-t border-stroke py-5 text-center dark:border-strokedark">
                 <p>
-                  Don't have an account?{" "}
+                  {signinTexts.signupLink.split("?")[0]}?{" "}
                   <Link
                     className="text-black hover:text-primary dark:text-white dark:hover:text-primary"
-                    href="/auth/signup"
+                    href={`/auth/signup`}
                   >
-                    Sign Up
+                    {signinTexts.signupLink.split("?")[1]}
                   </Link>
                 </p>
               </div>

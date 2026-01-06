@@ -1,12 +1,9 @@
 "use client";
 import React from "react";
-import { useContent } from "@/app/context/ContentContext";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "../Common/SectionHeader";
 
-const Feature = () => {
-  const { featuresData, featuresSection } = useContent();
-
+const Feature = ({ featuresSection, featuresData }: { featuresSection: any, featuresData: any[] }) => {
   return (
     <>
       {/* <!-- ===== Features Start ===== --> */}
@@ -39,3 +36,4 @@ const Feature = () => {
 };
 
 export default Feature;
+"

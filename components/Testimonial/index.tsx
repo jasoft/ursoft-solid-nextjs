@@ -7,11 +7,8 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 import SingleTestimonial from "./SingleTestimonial";
-import { useContent } from "@/app/context/ContentContext";
 
-const Testimonial = () => {
-  const { testimonialHeader, testimonialData } = useContent();
-
+const Testimonial = ({ testimonialHeader, testimonialData }: { testimonialHeader: any, testimonialData: any[] }) => {
   return (
     <>
       <section>
@@ -85,3 +82,4 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+"

@@ -666,6 +666,218 @@
     "download": {
       "title": "免费下载 - Your Uninstaller! 7",
       "description": "下载 Your Uninstaller! 7 - Windows 最强大的卸载程序。包含所有功能的 21 天免费试用。"
+    },
+    "blogDetails": {
+      "title": "博客详情 - Your Uninstaller! 7",
+      "description": "Your Uninstaller! 7 博客文章详情"
+    }
+  },
+  "revSliderContent": {
+    "title": "Your Uninstaller! 7",
+    "subtitle": "彻底卸载任意\n不需要的应用！",
+    "downloadLabel": "立即下载",
+    "downloadUrl": "https://www.ursoftware.com/dlds/yusetup.exe",
+    "versionInfo": "支持 Windows 11/10/8/7/Vista/XP",
+    "laptopSrc": "/images/hero/hero2_1920_q90.webp",
+    "laptopAlt": "Your Uninstaller! 7 - Windows 卸载软件"
+  },
+  "site": {
+    "url": "https://www.ursoftware.com"
+  },
+  "auth": {
+    "signin": {
+      "title": "登录您的账户",
+      "emailLabel": "邮箱",
+      "emailPlaceholder": "输入您的邮箱",
+      "passwordLabel": "密码",
+      "passwordPlaceholder": "输入您的密码",
+      "forgotPassword": "忘记密码?",
+      "rememberMe": "记住我",
+      "buttonText": "登录",
+      "signupLink": "还没有账户? 注册"
+    },
+    "signup": {
+      "title": "创建新账户",
+      "nameLabel": "全名",
+      "namePlaceholder": "输入您的全名",
+      "emailLabel": "邮箱",
+      "emailPlaceholder": "输入您的邮箱",
+      "passwordLabel": "密码",
+      "passwordPlaceholder": "输入您的密码",
+      "confirmPasswordLabel": "确认密码",
+      "confirmPasswordPlaceholder": "确认您的密码",
+      "agreeTerms": "我同意条款和条件",
+      "buttonText": "注册",
+      "signinLink": "已有账户? 登录"
+    }
+  },
+  "siteMetadata": {
+    "home": {
+      "title": "Your Uninstaller! - 彻底卸载软件，任何不需要的应用。",
+      "description": "Your Uninstaller! - 免费下载，屡获殊荣的卸载程序套件，可完全轻松地删除程序，卸载软件。删除不需要的程序的每一个痕迹。",
+      "keywords": [
+        "Your Uninstaller!",
+        "uninstall",
+        "uninstaller",
+        "uninstall program",
+        "uninstaller software",
+        "add remove",
+        "add remove programs",
+        "cleanup",
+        "registry",
+        "Windows"
+      ],
+      "openGraph": {
+        "url": "https://www.ursoftware.com/",
+        "siteName": "Your Uninstaller!",
+        "image": "/images/logo/site-logo.png"
+      }
+    },
+    "features": {
+      "title": "功能特性 - Your Uninstaller! 7",
+      "description": "Your Uninstaller! 7 的核心功能"
+    },
+    "order": {
+      "title": "购买 - Your Uninstaller! 7",
+      "description": "选择许可证并立即下载。包含安全卸载和深度系统清理。"
+    },
+    "support": {
+      "title": "支持 - Your Uninstaller! 7",
+      "description": "这是 Your Uninstaller! 7 的支持页面"
+    },
+    "privacy": {
+      "title": "隐私政策 - Your Uninstaller! 7",
+      "description": "URSoft, Inc. 的隐私政策"
+    },
+    "refundPolicy": {
+      "title": "退款政策 - Your Uninstaller! 7",
+      "description": "30 天退款保证和退款说明。"
+    },
+    "deliveryPolicy": {
+      "title": "交付政策 - Your Uninstaller! 7",
+      "description": "电子交付时间、许可证激活和支持。"
+    },
+    "docs": {
+      "title": "文档页面 - Solid SaaS Boilerplate",
+      "description": "这是 Solid Pro 的文档页面"
+    },
+    "download": {
+      "title": "免费下载 - Your Uninstaller! 7",
+      "description": "下载 Your Uninstaller! 7 - Windows 最强大的卸载程序。包含所有功能的 21 天免费试用。"
+    },
+    "auth": {
+      "signin": {
+        "title": "登录页面 - Your Uninstaller! 7",
+        "description": "登录您的 Your Uninstaller! 7 帐户"
+      },
+      "signup": {
+        "title": "注册页面 - Your Uninstaller! 7",
+        "description": "注册 Your Uninstaller! 7 新帐户"
+      }
+    }
+  },
+  "revSliderContent": {
+    "title": "Your Uninstaller! 7",
+    "subtitle": "彻底卸载任意\n不需要的应用！",
+    "downloadLabel": "立即下载",
+    "downloadUrl": "https://www.ursoftware.com/dlds/yusetup.exe",
+    "versionInfo": "支持 Windows 11/10/8/7/Vista/XP",
+    "laptopSrc": "/images/hero/hero2_1920_q90.webp",
+    "laptopAlt": "Your Uninstaller! 7 - Windows 卸载软件"
+  },
+  "site": {
+    "url": "https://www.ursoftware.com"
+  },
+  "auth": {
+    "signin": {
+      "title": "登录您的账户",
+      "emailLabel": "邮箱",
+      "emailPlaceholder": "输入您的邮箱",
+      "passwordLabel": "密码",
+      "passwordPlaceholder": "输入您的密码",
+      "forgotPassword": "忘记密码?",
+      "rememberMe": "记住我",
+      "buttonText": "登录",
+      "signupLink": "还没有账户? 注册"
+    },
+    "signup": {
+      "title": "创建新账户",
+      "nameLabel": "全名",
+      "namePlaceholder": "输入您的全名",
+      "emailLabel": "邮箱",
+      "emailPlaceholder": "输入您的邮箱",
+      "passwordLabel": "密码",
+      "passwordPlaceholder": "输入您的密码",
+      "confirmPasswordLabel": "确认密码",
+      "confirmPasswordPlaceholder": "确认您的密码",
+      "agreeTerms": "我同意条款和条件",
+      "buttonText": "注册",
+      "signinLink": "已有账户? 登录"
+    }
+  },
+  "siteMetadata": {
+    "home": {
+      "title": "Your Uninstaller! - 彻底卸载软件，任何不需要的应用。",
+      "description": "Your Uninstaller! - 免费下载，屡获殊荣的卸载程序套件，可完全轻松地删除程序，卸载软件。删除不需要的程序的每一个痕迹。",
+      "keywords": [
+        "Your Uninstaller!",
+        "uninstall",
+        "uninstaller",
+        "uninstall program",
+        "uninstaller software",
+        "add remove",
+        "add remove programs",
+        "cleanup",
+        "registry",
+        "Windows"
+      ],
+      "openGraph": {
+        "url": "https://www.ursoftware.com/",
+        "siteName": "Your Uninstaller!",
+        "image": "/images/logo/site-logo.png"
+      }
+    },
+    "features": {
+      "title": "功能特性 - Your Uninstaller! 7",
+      "description": "Your Uninstaller! 7 的核心功能"
+    },
+    "order": {
+      "title": "购买 - Your Uninstaller! 7",
+      "description": "选择许可证并立即下载。包含安全卸载和深度系统清理。"
+    },
+    "support": {
+      "title": "支持 - Your Uninstaller! 7",
+      "description": "这是 Your Uninstaller! 7 的支持页面"
+    },
+    "privacy": {
+      "title": "隐私政策 - Your Uninstaller! 7",
+      "description": "URSoft, Inc. 的隐私政策"
+    },
+    "refundPolicy": {
+      "title": "退款政策 - Your Uninstaller! 7",
+      "description": "30 天退款保证和退款说明。"
+    },
+    "deliveryPolicy": {
+      "title": "交付政策 - Your Uninstaller! 7",
+      "description": "电子交付时间、许可证激活和支持。"
+    },
+    "docs": {
+      "title": "文档页面 - Solid SaaS Boilerplate",
+      "description": "这是 Solid Pro 的文档页面"
+    },
+    "download": {
+      "title": "免费下载 - Your Uninstaller! 7",
+      "description": "下载 Your Uninstaller! 7 - Windows 最强大的卸载程序。包含所有功能的 21 天免费试用。"
+    },
+    "auth": {
+      "signin": {
+        "title": "登录页面 - Your Uninstaller! 7",
+        "description": "登录您的 Your Uninstaller! 7 帐户"
+      },
+      "signup": {
+        "title": "注册页面 - Your Uninstaller! 7",
+        "description": "注册 Your Uninstaller! 7 新帐户"
+      }
     }
   },
   "revSliderContent": {
@@ -689,5 +901,50 @@
     "/privacy",
     "/refund-policy",
     "/delivery-policy"
-  ]
+  ],
+  "blogDetails": {
+    "searchPlaceholder": "在这里搜索...",
+    "categoriesTitle": "分类",
+    "categories": ["博客", "活动", "网格", "新闻", "圆形"],
+    "imageAlt1": "神户制钢厂供应",
+    "title": "神户制钢厂供应",
+    "authorLabel": "作者：",
+    "authorName": "约翰·杜",
+    "publishedOnLabel": "发布于：",
+    "publishedDate": "2023年7月30日",
+    "categoryLabel": "分类：",
+    "categoryName": "活动",
+    "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum ipsum。",
+    "paragraph2": "Aenean augue ex, condimentum vel metus vitae, aliquam porta elit. Quisque non metus ac orci mollis posuere. Mauris vel ipsum a diam interdum ultricies sed vitae neque. Nulla porttitor quam vitae pulvinar placerat. Nulla fringilla elit sit amet justo feugiat sodales. Morbi eleifend, enim non eleifend laoreet, odio libero lobortis lectus, non porttitor sem urna sit amet metus. In sollicitudin quam est, pellentesque consectetur felis fermentum vitae。",
+    "imageAlt2": "图片",
+    "imageAlt3": "图片",
+    "heading2": "Nunc elementum elit viverra, tempus quam non",
+    "paragraph3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum ipsum。",
+    "relatedPost": {
+      "title": "相关文章",
+      "posts": [
+        {
+          "title": "AI 对现代商业策略的影响",
+          "date": "2023年9月15日",
+          "image": "/images/blog/blog-01.png"
+        },
+        {
+          "title": "云计算：深入探索无服务器架构",
+          "date": "2023年8月22日",
+          "image": "/images/blog/blog-02.png"
+        },
+        {
+          "title": "中小型企业的网络安全最佳实践",
+          "date": "2023年7月10日",
+          "image": "/images/blog/blog-03.png"
+        }
+      ]
+    },
+    "sharePost": {
+      "title": "分享此文章：",
+      "facebook": "脸书",
+      "twitter": "推特",
+      "linkedin": "领英"
+    }
+  }
 }

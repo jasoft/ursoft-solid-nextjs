@@ -2,12 +2,9 @@
 import React from "react";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
-import { useContent } from "@/app/context/ContentContext";
 import { BadgeCheck } from "lucide-react";
 
-const Pricing = () => {
-  const { pricingHeader, pricingOptions, pricingLabels, pricingIntro, pricingImageAlt } = useContent();
-
+const Pricing = ({ pricingHeader, pricingOptions, pricingLabels, pricingIntro, pricingImageAlt }: { pricingHeader: any, pricingOptions: any[], pricingLabels: any, pricingIntro: any, pricingImageAlt: any }) => {
   return (
     <>
       {/* <!-- ===== Pricing Start ===== --> */ }
@@ -127,3 +124,4 @@ const Pricing = () => {
 };
 
 export default Pricing;
+"

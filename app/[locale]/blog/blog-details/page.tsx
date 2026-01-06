@@ -1,16 +1,33 @@
+import { Metadata } from "next";
+import { Locale, locales } from "@/i18n";
+import { getMessages } from "@/lib/get-messages";
 import RelatedPost from "@/components/Blog/RelatedPost";
 import SharePost from "@/components/Blog/SharePost";
-import { Metadata } from "next";
 import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "Blog Details Page - Solid SaaS Boilerplate",
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
-  // other metadata
-  description: "This is Blog details page for Solid Pro"
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: Locale };
+}): Promise<Metadata> {
+  const messages = await getMessages(params.locale);
 
-const SingleBlogPage = async () => {
+  return {
+    title: messages.siteMetadata.blogDetails.title,
+    description: messages.siteMetadata.blogDetails.description,
+  };
+}
+
+export default async function SingleBlogPage({
+  params,
+}: {
+  params: { locale: Locale };
+}) {
+  const messages = await getMessages(params.locale);
   return (
     <>
       <section className="pb-20 pt-35 lg:pb-25 lg:pt-45 xl:pb-30 xl:pt-50">
@@ -25,7 +42,7 @@ const SingleBlogPage = async () => {
                   <div className="relative">
                     <input
                       type="text"
-                      placeholder="Search Here..."
+                      placeholder={messages.blogDetails.searchPlaceholder}
                       className="w-full rounded-lg border border-stroke px-6 py-4 shadow-solid-12 focus:border-primary focus:outline-hidden dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
                     />
 
@@ -50,29 +67,19 @@ const SingleBlogPage = async () => {
 
               <div className="animate_top mb-10 rounded-md border border-stroke bg-white p-9 shadow-solid-13 dark:border-strokedark dark:bg-blacksection">
                 <h4 className="mb-7.5 text-2xl font-semibold text-black dark:text-white">
-                  Categories
+                  {messages.blogDetails.categoriesTitle}
                 </h4>
 
                 <ul>
-                  <li className="mb-3 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">Blog</a>
-                  </li>
-                  <li className="mb-3 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">Events</a>
-                  </li>
-                  <li className="mb-3 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">Grids</a>
-                  </li>
-                  <li className="mb-3 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">News</a>
-                  </li>
-                  <li className="mb-3 transition-all duration-300 last:mb-0 hover:text-primary">
-                    <a href="#">Rounded</a>
-                  </li>
+                  {messages.blogDetails.categories.map((category: any, index: number) => (
+                    <li key={index} className="mb-3 transition-all duration-300 last:mb-0 hover:text-primary">
+                      <a href="#">{category}</a>
+                    </li>
+                  ))}
                 </ul>
               </div>
 
-              <RelatedPost />
+              <RelatedPost relatedPostTexts={messages.blogDetails.relatedPost} />
             </div>
 
             <div className="lg:w-2/3">
@@ -81,7 +88,7 @@ const SingleBlogPage = async () => {
                   <div className="relative aspect-97/60 w-full sm:aspect-97/44">
                     <Image
                       src={"/images/blog/blog-01.png"}
-                      alt="Kobe Steel plant that supplied"
+                      alt={messages.blogDetails.imageAlt1}
                       fill
                       className="rounded-md object-cover object-center"
                     />
@@ -89,46 +96,34 @@ const SingleBlogPage = async () => {
                 </div>
 
                 <h2 className="mb-5 mt-11 text-3xl font-semibold text-black dark:text-white 2xl:text-sectiontitle2">
-                  Kobe Steel plant that supplied
+                  {messages.blogDetails.title}
                 </h2>
 
                 <ul className="mb-9 flex flex-wrap gap-5 2xl:gap-7.5">
                   <li>
-                    <span className="text-black dark:text-white">Author: </span>{" "}
-                    Jhon Doe
+                    <span className="text-black dark:text-white">{messages.blogDetails.authorLabel}: </span>{" "}
+                    {messages.blogDetails.authorName}
                   </li>
                   <li>
                     <span className="text-black dark:text-white">
-                      Published On: July 30, 2023
+                      {messages.blogDetails.publishedOnLabel}: {messages.blogDetails.publishedDate}
                     </span>{" "}
                   </li>
                   <li>
                     <span className="text-black dark:text-white">
-                      Category:
+                      {messages.blogDetails.categoryLabel}:
                     </span>
-                    Events
+                    {messages.blogDetails.categoryName}
                   </li>
                 </ul>
 
                 <div className="blog-details">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur
-                    leo. Ut venenatis rhoncus quam sed condimentum. Curabitur
-                    vel turpis in dolor volutpat imperdiet in ut mi. Integer non
-                    volutpat nulla. Nunc elementum elit viverra, tempus quam
-                    non, interdum ipsum.
+                    {messages.blogDetails.paragraph1}
                   </p>
 
                   <p>
-                    Aenean augue ex, condimentum vel metus vitae, aliquam porta
-                    elit. Quisque non metus ac orci mollis posuere. Mauris vel
-                    ipsum a diam interdum ultricies sed vitae neque. Nulla
-                    porttitor quam vitae pulvinar placerat. Nulla fringilla elit
-                    sit amet justo feugiat sodales. Morbi eleifend, enim non
-                    eleifend laoreet, odio libero lobortis lectus, non porttitor
-                    sem urna sit amet metus. In sollicitudin quam est,
-                    pellentesque consectetur felis fermentum vitae.
+                    {messages.blogDetails.paragraph2}
                   </p>
 
                   <div className="flex flex-wrap gap-5">
@@ -136,31 +131,26 @@ const SingleBlogPage = async () => {
                       src={"/images/blog/blog-01.png"}
                       width={350}
                       height={200}
-                      alt="image"
+                      alt={messages.blogDetails.imageAlt2}
                     />
                     <Image
                       src={"/images/blog/blog-02.png"}
                       width={350}
                       height={200}
-                      alt="image"
+                      alt={messages.blogDetails.imageAlt3}
                     />
                   </div>
 
                   <h3 className="pt-8">
-                    Nunc elementum elit viverra, tempus quam non
+                    {messages.blogDetails.heading2}
                   </h3>
 
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur
-                    leo. Ut venenatis rhoncus quam sed condimentum. Curabitur
-                    vel turpis in dolor volutpat imperdiet in ut mi. Integer non
-                    volutpat nulla. Nunc elementum elit viverra, tempus quam
-                    non, interdum ipsum.
+                    {messages.blogDetails.paragraph3}
                   </p>
                 </div>
 
-                <SharePost />
+                <SharePost sharePostTexts={messages.blogDetails.sharePost} />
               </div>
             </div>
           </div>
@@ -168,6 +158,4 @@ const SingleBlogPage = async () => {
       </section>
     </>
   );
-};
-
-export default SingleBlogPage;
+}

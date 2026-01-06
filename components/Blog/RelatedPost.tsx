@@ -1,25 +1,24 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import BlogData from "./blogData";
 
-const RelatedPost = async () => {
+const RelatedPost = ({ relatedPostTexts }: { relatedPostTexts: any }) => {
   return (
     <>
       <div className="animate_top rounded-md border border-stroke bg-white p-9 shadow-solid-13 dark:border-strokedark dark:bg-blacksection">
         <h4 className="mb-7.5 text-2xl font-semibold text-black dark:text-white">
-          Related Posts
+          {relatedPostTexts.title}
         </h4>
 
         <div>
-          {BlogData.slice(0, 3).map((post, key) => (
+          {relatedPostTexts.posts.map((post: any, key: number) => (
             <div
               className="mb-7.5 flex flex-wrap gap-4 xl:flex-nowrap 2xl:gap-6"
               key={key}
             >
               <div className="max-w-45 relative h-18 w-45">
-                {post.mainImage ? (
-                  <Image fill src={post.mainImage} alt="Blog" />
+                {post.image ? (
+                  <Image fill src={post.image} alt={post.title} />
                 ) : (
                   "No image"
                 )}

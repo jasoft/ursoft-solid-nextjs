@@ -2,10 +2,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import { useContent } from "@/app/context/ContentContext";
 
-const Contact = () => {
-  const { contactTexts, funFactAlt } = useContent();
+const Contact = ({ contactTexts, funFactAlt }: { contactTexts: any, funFactAlt: any }) => {
   const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
@@ -139,3 +137,4 @@ const Contact = () => {
 };
 
 export default Contact;
+"
