@@ -5,9 +5,10 @@ import { getDictionary } from "@/lib/dictionaries";
 export async function generateMetadata({
   params,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
-  const content = await getDictionary(params.lang);
+  const { lang } = await params;
+  const content = await getDictionary(lang);
   
   return {
     title: content.siteMetadata.home.title,
