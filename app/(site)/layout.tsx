@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning className={`dark:bg-black ${inter.className}`}>
         <Providers>
-          <ContentProvider content={defaultContent}>
+          <ContentProvider content={{ ...defaultContent }}>
             <Lines />
             <Header />
             {children}

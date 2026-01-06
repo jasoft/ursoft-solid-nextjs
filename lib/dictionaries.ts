@@ -7,6 +7,7 @@ const dictionaries = {
 };
 
 export const getDictionary = async (locale: string) => {
-  const dictionary = dictionaries[locale as keyof typeof dictionaries];
-  return dictionary ? dictionary() : dictionaries.en();
+  const dictionary = dictionaries[locale as keyof typeof dictionaries] ?? dictionaries.en;
+  const module = await dictionary();
+  return { ...module };
 };
