@@ -1,4 +1,6 @@
-import { site } from "./content";
+const site = {
+  url: "https://www.ursoftware.com",
+};
 export const dynamic = "force-static";
 
 export default function robots() {

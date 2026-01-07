@@ -10,9 +10,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
 
   return {
     title: messages.siteMetadata.blog.title,
@@ -23,9 +24,10 @@ export async function generateMetadata({
 export default async function BlogPage({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
   return (
     <>
       {/* <!-- ===== Blog Grid Start ===== --> */}

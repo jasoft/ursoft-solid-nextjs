@@ -12,9 +12,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
 
   return {
     title: messages.siteMetadata.features.title,
@@ -25,13 +26,13 @@ export async function generateMetadata({
 export default async function FeaturesPage({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
 
   return (
     <main className="-mt-20 page-main-bg">
-      <FeaturesTab featuresTabContent={messages.featuresTabContent} />
       <Feature
         featuresSection={messages.featuresSection}
         featuresData={messages.featuresData}

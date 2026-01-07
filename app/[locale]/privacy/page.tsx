@@ -10,9 +10,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
 
   return {
     title: messages.siteMetadata.privacy.title,
@@ -23,9 +24,10 @@ export async function generateMetadata({
 export default async function PrivacyPolicyPage({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
   const mdx = messages.privacyContent.body;
   return (
     <main className="pb-20 pt-40 page-main-bg">

@@ -10,9 +10,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
 
   return {
     title: messages.siteMetadata.download.title,
@@ -23,14 +24,16 @@ export async function generateMetadata({
 export default async function DownloadPage({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
   return (
     <>
       <DownloadContent
         downloadPageContent={messages.downloadPageContent}
         updateContent={messages.updateContent}
+        revSliderDownloadUrl={messages.revSliderContent.downloadUrl}
       />
     </>
   );

@@ -11,9 +11,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
 
   return {
     title: messages.siteMetadata.docs.title,
@@ -24,11 +25,12 @@ export async function generateMetadata({
 export default async function DocsPage({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
   const mdx = messages.docsContent.body;
-  
+
   return (
     <main className="pb-20 pt-20 page-main-bg">
       <div className="mx-auto mb-10 max-w-c-1315 px-4 md:px-8 xl:px-0">

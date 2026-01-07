@@ -1,4 +1,17 @@
-import { seoRoutes, site } from "./content";
+const site = {
+  url: "https://www.ursoftware.com",
+};
+
+const seoRoutes = [
+  "",
+  "/features",
+  "/download",
+  "/order",
+  "/support",
+  "/privacy",
+  "/refund-policy",
+  "/delivery-policy"
+];
 export const dynamic = "force-static";
 
 export default function sitemap() {

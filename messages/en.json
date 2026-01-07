@@ -200,16 +200,16 @@
     "primaryButton": "DOWNLOAD NOW",
     "secondaryButton": "BUY NOW"
   },
-    "description": {
-      "title": "Why Choose Your Uninstaller?",
-      "callout": "Right-click any desktop icon and select uninstall - it's that simple!",
-      "paragraphs": [
-        "Your Uninstaller is the world's most popular uninstaller utility to manage all programs installed on your computer. It supports Windows 11 (32 and 64bit) and features a straightforward, clean interface.",
-        "Your Uninstaller works the way you think, making it easier to uninstall programs quickly, efficiently, and ultimately. With an advanced system scanning algorithm, Your Uninstaller! can easily remove any program installed on your computer - entirely, no trace left.",
-        "Your Uninstaller also manages applications installed on your PC; you can lock applications from accident removal, change default icons, write comments, save registration keys, and always know newly installed programs.",
-        "Uninstalling programs has never been this easy: right-click on an icon on the desktop and select uninstall; it will be removed, no more actions. Try all the capabilities of Your Uninstaller!"
-      ]
-    },
+  "description": {
+    "title": "Why Choose Your Uninstaller?",
+    "callout": "Right-click any desktop icon and select uninstall - it's that simple!",
+    "paragraphs": [
+      "Your Uninstaller is the world's most popular uninstaller utility to manage all programs installed on your computer. It supports Windows 11 (32 and 64bit) and features a straightforward, clean interface.",
+      "Your Uninstaller works the way you think, making it easier to uninstall programs quickly, efficiently, and ultimately. With an advanced system scanning algorithm, Your Uninstaller! can easily remove any program installed on your computer - entirely, no trace left.",
+      "Your Uninstaller also manages applications installed on your PC; you can lock applications from accident removal, change default icons, write comments, save registration keys, and always know newly installed programs.",
+      "Uninstalling programs has never been this easy: right-click on an icon on the desktop and select uninstall; it will be removed, no more actions. Try all the capabilities of Your Uninstaller!"
+    ]
+  },
   "supportContent": {
     "title": "CONTACT AND SUPPORT – Your Uninstaller! 7",
     "intro": [
@@ -379,7 +379,7 @@
   },
   "deliveryContent": {
     "title": "Delivery Policy",
-    "body": "\n# Delivery Policy\n### 1. Scope\nThis Delivery Policy (\"Policy\") applies to all customers who purchase licenses or downloads of **\"Your Uninstaller\"** via our website.\n\n### 2. Delivery Method\n- Upon successful payment and order confirmation, the software will be delivered electronically.\n- The customer will receive an email containing a download link (or license key / activation instructions), enabling immediate access to the product.\n- No physical media (CD/USB) will be shipped unless explicitly specified.\n\n### 3. Timing of Delivery\n- Delivery (i.e. email with download link / license) is typically initiated within **5 minutes** of payment confirmation.\n- In rare cases (e.g. payment system delays or manual review), delivery may take up to **24 hours**.\n- If you do not receive the delivery email within the expected timeframe, please contact our support team (see Section 8).\n\n### 4. License & Activation\n- For licensed copies, the email will include instructions for activation (e.g. license key, account instructions).\n- Use of the software is subject to our **License Agreement / End-User License Terms**.\n\n### 5. Updates and Upgrades\n- Once delivered, the customer is entitled to download any minor updates or patches for the same major release free of charge (e.g. from version 5.1 to 5.2).\n- Major upgrades (e.g. from version 5.1 to version 6.0) may require the purchase of a separate license or upgrade fee.\n\n### 6. Refunds, Returns & Cancellations\n- While digital licenses are generally non-returnable, we provide a **30-day money-back guarantee** to ensure your satisfaction.\n- If you encounter technical issues or are not satisfied, you may request a refund within **30 days** of purchase, subject to the conditions in our Refund Policy.\n- To request a refund, please contact our support team with your order details. Upon refund approval, you must uninstall the software and destroy all copies of the license key.\n\n### 7. Delivery Issues\n- If the delivery email is not received (e.g. due to spam filters), the customer is responsible for checking spam/junk mail and providing a valid email address.\n- If requested, we will resend the download link or license key.\n- We do not assume liability for delays caused by external factors (e.g. email provider, internet outage).\n\n### 8. Support & Contact Information\nIf you experience any issue with delivery, or have not received your software within the stated timeframe, please contact our support team:\n\nEmail: **support@ursoftware.com**\nSubject line: \"Delivery Issue – Your Uninstaller\"\n\nPlease include your order number, date of purchase, and the email address used for purchase.\n\n### 9. Changes to This Policy\nWe reserve the right to modify this Delivery Policy at any time. The latest version will always be available on our website. Changes will apply to new purchases from the date the revised policy is posted."
+    "body": "\n# Delivery Policy\n### 1. Scope\nThis Delivery Policy (\"Policy\") applies to all customers who purchase licenses or downloads of **\"Your Uninstaller\"** via our website.\n\n### 2. Delivery Method\n- Upon successful payment and order confirmation, the software will be delivered electronically.\n- The customer will receive an email containing a download link (or license key / activation instructions), enabling immediate access to the product.\n- No physical media (CD/USB) will be shipped unless explicitly specified.\n\n### 3. Timing of Delivery\n- Delivery (i.e. email with download link / license) is typically initiated within **5 minutes** of payment confirmation.\n- In rare cases (e.g. payment system delays or manual review), delivery may take up to **24 hours**.\n- If you do not receive the delivery email within the expected timeframe, please contact our support team (see Sections 8).\n\n### 4. License & Activation\n- For licensed copies, the email will include instructions for activation (e.g. license key, account instructions).\n- Use of the software is subject to our **License Agreement / End-User License Terms**.\n\n### 5. Updates and Upgrades\n- Once delivered, the customer is entitled to download any minor updates or patches for the same major release free of charge (e.g. from version 5.1 to 5.2).\n- Major upgrades (e.g. from version 5.1 to version 6.0) may require the purchase of a separate license or upgrade fee.\n\n### 6. Refunds, Returns & Cancellations\n- While digital licenses are generally non-returnable, we provide a **30-day money-back guarantee** to ensure your satisfaction.\n- If you encounter technical issues or are not satisfied, you may request a refund within **30 days** of purchase, subject to the conditions in our Refund Policy.\n- To request a refund, please contact our support team with your order details. Upon refund approval, you must uninstall the software and destroy all copies of the license key.\n\n### 7. Delivery Issues\n- If the delivery email is not received (e.g. due to spam filters), the customer is responsible for checking spam/junk mail and providing a valid email address.\n- If requested, we will resend the download link or license key.\n- We do not assume liability for delays caused by external factors (e.g. email provider, internet outage).\n\n### 8. Support & Contact Information\nIf you experience any issue with delivery, or have not received your software within the stated timeframe, please contact our support team:\n\nEmail: **support@ursoftware.com**\nSubject line: \"Delivery Issue – Your Uninstaller\"\n\nPlease include your order number, date of purchase, and the email address used for purchase.\n\n### 9. Changes to This Policy\nWe reserve the right to modify this Delivery Policy at any time. The latest version will always be available on our website. Changes will apply to new purchases from the date the revised policy is posted."
   },
   "notFoundContent": {
     "title": "404 Not Found",
@@ -617,104 +617,29 @@
   "integrationAlt": {
     "dotted": "Dotted"
   },
-  "siteMetadata": {
-    "home": {
-      "title": "Your Uninstaller! - Uninstall Software, any unwanted app Completely.",
-      "description": "Your Uninstaller! - Free download, award winning uninstaller suite to remove programs, uninstall software completely and easily. Remove every trace of unwanted programs.",
-      "keywords": [
-        "Your Uninstaller!",
-        "uninstall",
-        "uninstaller",
-        "uninstall program",
-        "uninstaller software",
-        "add remove",
-        "add remove programs",
-        "cleanup",
-        "registry",
-        "Windows"
-      ],
-      "openGraph": {
-        "url": "https://www.ursoftware.com/",
-        "siteName": "Your Uninstaller!",
-        "image": "/images/logo/site-logo.png"
-      }
+  "blogData": [
+    {
+      "_id": 1,
+      "mainImage": "/images/blog/blog-01.png",
+      "title": "Free advertising for your online business",
+      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
+      "slug": "blog-details"
     },
-    "features": {
-      "title": "Features - Your Uninstaller! 7",
-      "description": "Core features of Your Uninstaller! 7"
+    {
+      "_id": 2,
+      "mainImage": "/images/blog/blog-02.png",
+      "title": "9 simple ways to improve your design skills",
+      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
+      "slug": "blog-details"
     },
-    "order": {
-      "title": "Order - Your Uninstaller! 7",
-      "description": "Choose a license and download instantly. Safe uninstall with deep system cleanup included."
-    },
-    "support": {
-      "title": "Support - Your Uninstaller! 7",
-      "description": "This is Support page for Your Uninstaller! 7"
-    },
-    "privacy": {
-      "title": "Privacy Policy - Your Uninstaller! 7",
-      "description": "Privacy Policy of URSoft, Inc."
-    },
-    "refundPolicy": {
-      "title": "Refund Policy - Your Uninstaller! 7",
-      "description": "30-day money-back guarantee and refund instructions."
-    },
-    "deliveryPolicy": {
-      "title": "Delivery Policy - Your Uninstaller! 7",
-      "description": "Electronic delivery timing, license activation and support."
-    },
-    "docs": {
-      "title": "Docs Page - Solid SaaS Boilerplate",
-      "description": "This is Docs page for Solid Pro"
-    },
-    "download": {
-      "title": "Free Download - Your Uninstaller! 7",
-      "description": "Download Your Uninstaller! 7 - the most powerful uninstaller for Windows. 21-day free trial with all features."
-    },
-    "blogDetails": {
-      "title": "Blog Details - Your Uninstaller! 7",
-      "description": "Details of a blog post for Your Uninstaller! 7"
+    {
+      "_id": 2,
+      "mainImage": "/images/blog/blog-03.png",
+      "title": "Tips to quickly improve your coding speed.",
+      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
+      "slug": "blog-details"
     }
-  },
-  "revSliderContent": {
-    "title": "Your Uninstaller! 7",
-    "subtitle": "Uninstall any unwanted app \ncompletely!",
-    "downloadLabel": "DOWNLOAD NOW",
-    "downloadUrl": "https://www.ursoftware.com/dlds/yusetup.exe",
-    "versionInfo": "Supports Windows 11/10/8/7/Vista/XP",
-    "laptopSrc": "/images/hero/hero2_1920_q90.webp",
-    "laptopAlt": "Your Uninstaller! 7 - Windows Uninstaller Software"
-  },
-  "site": {
-    "url": "https://www.ursoftware.com"
-  },
-  "auth": {
-    "signin": {
-      "title": "Sign In to Your Account",
-      "emailLabel": "Email",
-      "emailPlaceholder": "Enter your email",
-      "passwordLabel": "Password",
-      "passwordPlaceholder": "Enter your password",
-      "forgotPassword": "Forgot password?",
-      "rememberMe": "Remember me",
-      "buttonText": "Sign In",
-      "signupLink": "Don't have an account? Sign Up"
-    },
-    "signup": {
-      "title": "Create a New Account",
-      "nameLabel": "Full Name",
-      "namePlaceholder": "Enter your full name",
-      "emailLabel": "Email",
-      "emailPlaceholder": "Enter your email",
-      "passwordLabel": "Password",
-      "passwordPlaceholder": "Enter your password",
-      "confirmPasswordLabel": "Confirm Password",
-      "confirmPasswordPlaceholder": "Confirm your password",
-      "agreeTerms": "I agree to the Terms and Conditions",
-      "buttonText": "Sign Up",
-      "signinLink": "Already have an account? Sign In"
-    }
-  },
+  ],
   "siteMetadata": {
     "home": {
       "title": "Your Uninstaller! - Uninstall Software, any unwanted app Completely.",
@@ -771,12 +696,29 @@
     },
     "auth": {
       "signin": {
-        "title": "Login - Your Uninstaller! 7",
-        "description": "Login to your account for Your Uninstaller! 7"
+        "title": "Sign In to Your Account",
+        "emailLabel": "Email",
+        "emailPlaceholder": "Enter your email",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Enter your password",
+        "forgotPassword": "Forgot password?",
+        "rememberMe": "Remember me",
+        "buttonText": "Sign In",
+        "signupLink": "Don't have an account? Sign Up"
       },
       "signup": {
-        "title": "Register - Your Uninstaller! 7",
-        "description": "Register for a new account for Your Uninstaller! 7"
+        "title": "Create a New Account",
+        "nameLabel": "Full Name",
+        "namePlaceholder": "Enter your full name",
+        "emailLabel": "Email",
+        "emailPlaceholder": "Enter your email",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Enter your password",
+        "confirmPasswordLabel": "Confirm Password",
+        "confirmPasswordPlaceholder": "Confirm your password",
+        "agreeTerms": "I agree to the Terms and Conditions",
+        "buttonText": "Sign Up",
+        "signinLink": "Already have an account? Sign In"
       }
     },
     "installed": {
@@ -786,6 +728,14 @@
     "update": {
       "title": "New Version Available - Your Uninstaller! 7",
       "description": "Download the latest version of Your Uninstaller! 7"
+    },
+    "blogDetails": {
+      "title": "Blog Details - Your Uninstaller! 7",
+      "description": "Read our latest blog posts."
+    },
+    "blog": {
+      "title": "Blog - Your Uninstaller! 7",
+      "description": "Read our latest blog posts."
     }
   },
   "revSliderContent": {

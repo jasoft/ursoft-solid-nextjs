@@ -42,14 +42,12 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
       <body suppressHydrationWarning className={`dark:bg-black ${inter.className}`}>
         <Providers>
-          {/* Components that were previously wrapped by ContentProvider need to either receive props
-              or call getMessages themselves. For this layout, we'll assume they will be updated. */}
           <Lines />
           <LanguageRedirect />
-          <Header /> {/* Header will need to fetch its own content or receive props */}
+          <Header headerMenu={messages.headerMenu} headerContent={messages.headerContent} />
           {children}
           <Footer footerCompanyDescription={messages.footerCompanyDescription} footerContent={messages.footerContent} />
-          <ScrollToTop />
+          <ScrollToTop accessibilityTexts={messages.accessibilityTexts} />
         </Providers>
       </body>
     </html>

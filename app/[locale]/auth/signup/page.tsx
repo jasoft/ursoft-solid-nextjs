@@ -10,9 +10,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
 
   return {
     title: messages.siteMetadata.auth.signup.title,
@@ -23,12 +24,13 @@ export async function generateMetadata({
 export default async function SignupPage({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
   return (
     <>
-      <Signup signupTexts={messages.auth.signup} />
+      <Signup signupTexts={messages.siteMetadata.auth.signup} />
     </>
   );
 }

@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import { Locale, locales } from "@/i18n";
 import { getMessages } from "@/lib/get-messages";
 import Pricing from "@/components/Pricing";
-import OrderFeatures from "../../../app/(site)/order/OrderFeatures"; // Assuming OrderFeatures is in a specific path
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -11,9 +10,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
 
   return {
     title: messages.siteMetadata.order.title,
@@ -24,9 +24,10 @@ export async function generateMetadata({
 export default async function OrderPage({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
-  const messages = await getMessages(params.locale);
+  const { locale } = await params;
+  const messages = await getMessages(locale);
   return (
     <main className="page-main-bg">
       <Pricing
@@ -36,7 +37,6 @@ export default async function OrderPage({
         pricingOptions={messages.pricingOptions}
         pricingImageAlt={messages.pricingImageAlt}
       />
-      <OrderFeatures orderFeatures={messages.orderFeatures} />
     </main>
   );
 }
