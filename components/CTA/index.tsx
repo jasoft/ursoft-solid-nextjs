@@ -90,4 +90,3 @@ const CTA = ({ ctaData, ctaAlt, updateContent }: { ctaData: any, ctaAlt: any, up
 };
 
 export default CTA;
-"

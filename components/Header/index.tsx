@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { useContent } from "@/app/context/ContentContext";
@@ -33,7 +33,7 @@ const Header = () => {
       <header className="relative z-50 w-full bg-white py-4 dark:bg-black">
         <div className="max-w-c-1390 relative mx-auto items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
           <div className="flex w-full items-center justify-between xl:w-1/4">
-            <a href="/">
+            <Link href={`/${(useParams()?.locale as string) || "zh"}/`}>
               <Image
                 src="/images/logo/site-logo.png"
                 alt={headerContent.logoAlt}
@@ -50,7 +50,7 @@ const Header = () => {
                 className="dark:hidden h-10 w-auto"
                 priority
               />
-            </a>
+            </Link>
 
             {/* <!-- Hamburger Toggle BTN --> */}
             <button
@@ -101,20 +101,26 @@ const Header = () => {
           >
             <nav>
               <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
-                {headerMenu.map((menuItem, key) => (
-                  <li key={key}>
-                    <Link
-                      href={`${menuItem.path}`}
-                      className={
-                        pathUrl === menuItem.path
-                          ? "text-primary hover:text-primary"
-                          : "hover:text-primary"
-                      }
-                    >
-                      {menuItem.title}
-                    </Link>
-                  </li>
-                ))}
+                {headerMenu.map((menuItem, key) => {
+                  const locale = (useParams()?.locale as string) || "zh";
+                  const href = `/${locale}${menuItem.path === "/" ? "" : menuItem.path}`;
+                  const isActive = pathUrl === href || (menuItem.path === "/" && pathUrl === `/${locale}`);
+
+                  return (
+                    <li key={key}>
+                      <Link
+                        href={href}
+                        className={
+                          isActive
+                            ? "text-primary hover:text-primary"
+                            : "hover:text-primary"
+                        }
+                      >
+                        {menuItem.title}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
           </div>
@@ -131,7 +137,7 @@ const Header = () => {
       >
         <div className="max-w-c-1390 relative mx-auto items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
           <div className="flex w-full items-center justify-between xl:w-1/4">
-            <a href="/">
+            <Link href={`/${(useParams()?.locale as string) || "zh"}/`}>
               <Image
                 src="/images/logo/site-logo.png"
                 alt={headerContent.logoAlt}
@@ -148,7 +154,7 @@ const Header = () => {
                 className="dark:hidden h-8 w-auto"
                 loading="lazy"
               />
-            </a>
+            </Link>
 
             {/* <!-- Hamburger Toggle BTN --> */}
             <button
@@ -200,20 +206,26 @@ const Header = () => {
           >
             <nav>
               <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
-                {headerMenu.map((menuItem, key) => (
-                  <li key={key}>
-                    <Link
-                      href={`${menuItem.path}`}
-                      className={
-                        pathUrl === menuItem.path
-                          ? "text-primary hover:text-primary"
-                          : "hover:text-primary"
-                      }
-                    >
-                      {menuItem.title}
-                    </Link>
-                  </li>
-                ))}
+                {headerMenu.map((menuItem, key) => {
+                  const locale = (useParams()?.locale as string) || "zh";
+                  const href = `/${locale}${menuItem.path === "/" ? "" : menuItem.path}`;
+                  const isActive = pathUrl === href || (menuItem.path === "/" && pathUrl === `/${locale}`);
+
+                  return (
+                    <li key={key}>
+                      <Link
+                        href={href}
+                        className={
+                          isActive
+                            ? "text-primary hover:text-primary"
+                            : "hover:text-primary"
+                        }
+                      >
+                        {menuItem.title}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
           </div>

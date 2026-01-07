@@ -158,4 +158,3 @@ const About = ({ importantFeatures }: { importantFeatures: any[] }) => {
 };
 
 export default About;
-"

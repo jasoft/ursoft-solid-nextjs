@@ -124,4 +124,3 @@ const Pricing = ({ pricingHeader, pricingOptions, pricingLabels, pricingIntro, p
 };
 
 export default Pricing;
-"

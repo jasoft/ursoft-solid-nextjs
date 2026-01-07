@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { notFoundContent, headerMenu } from "@/app/content";
 
-export default function ErrorView() {
+export default function ErrorView({ notFoundContent }: { notFoundContent: any }) {
   return (
     <section className="overflow-hidden pb-25 pt-45 lg:pb-32.5 lg:pt-50 xl:pb-37.5 xl:pt-55">
       <div className="animate_top mx-auto max-w-[518px] text-center">
@@ -23,7 +22,7 @@ export default function ErrorView() {
           href="/"
           className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
         >
-          {headerMenu.find((m) => m.path === "/")?.title}
+          {notFoundContent.homeButtonText}
           <svg
             className="fill-white"
             width="14"

@@ -72,4 +72,3 @@ const Integration = ({ integrationHeader, integrationIcons, integrationAlt }: { 
 };
 
 export default Integration;
-"

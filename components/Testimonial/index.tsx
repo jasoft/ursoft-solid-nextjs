@@ -82,4 +82,3 @@ const Testimonial = ({ testimonialHeader, testimonialData }: { testimonialHeader
 };
 
 export default Testimonial;
-"

@@ -31,11 +31,12 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: Locale }; // Use Locale type and direct access, as generateStaticParams makes it non-Promise
+  params: Promise<{ locale: Locale }>; // params is a Promise in newer Next.js versions
 }) {
-  const locale = locales.includes(params.locale) ? params.locale : defaultLocale;
+  const { locale: resolvedLocale } = await params;
+  const locale = locales.includes(resolvedLocale) ? resolvedLocale : defaultLocale;
   // In this SSG approach, getMessages is called per page, not per layout
-  // const messages = await getMessages(locale); // No longer needed here if passed via props or called in children
+  const messages = await getMessages(locale); // No longer needed here if passed via props or called in children
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -47,7 +48,7 @@ export default async function LocaleLayout({
           <LanguageRedirect />
           <Header /> {/* Header will need to fetch its own content or receive props */}
           {children}
-          <Footer /> {/* Footer will need to fetch its own content or receive props */}
+          <Footer footerCompanyDescription={messages.footerCompanyDescription} footerContent={messages.footerContent} />
           <ScrollToTop />
         </Providers>
       </body>

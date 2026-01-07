@@ -97,4 +97,3 @@ const FunFact = ({ funFactData, funFactHeader, funFactAlt }: { funFactData: any[
 };
 
 export default FunFact;
-"

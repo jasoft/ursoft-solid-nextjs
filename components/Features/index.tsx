@@ -36,4 +36,3 @@ const Feature = ({ featuresSection, featuresData }: { featuresSection: any, feat
 };
 
 export default Feature;
-"

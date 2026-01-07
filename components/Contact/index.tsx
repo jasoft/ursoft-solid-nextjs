@@ -137,4 +137,3 @@ const Contact = ({ contactTexts, funFactAlt }: { contactTexts: any, funFactAlt: 
 };
 
 export default Contact;
-"
