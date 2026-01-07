@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ["latin"] });
 // Metadata will be generated dynamically per page/layout via getMessages
 // Temporarily keep a placeholder or remove if not needed at this level
 // export const metadata: Metadata = {
-//   metadataBase: new URL(site.url),
+//   // This will be overridden by page-level generateMetadata
 // };
 
 export const dynamicParams = false;
