@@ -670,10 +670,18 @@
       "title": "文档页面 - Solid SaaS Boilerplate",
       "description": "这是 Solid Pro 的文档页面"
     },
-    "download": {
-      "title": "免费下载 - Your Uninstaller! 7",
-      "description": "下载 Your Uninstaller! 7 - Windows 最强大的卸载程序。包含所有功能的 21 天免费试用。"
-    },
+          "download": {
+            "title": "免费下载 - Your Uninstaller! 7",
+            "description": "下载 Your Uninstaller! 7 - Windows 最强大的卸载程序。包含所有功能的 21 天免费试用。"
+          },
+          "installed": {
+            "title": "感谢您安装 Your Uninstaller! 7",
+            "description": "Your Uninstaller! 7 新用户提示和技巧"
+          },
+          "update": {
+            "title": "新版本可用 - Your Uninstaller! 7",
+            "description": "下载最新版本的 Your Uninstaller! 7"
+          },
     "blogDetails": {
       "title": "博客详情 - Your Uninstaller! 7",
       "description": "Your Uninstaller! 7 博客文章详情"
@@ -931,6 +939,54 @@
       ]
     },
     "body": "# Bootstrap 模板\n\n## 示例标题\n\n这是一个示例标题下的段落。它演示了标准 Markdown 内容的显示方式。\n\n### 副标题\n\n副标题下的另一个段落。支持 Markdown 功能，例如**粗体**、*斜体* 和 `代码`。\n\n- 列表项 1\n- 列表项 2\n\n```javascript\n// 代码块示例\nconst greet = (name) => {\n  console.log(`Hello, ${name}!`);\n};\n\ngreet('World');\n```\n\n"
+  },
+  "orderFeatures": {
+    "title": "为什么立即订购 Your Uninstaller？",
+    "items": [
+      {
+        "title": "即时交付",
+        "description": "购买后立即通过电子邮件接收您的许可证密钥。",
+        "icon": "/images/order/delivery-icon.svg"
+      },
+      {
+        "title": "安全支付",
+        "description": "所有交易均通过高级加密保护。",
+        "icon": "/images/order/security-icon.svg"
+      },
+      {
+        "title": "30 天退款保证",
+        "description": "不满意？30 天内全额退款，无理由退款。",
+        "icon": "/images/order/guarantee-icon.svg"
+      }
+    ]
+  },
+  "featuresTabContent": {
+    "tabs": [
+      {
+        "id": "tabOne",
+        "title": "简洁用户界面",
+        "subtitle": "直观设计",
+        "description": "我们的软件拥有时尚现代的界面，使用户可以轻松导航并高效执行任务。享受清晰、简洁的控件，带来整洁的体验。",
+        "image": "/images/features/features-light-01.svg",
+        "imageDark": "/images/features/features-dark-01.svg"
+      },
+      {
+        "id": "tabTwo",
+        "title": "基本业务页面",
+        "subtitle": "全面功能",
+        "description": "通过专用页面访问所有重要的业务功能，实现无缝操作。从客户管理到报告，您所需的一切都触手可及。",
+        "image": "/images/features/features-light-02.svg",
+        "imageDark": "/images/features/features-dark-02.svg"
+      },
+      {
+        "id": "tabThree",
+        "title": "全功能集成",
+        "subtitle": "扩展您的能力",
+        "description": "与您现有的工具和服务轻松集成。我们强大的 API 和预构建连接器可确保您的整个生态系统中工作流程顺畅，效率更高。",
+        "image": "/images/features/features-light-03.svg",
+        "imageDark": "/images/features/features-dark-03.svg"
+      }
+    ]
   },
   "seoRoutes": [
     "/",
