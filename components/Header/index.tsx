@@ -4,13 +4,20 @@ import Link from "next/link";
 import { usePathname, useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const Header = ({ headerMenu, headerContent }: { headerMenu: any, headerContent: any }) => {
+const Header = ({
+  headerMenu,
+  headerContent,
+}: {
+  headerMenu: any;
+  headerContent: any;
+}) => {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
 
   const pathUrl = usePathname();
+  const params = useParams();
+  const locale = (params?.locale as string) || "zh";
 
-  // Sticky menu - 滚动超过header高度后显示sticky header
   const handleStickyMenu = () => {
     if (window.scrollY >= 100) {
       setStickyMenu(true);
@@ -26,17 +33,16 @@ const Header = ({ headerMenu, headerContent }: { headerMenu: any, headerContent:
 
   return (
     <>
-      {/* 原始 Header - 静态定位，会被滚出屏幕 */}
       <header className="relative z-50 w-full bg-white py-4 dark:bg-black">
         <div className="max-w-c-1390 relative mx-auto items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
           <div className="flex w-full items-center justify-between xl:w-1/4">
-            <Link href={`/${(useParams()?.locale as string) || "zh"}/`}>
+            <Link href={`/${locale}/`}>
               <Image
                 src="/images/logo/site-logo.png"
                 alt={headerContent.logoAlt}
                 width={431}
                 height={90}
-                className="hidden dark:block h-10 w-auto"
+                className="hidden h-10 w-auto dark:block"
                 priority
               />
               <Image
@@ -44,12 +50,11 @@ const Header = ({ headerMenu, headerContent }: { headerMenu: any, headerContent:
                 alt={headerContent.logoAlt}
                 width={431}
                 height={90}
-                className="dark:hidden h-10 w-auto"
+                className="h-10 w-auto dark:hidden"
                 priority
               />
             </Link>
 
-            {/* <!-- Hamburger Toggle BTN --> */}
             <button
               aria-label={headerContent.hamburgerAriaLabel}
               className="block xl:hidden"
@@ -89,7 +94,6 @@ const Header = ({ headerMenu, headerContent }: { headerMenu: any, headerContent:
             </button>
           </div>
 
-          {/* Nav Menu */}
           <div
             className={`invisible h-0 w-full items-center justify-between xl:visible xl:flex xl:h-auto xl:w-full ${
               navigationOpen &&
@@ -99,9 +103,12 @@ const Header = ({ headerMenu, headerContent }: { headerMenu: any, headerContent:
             <nav>
               <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
                 {headerMenu.map((menuItem, key) => {
-                  const locale = (useParams()?.locale as string) || "zh";
-                  const href = `/${locale}${menuItem.path === "/" ? "" : menuItem.path}`;
-                  const isActive = pathUrl === href || (menuItem.path === "/" && pathUrl === `/${locale}`);
+                  const href = `/${locale}${
+                    menuItem.path === "/" ? "" : menuItem.path
+                  }`;
+                  const isActive =
+                    pathUrl === href ||
+                    (menuItem.path === "/" && pathUrl === `/${locale}`);
 
                   return (
                     <li key={key}>
@@ -124,7 +131,6 @@ const Header = ({ headerMenu, headerContent }: { headerMenu: any, headerContent:
         </div>
       </header>
 
-      {/* Sticky Header - 固定定位，滚动后从顶部滑入 */}
       <header
         className={`fixed top-0 left-0 z-99999 w-full bg-white/80 py-3 shadow-md backdrop-blur-sm transition-all duration-300 dark:bg-black/80 ${
           stickyMenu
@@ -134,13 +140,13 @@ const Header = ({ headerMenu, headerContent }: { headerMenu: any, headerContent:
       >
         <div className="max-w-c-1390 relative mx-auto items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
           <div className="flex w-full items-center justify-between xl:w-1/4">
-            <Link href={`/${(useParams()?.locale as string) || "zh"}/`}>
+            <Link href={`/${locale}/`}>
               <Image
                 src="/images/logo/site-logo.png"
                 alt={headerContent.logoAlt}
                 width={431}
                 height={90}
-                className="hidden dark:block h-8 w-auto"
+                className="hidden h-8 w-auto dark:block"
                 loading="lazy"
               />
               <Image
@@ -148,12 +154,11 @@ const Header = ({ headerMenu, headerContent }: { headerMenu: any, headerContent:
                 alt={headerContent.logoAlt}
                 width={431}
                 height={90}
-                className="dark:hidden h-8 w-auto"
+                className="h-8 w-auto dark:hidden"
                 loading="lazy"
               />
             </Link>
 
-            {/* <!-- Hamburger Toggle BTN --> */}
             <button
               aria-label={headerContent.hamburgerAriaLabel}
               className="block xl:hidden"
@@ -191,10 +196,8 @@ const Header = ({ headerMenu, headerContent }: { headerMenu: any, headerContent:
                 </span>
               </span>
             </button>
-            {/* <!-- Hamburger Toggle BTN --> */}
           </div>
 
-          {/* Nav Menu Start   */}
           <div
             className={`invisible h-0 w-full items-center justify-between xl:visible xl:flex xl:h-auto xl:w-full ${
               navigationOpen &&
@@ -204,9 +207,12 @@ const Header = ({ headerMenu, headerContent }: { headerMenu: any, headerContent:
             <nav>
               <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
                 {headerMenu.map((menuItem, key) => {
-                  const locale = (useParams()?.locale as string) || "zh";
-                  const href = `/${locale}${menuItem.path === "/" ? "" : menuItem.path}`;
-                  const isActive = pathUrl === href || (menuItem.path === "/" && pathUrl === `/${locale}`);
+                  const href = `/${locale}${
+                    menuItem.path === "/" ? "" : menuItem.path
+                  }`;
+                  const isActive =
+                    pathUrl === href ||
+                    (menuItem.path === "/" && pathUrl === `/${locale}`);
 
                   return (
                     <li key={key}>

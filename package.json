@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "npx --yes serve out -l 3000",
     "optimize:images": "node scripts/optimize-images.mjs",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "framer-motion": "^12.0.6",
@@ -27,9 +27,9 @@
     "@types/node": "^20.8.9",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
-    "baseline-browser-mapping": "^2.8.32",
-    "eslint": "^9.24.0",
-    "eslint-config-next": "16.0.5",
+    "baseline-browser-mapping": "^2.9.12",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.0.3",
     "imagemin": "^9.0.1",
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-pngquant": "^10.0.0",

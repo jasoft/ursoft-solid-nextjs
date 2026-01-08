@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import NewsletterEmbed from "@/components/NewsletterEmbed";
 
 const Footer = ({ footerCompanyDescription, footerContent }: { footerCompanyDescription: string, footerContent: any }) => {
@@ -29,7 +30,7 @@ const Footer = ({ footerCompanyDescription, footerContent }: { footerCompanyDesc
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-                <a href="/" className="relative">
+                <Link href="/" className="relative">
                   <Image
                     width={150}
                     height={31}
@@ -44,7 +45,7 @@ const Footer = ({ footerCompanyDescription, footerContent }: { footerCompanyDesc
                     alt={footerContent.logoAlt}
                     className="hidden dark:block"
                   />
-                </a>
+                </Link>
 
                 <p className="mt-5 mb-10">{footerCompanyDescription}</p>
               </motion.div>

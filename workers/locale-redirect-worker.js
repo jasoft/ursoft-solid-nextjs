@@ -145,7 +145,7 @@ function hasLocalePrefix(pathname) {
 /**
  * Main request handler
  */
-export default {
+const worker = {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     const pathname = url.pathname;
@@ -191,3 +191,5 @@ export default {
     return fetch(request);
   },
 };
+
+export default worker;

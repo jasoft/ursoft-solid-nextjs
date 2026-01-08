@@ -1,19 +1,28 @@
 "use client";
 import { useEffect, useState } from "react";
 
-
-export default function ScrollToTop({ accessibilityTexts }: { accessibilityTexts?: any }) {
+export default function ScrollToTop({
+  accessibilityTexts,
+}: {
+  accessibilityTexts?: any;
+}) {
   // Fallback if not provided, though ideally it should be provided
-  const texts = accessibilityTexts || { scrollToTopAria: "Scroll to top", scrollToTopSrOnly: "Scroll to top" };
+  const texts = accessibilityTexts || {
+    scrollToTopAria: "Scroll to top",
+    scrollToTopSrOnly: "Scroll to top",
+  };
   const [isVisible, setIsVisible] = useState(false);
 
   // Top: 0 takes us all the way back to the top of the page
   // Behavior: smooth keeps it smooth!
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+    return () => {};
   };
 
   useEffect(() => {
@@ -32,16 +41,16 @@ export default function ScrollToTop({ accessibilityTexts }: { accessibilityTexts
   }, []);
 
   return (
-    <div className="z-99 fixed bottom-8 right-8">
+    <div suppressHydrationWarning className="fixed right-8 bottom-8 z-99">
       {isVisible && (
-          <div
-            onClick={scrollToTop}
-            aria-label={texts.scrollToTopAria}
-            className="hover:shadow-signUp rounded-xs bg-primary hover:bg-primary/80 flex h-10 w-10 cursor-pointer items-center justify-center text-white shadow-md transition duration-300 ease-in-out"
-          >
-            <span className="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
-            <span className="sr-only">{texts.scrollToTopSrOnly}</span>
-          </div>
+        <div
+          onClick={scrollToTop}
+          aria-label={texts.scrollToTopAria}
+          className="hover:shadow-signUp bg-primary hover:bg-primary/80 flex h-10 w-10 cursor-pointer items-center justify-center rounded-xs text-white shadow-md transition duration-300 ease-in-out"
+        >
+          <span className="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"></span>
+          <span className="sr-only">{texts.scrollToTopSrOnly}</span>
+        </div>
       )}
     </div>
   );

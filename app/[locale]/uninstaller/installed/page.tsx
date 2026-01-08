@@ -32,9 +32,9 @@ export default async function InstalledPage({
   const mdx = messages.installedMarkdown;
 
   return (
-    <main className="pb-20 pt-20 page-main-bg">
-      <div className="mx-auto mb-10 max-w-c-1315 px-4 md:px-8 xl:px-0">
-        <div className="relative z-1 mb-10 flex w-full flex-col justify-between rounded-md border border-stroke bg-white p-6 shadow-solid-13 dark:border-strokedark dark:bg-blacksection md:flex-row md:items-center">
+    <main className="page-main-bg pt-20 pb-20">
+      <div className="max-w-c-1315 mx-auto mb-10 px-4 md:px-8 xl:px-0">
+        <div className="border-stroke shadow-solid-13 dark:border-strokedark dark:bg-blacksection relative z-1 mb-10 flex w-full flex-col justify-between rounded-md border bg-white p-6 md:flex-row md:items-center">
           <div className="flex w-full items-center gap-6">
             <div className="h-10 w-10 flex-shrink-0">
               <Image
@@ -45,11 +45,13 @@ export default async function InstalledPage({
               />
             </div>
             <div className="w-full">
-              <p className="text-black dark:text-white">
-                {messages.installedContent.tips.map((tip: string, i: number) => (
-                  <li key={i}>{tip}</li>
-                ))}
-              </p>
+              <ul className="list-disc pl-5 text-black dark:text-white">
+                {messages.installedContent.tips.map(
+                  (tip: string, i: number) => (
+                    <li key={i}>{tip}</li>
+                  ),
+                )}
+              </ul>
             </div>
           </div>
         </div>
