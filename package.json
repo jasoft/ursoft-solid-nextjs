@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "npx --yes serve out -l 3000",
     "optimize:images": "node scripts/optimize-images.mjs",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit",
+    "check": "npm run lint && npm run type-check && node scripts/check-i18n-consistency.js && next build"
   },
   "dependencies": {
     "framer-motion": "^12.0.6",
