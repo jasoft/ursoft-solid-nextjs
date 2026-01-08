@@ -950,5 +950,41 @@
     "title": "Наш блог",
     "subtitle": "Новости, советы и истории",
     "description": "Читайте последние статьи о безопасности, оптимизации и обслуживании ПК."
+  },
+  "headerMenu": [
+    {
+      "id": 1,
+      "title": "Главная",
+      "newTab": false,
+      "path": "/"
+    },
+    {
+      "id": 2,
+      "title": "Возможности",
+      "newTab": false,
+      "path": "/features"
+    },
+    {
+      "id": 2.05,
+      "title": "Скачать",
+      "newTab": false,
+      "path": "/download"
+    },
+    {
+      "id": 2.06,
+      "title": "Купить",
+      "newTab": false,
+      "path": "/order"
+    },
+    {
+      "id": 4,
+      "title": "Поддержка",
+      "newTab": false,
+      "path": "/support"
+    }
+  ],
+  "headerContent": {
+    "logoAlt": "логотип",
+    "hamburgerAriaLabel": "Переключатель меню"
   }
 }
