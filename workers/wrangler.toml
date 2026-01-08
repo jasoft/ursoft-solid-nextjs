@@ -6,7 +6,7 @@ compatibility_date = "2024-01-01"
 pattern = "staging.ursoftware.com/*"
 zone_name = "ursoftware.com"
 
-# 生产环境路由 (已启用)
+# 生产环境路由 (Pages 构建已完成，正式启用)
 [[routes]]
 pattern = "www.ursoftware.com/*"
 zone_name = "ursoftware.com"
