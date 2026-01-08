@@ -4,12 +4,18 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-const About = ({ importantFeatures }: { importantFeatures: any[] }) => {
+const About = ({
+  importantFeatures,
+  aboutCtaLabel,
+}: {
+  importantFeatures: any[];
+  aboutCtaLabel: string;
+}) => {
   return (
     <>
       {/* <!-- ===== Important Feature #1 Start ===== --> */}
-      <section className="overflow-hidden pb-20 lg:pb-25 xl:pb-30 pt-8">
-        <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
+      <section className="overflow-hidden pt-8 pb-20 lg:pb-25 xl:pb-30">
+        <div className="max-w-c-1235 mx-auto px-4 md:px-8 xl:px-0">
           <div className="flex items-center gap-8 lg:gap-32.5">
             <motion.div
               variants={{
@@ -29,7 +35,7 @@ const About = ({ importantFeatures }: { importantFeatures: any[] }) => {
               viewport={{ once: true }}
               className="animate_left mx-auto hidden md:block"
             >
-              <div className="inline-block overflow-hidden rounded-2xl bg-white p-3 md:p-4 shadow-solid-4 border border-stroke dark:border-strokedark dark:bg-blacksection">
+              <div className="shadow-solid-4 border-stroke dark:border-strokedark dark:bg-blacksection inline-block overflow-hidden rounded-2xl border bg-white p-3 md:p-4">
                 <Image
                   src={importantFeatures[0].image}
                   alt={importantFeatures[0].title}
@@ -58,15 +64,13 @@ const About = ({ importantFeatures }: { importantFeatures: any[] }) => {
               viewport={{ once: true }}
               className="animate_right md:w-1/2"
             >
-              <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
+              <h2 className="xl:text-hero relative mb-6 text-3xl font-bold text-black dark:text-white">
                 {importantFeatures[0].title}
               </h2>
-              <h4 className="font-medium uppercase text-black dark:text-white">
+              <h4 className="font-medium text-black uppercase dark:text-white">
                 {importantFeatures[0].subTitle}
               </h4>
               <p>{importantFeatures[0].description}</p>
-
-
             </motion.div>
           </div>
         </div>
@@ -75,7 +79,7 @@ const About = ({ importantFeatures }: { importantFeatures: any[] }) => {
 
       {/* <!-- ===== Important Feature #2 Start ===== --> */}
       <section>
-        <div className="mx-auto max-w-c-1235 overflow-visible px-4 md:px-8 2xl:px-0">
+        <div className="max-w-c-1235 mx-auto overflow-visible px-4 md:px-8 2xl:px-0">
           <div className="flex items-center gap-8 lg:gap-32.5">
             <motion.div
               variants={{
@@ -95,21 +99,22 @@ const About = ({ importantFeatures }: { importantFeatures: any[] }) => {
               viewport={{ once: true }}
               className="animate_left md:w-1/2"
             >
-              <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
+              <h2 className="xl:text-hero relative mb-6 text-3xl font-bold text-black dark:text-white">
                 {importantFeatures[1].title}
               </h2>
-              <h4 className="font-medium uppercase text-black dark:text-white">
+              <h4 className="font-medium text-black uppercase dark:text-white">
                 {importantFeatures[1].subTitle}
               </h4>
               <p>{importantFeatures[1].description}</p>
               <div>
                 <Link
                   href="/features"
-                  className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
+                  className="group hover:text-primary dark:hover:text-primary mt-7.5 inline-flex items-center gap-2.5 text-black dark:text-white"
                 >
                   <span className="duration-300 group-hover:pr-2">
-                    Learn More
+                    {aboutCtaLabel}
                   </span>
+
                   <svg
                     width="14"
                     height="14"
@@ -139,7 +144,7 @@ const About = ({ importantFeatures }: { importantFeatures: any[] }) => {
               viewport={{ once: true }}
               className="animate_right mx-auto hidden md:block"
             >
-              <div className="relative z-10 inline-block overflow-hidden rounded-2xl bg-white p-3 md:p-4 shadow-solid-4 border border-stroke dark:border-strokedark dark:bg-blacksection">
+              <div className="shadow-solid-4 border-stroke dark:border-strokedark dark:bg-blacksection relative z-10 inline-block overflow-hidden rounded-2xl border bg-white p-3 md:p-4">
                 <Image
                   src={importantFeatures[1].image}
                   alt={importantFeatures[1].title}

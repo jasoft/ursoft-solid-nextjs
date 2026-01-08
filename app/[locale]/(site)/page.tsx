@@ -38,7 +38,11 @@ export async function generateMetadata({
       url: messages.siteMetadata.home.openGraph.url,
       siteName: messages.siteMetadata.home.openGraph.siteName,
       images: [
-        { url: messages.siteMetadata.home.openGraph.image, width: 300, height: 300 },
+        {
+          url: messages.siteMetadata.home.openGraph.image,
+          width: 300,
+          height: 300,
+        },
       ],
       type: "website",
     },
@@ -62,15 +66,45 @@ export default async function Page({
       {/* Each component will now receive its content via props */}
       <RevSliderHero revSliderContent={messages.revSliderContent} />
       <Brands brandData={messages.brandData} />
-      <About importantFeatures={messages.importantFeatures} />
-      <Feature featuresSection={messages.featuresSection} featuresData={messages.featuresData} />
-      <FunFact funFactHeader={messages.funFactHeader} funFactData={messages.funFactData} funFactAlt={messages.funFactAlt} />
-      <Integration integrationHeader={messages.integrationHeader} integrationIcons={messages.integrationIcons} integrationAlt={messages.integrationAlt} />
-      <CTA ctaData={messages.ctaData} ctaAlt={messages.ctaAlt} updateContent={messages.updateContent} />
+      <About
+        importantFeatures={messages.importantFeatures}
+        aboutCtaLabel={messages.aboutCtaLabel}
+      />
+      <Feature
+        featuresSection={messages.featuresSection}
+        featuresData={messages.featuresData}
+      />
+      <FunFact
+        funFactHeader={messages.funFactHeader}
+        funFactData={messages.funFactData}
+        funFactAlt={messages.funFactAlt}
+      />
+      <Integration
+        integrationHeader={messages.integrationHeader}
+        integrationIcons={messages.integrationIcons}
+        integrationAlt={messages.integrationAlt}
+      />
+      <CTA
+        ctaData={messages.ctaData}
+        ctaAlt={messages.ctaAlt}
+        updateContent={messages.updateContent}
+      />
       {/* FAQ is not rendered in original Home, but if it were, it would receive props */}
-      <Testimonial testimonialHeader={messages.testimonialHeader} testimonialData={messages.testimonialData} />
-      <Pricing pricingHeader={messages.pricingHeader} pricingIntro={messages.pricingIntro} pricingLabels={messages.pricingLabels} pricingOptions={messages.pricingOptions} pricingImageAlt={messages.pricingImageAlt} />
-      <Contact contactTexts={messages.contactTexts} funFactAlt={messages.funFactAlt} />
+      <Testimonial
+        testimonialHeader={messages.testimonialHeader}
+        testimonialData={messages.testimonialData}
+      />
+      <Pricing
+        pricingHeader={messages.pricingHeader}
+        pricingIntro={messages.pricingIntro}
+        pricingLabels={messages.pricingLabels}
+        pricingOptions={messages.pricingOptions}
+        pricingImageAlt={messages.pricingImageAlt}
+      />
+      <Contact
+        contactTexts={messages.contactTexts}
+        funFactAlt={messages.funFactAlt}
+      />
     </main>
   );
 }
