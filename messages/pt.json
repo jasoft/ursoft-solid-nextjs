@@ -1,0 +1,892 @@
+{
+  "heroData": {
+    "title": "Your Uninstaller 7",
+    "subtitle": "Desinstale completamente qualquer aplicativo indesejado.",
+    "primaryButton": "Baixar agora",
+    "primaryButtonUrl": "https://www.ursoftware.com/dlds/yusetup.exe",
+    "description": "Compatível com Windows 11. Windows 10. Windows 8. Windows 7. \n\n Versão atual: 7.5.0",
+    "image": "/images/hero/hero2.png"
+  },
+  "featuresSection": {
+    "title": "Recursos",
+    "subtitle": "Recursos principais do Your Uninstaller! 7",
+    "description": "Desinstalação completa, limpeza do registro, controle de inicialização, eliminação de privacidade e varredura profunda — mantenha o Windows limpo, seguro e rápido."
+  },
+  "pricingHeader": {
+    "title": "PLANOS DE PREÇOS",
+    "subtitle": "Licenciamento simples e justo",
+    "description": "Escolha sua licença e baixe instantaneamente. Desinstalação segura com limpeza profunda do sistema incluída."
+  },
+  "pricingIntro": {
+    "claimTitle": "O software de desinstalação de PC mais vendido no mundo",
+    "claimStats": "Confiado por milhões de usuários no mundo inteiro há mais de 20 anos",
+    "bullets": [
+      "Desinstale qualquer aplicativo completamente.",
+      "Limpe o registro e o lixo de disco deixados por outros desinstaladores.",
+      "Limpe profundamente seus dados privados.",
+      "Deixe seu PC mais rápido e seguro!",
+      "Atualize automaticamente para a versão mais recente",
+      "Suporte técnico premium"
+    ],
+    "keyDelivery": "Você receberá um e-mail com sua chave de licença em até 5 minutos após o pagamento.",
+    "instantDeliveryLabel": "Entrega imediata",
+    "guarantee": "Garantia de reembolso de 30 dias!"
+  },
+  "brandData": [
+    {
+      "id": 0.25,
+      "name": "Cliente",
+      "href": "#",
+      "image": "/images/brand/brand-light-01.svg",
+      "imageLight": "/images/brand/brand-dark-01.svg"
+    },
+    {
+      "id": 0.3,
+      "name": "Cliente",
+      "href": "#",
+      "image": "/images/brand/brand-light-02.svg",
+      "imageLight": "/images/brand/brand-dark-02.svg"
+    },
+    {
+      "id": 0.4,
+      "name": "Cliente",
+      "href": "#",
+      "image": "/images/brand/brand-light-03.svg",
+      "imageLight": "/images/brand/brand-dark-03.svg"
+    },
+    {
+      "id": 0.5,
+      "name": "Cliente",
+      "href": "#",
+      "image": "/images/brand/brand-light-04.svg",
+      "imageLight": "/images/brand/brand-dark-04.svg"
+    },
+    {
+      "id": 0.6,
+      "name": "Cliente",
+      "href": "#",
+      "image": "/images/brand/brand-light-05.svg",
+      "imageLight": "/images/brand/brand-dark-05.svg"
+    },
+    {
+      "id": 0.7,
+      "name": "Cliente",
+      "href": "#",
+      "image": "/images/brand/brand-light-06.svg",
+      "imageLight": "/images/brand/brand-dark-06.svg"
+    }
+  ],
+  "pricingImageAlt": {
+    "guarantee": "Garantia"
+  },
+  "importantFeatures": [
+    {
+      "title": "Manter seu PC limpo sempre foi um desafio.",
+      "subTitle": "Agora aqui está a solução. Vários modos de desinstalação tornam possível eliminar cada parte do aplicativo.",
+      "description": "O Your Uninstaller pode escanear todo o sistema em busca de cada vestígio de um aplicativo (o que leva mais tempo) ou chamar o desinstalador nativo. É altamente personalizável.",
+      "image": "/images/important/uninstall_modes-1.png"
+    },
+    {
+      "title": "Encontre todos os vestígios em poucos cliques.",
+      "subTitle": "Com nossos algoritmos avançados de varredura, o Your Uninstaller pode encontrar arquivos de lixo e entradas de registro relacionadas a um aplicativo.",
+      "description": "Ao monitorar e analisar os logs de instalação e o comportamento dos aplicativos, o Your Uninstaller conhece tudo sobre o aplicativo que você deseja remover. Ele faz seu trabalho perfeitamente.",
+      "image": "/images/important/junk_found-1.png"
+    }
+  ],
+  "featuresData": [
+    {
+      "id": 1,
+      "icon": "/images/features/complete-uninstall.svg",
+      "title": "Desinstalação completa",
+      "description": "Desinstale completamente qualquer programa instalado, mesmo os corrompidos. A parte mais empolgante do Your Uninstaller! é erradicar cada aspecto de um programa. Com o Your Uninstaller, é fácil desinstalar qualquer programa instalado — sem deixar rastros."
+    },
+    {
+      "id": 2,
+      "icon": "/images/features/deep-scan.svg",
+      "title": "Varredura profunda do sistema",
+      "description": "Se você instala/desinstala softwares com frequência, inevitavelmente encontrará programas corrompidos. Eles ficam na sua lista de programas e falham quando você tenta eliminá-los. Deixe o Your Uninstaller consertá-los."
+    },
+    {
+      "id": 3,
+      "icon": "/images/features/file-shredder.svg",
+      "title": "Triturador de arquivos seguro",
+      "description": "Após a desinstalação padrão, o Your Uninstaller escaneia o sistema em busca de vestígios relacionados e remove quaisquer artefatos de lixo. Você nem vai perceber que o programa esteve instalado no seu PC."
+    },
+    {
+      "id": 4,
+      "icon": "/images/features/startup-manager.svg",
+      "title": "Gerenciador de inicialização",
+      "description": "Alguns programas são difíceis de remover, incrivelmente antigos e não conformes. Eles não são problema para o Your Uninstaller!"
+    },
+    {
+      "id": 5,
+      "icon": "/images/features/disk-cleaner.svg",
+      "title": "Limpeza de disco",
+      "description": "Nenhum conhecimento especialista é necessário. A usabilidade é sempre prioridade no desenvolvimento dos nossos produtos. O Your Uninstaller é fácil de usar. Sem complicações, sem confusão."
+    },
+    {
+      "id": 6,
+      "icon": "/images/features/force-uninstall.svg",
+      "title": "Desinstalação forçada",
+      "description": "O Your Uninstaller oferece várias ferramentas bem projetadas como Gerenciador de inicialização, Triturador de arquivos, Limpeza de disco e muito mais. Essas ferramentas fornecem excelente suporte para manter o Windows sólido e rápido."
+    }
+  ],
+  "funFactData": [
+    {
+      "id": 1,
+      "value": "67",
+      "title": "Módulos de análise de logs de instalação"
+    },
+    {
+      "id": 2,
+      "value": "312,940",
+      "title": "Clientes satisfeitos"
+    },
+    {
+      "id": 3,
+      "value": "20",
+      "title": "Anos de experiência em desenvolvimento"
+    }
+  ],
+  "funFactHeader": {
+    "title": "Confiado por usuários Windows no mundo inteiro",
+    "description": "Desinstale apps com segurança, limpe resíduos e mantenha seu PC rápido e organizado."
+  },
+  "testimonialHeader": {
+    "title": "DEPOIMENTOS",
+    "subtitle": "Usuários reais. Resultados reais.",
+    "description": "Veja como o Your Uninstaller mantém o Windows limpo, rápido e seguro com desinstalação profunda e limpeza do sistema."
+  },
+  "testimonialData": [
+    {
+      "id": 1,
+      "name": "Riccardo S.",
+      "designation": "Smart Computing",
+      "image": "/images/user/user-01.png",
+      "content": "O Your Uninstaller! permite remover programas que não aparecem na lista Adicionar/Remover Programas. Você também pode usar o Your Uninstaller! para remover a bagunça (arquivos desnecessários que programas às vezes deixam) do seu Registro."
+    },
+    {
+      "id": 2,
+      "name": "Leena R.",
+      "designation": "PC Plus",
+      "image": "/images/user/user-02.png",
+      "content": "O Your Uninstaller! mostra todos os ícones dos seus programas em uma enorme janela rolável, fácil de navegar. Se você quiser mais informações sobre um programa antes de desinstalá-lo completamente, são apenas dois cliques."
+    },
+    {
+      "id": 3,
+      "name": "Arturo Rivera",
+      "designation": "Usuário",
+      "image": "/images/user/user-01.png",
+      "content": "Uso o Your Unistaller há anos e acho que é um ótimo produto! É muito melhor do que o integrado ao Windows. Parabéns por um grande produto e eu realmente recomendo!!! Obrigado."
+    },
+    {
+      "id": 4,
+      "name": "Anthony A. Newlin",
+      "designation": "Usuário",
+      "image": "/images/user/user-02.png",
+      "content": "O melhor. É realmente maravilhoso. Recomendo FORTEMENTE o Your Uninstaller! a TODOS que querem um computador LIMPO!"
+    },
+    {
+      "id": 5,
+      "name": "Carrie R. Powell",
+      "designation": "Usuário",
+      "image": "/images/user/user-01.png",
+      "content": "Isso realmente me economiza tempo e esforço. O Your Uninstaller! é exatamente o que faltava ao meu computador. Eu provavelmente poderia vender isso para vocês. Obrigado, pessoal, continuem o bom trabalho!"
+    }
+  ],
+  "ctaData": {
+    "title": "Experimente o teste de 21 dias",
+    "description": "É grátis baixar e testar nosso software por três semanas. A versão de teste faz quase o mesmo que a versão completa, exceto por algumas pequenas restrições.",
+    "primaryButton": "BAIXAR AGORA",
+    "secondaryButton": "COMPRAR AGORA"
+  },
+  "description": {
+    "title": "Por que escolher o Your Uninstaller?",
+    "callout": "Clique com o botão direito em qualquer ícone da área de trabalho e selecione desinstalar — é simples assim!",
+    "paragraphs": [
+      "O Your Uninstaller é o utilitário de desinstalação mais popular do mundo para gerenciar todos os programas instalados no seu computador. Ele oferece suporte ao Windows 11 (32 e 64 bits) e possui uma interface simples e limpa.",
+      "O Your Uninstaller funciona do jeito que você pensa, tornando mais fácil desinstalar programas de forma rápida, eficiente e definitiva. Com um algoritmo avançado de varredura do sistema, o Your Uninstaller! pode remover facilmente qualquer programa instalado no seu computador — completamente, sem deixar rastros.",
+      "O Your Uninstaller também gerencia os aplicativos instalados no seu PC; você pode bloquear aplicativos contra remoção acidental, alterar ícones padrão, escrever comentários, salvar chaves de registro e sempre saber quais programas foram recém-instalados.",
+      "Desinstalar programas nunca foi tão fácil: clique com o botão direito em um ícone da área de trabalho e selecione desinstalar; ele será removido, sem mais ações. Experimente todos os recursos do Your Uninstaller!"
+    ]
+  },
+  "supportContent": {
+    "title": "CONTATO E SUPORTE – Your Uninstaller! 7",
+    "intro": [
+      "Estamos animados para falar com você! Preencha o formulário abaixo e entraremos em contato.",
+      "A URSoft está comprometida em fornecer aos usuários e clientes suporte e assistência de alta qualidade. Quando você encontrar um problema, tiver uma pergunta ou precisar de qualquer outra ajuda com nossos produtos, pode nos procurar.",
+      "Sua mensagem será tratada cuidadosamente por nossa equipe experiente; a resposta normalmente é em até 48 horas."
+    ],
+    "lostKeyUrl": "https://cms.ursoftware.com/orders/lostkey",
+    "lostKeyButtonLabel": "Obter minha chave",
+    "lostKeyHint": "Perdeu sua chave de registro? Clique em \"Obter minha chave\" para recuperação instantânea."
+  },
+  "pricingOptions": [
+    {
+      "price": "$24.99",
+      "title": "Licença para 1 PC",
+      "subtitle": "Perfeito para usuários individuais",
+      "bullets": [
+        "Tempo ilimitado. Pague e obtenha.",
+        "Todas as atualizações menores são gratuitas.",
+        "Atualizações maiores com 50% de custo.",
+        "Permite instalar em um PC."
+      ],
+      "buyUrl": "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=36254&recommendation=YUFP&cfg=defaultsource"
+    },
+    {
+      "price": "$39.99",
+      "title": "Licença para 3 PCs",
+      "subtitle": "Ótimo para famílias",
+      "badge": "Mais popular",
+      "bullets": [
+        "Tempo ilimitado. Pague e obtenha.",
+        "Todas as atualizações menores são gratuitas.",
+        "Atualizações maiores com 50% de custo.",
+        "Você pode instalar em 3 computadores! Até compartilhar com amigos."
+      ],
+      "buyUrl": "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=100687&cfg=defaultsource"
+    },
+    {
+      "price": "$99.99",
+      "title": "Licença para PCs ilimitados",
+      "subtitle": "Para empresas e usuários avançados",
+      "badge": "Melhor valor",
+      "bullets": [
+        "Tempo ilimitado. Pague e obtenha.",
+        "Todas as atualizações são gratuitas! Incluindo maiores e menores.",
+        "Sem limitação por computador. Instale em quantos computadores você possuir."
+      ],
+      "buyUrl": "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=248979"
+    }
+  ],
+  "updateContent": {
+    "title": "Nova versão disponível!",
+    "downloadUrl": "https://www.ursoftware.com/dlds/yusetup.exe"
+  },
+  "downloadPageContent": {
+    "hero": {
+      "title": "Your Uninstaller! 7",
+      "description": "O utilitário de desinstalação mais popular do mundo. Remova completamente qualquer programa do seu PC Windows — sem deixar rastros.",
+      "downloadLabel": "Baixar teste gratuito",
+      "logoAlt": "Logo do Your Uninstaller",
+      "badges": {
+        "os": "Windows 11/10/8/7",
+        "trial": "Teste gratuito de 21 dias",
+        "secure": "Seguro"
+      }
+    },
+    "features": [
+      {
+        "title": "Desinstalação completa",
+        "desc": "Remova programas totalmente"
+      },
+      {
+        "title": "Limpeza de registro",
+        "desc": "Limpe entradas residuais"
+      },
+      {
+        "title": "Rápido e eficiente",
+        "desc": "Varredura ultrarrápida"
+      },
+      {
+        "title": "Bloqueio de apps",
+        "desc": "Proteja apps importantes"
+      }
+    ],
+    "description": {
+      "title": "Por que escolher o Your Uninstaller?",
+      "callout": "Clique com o botão direito em qualquer ícone da área de trabalho e selecione desinstalar — é simples assim!",
+      "paragraphs": [
+        "O Your Uninstaller é o utilitário de desinstalação mais popular do mundo para gerenciar todos os programas instalados no seu computador. Ele oferece suporte ao Windows 11 (32 e 64 bits) e possui uma interface simples e limpa.",
+        "O Your Uninstaller funciona do jeito que você pensa, tornando mais fácil desinstalar programas de forma rápida, eficiente e definitiva. Com um algoritmo avançado de varredura do sistema, o Your Uninstaller! pode remover facilmente qualquer programa instalado no seu computador — completamente, sem deixar rastros.",
+        "O Your Uninstaller também gerencia os aplicativos instalados no seu PC; você pode bloquear aplicativos contra remoção acidental, alterar ícones padrão, escrever comentários, salvar chaves de registro e sempre saber quais programas foram recém-instalados.",
+        "Desinstalar programas nunca foi tão fácil: clique com o botão direito em um ícone da área de trabalho e selecione desinstalar; ele será removido, sem mais ações. Experimente todos os recursos do Your Uninstaller!"
+      ]
+    },
+    "gallery": {
+      "title": "Galeria de capturas de tela",
+      "items": [
+        {
+          "src": "/images/download/yu_main_hd.png",
+          "alt": "Your Uninstaller! 7 Tela principal"
+        },
+        {
+          "src": "/images/download/yu_main_hd_2.png",
+          "alt": "Your Uninstaller! 7 Tela de desinstalação"
+        },
+        {
+          "src": "/images/download/yu_main_hd_3.png",
+          "alt": "Your Uninstaller! 7 Varredura profunda"
+        },
+        {
+          "src": "/images/download/yu_main_hd_4.png",
+          "alt": "Your Uninstaller! 7 Gerenciador de inicialização"
+        }
+      ],
+      "modal": {
+        "closeAriaLabel": "Fechar"
+      }
+    },
+    "cta": {
+      "title": "Experimente antes de comprar",
+      "description": "Oferecemos um período de teste gratuito de 21 dias com todos os recursos. Se você quiser usar nosso software depois disso, compre uma licença.",
+      "primaryLabel": "Baixar agora",
+      "secondaryLabel": "Comprar licença"
+    },
+    "assets": {
+      "logo": "/images/download/yulogo_96.png"
+    }
+  },
+  "installedContent": {
+    "tips": [
+      "Você pode encontrar o aplicativo para desinstalar digitando parte do nome na barra de pesquisa superior.",
+      "O modo Hunter permite mirar no programa e começar a desinstalá-lo.",
+      "Você pode desativar a criação de pontos de restauração no menu \"Opções\".",
+      "Existem vários níveis de modos de desinstalação, o Modo Normal funciona quase sempre, o Modo Super é recomendado apenas para softwares muito problemáticos, pois levará muito mais tempo.",
+      "A ferramenta File Shredder ajuda você a limpar arquivos indesejados completamente! Sem chance de recuperação. É 100% irrecuperável.",
+      "O Gerenciador de Inicialização pode adicionar novos itens de inicialização facilmente.",
+      "Oferecemos uma garantia de reembolso de 30 dias! Sem perguntas. Se você não estiver satisfeito, peça um reembolso."
+    ]
+  },
+  "installedMarkdown": "# Obrigado por instalar o Your Uninstaller!\n\n### Se você é novo no Your Uninstaller, aqui estão algumas dicas valiosas:\n\n- Você pode encontrar o aplicativo para desinstalar digitando parte do nome na barra de pesquisa superior.\n- O **Modo Hunter** permite mirar no programa e começar a desinstalá-lo.\n- Você pode desativar a criação de pontos de restauração no menu \"Opções\".\n- Existem vários níveis de modos de desinstalação: o **Modo Normal** funciona quase sempre, o **Modo Super** é recomendado apenas para softwares particularmente problemáticos, pois levará muito mais tempo.\n- A ferramenta **File Shredder** ajuda você a limpar arquivos indesejados completamente! Sem chance de recuperação. É 100% irrecuperável.\n- O **Gerenciador de Inicialização** permite adicionar novos itens de inicialização facilmente.\n- Oferecemos uma **garantia de reembolso de 30 dias!** Sem perguntas. Se você não estiver satisfeito, peça um reembolso.\n",
+  "installedAssets": {
+    "bannerSrc": "/images/installed/installed-banner.svg",
+    "bannerAlt": "Instalação bem-sucedida"
+  },
+  "uninstallerUpdateMarkdown": "# Nova versão disponível!\n\nUma nova versão do Uninstaller está disponível.\n\nSeu download começará em alguns segundos, basta instalar o arquivo baixado e seu software será atualizado para a versão mais recente. Se não começar, clique no botão abaixo para baixar manualmente:\n\n[Baixar Versão Mais Recente](https://www.ursoftware.com/dlds/yusetup.exe)",
+  "installedContent": {
+    "tips": [
+      "Você pode encontrar o aplicativo para desinstalar digitando parte do nome na barra de pesquisa superior.",
+      "O modo Hunter permite mirar no programa e começar a desinstalá-lo.",
+      "Você pode desativar a criação de pontos de restauração no menu \"Opções\".",
+      "Existem vários níveis de modos de desinstalação, o Modo Normal funciona quase sempre, o Modo Super é recomendado apenas para softwares muito problemáticos, pois levará muito mais tempo.",
+      "A ferramenta File Shredder ajuda você a limpar arquivos indesejados completamente! Sem chance de recuperação. É 100% irrecuperável.",
+      "O Gerenciador de Inicialização pode adicionar novos itens de inicialização facilmente.",
+      "Oferecemos uma garantia de reembolso de 30 dias! Sem perguntas. Se você não estiver satisfeito, peça um reembolso."
+    ]
+  },
+  "installedMarkdown": "# Obrigado por instalar o Your Uninstaller!\n\n### Se você é novo no Your Uninstaller, aqui estão algumas dicas valiosas:\n\n- Você pode encontrar o aplicativo para desinstalar digitando parte do nome na barra de pesquisa superior. \n- O **Modo Hunter** permite mirar no programa e começar a desinstalá-lo.\n- Você pode desativar a criação de pontos de restauração no menu \"Opções\".\n- Existem vários níveis de modos de desinstalação: o **Modo Normal** funciona quase sempre, o **Modo Super** é recomendado apenas para softwares particularmente problemáticos, pois levará muito mais tempo.\n- A ferramenta **File Shredder** ajuda você a limpar arquivos indesejados completamente! Sem chance de recuperação. É 100% irrecuperável.\n- O **Gerenciador de Inicialização** permite adicionar novos itens de inicialização facilmente.\n- Oferecemos uma **garantia de reembolso de 30 dias!** Sem perguntas. Se você não estiver satisfeito, peça um reembolso.\n",
+  "installedAssets": {
+    "bannerSrc": "/images/installed/installed-banner.svg",
+    "bannerAlt": "Instalação bem-sucedida"
+  },
+  "uninstallerUpdateMarkdown": "# Nova versão disponível!\n\nUma nova versão do Uninstaller está disponível.\n\nSeu download começará em alguns segundos, basta instalar o arquivo baixado e seu software será atualizado para a versão mais recente. Se não começar, clique no botão abaixo para baixar manualmente:\n\n[Baixar Versão Mais Recente](https://www.ursoftware.com/dlds/yusetup.exe)",
+  "refundContent": {
+    "title": "Política de Reembolso",
+    "body": "# Política de Reembolso\n\n### 1. Escopo\nEsta política aplica-se a todas as licenças do \"Your Uninstaller!\" compradas diretamente em nosso site.\n\n### 2. Garantia de Reembolso de 30 Dias\nQueremos que você esteja totalmente satisfeito com sua compra. Se você não estiver satisfeito com o software por qualquer motivo, poderá solicitar um reembolso total no prazo de **30 dias** a partir da data da compra.\n\n### 3. Motivos Elegíveis\nGeralmente aprovamos solicitações de reembolso pelos seguintes motivos:\n- O software não funciona no seu computador conforme anunciado.\n- Você não consegue instalar ou ativar o software, apesar da assistência do suporte.\n- Compras duplicadas acidentais.\n\n### 4. Não Elegíveis\nReembolsos podem não ser concedidos nos seguintes casos:\n- Solicitações feitas mais de 30 dias após a compra.\n- \"Mudança de ideia\" se o software foi totalmente ativado e usado sem problemas técnicos.\n- Compras de revendedores não autorizados.\n- Falha ao fornecer detalhes da compra (por exemplo, número do pedido, e-mail).\n\n### 5. Como Solicitar um Reembolso\nPara solicitar um reembolso, envie um e-mail para **support@ursoftware.com** com o assunto \"Refund Request\".\nPor favor, inclua:\n- Seu Número do Pedido\n- O endereço de e-mail usado na compra\n- Uma breve descrição do motivo do reembolso\n\n### 6. Tempo de Processamento\nUma vez aprovado, seu reembolso será processado imediatamente. O crédito pode levar de **5 a 10 dias úteis** para aparecer em seu extrato, dependendo do seu banco ou emissora do cartão."
+  },
+  "privacyContent": {
+    "title": "Política de Privacidade",
+    "body": "# Política de Privacidade\n  Estamos comprometidos em proteger sua privacidade e as informações que você nos fornece. **URSoft, Inc nunca venderá, alugará, arrendará ou divulgará informações de clientes a terceiros.** Outros termos da política de privacidade da URSoft, Inc são os seguintes:\n\n**Coleta de Informações** Quando você realiza atividades em nosso site, como solicitar ou registrar produtos, baixar versões de teste de software ou atualizações, solicitar suporte técnico ou se inscrever em ofertas especiais ou newsletters, a URSoft pode pedir que você forneça informações. As informações que pedimos ao comprar ou solicitar serão apenas as necessárias para processar sua compra ou pedido. Ao atender um pedido, pediremos seu nome, endereço de e-mail, endereço (para envio), número de telefone e número do cartão de crédito, tipo e data de validade. Usaremos essas informações apenas para assuntos relacionados ao seu pedido, a menos que você solicite o contrário. As informações do seu cartão de crédito serão mantidas apenas por um período razoavelmente necessário para garantir que o pagamento foi recebido.\n\nInformações adicionais que podemos pedir ao optar por participar de outras atividades em nosso site ou em nossos produtos podem incluir nome, endereço de correspondência, número de telefone, números de fax, endereço de e-mail e outras informações demográficas que nos permitirão entender melhor os requisitos de nossos clientes e continuar a fornecer produtos e serviços de alta qualidade. Esta solicitação de informações será opcional e necessária apenas para participar de certas atividades. Ao optar por inserir as informações solicitadas quando solicitado, você pode se qualificar para receber versões de demonstração de novos softwares, funcionalidades estendidas, dicas de usuário e informações sobre produtos, newsletters e ofertas especiais.\n\nQualquer informação que você postar em uma sala de bate-papo ou boletim público está disponível para todos os usuários desse site.\n\n**Como Usamos Suas Informações** Quaisquer informações coletadas serão usadas..."
+  },
+  "deliveryContent": {
+    "title": "Política de Entrega",
+    "body": "\n# Política de Entrega\n### 1. Escopo\nEsta Política de Entrega (\"Política\") aplica-se a todos os clientes que adquirem licenças ou downloads do **\"Your Uninstaller\"** através do nosso site.\n\n### 2. Método de Entrega\n- Após o pagamento bem-sucedido e confirmação do pedido, o software será entregue eletronicamente.\n- O cliente receberá um e-mail contendo um link para download (ou chave de licença / instruções de ativação), permitindo acesso imediato ao produto.\n- Nenhuma mídia física (CD/USB) será enviada, a menos que explicitamente especificado.\n\n### 3. Prazo de Entrega\n- A entrega (ou seja, e-mail com link de download / licença) é normalmente iniciada dentro de **5 minutos** após a confirmação do pagamento.\n- Em casos raros (por exemplo, atrasos no sistema de pagamento ou revisão manual), a entrega pode levar até **24 horas**.\n- Se você não receber o e-mail de entrega dentro do prazo esperado, entre em contato com nossa equipe de suporte (veja a Seção 8).\n\n### 4. Licença e Ativação\n- Para cópias licenciadas, o e-mail incluirá instruções para ativação (por exemplo, chave de licença, instruções da conta).\n- O uso do software está sujeito ao nosso **Contrato de Licença / Termos de Licença de Usuário Final**.\n\n### 5. Atualizações e Upgrades\n- Uma vez entregue, o cliente tem o direito de baixar quaisquer atualizações menores ou patches para a mesma versão principal gratuitamente (por exemplo, da versão 5.1 para 5.2).\n- Grandes atualizações (por exemplo, da versão 5.1 para 6.0) podem exigir a compra de uma licença separada ou taxa de atualização.\n\n### 6. Reembolsos, Devoluções e Cancelamentos\n- Embora as licenças digitais geralmente não sejam retornáveis, oferecemos uma **garantia de reembolso de 30 dias** para garantir sua satisfação.\n- Se você encontrar problemas técnicos ou não estiver satisfeito, pode solicitar um reembolso no prazo de **30 dias** após a compra, sujeito às condições da nossa Política de Reembolso.\n- Para solicitar um reembolso, entre em contato com nossa equipe de suporte com os detalhes do seu pedido. Após a aprovação do reembolso, você deve desinstalar o software e destruir todas as cópias da chave de licença.\n\n### 7. Problemas de Entrega\n- Se o e-mail de entrega não for recebido (por exemplo, devido a filtros de spam), o cliente é responsável por verificar a pasta de spam/lixo eletrônico e fornecer um endereço de e-mail válido.\n- Se solicitado, reenviaremos o link para download ou a chave de licença.\n- Não assumimos responsabilidade por atrasos causados por fatores externos (por exemplo, provedor de e-mail, interrupção da internet).\n\n### 8. Suporte e Informações de Contato\nSe você tiver qualquer problema com a entrega ou não tiver recebido seu software dentro do prazo estabelecido, entre em contato com nossa equipe de suporte:\n\nE-mail: **support@ursoftware.com**\nLinha de assunto: \"Delivery Issue – Your Uninstaller\"\n\nPor favor, inclua o número do seu pedido, data da compra e o endereço de e-mail usado para a compra.\n\n### 9. Alterações nesta Política\nReservamo-nos o direito de modificar esta Política de Entrega a qualquer momento. A versão mais recente estará sempre disponível em nosso site. As alterações serão aplicadas a novas compras a partir da data em que a política revisada for publicada."
+  },
+  "notFoundContent": {
+    "title": "404 Não Encontrado",
+    "body": "Desculpe, a página que você está procurando não existe.",
+    "homeButtonText": "Ir para o Início"
+  },
+  "integrationHeader": {
+    "title": "Funções de gerenciamento essenciais",
+    "subtitle": "Limpo, seguro e rápido",
+    "description": "O Your Uninstaller oferece ferramentas práticas para manter o PC mais rápido e seguro."
+  },
+  "integrationIcons": [
+    {
+      "src": "/images/integration/windows.png",
+      "alt": "Windows"
+    },
+    {
+      "src": "/images/integration/registry.png",
+      "alt": "Editor do Registro"
+    },
+    {
+      "src": "/images/integration/cleanup.png",
+      "alt": "Limpeza"
+    },
+    {
+      "src": "/images/integration/startup.png",
+      "alt": "Gerenciador de inicialização"
+    },
+    {
+      "src": "/images/integration/privacy.png",
+      "alt": "Privacidade e proteção"
+    },
+    {
+      "src": "/images/integration/speed.png",
+      "alt": "Velocidade de desempenho"
+    }
+  ],
+  "footerCompanyDescription": "Ajudamos usuários Windows a manter seus PCs limpos, rápidos e seguros. O Your Uninstaller remove aplicativos completamente, limpa resíduos do registro e do disco, gerencia itens de inicialização e protege a privacidade com destruição segura. Simples, confiável e com atualizações e suporte, transforma a manutenção em um clique para manter a produtividade.",
+  "footerContent": {
+    "logoAlt": "Logo da URSoft",
+    "sections": [
+      {
+        "title": "Links rápidos",
+        "links": [
+          {
+            "label": "Início",
+            "href": "/"
+          },
+          {
+            "label": "Recursos",
+            "href": "/features"
+          },
+          {
+            "label": "Download",
+            "href": "/download"
+          },
+          {
+            "label": "Pedido",
+            "href": "/order"
+          }
+        ]
+      },
+      {
+        "title": "Suporte",
+        "links": [
+          {
+            "label": "Suporte",
+            "href": "/support"
+          },
+          {
+            "label": "Política de privacidade",
+            "href": "/privacy"
+          },
+          {
+            "label": "Política de reembolso",
+            "href": "/refund-policy"
+          },
+          {
+            "label": "Política de entrega",
+            "href": "/delivery-policy"
+          }
+        ]
+      },
+      {
+        "title": "Newsletter",
+        "description": "Fique por dentro das últimas notícias e atualizações.",
+        "embed": {
+          "uid": "489ef797fa",
+          "src": "https://ursoftware.kit.com/489ef797fa/index.js"
+        }
+      }
+    ],
+    "bottomLinks": [
+      {
+        "label": "Início",
+        "href": "/"
+      },
+      {
+        "label": "Pedido",
+        "href": "/order"
+      },
+      {
+        "label": "Suporte",
+        "href": "/support"
+      },
+      {
+        "label": "Política de privacidade",
+        "href": "/privacy"
+      },
+      {
+        "label": "Política de entrega",
+        "href": "/delivery-policy"
+      }
+    ],
+    "copyrightBrand": "URSoft, Inc.",
+    "socialAriaLabel": "ícone social"
+  },
+  "headerMenu": [
+    {
+      "id": 1,
+      "title": "Início",
+      "newTab": false,
+      "path": "/"
+    },
+    {
+      "id": 2,
+      "title": "Recursos",
+      "newTab": false,
+      "path": "/features"
+    },
+    {
+      "id": 2.05,
+      "title": "Download",
+      "newTab": false,
+      "path": "/download"
+    },
+    {
+      "id": 2.06,
+      "title": "Pedido",
+      "newTab": false,
+      "path": "/order"
+    },
+    {
+      "id": 4,
+      "title": "Suporte",
+      "newTab": false,
+      "path": "/support"
+    }
+  ],
+  "headerContent": {
+    "logoAlt": "logo",
+    "hamburgerAriaLabel": "alternador do menu"
+  },
+  "ctaAlt": {
+    "shape": "Saly",
+    "arrow": "Arrow"
+  },
+  "pricingLabels": {
+    "lifetimeTag": "Atualizações vitalícias",
+    "buyButton": "Comprar agora",
+    "oneTimeNote": "Pagamento único"
+  },
+  "contactTexts": {
+    "formTitle": "Enviar uma mensagem",
+    "namePlaceholder": "Nome e sobrenome",
+    "emailPlaceholder": "seu.email@dominio.tld",
+    "subjectLabel": "Escolher",
+    "subjectOptions": [
+      {
+        "value": "Pre-purchase Questions",
+        "label": "Dúvidas pré-compra"
+      },
+      {
+        "value": "Lost Key",
+        "label": "Chave perdida"
+      },
+      {
+        "value": "Technical Inquiries",
+        "label": "Perguntas técnicas"
+      },
+      {
+        "value": "Other",
+        "label": "Outro"
+      }
+    ],
+    "messagePlaceholder": "Digite sua mensagem aqui...",
+    "sendButton": "Enviar mensagem",
+    "sendAriaLabel": "enviar mensagem",
+    "sidebar": {
+      "title": "Encontre-nos",
+      "locationTitle": "Nossa localização",
+      "locationValue": "290 Maryam Springs 260, Courbevoie, Paris, France",
+      "emailTitle": "Endereço de e-mail",
+      "emailValue": "yourmail@domainname.com",
+      "phoneTitle": "Número de telefone",
+      "phoneValue": "+009 42334 6343 843"
+    }
+  },
+  "faqHeaderContent": {
+    "badge": "NOSSAS FAQS",
+    "title": "Perguntas",
+    "titleEmphasis": "Frequentes",
+    "moreLabel": "Saiba mais"
+  },
+  "faqItems": [
+    {
+      "id": 1,
+      "quest": "Lorem ipsum dolor sit amet, consectetur",
+      "ans": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences."
+    },
+    {
+      "id": 2,
+      "quest": "Lorem ipsum dolor sit amet, consectetur",
+      "ans": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences."
+    },
+    {
+      "id": 3,
+      "quest": "Lorem ipsum dolor sit amet, consectetur",
+      "ans": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences."
+    }
+  ],
+  "accessibilityTexts": {
+    "scrollToTopAria": "voltar ao topo",
+    "scrollToTopSrOnly": "voltar ao topo"
+  },
+  "heroAlt": {
+    "shape": "forma",
+    "hero": "Hero"
+  },
+  "funFactAlt": {
+    "man": "Homem",
+    "doodle": "Rabisco",
+    "dotted": "Pontilhado"
+  },
+  "integrationAlt": {
+    "dotted": "Pontilhado"
+  },
+  "blogData": [
+    {
+      "_id": 1,
+      "mainImage": "/images/blog/blog-01.png",
+      "title": "Free advertising for your online business",
+      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
+      "slug": "blog-details"
+    },
+    {
+      "_id": 2,
+      "mainImage": "/images/blog/blog-02.png",
+      "title": "9 simple ways to improve your design skills",
+      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
+      "slug": "blog-details"
+    },
+    {
+      "_id": 2,
+      "mainImage": "/images/blog/blog-03.png",
+      "title": "Tips to quickly improve your coding speed.",
+      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
+      "slug": "blog-details"
+    }
+  ],
+  "siteMetadata": {
+    "home": {
+      "title": "Your Uninstaller! - Software para desinstalar e remover qualquer aplicativo indesejado completamente.",
+      "description": "Your Uninstaller! - Download gratuito, suíte premiada de desinstalação para remover programas, desinstalar software completamente e facilmente. Remova todos os vestígios de programas indesejados.",
+      "keywords": [
+        "Your Uninstaller!",
+        "uninstall",
+        "uninstaller",
+        "uninstall program",
+        "uninstaller software",
+        "add remove",
+        "add remove programs",
+        "cleanup",
+        "registry",
+        "Windows"
+      ],
+      "openGraph": {
+        "url": "https://www.ursoftware.com/",
+        "siteName": "Your Uninstaller!",
+        "image": "/images/logo/site-logo.png"
+      }
+    },
+    "features": {
+      "title": "Recursos - Your Uninstaller! 7",
+      "description": "Recursos principais do Your Uninstaller! 7"
+    },
+    "order": {
+      "title": "Pedido - Your Uninstaller! 7",
+      "description": "Escolha uma licença e baixe instantaneamente. Desinstalação segura com limpeza profunda do sistema incluída."
+    },
+    "support": {
+      "title": "Suporte - Your Uninstaller! 7",
+      "description": "Esta é a página de suporte do Your Uninstaller! 7"
+    },
+    "privacy": {
+      "title": "Política de privacidade - Your Uninstaller! 7",
+      "description": "Política de privacidade da URSoft, Inc."
+    },
+    "refundPolicy": {
+      "title": "Política de reembolso - Your Uninstaller! 7",
+      "description": "Garantia de reembolso de 30 dias e instruções para reembolso."
+    },
+    "deliveryPolicy": {
+      "title": "Política de entrega - Your Uninstaller! 7",
+      "description": "Prazo de entrega eletrônica, ativação de licença e suporte."
+    },
+    "docs": {
+      "title": "Página de Docs - Solid SaaS Boilerplate",
+      "description": "Esta é a página de Docs do Solid Pro"
+    },
+    "download": {
+      "title": "Download gratuito - Your Uninstaller! 7",
+      "description": "Baixe o Your Uninstaller! 7 - o desinstalador mais poderoso para Windows. Teste gratuito de 21 dias com todos os recursos."
+    },
+    "auth": {
+      "signin": {
+        "title": "Entre na sua conta",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "Digite seu e-mail",
+        "passwordLabel": "Senha",
+        "passwordPlaceholder": "Digite sua senha",
+        "forgotPassword": "Esqueceu a senha?",
+        "rememberMe": "Lembrar de mim",
+        "buttonText": "Entrar",
+        "signupLink": "Não tem uma conta? Cadastre-se"
+      },
+      "signup": {
+        "title": "Crie uma nova conta",
+        "nameLabel": "Nome completo",
+        "namePlaceholder": "Digite seu nome completo",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "Digite seu e-mail",
+        "passwordLabel": "Senha",
+        "passwordPlaceholder": "Digite sua senha",
+        "confirmPasswordLabel": "Confirmar senha",
+        "confirmPasswordPlaceholder": "Confirme sua senha",
+        "agreeTerms": "Concordo com os Termos e Condições",
+        "buttonText": "Cadastrar",
+        "signinLink": "Já tem uma conta? Entrar"
+      }
+    },
+    "installed": {
+      "title": "Obrigado por instalar o Your Uninstaller! 7",
+      "description": "Dicas e truques para novos usuários do Your Uninstaller! 7"
+    },
+    "update": {
+      "title": "Nova versão disponível - Your Uninstaller! 7",
+      "description": "Baixe a versão mais recente do Your Uninstaller! 7"
+    },
+    "blogDetails": {
+      "title": "Detalhes do blog - Your Uninstaller! 7",
+      "description": "Leia nossos últimos posts do blog."
+    },
+    "blog": {
+      "title": "Blog - Your Uninstaller! 7",
+      "description": "Leia nossos últimos posts do blog."
+    }
+  },
+  "revSliderContent": {
+    "title": "Your Uninstaller! 7",
+    "subtitle": "Desinstale completamente\nqualquer aplicativo indesejado!",
+    "downloadLabel": "BAIXAR AGORA",
+    "downloadUrl": "https://www.ursoftware.com/dlds/yusetup.exe",
+    "versionInfo": "Compatível com Windows 11/10/8/7/Vista/XP",
+    "laptopSrc": "/images/hero/hero2_1920_q90.webp",
+    "laptopAlt": "Your Uninstaller! 7 - software de desinstalação para Windows"
+  },
+  "site": {
+    "url": "https://www.ursoftware.com"
+  },
+  "docsContent": {
+    "sidebar": {
+      "title": "Documentação",
+      "sections": [
+        {
+          "title": "Primeiros passos",
+          "links": [
+            {
+              "label": "Modelo Bootstrap",
+              "href": "/docs/bootstrap-template"
+            },
+            {
+              "label": "Componente Tailwind",
+              "href": "/docs/tailwind-component"
+            },
+            {
+              "label": "Modelo Tailwind",
+              "href": "/docs/tailwind-template"
+            },
+            {
+              "label": "Formulário de contato",
+              "href": "/docs/contact-form"
+            },
+            {
+              "label": "Guia de estilo",
+              "href": "/docs/style-guide"
+            }
+          ]
+        }
+      ]
+    },
+    "body": "# Bootstrap Template\n\n## Example Heading\n\nThis is a paragraph under an example heading. It demonstrates how standard markdown content would appear.\n\n### Sub-heading\n\nAnother paragraph under a sub-heading. Markdown features like **bold**, *italic*, and `code` are supported.\n\n- List item 1\n- List item 2\n\n```javascript\n// Code block example\nconst greet = (name) => {\n  console.log(`Hello, ${name}!`);\n};\n\ngreet('World');\n```\n\n"
+  },
+  "orderFeatures": {
+    "title": "Por que pedir o Your Uninstaller agora?",
+    "items": [
+      {
+        "title": "Entrega imediata",
+        "description": "Receba sua chave de licença por e-mail imediatamente após a compra.",
+        "icon": "/images/order/delivery-icon.svg"
+      },
+      {
+        "title": "Pagamento seguro",
+        "description": "Todas as transações são protegidas com criptografia avançada.",
+        "icon": "/images/order/security-icon.svg"
+      },
+      {
+        "title": "Garantia de reembolso de 30 dias",
+        "description": "Não satisfeito? Receba reembolso total em até 30 dias, sem perguntas.",
+        "icon": "/images/order/guarantee-icon.svg"
+      }
+    ]
+  },
+  "featuresTabContent": {
+    "tabs": [
+      {
+        "id": "tabOne",
+        "title": "Interface limpa",
+        "subtitle": "Design intuitivo",
+        "description": "Nosso software tem uma interface elegante e moderna, facilitando a navegação e a realização de tarefas com eficiência. Aproveite uma experiência sem bagunça com controles claros e concisos.",
+        "image": "/images/features/features-light-01.svg",
+        "imageDark": "/images/features/features-dark-01.svg"
+      },
+      {
+        "id": "tabTwo",
+        "title": "Páginas essenciais para negócios",
+        "subtitle": "Funcionalidade abrangente",
+        "description": "Acesse todas as funções vitais de negócios com páginas dedicadas para operações contínuas. Do gerenciamento de clientes aos relatórios, tudo o que você precisa está a um clique de distância.",
+        "image": "/images/features/features-light-02.svg",
+        "imageDark": "/images/features/features-dark-02.svg"
+      },
+      {
+        "id": "tabThree",
+        "title": "Integrações totalmente funcionais",
+        "subtitle": "Expanda suas capacidades",
+        "description": "Integre facilmente com suas ferramentas e serviços existentes. Nossa API robusta e conectores prontos garantem um fluxo de trabalho suave e maior produtividade em todo o ecossistema.",
+        "image": "/images/features/features-light-03.svg",
+        "imageDark": "/images/features/features-dark-03.svg"
+      }
+    ]
+  },
+  "seoRoutes": [
+    "/",
+    "/features",
+    "/download",
+    "/order",
+    "/support",
+    "/privacy",
+    "/refund-policy",
+    "/delivery-policy"
+  ],
+  "blogDetails": {
+    "searchPlaceholder": "Pesquisar aqui...",
+    "categoriesTitle": "Categorias",
+    "categories": ["Blog", "Eventos", "Grades", "Notícias", "Arredondado"],
+    "imageAlt1": "Usina da Kobe Steel que forneceu",
+    "title": "Usina da Kobe Steel que forneceu",
+    "authorLabel": "Autor:",
+    "authorName": "Jhon Doe",
+    "publishedOnLabel": "Publicado em:",
+    "publishedDate": "30 de julho, 2023",
+    "categoryLabel": "Categoria:",
+    "categoryName": "Eventos",
+    "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum ipsum.",
+    "paragraph2": "Aenean augue ex, condimentum vel metus vitae, aliquam porta elit. Quisque non metus ac orci mollis posuere. Mauris vel ipsum a diam interdum ultricies sed vitae neque. Nulla porttitor quam vitae pulvinar placerat. Nulla fringilla elit sit amet justo feugiat sodales. Morbi eleifend, enim non eleifend laoreet, odio libero lobortis lectus, non porttitor sem urna sit amet metus. In sollicitudin quam est, pellentesque consectetur felis fermentum vitae.",
+    "imageAlt2": "imagem",
+    "imageAlt3": "imagem",
+    "heading2": "Nunc elementum elit viverra, tempus quam non",
+    "paragraph3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum ipsum.",
+    "relatedPost": {
+      "title": "Posts relacionados",
+      "posts": [
+        {
+          "title": "O impacto da IA nas estratégias modernas de negócios",
+          "date": "2023-09-15",
+          "image": "/images/blog/blog-01.png"
+        },
+        {
+          "title": "Computação em nuvem: um mergulho em arquiteturas serverless",
+          "date": "2023-08-22",
+          "image": "/images/blog/blog-02.png"
+        },
+        {
+          "title": "Boas práticas de cibersegurança para pequenas empresas",
+          "date": "2023-07-10",
+          "image": "/images/blog/blog-03.png"
+        }
+      ]
+    },
+    "sharePost": {
+      "title": "Compartilhe este post:",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn"
+    }
+  }
+}

@@ -34,13 +34,15 @@ const RevSliderHero = ({ revSliderContent }: { revSliderContent: any }) => {
 
             {/* Subtitle */}
             <h2
-              className="mt-8 mb-8 text-2xl leading-[34px] font-medium tracking-[1px] md:mt-10 md:mb-10 md:text-3xl md:leading-[40px] lg:text-[47px]"
+              className="mt-8 mb-8 text-2xl leading-[34px] font-medium tracking-[1px] md:mt-10 md:mb-10 md:text-3xl md:leading-[40px] lg:text-[47px] lg:leading-[1.2]"
               style={{ fontFamily: "'Roboto', sans-serif" }}
             >
               {revSliderContent.subtitle.split("\n").map((line, i) => (
                 <span key={i}>
                   {line}
-                  {i === 0 && <br />}
+                  {i < revSliderContent.subtitle.split("\n").length - 1 && (
+                    <br />
+                  )}
                 </span>
               ))}
             </h2>

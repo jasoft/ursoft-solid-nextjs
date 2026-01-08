@@ -10,15 +10,24 @@ export default function LanguageSwitcher() {
   return (
     <div className="flex items-center gap-2 text-sm">
       {locales.map((l) => {
-        const href = withLocalePrefix(pathname ? pathname.replace(/^\/(en|zh|fr)/, "") : "/", l);
+        const href = withLocalePrefix(
+          pathname ? pathname.replace(/^\/(en|zh|fr|es|ja|pt|de|ru)/, "") : "/",
+          l,
+        );
         const active = l === current;
         return (
           <Link
             key={l}
             href={href}
-            className={active ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"}
+            className={
+              active
+                ? "text-primary font-semibold"
+                : "hover:text-primary text-gray-700"
+            }
             onClick={() => {
-              try { localStorage.setItem("preferredLocale", l); } catch {}
+              try {
+                document.cookie = `preferredLocale=${l}; path=/; max-age=31536000; SameSite=Lax`;
+              } catch {}
             }}
           >
             {l.toUpperCase()}
@@ -28,4 +37,3 @@ export default function LanguageSwitcher() {
     </div>
   );
 }
-

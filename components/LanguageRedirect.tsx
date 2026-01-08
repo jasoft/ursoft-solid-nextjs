@@ -1,7 +1,11 @@
 "use client";
 import { useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { currentLocaleFromPath, detectLocaleByIp, withLocalePrefix } from "@/lib/i18n";
+import {
+  currentLocaleFromPath,
+  detectLocaleByIp,
+  withLocalePrefix,
+} from "@/lib/i18n";
 
 const STORAGE_KEY = "preferredLocale";
 
@@ -11,7 +15,7 @@ export default function LanguageRedirect() {
 
   useEffect(() => {
     if (!pathname) return;
-    const hasLang = /^\/(en|zh|fr)(\/|$)/i.test(pathname);
+    const hasLang = /^\/(en|zh|fr|es|ja|pt|de|ru)(\/|$)/i.test(pathname);
     if (hasLang) return; // already language-scoped
 
     const stored = localStorage.getItem(STORAGE_KEY);
@@ -29,4 +33,3 @@ export default function LanguageRedirect() {
 
   return null;
 }
-

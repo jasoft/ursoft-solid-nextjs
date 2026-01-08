@@ -1,9 +1,8 @@
-import { Metadata } from "next";
+import CTA from "@/components/CTA";
+import Feature from "@/components/Features";
 import { Locale, locales } from "@/i18n";
 import { getMessages } from "@/lib/get-messages";
-import Feature from "@/components/Features";
-import CTA from "@/components/CTA";
-import FeaturesTab from "@/components/FeaturesTab"; // Assuming FeaturesTab is a component
+import { Metadata } from "next";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -32,7 +31,7 @@ export default async function FeaturesPage({
   const messages = await getMessages(locale);
 
   return (
-    <main className="-mt-20 page-main-bg">
+    <main className="page-main-bg -mt-20">
       <Feature
         featuresSection={messages.featuresSection}
         featuresData={messages.featuresData}

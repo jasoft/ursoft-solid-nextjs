@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+// Force reload
 
 const withMDX = require('@next/mdx')({ extension: /\.mdx?$/ });
 

@@ -1,4 +1,13 @@
-export const locales = ["en", "zh", "fr"] as const;
+export const locales = [
+  "en",
+  "zh",
+  "fr",
+  "es",
+  "ja",
+  "pt",
+  "de",
+  "ru",
+] as const;
 export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = "en";
@@ -14,17 +23,27 @@ export function normalizeLocale(v: string | null | undefined): Locale {
   // map common language tags
   if (lower.startsWith("zh")) return "zh";
   if (lower.startsWith("fr")) return "fr";
+  if (lower.startsWith("es")) return "es";
+  if (lower.startsWith("ja")) return "ja";
+  if (lower.startsWith("pt")) return "pt";
+  if (lower.startsWith("de")) return "de";
+  if (lower.startsWith("ru")) return "ru";
   return "en";
 }
 
-export function withLocalePrefix(path: string, locale: Locale | null | undefined) {
+export function withLocalePrefix(
+  path: string,
+  locale: Locale | null | undefined,
+) {
   const l = normalizeLocale(locale ?? defaultLocale);
   if (!path.startsWith("/")) path = `/${path}`;
   if (path === "/") return `/${l}`;
   return `/${l}${path}`;
 }
 
-export function currentLocaleFromPath(pathname: string | null | undefined): Locale {
+export function currentLocaleFromPath(
+  pathname: string | null | undefined,
+): Locale {
   if (!pathname) return defaultLocale;
   const seg = pathname.split("/").filter(Boolean)[0] ?? "";
   return isLocale(seg) ? (seg as Locale) : defaultLocale;
@@ -39,10 +58,38 @@ export async function detectLocaleByIp(): Promise<Locale> {
     const country = String(data.country || "").toUpperCase();
     // Simplified mapping
     if (["CN", "TW", "HK", "MO"].includes(country)) return "zh";
-    if (["FR", "MC", "BE", "LU", "CH", "CA"].includes(country)) return "fr";
+    if (["JP"].includes(country)) return "ja";
+    if (["FR", "MC", "BE", "LU", "CA"].includes(country)) return "fr";
+    if (
+      [
+        "ES",
+        "MX",
+        "AR",
+        "CO",
+        "PE",
+        "CL",
+        "VE",
+        "EC",
+        "GT",
+        "CU",
+        "BO",
+        "DO",
+        "HN",
+        "PY",
+        "SV",
+        "NI",
+        "CR",
+        "PA",
+        "UY",
+        "GQ",
+      ].includes(country)
+    )
+      return "es";
+    if (["PT", "BR"].includes(country)) return "pt";
+    if (["DE", "AT", "CH", "LI"].includes(country)) return "de";
+    if (["RU", "BY", "KZ", "KG"].includes(country)) return "ru";
     return "en";
   } catch {
     return defaultLocale;
   }
 }
-

@@ -1,0 +1,875 @@
+{
+  "heroData": {
+    "title": "Your Uninstaller 7",
+    "subtitle": "不要なアプリを完全にアンインストールします。",
+    "primaryButton": "今すぐダウンロード",
+    "primaryButtonUrl": "https://www.ursoftware.com/dlds/yusetup.exe",
+    "description": "Windows 11/10/8/7 に対応。\n\n現在のバージョン: 7.5.0",
+    "image": "/images/hero/hero2.png"
+  },
+  "featuresSection": {
+    "title": "機能",
+    "subtitle": "Your Uninstaller! 7 の主要機能",
+    "description": "完全アンインストール、レジストリのクリーンアップ、スタートアップ管理、プライバシー消去、ディープスキャン — Windows を清潔・安全・高速に保ちます。"
+  },
+  "pricingHeader": {
+    "title": "料金プラン",
+    "subtitle": "シンプルで公正なライセンス",
+    "description": "ライセンスを選んで即時ダウンロード。安全なアンインストールと深いシステムクリーンアップが含まれます。"
+  },
+  "pricingIntro": {
+    "claimTitle": "世界で最も売れているPCアンインストーラー",
+    "claimStats": "20年以上にわたり世界中の何百万人ものユーザーに信頼されています",
+    "bullets": [
+      "どんなアプリでも完全にアンインストール。",
+      "他のアンインストーラーが残したレジストリとディスクの不要データを清掃。",
+      "個人データを徹底的に消去。",
+      "PCをより速く、安全に。",
+      "最新バージョンへ自動更新",
+      "プレミアム技術サポート"
+    ],
+    "keyDelivery": "お支払い後5分以内にライセンスキーが記載されたメールが届きます。",
+    "instantDeliveryLabel": "即時配信",
+    "guarantee": "30日間返金保証!"
+  },
+  "brandData": [
+    {
+      "id": 0.25,
+      "name": "Client",
+      "href": "#",
+      "image": "/images/brand/brand-light-01.svg",
+      "imageLight": "/images/brand/brand-dark-01.svg"
+    },
+    {
+      "id": 0.3,
+      "name": "Client",
+      "href": "#",
+      "image": "/images/brand/brand-light-02.svg",
+      "imageLight": "/images/brand/brand-dark-02.svg"
+    },
+    {
+      "id": 0.4,
+      "name": "Client",
+      "href": "#",
+      "image": "/images/brand/brand-light-03.svg",
+      "imageLight": "/images/brand/brand-dark-03.svg"
+    },
+    {
+      "id": 0.5,
+      "name": "Client",
+      "href": "#",
+      "image": "/images/brand/brand-light-04.svg",
+      "imageLight": "/images/brand/brand-dark-04.svg"
+    },
+    {
+      "id": 0.6,
+      "name": "Client",
+      "href": "#",
+      "image": "/images/brand/brand-light-05.svg",
+      "imageLight": "/images/brand/brand-dark-05.svg"
+    },
+    {
+      "id": 0.7,
+      "name": "Client",
+      "href": "#",
+      "image": "/images/brand/brand-light-06.svg",
+      "imageLight": "/images/brand/brand-dark-06.svg"
+    }
+  ],
+  "pricingImageAlt": {
+    "guarantee": "保証"
+  },
+  "importantFeatures": [
+    {
+      "title": "PCを清潔に保つのは常に課題でした。",
+      "subTitle": "ここに解決策があります。複数のアンインストールモードで、アプリのあらゆる要素を消去できます。",
+      "description": "Your Uninstaller はアプリの痕跡をすべて検出するためにシステム全体をスキャンする（時間がかかります）か、ネイティブアンインストーラーを呼び出します。高度にカスタマイズ可能です。",
+      "image": "/images/important/uninstall_modes-1.png"
+    },
+    {
+      "title": "数クリックであらゆる痕跡を検出。",
+      "subTitle": "高度なスキャンアルゴリズムで、不要ファイルやレジストリエントリを見つけます。",
+      "description": "インストールログとアプリの挙動を監視・分析することで、Your Uninstaller は削除したいアプリを熟知しています。驚くほど正確に作業を完了します。",
+      "image": "/images/important/junk_found-1.png"
+    }
+  ],
+  "featuresData": [
+    {
+      "id": 1,
+      "icon": "/images/features/complete-uninstall.svg",
+      "title": "完全アンインストール",
+      "description": "破損したものを含むあらゆるプログラムを完全に削除します。Your Uninstaller! の最大の魅力は、プログラムのあらゆる要素を根こそぎ消去できることです。Your Uninstaller なら、どんなインストール済みプログラムでも簡単に完全削除できます。"
+    },
+    {
+      "id": 2,
+      "icon": "/images/features/deep-scan.svg",
+      "title": "ディープシステムスキャン",
+      "description": "ソフトを頻繁にインストール/アンインストールすると、破損したプログラムが残ることがあります。リストに残って削除に失敗する問題を、Your Uninstaller が解決します。"
+    },
+    {
+      "id": 3,
+      "icon": "/images/features/file-shredder.svg",
+      "title": "安全なファイルシュレッダー",
+      "description": "標準アンインストール後に関連する痕跡をスキャンし、不要な断片を削除します。PCにインストールしていたことすら気付かないほどです。"
+    },
+    {
+      "id": 4,
+      "icon": "/images/features/startup-manager.svg",
+      "title": "スタートアップマネージャー",
+      "description": "削除が難しい古い非準拠プログラムも問題ありません。Your Uninstaller なら簡単です。"
+    },
+    {
+      "id": 5,
+      "icon": "/images/features/disk-cleaner.svg",
+      "title": "ディスククリーナー",
+      "description": "専門知識は不要。使いやすさを最優先に設計されています。Your Uninstaller は簡単で、迷いません。"
+    },
+    {
+      "id": 6,
+      "icon": "/images/features/force-uninstall.svg",
+      "title": "強制アンインストール",
+      "description": "スタートアップマネージャー、ファイルシュレッダー、ディスククリーナーなどの便利ツールを多数搭載。Windows を安定・高速に保つための強力な支援です。"
+    }
+  ],
+  "funFactData": [
+    {
+      "id": 1,
+      "value": "67",
+      "title": "インストールログ解析モジュール"
+    },
+    {
+      "id": 2,
+      "value": "312,940",
+      "title": "満足した顧客"
+    },
+    {
+      "id": 3,
+      "value": "20",
+      "title": "開発経験年数"
+    }
+  ],
+  "funFactHeader": {
+    "title": "世界中のWindowsユーザーに信頼されています",
+    "description": "アプリを安全に削除し、残留物を消去して、PCを高速で整頓された状態に。"
+  },
+  "testimonialHeader": {
+    "title": "お客様の声",
+    "subtitle": "実際のユーザー。実際の成果。",
+    "description": "深いアンインストールとシステムクリーンアップで Windows を清潔・高速・安全に保ちます。"
+  },
+  "testimonialData": [
+    {
+      "id": 1,
+      "name": "Riccardo S.",
+      "designation": "Smart Computing",
+      "image": "/images/user/user-01.png",
+      "content": "Your Uninstaller! は、追加と削除の一覧に表示されないプログラムを削除できます。また、レジストリに残る不要ファイルのクリーンアップにも使えます。"
+    },
+    {
+      "id": 2,
+      "name": "Leena R.",
+      "designation": "PC Plus",
+      "image": "/images/user/user-02.png",
+      "content": "Your Uninstaller! は巨大なスクロール可能なウィンドウにすべてのアイコンを表示してくれるので、簡単に操作できます。アンインストール前に詳細を知りたい場合も、たった2クリックです。"
+    },
+    {
+      "id": 3,
+      "name": "Arturo Rivera",
+      "designation": "ユーザー",
+      "image": "/images/user/user-01.png",
+      "content": "長年 Your Unistaller を使っていますが、本当に素晴らしい製品だと思います。Windows 内蔵のものよりはるかに優れています。素晴らしい製品をありがとうございます。強くおすすめします!"
+    },
+    {
+      "id": 4,
+      "name": "Anthony A. Newlin",
+      "designation": "ユーザー",
+      "image": "/images/user/user-02.png",
+      "content": "最高です。素晴らしい。本当におすすめします。PCをきれいに保ちたいすべての人に。"
+    },
+    {
+      "id": 5,
+      "name": "Carrie R. Powell",
+      "designation": "ユーザー",
+      "image": "/images/user/user-01.png",
+      "content": "時間と労力を大幅に節約できました。Your Uninstaller! は私のPCに欠けていたものです。販売できるくらいです。素晴らしい仕事を続けてください!"
+    }
+  ],
+  "ctaData": {
+    "title": "21日間の試用を体験",
+    "description": "3週間無料でダウンロードして試せます。体験版は小さな制限を除いて製品版とほぼ同じ機能です。",
+    "primaryButton": "今すぐダウンロード",
+    "secondaryButton": "今すぐ購入"
+  },
+  "description": {
+    "title": "Your Uninstaller を選ぶ理由",
+    "callout": "デスクトップのアイコンを右クリックしてアンインストールを選ぶだけ — とても簡単です!",
+    "paragraphs": [
+      "Your Uninstaller は、コンピューターにインストールされたすべてのプログラムを管理できる世界で最も人気のアンインストールユーティリティです。Windows 11 (32/64bit) に対応し、シンプルでクリーンなインターフェイスを提供します。",
+      "Your Uninstaller は直感的に使えるよう設計され、プログラムのアンインストールを迅速・効率的・確実にします。高度なシステムスキャンアルゴリズムにより、あらゆるプログラムを痕跡なしで完全に削除できます。",
+      "Your Uninstaller はPCにインストールされたアプリも管理します。誤削除を防ぐロック、既定アイコンの変更、コメントの記録、登録キーの保存、新規インストールの把握などが可能です。",
+      "プログラムのアンインストールがこれほど簡単だったことはありません。デスクトップのアイコンを右クリックしてアンインストールを選ぶだけで完了します。Your Uninstaller のすべての機能をお試しください。"
+    ]
+  },
+  "supportContent": {
+    "title": "お問い合わせとサポート – Your Uninstaller! 7",
+    "intro": [
+      "お気軽にご連絡ください。以下のフォームに入力いただければ折り返しご連絡します。",
+      "URSoft は高品質なサポートと支援の提供に取り組んでいます。問題や質問がある場合、または製品に関する支援が必要な場合は、いつでもご相談ください。",
+      "メッセージは経験豊富なスタッフが慎重に対応し、通常48時間以内に返信します。"
+    ],
+    "lostKeyUrl": "https://cms.ursoftware.com/orders/lostkey",
+    "lostKeyButtonLabel": "キーを取得",
+    "lostKeyHint": "登録キーを紛失しましたか？「キーを取得」をクリックしてすぐに取り戻せます。"
+  },
+  "pricingOptions": [
+    {
+      "price": "$24.99",
+      "title": "1台PCライセンス",
+      "subtitle": "個人ユーザーに最適",
+      "bullets": [
+        "期限なし。支払ってすぐ入手。",
+        "マイナーアップグレードはすべて無料。",
+        "メジャーアップグレードは50%で購入可能。",
+        "1台のPCにインストール可能。"
+      ],
+      "buyUrl": "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=36254&recommendation=YUFP&cfg=defaultsource"
+    },
+    {
+      "price": "$39.99",
+      "title": "3台PCライセンス",
+      "subtitle": "家族に最適",
+      "badge": "人気",
+      "bullets": [
+        "期限なし。支払ってすぐ入手。",
+        "マイナーアップグレードはすべて無料。",
+        "メジャーアップグレードは50%で購入可能。",
+        "3台のPCにインストール可能。友人と共有もできます。"
+      ],
+      "buyUrl": "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=100687&cfg=defaultsource"
+    },
+    {
+      "price": "$99.99",
+      "title": "無制限PCライセンス",
+      "subtitle": "法人・上級ユーザー向け",
+      "badge": "お得",
+      "bullets": [
+        "期限なし。支払ってすぐ入手。",
+        "メジャー・マイナー含むすべてのアップグレードが無料。",
+        "PC台数制限なし。所有するすべてのPCにインストール可能。"
+      ],
+      "buyUrl": "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=248979"
+    }
+  ],
+  "updateContent": {
+    "title": "新バージョンが利用可能です!",
+    "downloadUrl": "https://www.ursoftware.com/dlds/yusetup.exe"
+  },
+  "downloadPageContent": {
+    "hero": {
+      "title": "Your Uninstaller! 7",
+      "description": "世界で最も人気のアンインストールユーティリティ。Windows PC からあらゆるプログラムを完全に削除 — 痕跡ゼロ。",
+      "downloadLabel": "無料体験版をダウンロード",
+      "logoAlt": "Your Uninstaller ロゴ",
+      "badges": {
+        "os": "Windows 11/10/8/7",
+        "trial": "21日間無料体験",
+        "secure": "安全・安心"
+      }
+    },
+    "features": [
+      {
+        "title": "完全アンインストール",
+        "desc": "プログラムを完全に削除"
+      },
+      {
+        "title": "レジストリのクリーンアップ",
+        "desc": "残留エントリを削除"
+      },
+      {
+        "title": "高速・効率的",
+        "desc": "超高速スキャン"
+      },
+      {
+        "title": "アプリロック",
+        "desc": "重要なアプリを保護"
+      }
+    ],
+    "description": {
+      "title": "Your Uninstaller を選ぶ理由",
+      "callout": "デスクトップのアイコンを右クリックしてアンインストールを選ぶだけ — とても簡単です!",
+      "paragraphs": [
+        "Your Uninstaller は、コンピューターにインストールされたすべてのプログラムを管理できる世界で最も人気のアンインストールユーティリティです。Windows 11 (32/64bit) に対応し、シンプルでクリーンなインターフェイスを提供します。",
+        "Your Uninstaller は直感的に使えるよう設計され、プログラムのアンインストールを迅速・効率的・確実にします。高度なシステムスキャンアルゴリズムにより、あらゆるプログラムを痕跡なしで完全に削除できます。",
+        "Your Uninstaller はPCにインストールされたアプリも管理します。誤削除を防ぐロック、既定アイコンの変更、コメントの記録、登録キーの保存、新規インストールの把握などが可能です。",
+        "プログラムのアンインストールがこれほど簡単だったことはありません。デスクトップのアイコンを右クリックしてアンインストールを選ぶだけで完了します。Your Uninstaller のすべての機能をお試しください。"
+      ]
+    },
+    "gallery": {
+      "title": "スクリーンショットギャラリー",
+      "items": [
+        {
+          "src": "/images/download/yu_main_hd.png",
+          "alt": "Your Uninstaller! 7 メイン画面"
+        },
+        {
+          "src": "/images/download/yu_main_hd_2.png",
+          "alt": "Your Uninstaller! 7 アンインストール画面"
+        },
+        {
+          "src": "/images/download/yu_main_hd_3.png",
+          "alt": "Your Uninstaller! 7 ディープスキャン"
+        },
+        {
+          "src": "/images/download/yu_main_hd_4.png",
+          "alt": "Your Uninstaller! 7 スタートアップ管理"
+        }
+      ],
+      "modal": {
+        "closeAriaLabel": "閉じる"
+      }
+    },
+    "cta": {
+      "title": "購入前にお試しください",
+      "description": "全機能を備えた21日間の無料試用期間を提供しています。その後もソフトウェアを使用したい場合は、ライセンスを購入してください。",
+      "primaryLabel": "今すぐダウンロード",
+      "secondaryLabel": "ライセンスを購入"
+    },
+    "assets": {
+      "logo": "/images/download/yulogo_96.png"
+    }
+  },
+  "installedContent": {
+    "tips": [
+      "上部の検索バーに名前の一部を入力することで、アンインストールするアプリを見つけることができます。",
+      "ハンターモードを使用すると、プログラムをターゲットにしてアンインストールを開始できます。",
+      "「オプション」メニューで復元ポイントの作成をオフにすることができます。",
+      "アンインストールモードにはいくつかレベルがあります。通常モードはほとんどの場合機能しますが、スーパーモードは特に問題のあるソフトウェアにのみ推奨され、時間がかかります。",
+      "ファイルシュレッダーツールを使用すると、不要なファイルを完全に消去できます！復元の可能性はありません。100%回復不可能です。",
+      "スタートアップマネージャーで新しいスタートアップ項目を簡単に追加できます。",
+      "30日間の返金保証を提供しています！質問はありません。満足できない場合は、返金をリクエストしてください。"
+    ]
+  },
+  "installedMarkdown": "# Your Uninstaller! をインストールしていただきありがとうございます\n\n### Your Uninstaller! を初めてお使いの方へ、いくつかの役立つヒントをご紹介します：\n\n- 上部の検索バーに名前の一部を入力することで、アンインストールするアプリを見つけることができます。\n- **ハンターモード**を使用すると、プログラムをターゲットにしてアンインストールを開始できます。\n- 「オプション」メニューで復元ポイントの作成をオフにすることができます。\n- アンインストールモードにはいくつかレベルがあります。**通常モード**はほとんどの場合機能しますが、**スーパーモード**は特に問題のあるソフトウェアにのみ推奨され、時間がかかります。\n- **ファイルシュレッダー**ツールを使用すると、不要なファイルを完全に消去できます！復元の可能性はありません。100%回復不可能です。\n- **スタートアップマネージャー**で新しいスタートアップ項目を簡単に追加できます。\n- **30日間の返金保証**を提供しています！質問はありません。満足できない場合は、返金をリクエストしてください。\n",
+  "installedAssets": {
+    "bannerSrc": "/images/installed/installed-banner.svg",
+    "bannerAlt": "インストール成功"
+  },
+  "uninstallerUpdateMarkdown": "# 新しいバージョンが利用可能です！\n\nUninstallerの新しいバージョンが利用可能です。\n\n数秒後にダウンロードが開始されます。ダウンロードしたファイルをインストールするだけで、ソフトウェアは最新バージョンに更新されます。開始されない場合は、下のボタンをクリックして手動でダウンロードしてください：\n\n[最新バージョンをダウンロード](https://www.ursoftware.com/dlds/yusetup.exe)",
+  "privacyContent": {
+    "title": "プライバシーポリシー",
+    "body": "# プライバシーポリシー\n  私たちは、お客様のプライバシーと提供される情報の保護に取り組んでいます。**URSoft, Incは、顧客情報を第三者に販売、貸与、リース、または開示することはありません。** URSoft, Incのプライバシーポリシーのその他の条件は以下の通りです：\n\n**情報の収集** お客様が製品の注文や登録、ソフトウェアの試用版やアップデートのダウンロード、テクニカルサポートのリクエスト、特別オファーやニュースレターへの登録などの活動を行う際、URSoftは情報の提供をお願いすることがあります。購入や注文の際にお願いする情報は、購入や注文の処理に必要なものに限られます。注文を処理する際、お名前、メールアドレス、住所（配送用）、電話番号、クレジットカード番号、種類、有効期限をお伺いします。この情報は、お客様が別途リクエストしない限り、注文に関連する事項にのみ使用されます。クレジットカード情報は、支払いが確認されるために合理的に必要な期間のみ保持されます。\n\n当社のウェブサイトや製品内でのその他の活動に参加する際にお願いする追加情報には、名前、郵送先住所、電話番号、ファックス番号、メールアドレス、および顧客の要件をよりよく理解し、高品質の製品とサービスを提供し続けるためのその他の人口統計情報が含まれる場合があります。この情報リクエストは任意であり、特定の活動に参加する場合にのみ必要です。求められた情報を入力することを選択した場合、新しいソフトウェアのデモ版、拡張機能、ユーザーヒント、製品情報、ニュースレター、特別オファーを受け取る資格が得られる場合があります。\n\nチャットルームや掲示板に投稿した情報は、そのサイトのすべてのユーザーが利用できます。\n\n**情報の使用方法** 収集された情報は..."
+  },
+  "refundContent": {
+    "title": "返金ポリシー",
+    "body": "# 返金ポリシー\n\n### 1. 適用範囲\nこのポリシーは、当社のウェブサイトから直接購入された「Your Uninstaller!」のすべてのライセンスに適用されます。\n\n### 2. 30日間返金保証\n私たちは、お客様が購入に完全に満足していただくことを望んでいます。何らかの理由でソフトウェアに満足できない場合は、購入日から**30日以内**であれば全額返金をリクエストできます。\n\n### 3. 対象となる理由\n通常、以下の理由による返金リクエストを承認します：\n- ソフトウェアが宣伝通りにお客様のコンピュータで動作しない。\n- サポートの支援にもかかわらず、ソフトウェアをインストールまたはアクティブ化できない。\n- 誤って重複購入した。\n\n### 4. 対象外\n以下の場合、返金が認められないことがあります：\n- 購入から30日以上経過したリクエスト。\n- ソフトウェアが完全にアクティブ化され、技術的な問題なく使用された場合の「気が変わった」。\n- 許可されていない再販業者からの購入。\n- 購入詳細（注文番号、メールなど）の提供がない。\n\n### 5. 返金のリクエスト方法\n返金をリクエストするには、件名を「Refund Request」として **support@ursoftware.com** までメールでお問い合わせください。\n以下を含めてください：\n- 注文番号\n- 購入時に使用したメールアドレス\n- 返金理由の簡単な説明\n\n### 6. 処理時間\n承認されると、返金は直ちに処理されます。銀行やカード発行会社によっては、明細に反映されるまで**5〜10営業日**かかる場合があります。"
+  },
+  "deliveryContent": {
+    "title": "配送ポリシー",
+    "body": "\n# 配送ポリシー\n### 1. 適用範囲\nこの配送ポリシー（以下「本ポリシー」）は、当社のウェブサイトを通じて**「Your Uninstaller」**のライセンスまたはダウンロードを購入するすべてのお客様に適用されます。\n\n### 2. 配送方法\n- 支払いが完了し、注文が確認されると、ソフトウェアは電子的に配送されます。\n- お客様は、ダウンロードリンク（またはライセンスキー/アクティベーション手順）を含むメールを受け取り、製品に即座にアクセスできます。\n- 特に指定がない限り、物理メディア（CD/USB）は発送されません。\n\n### 3. 配送のタイミング\n- 配送（つまり、ダウンロードリンク/ライセンスを含むメール）は通常、支払い確認後**5分以内**に開始されます。\n- まれに（例：決済システムの遅延や手動確認）、配送に最大**24時間**かかる場合があります。\n- 予想される時間内に配送メールが届かない場合は、サポートチームにご連絡ください（セクション8を参照）。\n\n### 4. ライセンスとアクティベーション\n- ライセンス版の場合、メールにはアクティベーション手順（例：ライセンスキー、アカウント手順）が含まれています。\n- ソフトウェアの使用は、当社の**使用許諾契約 / エンドユーザーライセンス条項**に従うものとします。\n\n### 5. アップデートとアップグレード\n- 配送後、お客様は同じメジャーバージョン（例：バージョン5.1から5.2）のマイナーアップデートやパッチを無料でダウンロードする権利があります。\n- メジャーアップグレード（例：バージョン5.1から6.0）には、別途ライセンスの購入やアップグレード料金が必要になる場合があります。\n\n### 6. 返金、返品、キャンセル\n- デジタルライセンスは通常返品不可ですが、お客様の満足を保証するために**30日間の返金保証**を提供しています。\n- 技術的な問題が発生した場合や満足いただけない場合は、返金ポリシーの条件に従い、購入から**30日以内**に返金をリクエストできます。\n- 返金をリクエストするには、注文詳細を添えてサポートチームにご連絡ください。返金が承認された場合、ソフトウェアをアンインストールし、ライセンスキーのすべてのコピーを破棄する必要があります。\n\n### 7. 配送の問題\n- 配送メールが届かない場合（例：スパムフィルターによる）、お客様はスパム/迷惑メールフォルダを確認し、有効なメールアドレスを提供する責任があります。\n- リクエストに応じて、ダウンロードリンクまたはライセンスキーを再送信します。\n- 外部要因（例：メールプロバイダー、インターネット障害）による遅延については責任を負いません。\n\n### 8. サポートと連絡先情報\n配送に関する問題が発生した場合、または指定された時間内にソフトウェアを受け取っていない場合は、サポートチームにご連絡ください：\n\nメール：**support@ursoftware.com**\n件名：「Delivery Issue – Your Uninstaller」\n\n注文番号、購入日、購入時に使用したメールアドレスを含めてください。\n\n### 9. 本ポリシーの変更\n当社は、この配送ポリシーをいつでも変更する権利を留保します。最新バージョンは常に当社のウェブサイトで入手可能です。変更は、改訂されたポリシーが掲載された日以降の新規購入に適用されます。"
+  },
+  "notFoundContent": {
+    "title": "404 ページが見つかりません",
+    "body": "申し訳ありませんが、お探しのページは存在しません。",
+    "homeButtonText": "ホームへ戻る"
+  },
+  "integrationHeader": {
+    "title": "重要な管理機能",
+    "subtitle": "クリーン、安全、そして高速",
+    "description": "Your Uninstaller は、より速く安全なPC環境を保つための実用的なツールを提供します。"
+  },
+  "integrationIcons": [
+    {
+      "src": "/images/integration/windows.png",
+      "alt": "Windows"
+    },
+    {
+      "src": "/images/integration/registry.png",
+      "alt": "レジストリエディター"
+    },
+    {
+      "src": "/images/integration/cleanup.png",
+      "alt": "クリーンアップ"
+    },
+    {
+      "src": "/images/integration/startup.png",
+      "alt": "スタートアップマネージャー"
+    },
+    {
+      "src": "/images/integration/privacy.png",
+      "alt": "プライバシーと保護"
+    },
+    {
+      "src": "/images/integration/speed.png",
+      "alt": "パフォーマンス速度"
+    }
+  ],
+  "footerCompanyDescription": "WindowsユーザーのPCを清潔・高速・安全に保つお手伝いをします。Your Uninstaller はアプリを完全に削除し、レジストリやディスクの残留物を消去、スタートアップ項目を管理し、セキュアなシュレッディングでプライバシーを保護します。シンプルで信頼でき、更新とサポートに支えられ、メンテナンスをワンクリックで実現し、生産性を保ちます。",
+  "footerContent": {
+    "logoAlt": "URSoft ロゴ",
+    "sections": [
+      {
+        "title": "クイックリンク",
+        "links": [
+          {
+            "label": "ホーム",
+            "href": "/"
+          },
+          {
+            "label": "機能",
+            "href": "/features"
+          },
+          {
+            "label": "ダウンロード",
+            "href": "/download"
+          },
+          {
+            "label": "注文",
+            "href": "/order"
+          }
+        ]
+      },
+      {
+        "title": "サポート",
+        "links": [
+          {
+            "label": "サポート",
+            "href": "/support"
+          },
+          {
+            "label": "プライバシーポリシー",
+            "href": "/privacy"
+          },
+          {
+            "label": "返金ポリシー",
+            "href": "/refund-policy"
+          },
+          {
+            "label": "配送ポリシー",
+            "href": "/delivery-policy"
+          }
+        ]
+      },
+      {
+        "title": "ニュースレター",
+        "description": "最新ニュースと更新情報をお届けします。",
+        "embed": {
+          "uid": "489ef797fa",
+          "src": "https://ursoftware.kit.com/489ef797fa/index.js"
+        }
+      }
+    ],
+    "bottomLinks": [
+      {
+        "label": "ホーム",
+        "href": "/"
+      },
+      {
+        "label": "注文",
+        "href": "/order"
+      },
+      {
+        "label": "サポート",
+        "href": "/support"
+      },
+      {
+        "label": "プライバシーポリシー",
+        "href": "/privacy"
+      },
+      {
+        "label": "配送ポリシー",
+        "href": "/delivery-policy"
+      }
+    ],
+    "copyrightBrand": "URSoft, Inc.",
+    "socialAriaLabel": "social icon"
+  },
+  "headerMenu": [
+    {
+      "id": 1,
+      "title": "ホーム",
+      "newTab": false,
+      "path": "/"
+    },
+    {
+      "id": 2,
+      "title": "機能",
+      "newTab": false,
+      "path": "/features"
+    },
+    {
+      "id": 2.05,
+      "title": "ダウンロード",
+      "newTab": false,
+      "path": "/download"
+    },
+    {
+      "id": 2.06,
+      "title": "注文",
+      "newTab": false,
+      "path": "/order"
+    },
+    {
+      "id": 4,
+      "title": "サポート",
+      "newTab": false,
+      "path": "/support"
+    }
+  ],
+  "headerContent": {
+    "logoAlt": "logo",
+    "hamburgerAriaLabel": "hamburger Toggler"
+  },
+  "ctaAlt": {
+    "shape": "Saly",
+    "arrow": "Arrow"
+  },
+  "pricingLabels": {
+    "lifetimeTag": "生涯アップグレード",
+    "buyButton": "今すぐ購入",
+    "oneTimeNote": "一度の支払い"
+  },
+  "contactTexts": {
+    "formTitle": "メッセージを送信",
+    "namePlaceholder": "姓名",
+    "emailPlaceholder": "your.email@domain.tld",
+    "subjectLabel": "選択",
+    "subjectOptions": [
+      {
+        "value": "Pre-purchase Questions",
+        "label": "購入前の質問"
+      },
+      {
+        "value": "Lost Key",
+        "label": "キーを紛失"
+      },
+      {
+        "value": "Technical Inquiries",
+        "label": "技術的な問い合わせ"
+      },
+      {
+        "value": "Other",
+        "label": "その他"
+      }
+    ],
+    "messagePlaceholder": "ここにメッセージを入力してください...",
+    "sendButton": "メッセージを送信",
+    "sendAriaLabel": "send message",
+    "sidebar": {
+      "title": "所在地",
+      "locationTitle": "所在地",
+      "locationValue": "290 Maryam Springs 260, Courbevoie, Paris, France",
+      "emailTitle": "メールアドレス",
+      "emailValue": "yourmail@domainname.com",
+      "phoneTitle": "電話番号",
+      "phoneValue": "+009 42334 6343 843"
+    }
+  },
+  "faqHeaderContent": {
+    "badge": "FAQ",
+    "title": "よくある",
+    "titleEmphasis": "質問",
+    "moreLabel": "さらに詳しく"
+  },
+  "faqItems": [
+    {
+      "id": 1,
+      "quest": "Lorem ipsum dolor sit amet, consectetur",
+      "ans": "スタートアップや中小企業向けにデジタル体験サービスを提供しています。ブランドアイデンティティやデジタル体験を構築し、成功を支援します。"
+    },
+    {
+      "id": 2,
+      "quest": "Lorem ipsum dolor sit amet, consectetur",
+      "ans": "スタートアップや中小企業向けにデジタル体験サービスを提供しています。ブランドアイデンティティやデジタル体験を構築し、成功を支援します。"
+    },
+    {
+      "id": 3,
+      "quest": "Lorem ipsum dolor sit amet, consectetur",
+      "ans": "スタートアップや中小企業向けにデジタル体験サービスを提供しています。ブランドアイデンティティやデジタル体験を構築し、成功を支援します。"
+    }
+  ],
+  "accessibilityTexts": {
+    "scrollToTopAria": "scroll to top",
+    "scrollToTopSrOnly": "scroll to top"
+  },
+  "heroAlt": {
+    "shape": "shape",
+    "hero": "Hero"
+  },
+  "funFactAlt": {
+    "man": "Man",
+    "doodle": "Doodle",
+    "dotted": "Dotted"
+  },
+  "integrationAlt": {
+    "dotted": "Dotted"
+  },
+  "blogData": [
+    {
+      "_id": 1,
+      "mainImage": "/images/blog/blog-01.png",
+      "title": "オンラインビジネスのための無料広告",
+      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
+      "slug": "blog-details"
+    },
+    {
+      "_id": 2,
+      "mainImage": "/images/blog/blog-02.png",
+      "title": "デザインスキルを高める9つの方法",
+      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
+      "slug": "blog-details"
+    },
+    {
+      "_id": 2,
+      "mainImage": "/images/blog/blog-03.png",
+      "title": "コーディング速度を素早く改善するヒント",
+      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
+      "slug": "blog-details"
+    }
+  ],
+  "siteMetadata": {
+    "home": {
+      "title": "Your Uninstaller! - 不要なアプリを完全に削除するアンインストールソフト",
+      "description": "Your Uninstaller! - 無料ダウンロード。受賞歴のあるアンインストールスイートで、プログラムを完全に削除し、不要な痕跡をすべて消去します。",
+      "keywords": [
+        "Your Uninstaller!",
+        "uninstall",
+        "uninstaller",
+        "uninstall program",
+        "uninstaller software",
+        "add remove",
+        "add remove programs",
+        "cleanup",
+        "registry",
+        "Windows"
+      ],
+      "openGraph": {
+        "url": "https://www.ursoftware.com/",
+        "siteName": "Your Uninstaller!",
+        "image": "/images/logo/site-logo.png"
+      }
+    },
+    "features": {
+      "title": "機能 - Your Uninstaller! 7",
+      "description": "Your Uninstaller! 7 の主要機能"
+    },
+    "order": {
+      "title": "注文 - Your Uninstaller! 7",
+      "description": "ライセンスを選択して即時ダウンロード。安全なアンインストールと深いシステムクリーンアップが含まれます。"
+    },
+    "support": {
+      "title": "サポート - Your Uninstaller! 7",
+      "description": "Your Uninstaller! 7 のサポートページ"
+    },
+    "privacy": {
+      "title": "プライバシーポリシー - Your Uninstaller! 7",
+      "description": "URSoft, Inc. のプライバシーポリシー"
+    },
+    "refundPolicy": {
+      "title": "返金ポリシー - Your Uninstaller! 7",
+      "description": "30日間返金保証と返金手順"
+    },
+    "deliveryPolicy": {
+      "title": "配送ポリシー - Your Uninstaller! 7",
+      "description": "電子配信のタイミング、ライセンス有効化、サポート"
+    },
+    "docs": {
+      "title": "ドキュメント - Solid SaaS Boilerplate",
+      "description": "Solid Pro のドキュメントページ"
+    },
+    "download": {
+      "title": "無料ダウンロード - Your Uninstaller! 7",
+      "description": "Your Uninstaller! 7 をダウンロード - Windows向け最強アンインストーラー。21日間無料体験付き。"
+    },
+    "auth": {
+      "signin": {
+        "title": "アカウントにサインイン",
+        "emailLabel": "メール",
+        "emailPlaceholder": "メールアドレスを入力",
+        "passwordLabel": "パスワード",
+        "passwordPlaceholder": "パスワードを入力",
+        "forgotPassword": "パスワードをお忘れですか?",
+        "rememberMe": "ログイン状態を保持",
+        "buttonText": "サインイン",
+        "signupLink": "アカウントをお持ちでない方はこちら。サインアップ"
+      },
+      "signup": {
+        "title": "新しいアカウントを作成",
+        "nameLabel": "氏名",
+        "namePlaceholder": "氏名を入力",
+        "emailLabel": "メール",
+        "emailPlaceholder": "メールアドレスを入力",
+        "passwordLabel": "パスワード",
+        "passwordPlaceholder": "パスワードを入力",
+        "confirmPasswordLabel": "パスワード確認",
+        "confirmPasswordPlaceholder": "パスワードを確認",
+        "agreeTerms": "利用規約に同意します",
+        "buttonText": "サインアップ",
+        "signinLink": "すでにアカウントをお持ちですか? サインイン"
+      }
+    },
+    "installed": {
+      "title": "Your Uninstaller! 7 のインストールありがとうございます",
+      "description": "Your Uninstaller! 7 の新規ユーザー向けヒントとコツ"
+    },
+    "update": {
+      "title": "新しいバージョン - Your Uninstaller! 7",
+      "description": "Your Uninstaller! 7 の最新バージョンをダウンロード"
+    },
+    "blogDetails": {
+      "title": "ブログ詳細 - Your Uninstaller! 7",
+      "description": "最新のブログ記事をお読みください。"
+    },
+    "blog": {
+      "title": "ブログ - Your Uninstaller! 7",
+      "description": "最新のブログ記事をお読みください。"
+    }
+  },
+  "revSliderContent": {
+    "title": "Your Uninstaller! 7",
+    "subtitle": "不要なアプリを\n完全にアンインストール!",
+    "downloadLabel": "今すぐダウンロード",
+    "downloadUrl": "https://www.ursoftware.com/dlds/yusetup.exe",
+    "versionInfo": "Windows 11/10/8/7/Vista/XP に対応",
+    "laptopSrc": "/images/hero/hero2_1920_q90.webp",
+    "laptopAlt": "Your Uninstaller! 7 - Windows アンインストールソフト"
+  },
+  "site": {
+    "url": "https://www.ursoftware.com"
+  },
+  "docsContent": {
+    "sidebar": {
+      "title": "ドキュメント",
+      "sections": [
+        {
+          "title": "はじめに",
+          "links": [
+            {
+              "label": "Bootstrap テンプレート",
+              "href": "/docs/bootstrap-template"
+            },
+            {
+              "label": "Tailwind コンポーネント",
+              "href": "/docs/tailwind-component"
+            },
+            {
+              "label": "Tailwind テンプレート",
+              "href": "/docs/tailwind-template"
+            },
+            {
+              "label": "お問い合わせフォーム",
+              "href": "/docs/contact-form"
+            },
+            {
+              "label": "スタイルガイド",
+              "href": "/docs/style-guide"
+            }
+          ]
+        }
+      ]
+    },
+    "body": "# Bootstrap テンプレート\n\n## 見出しの例\n\nこれは見出しの下の段落です。標準的な Markdown コンテンツの表示例です。\n\n### 小見出し\n\n小見出しの下の別の段落。**太字**、*斜体*、`コード` などの Markdown が使用できます。\n\n- リスト項目 1\n- リスト項目 2\n\n```javascript\n// コードブロックの例\nconst greet = (name) => {\n  console.log(`Hello, ${name}!`);\n};\n\ngreet('World');\n```\n\n"
+  },
+  "orderFeatures": {
+    "title": "今すぐ注文する理由",
+    "items": [
+      {
+        "title": "即時配信",
+        "description": "購入後すぐにライセンスキーがメールで届きます。",
+        "icon": "/images/order/delivery-icon.svg"
+      },
+      {
+        "title": "安全な決済",
+        "description": "すべての取引は高度な暗号化で保護されています。",
+        "icon": "/images/order/security-icon.svg"
+      },
+      {
+        "title": "30日間返金保証",
+        "description": "満足できなければ30日以内に全額返金します。",
+        "icon": "/images/order/guarantee-icon.svg"
+      }
+    ]
+  },
+  "featuresTabContent": {
+    "tabs": [
+      {
+        "id": "tabOne",
+        "title": "クリーンなユーザーインターフェイス",
+        "subtitle": "直感的なデザイン",
+        "description": "洗練されたモダンなUIで、効率的に操作できます。すっきりとした体験を提供します。",
+        "image": "/images/features/features-light-01.svg",
+        "imageDark": "/images/features/features-dark-01.svg"
+      },
+      {
+        "id": "tabTwo",
+        "title": "必要なビジネスページ",
+        "subtitle": "包括的な機能",
+        "description": "主要な業務機能にアクセスできるページを用意。クライアント管理からレポートまで、必要なものが揃っています。",
+        "image": "/images/features/features-light-02.svg",
+        "imageDark": "/images/features/features-dark-02.svg"
+      },
+      {
+        "id": "tabThree",
+        "title": "完全な統合機能",
+        "subtitle": "機能を拡張",
+        "description": "既存のツールやサービスとシームレスに連携できます。堅牢なAPIと事前構築コネクタにより、ワークフローと生産性を向上します。",
+        "image": "/images/features/features-light-03.svg",
+        "imageDark": "/images/features/features-dark-03.svg"
+      }
+    ]
+  },
+  "seoRoutes": [
+    "/",
+    "/features",
+    "/download",
+    "/order",
+    "/support",
+    "/privacy",
+    "/refund-policy",
+    "/delivery-policy"
+  ],
+  "blogDetails": {
+    "searchPlaceholder": "ここで検索...",
+    "categoriesTitle": "カテゴリー",
+    "categories": ["ブログ", "イベント", "グリッド", "ニュース", "ラウンド"],
+    "imageAlt1": "Kobe Steel plant that supplied",
+    "title": "Kobe Steel plant that supplied",
+    "authorLabel": "著者:",
+    "authorName": "Jhon Doe",
+    "publishedOnLabel": "公開日:",
+    "publishedDate": "2023年7月30日",
+    "categoryLabel": "カテゴリー:",
+    "categoryName": "Events",
+    "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum ipsum.",
+    "paragraph2": "Aenean augue ex, condimentum vel metus vitae, aliquam porta elit. Quisque non metus ac orci mollis posuere. Mauris vel ipsum a diam interdum ultricies sed vitae neque. Nulla porttitor quam vitae pulvinar placerat. Nulla fringilla elit sit amet justo feugiat sodales. Morbi eleifend, enim non eleifend laoreet, odio libero lobortis lectus, non porttitor sem urna sit amet metus. In sollicitudin quam est, pellentesque consectetur felis fermentum vitae.",
+    "imageAlt2": "image",
+    "imageAlt3": "image",
+    "heading2": "Nunc elementum elit viverra, tempus quam non",
+    "paragraph3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum ipsum.",
+    "relatedPost": {
+      "title": "関連投稿",
+      "posts": [
+        {
+          "title": "現代のビジネス戦略におけるAIの影響",
+          "date": "2023-09-15",
+          "image": "/images/blog/blog-01.png"
+        },
+        {
+          "title": "クラウドコンピューティング: サーバーレスアーキテクチャを深掘り",
+          "date": "2023-08-22",
+          "image": "/images/blog/blog-02.png"
+        },
+        {
+          "title": "中小企業向けサイバーセキュリティのベストプラクティス",
+          "date": "2023-07-10",
+          "image": "/images/blog/blog-03.png"
+        }
+      ]
+    },
+    "sharePost": {
+      "title": "この投稿を共有:",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn"
+    }
+  }
+}
