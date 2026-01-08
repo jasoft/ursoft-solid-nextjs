@@ -1,5 +1,5 @@
 /**
- * Cloudflare Worker for legacy route localization
+ * Cloudflare Pages Middleware for legacy route localization
  *
  * Handles:
  * - Language detection from cookie, Accept-Language header, or default 'en'
@@ -143,53 +143,50 @@ function hasLocalePrefix(pathname) {
 }
 
 /**
- * Main request handler
+ * Main request handler (Cloudflare Pages Middleware)
  */
-const worker = {
-  async fetch(request, env, ctx) {
-    const url = new URL(request.url);
-    const pathname = url.pathname;
+export async function onRequest(context) {
+  const { request, next } = context;
+  const url = new URL(request.url);
+  const pathname = url.pathname;
 
-    // Step 1: Check if already has locale prefix -> pass through
-    if (hasLocalePrefix(pathname)) {
-      return fetch(request);
+  // Step 1: Check if already has locale prefix -> pass through
+  if (hasLocalePrefix(pathname)) {
+    return next();
+  }
+
+  // Step 2: Check if excluded path (static assets, API, system files) -> pass through
+  if (isExcludedPath(pathname)) {
+    return next();
+  }
+
+  // Step 3: Check if it's a page route (legacy paths) -> redirect
+  if (isPageRoute(pathname)) {
+    // Determine target locale
+    const cookieHeader = request.headers.get("Cookie");
+    const localeMatch = cookieHeader?.match(/preferredLocale=([^;]+)/);
+    const cookieLocale = localeMatch ? localeMatch[1] : null;
+    const acceptLanguage = request.headers.get("Accept-Language");
+    const defaultLocale = "en";
+
+    let targetLocale = cookieLocale;
+
+    if (!targetLocale || !LOCALES.includes(targetLocale)) {
+      targetLocale = parseAcceptLanguage(acceptLanguage);
     }
 
-    // Step 2: Check if excluded path (static assets, API, system files) -> pass through
-    if (isExcludedPath(pathname)) {
-      return fetch(request);
+    // If still not valid, use default
+    if (!LOCALES.includes(targetLocale)) {
+      targetLocale = defaultLocale;
     }
 
-    // Step 3: Check if it's a page route (legacy paths) -> redirect
-    if (isPageRoute(pathname)) {
-      // Determine target locale
-      const cookieHeader = request.headers.get("Cookie");
-      const localeMatch = cookieHeader?.match(/preferredLocale=([^;]+)/);
-      const cookieLocale = localeMatch ? localeMatch[1] : null;
-      const acceptLanguage = request.headers.get("Accept-Language");
-      const defaultLocale = "en";
+    // Build new URL with locale prefix
+    const newUrl = `${url.protocol}//${url.host}/${targetLocale}${pathname}${url.search}`;
 
-      let targetLocale = cookieLocale;
+    // 302 redirect
+    return Response.redirect(newUrl, 302);
+  }
 
-      if (!targetLocale || !LOCALES.includes(targetLocale)) {
-        targetLocale = parseAcceptLanguage(acceptLanguage);
-      }
-
-      // If still not valid, use default
-      if (!LOCALES.includes(targetLocale)) {
-        targetLocale = defaultLocale;
-      }
-
-      // Build new URL with locale prefix
-      const newUrl = `${url.protocol}//${url.host}/${targetLocale}${pathname}${url.search}`;
-
-      // 302 redirect
-      return Response.redirect(newUrl, 302);
-    }
-
-    // Step 4: Pass through everything else
-    return fetch(request);
-  },
-};
-
-export default worker;
+  // Step 4: Pass through everything else
+  return next();
+}
