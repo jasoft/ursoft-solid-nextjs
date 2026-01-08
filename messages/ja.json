@@ -310,19 +310,23 @@
       "items": [
         {
           "src": "/images/download/yu_main_hd.png",
-          "alt": "Your Uninstaller! 7 メイン画面"
+          "alt": "Your Uninstaller! 7 メイン画面",
+          "title": "Your Uninstaller! 7 メイン画面"
         },
         {
           "src": "/images/download/yu_main_hd_2.png",
-          "alt": "Your Uninstaller! 7 アンインストール画面"
+          "alt": "Your Uninstaller! 7 アンインストール画面",
+          "title": "Your Uninstaller! 7 アンインストール画面"
         },
         {
           "src": "/images/download/yu_main_hd_3.png",
-          "alt": "Your Uninstaller! 7 ディープスキャン"
+          "alt": "Your Uninstaller! 7 ディープスキャン",
+          "title": "Your Uninstaller! 7 ディープスキャン"
         },
         {
           "src": "/images/download/yu_main_hd_4.png",
-          "alt": "Your Uninstaller! 7 スタートアップ管理"
+          "alt": "Your Uninstaller! 7 スタートアップ管理",
+          "title": "Your Uninstaller! 7 スタートアップ管理"
         }
       ],
       "modal": {

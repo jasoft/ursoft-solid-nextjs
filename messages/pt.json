@@ -310,19 +310,23 @@
       "items": [
         {
           "src": "/images/download/yu_main_hd.png",
-          "alt": "Your Uninstaller! 7 Tela principal"
+          "alt": "Your Uninstaller! 7 Tela principal",
+          "title": "Your Uninstaller! 7 Tela principal"
         },
         {
           "src": "/images/download/yu_main_hd_2.png",
-          "alt": "Your Uninstaller! 7 Tela de desinstalação"
+          "alt": "Your Uninstaller! 7 Tela de desinstalação",
+          "title": "Your Uninstaller! 7 Tela de desinstalação"
         },
         {
           "src": "/images/download/yu_main_hd_3.png",
-          "alt": "Your Uninstaller! 7 Varredura profunda"
+          "alt": "Your Uninstaller! 7 Varredura profunda",
+          "title": "Your Uninstaller! 7 Varredura profunda"
         },
         {
           "src": "/images/download/yu_main_hd_4.png",
-          "alt": "Your Uninstaller! 7 Gerenciador de inicialização"
+          "alt": "Your Uninstaller! 7 Gerenciador de inicialização",
+          "title": "Your Uninstaller! 7 Gerenciador de inicialização"
         }
       ],
       "modal": {
