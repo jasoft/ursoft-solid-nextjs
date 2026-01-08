@@ -11,25 +11,40 @@
 
 文件位置：`workers/locale-redirect-worker.js`
 
-### 2. 通过 Cloudflare Dashboard 部署
+### 2. 部署方式（二选一）
+
+#### 方法 A: 使用 Wrangler CLI（推荐）
+
+这是最快且不易出错的方法，已配置好 `wrangler.toml`。
+
+1. 进入 workers 目录：
+   ```bash
+   cd workers
+   ```
+2. 部署并自动绑定路由：
+   ```bash
+   npx wrangler deploy
+   ```
+
+#### 方法 B: 通过 Cloudflare Dashboard 部署
 
 1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com)
 2. 选择你的域名
 3. 进入 **Workers & Pages**
-4. 点击 **Create Application**
-5. 选择 **Create Worker**
-6. 命名 Worker（如 `locale-redirect`）
-7. 将 `locale-redirect-worker.js` 内容复制到编辑器
-8. 点击 **Deploy**
+4. 点击 **Create Application** -> **Create Worker**
+5. 命名 Worker（如 `locale-redirect`）
+6. 将 `locale-redirect-worker.js` 内容复制到编辑器并点击 **Deploy**
 
-### 3. 配置路由绑定
+### 3. 配置路由绑定 (仅 Dashboard 方式需要手动配置)
 
-1. 在 Worker 页面点击 **Settings** → **Triggers**
-2. 点击 **Add Route**
+如果你使用了 **方法 A**，这一步已经自动完成了。如果是 **方法 B**：
+
+1. 在 Worker 页面点击 **Settings** (设置) → **Triggers** (触发器)
+2. 找到 **Routes** (路由) 区域，点击 **Add Route**
 3. 填写：
-   - Route: `yourdomain.com/*`（替换为你的域名）
-   - Zone: 选择你的域名
-4. 点击 **Add**
+   - Route: `www.ursoftware.com/*`（替换为你的实际域名）
+   - Zone: 选择 `ursoftware.com`
+4. 点击 **Add Route**
 
 ### 4. 验证部署
 

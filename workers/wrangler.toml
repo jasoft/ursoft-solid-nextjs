@@ -1,0 +1,14 @@
+name = "locale-redirect"
+main = "locale-redirect-worker.js"
+compatibility_date = "2024-01-01"
+
+# 绑定到自定义域名路由
+# 注意：你需要先在 Cloudflare 账户中拥有 ursoftware.com 这个 Zone
+[[routes]]
+pattern = "www.ursoftware.com/*"
+zone_name = "ursoftware.com"
+
+# 如果你也想匹配根域名 (可选)
+# [[routes]]
+# pattern = "ursoftware.com/*"
+# zone_name = "ursoftware.com"
