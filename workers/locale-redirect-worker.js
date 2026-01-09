@@ -8,7 +8,7 @@
  */
 
 // Supported locales
-const LOCALES = ["en", "zh", "fr", "es", "ja", "pt", "de", "ru"];
+const LOCALES = ["en", "zh", "fr", "es", "ja", "pt", "de", "ru", "it", "ko", "nl"];
 
 // Page route whitelist (all routes from app directory)
 const PAGE_ROUTES = [
