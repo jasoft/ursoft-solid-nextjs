@@ -36,6 +36,7 @@ export default async function OrderPage({
         pricingLabels={messages.pricingLabels}
         pricingOptions={messages.pricingOptions}
         pricingImageAlt={messages.pricingImageAlt}
+        locale={locale}
       />
     </main>
   );

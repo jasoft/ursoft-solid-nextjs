@@ -3,8 +3,17 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import NewsletterEmbed from "@/components/NewsletterEmbed";
+import { withLocalePrefix, Locale } from "@/lib/i18n";
 
-const Footer = ({ footerCompanyDescription, footerContent }: { footerCompanyDescription: string, footerContent: any }) => {
+const Footer = ({
+  footerCompanyDescription,
+  footerContent,
+  locale,
+}: {
+  footerCompanyDescription: string;
+  footerContent: any;
+  locale: Locale;
+}) => {
   return (
     <>
       <footer className="border-stroke dark:border-strokedark dark:bg-blacksection border-t bg-white">
@@ -30,7 +39,10 @@ const Footer = ({ footerCompanyDescription, footerContent }: { footerCompanyDesc
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-                <Link href="/" className="relative">
+                <Link
+                  href={withLocalePrefix("/", locale)}
+                  className="relative"
+                >
                   <Image
                     width={150}
                     height={31}
@@ -77,10 +89,10 @@ const Footer = ({ footerCompanyDescription, footerContent }: { footerCompanyDesc
                           {section.title}
                         </h4>
                         <ul>
-                          {section.links?.map((l, i) => (
+                          {section.links?.map((l: any, i: number) => (
                             <li key={i}>
                               <a
-                                href={l.href}
+                                href={withLocalePrefix(l.href, locale)}
                                 className="hover:text-primary mb-3 inline-block"
                               >
                                 {l.label}
@@ -119,10 +131,10 @@ const Footer = ({ footerCompanyDescription, footerContent }: { footerCompanyDesc
                           {section.title}
                         </h4>
                         <ul>
-                          {section.links?.map((l, i) => (
+                          {section.links?.map((l: any, i: number) => (
                             <li key={i}>
                               <a
-                                href={l.href}
+                                href={withLocalePrefix(l.href, locale)}
                                 className="hover:text-primary mb-3 inline-block"
                               >
                                 {l.label}
@@ -198,9 +210,12 @@ const Footer = ({ footerCompanyDescription, footerContent }: { footerCompanyDesc
               className="animate_top"
             >
               <ul className="flex items-center gap-8">
-                {footerContent.bottomLinks.map((l, i) => (
+                {footerContent.bottomLinks.map((l: any, i: number) => (
                   <li key={i}>
-                    <a href={l.href} className="hover:text-primary">
+                    <a
+                      href={withLocalePrefix(l.href, locale)}
+                      className="hover:text-primary"
+                    >
                       {l.label}
                     </a>
                   </li>

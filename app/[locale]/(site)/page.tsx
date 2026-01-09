@@ -100,6 +100,7 @@ export default async function Page({
         pricingLabels={messages.pricingLabels}
         pricingOptions={messages.pricingOptions}
         pricingImageAlt={messages.pricingImageAlt}
+        locale={locale}
       />
       <Contact
         contactTexts={messages.contactTexts}

@@ -33,11 +33,13 @@ export default async function LocaleLayout({
       <Header
         headerMenu={messages.headerMenu}
         headerContent={messages.headerContent}
+        locale={locale}
       />
       {children}
       <Footer
         footerCompanyDescription={messages.footerCompanyDescription}
         footerContent={messages.footerContent}
+        locale={locale}
       />
       <ScrollToTop accessibilityTexts={messages.accessibilityTexts} />
     </Providers>

@@ -3,14 +3,29 @@ import React from "react";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
 import { BadgeCheck } from "lucide-react";
+import { withLocalePrefix, Locale } from "@/lib/i18n";
 
-const Pricing = ({ pricingHeader, pricingOptions, pricingLabels, pricingIntro, pricingImageAlt }: { pricingHeader: any, pricingOptions: any[], pricingLabels: any, pricingIntro: any, pricingImageAlt: any }) => {
+const Pricing = ({
+  pricingHeader,
+  pricingOptions,
+  pricingLabels,
+  pricingIntro,
+  pricingImageAlt,
+  locale,
+}: {
+  pricingHeader: any;
+  pricingOptions: any[];
+  pricingLabels: any;
+  pricingIntro: any;
+  pricingImageAlt: any;
+  locale: Locale;
+}) => {
   return (
     <>
-      {/* <!-- ===== Pricing Start ===== --> */ }
+      {/* <!-- ===== Pricing Start ===== --> */}
       <section id="pricing" className="overflow-hidden pt-15 pb-20 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
-          {/* <!-- Section Title Start --> */ }
+          {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
               title: pricingHeader.title,
@@ -18,7 +33,7 @@ const Pricing = ({ pricingHeader, pricingOptions, pricingLabels, pricingIntro, p
               description: pricingHeader.description,
             }}
           />
-          {/* <!-- Section Title End --> */ }
+          {/* <!-- Section Title End --> */}
         </div>
 
         <div className="relative mx-auto mt-15 max-w-[1207px] px-4 md:px-8 xl:mt-20 xl:px-0">
@@ -51,7 +66,7 @@ const Pricing = ({ pricingHeader, pricingOptions, pricingLabels, pricingIntro, p
                 <p className="text-sm text-primary">{pricingLabels.oneTimeNote}</p>
                 <div className="mt-9 border-t border-stroke pt-9 pb-12.5 dark:border-strokedark">
                   <ul>
-                    {plan.bullets.map((b, i) => {
+                    {plan.bullets.map((b: string, i: number) => {
                       const highlight = /All upgrades are free/i.test(b);
                       return (
                         <li
@@ -95,7 +110,7 @@ const Pricing = ({ pricingHeader, pricingOptions, pricingLabels, pricingIntro, p
                   </ul>
                 </div>
                 <a
-                  href={plan.buyUrl || "/order"}
+                  href={plan.buyUrl || withLocalePrefix("/order", locale)}
                   className="group/btn inline-flex w-full items-center justify-center gap-2.5 rounded-md bg-primary px-4 py-3 font-medium text-white transition-all duration-300 hover:bg-primary/90"
                 >
                   <span className="duration-300 group-hover/btn:pr-2">

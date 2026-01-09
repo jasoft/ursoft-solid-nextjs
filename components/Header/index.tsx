@@ -1,22 +1,23 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { withLocalePrefix, Locale } from "@/lib/i18n";
 
 const Header = ({
   headerMenu,
   headerContent,
+  locale,
 }: {
   headerMenu: any;
   headerContent: any;
+  locale: Locale;
 }) => {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
 
   const pathUrl = usePathname();
-  const params = useParams();
-  const locale = (params?.locale as string) || "zh";
 
   const handleStickyMenu = () => {
     if (window.scrollY >= 100) {
@@ -36,7 +37,7 @@ const Header = ({
       <header className="relative z-50 w-full bg-white py-4 dark:bg-black">
         <div className="max-w-c-1390 relative mx-auto items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
           <div className="flex w-full items-center justify-between xl:w-1/4">
-            <Link href={`/${locale}/`}>
+            <Link href={withLocalePrefix("/", locale)}>
               <Image
                 src="/images/logo/site-logo.png"
                 alt={headerContent.logoAlt}
@@ -102,13 +103,9 @@ const Header = ({
           >
             <nav>
               <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
-                {headerMenu.map((menuItem, key) => {
-                  const href = `/${locale}${
-                    menuItem.path === "/" ? "" : menuItem.path
-                  }`;
-                  const isActive =
-                    pathUrl === href ||
-                    (menuItem.path === "/" && pathUrl === `/${locale}`);
+                {headerMenu.map((menuItem: any, key: number) => {
+                  const href = withLocalePrefix(menuItem.path, locale);
+                  const isActive = pathUrl === href;
 
                   return (
                     <li key={key}>
@@ -140,7 +137,7 @@ const Header = ({
       >
         <div className="max-w-c-1390 relative mx-auto items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
           <div className="flex w-full items-center justify-between xl:w-1/4">
-            <Link href={`/${locale}/`}>
+            <Link href={withLocalePrefix("/", locale)}>
               <Image
                 src="/images/logo/site-logo.png"
                 alt={headerContent.logoAlt}
@@ -206,13 +203,9 @@ const Header = ({
           >
             <nav>
               <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
-                {headerMenu.map((menuItem, key) => {
-                  const href = `/${locale}${
-                    menuItem.path === "/" ? "" : menuItem.path
-                  }`;
-                  const isActive =
-                    pathUrl === href ||
-                    (menuItem.path === "/" && pathUrl === `/${locale}`);
+                {headerMenu.map((menuItem: any, key: number) => {
+                  const href = withLocalePrefix(menuItem.path, locale);
+                  const isActive = pathUrl === href;
 
                   return (
                     <li key={key}>
