@@ -30,6 +30,24 @@ export default async function SingleBlogPage({
 }) {
   const { locale } = await params;
   const messages = await getMessages(locale);
+  console.log(`[DEBUG LOG] Locale: ${locale}`);
+  if (messages?.blogDetails?.relatedPost) {
+      console.log(`[DEBUG LOG] relatedPost title: ${messages.blogDetails.relatedPost.title}`);
+  }
+  if (messages?.blogData) {
+      console.log(`[DEBUG LOG] blogData length: ${messages.blogData.length}`);
+      if (messages.blogData.length > 0) {
+          console.log(`[DEBUG LOG] first post title: ${messages.blogData[0].title}`);
+      }
+  } else {
+      console.log(`[DEBUG LOG] blogData MISSING`);
+  }
+  if (messages?.blogDetails?.sharePost) {
+       console.log(`[DEBUG LOG] sharePost title: ${messages.blogDetails.sharePost.title}`);
+  } else {
+       console.log(`[DEBUG LOG] sharePost MISSING`);
+  }
+
   return (
     <>
       <section className="pb-20 pt-35 lg:pb-25 lg:pt-45 xl:pb-30 xl:pt-50">
@@ -81,7 +99,10 @@ export default async function SingleBlogPage({
                 </ul>
               </div>
 
-              <RelatedPost relatedPostTexts={messages.blogDetails.relatedPost} />
+              <RelatedPost
+                relatedPostTexts={messages.blogDetails.relatedPost}
+                posts={messages.blogData.slice(0, 3)}
+              />
             </div>
 
             <div className="lg:w-2/3">

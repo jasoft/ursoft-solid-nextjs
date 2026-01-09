@@ -29,6 +29,12 @@ export default async function DocsPage({
 }) {
   const { locale } = await params;
   const messages = await getMessages(locale);
+  console.log(`[DEBUG LOG DOCS] Locale: ${locale}`);
+  console.log(`[DEBUG LOG DOCS] docsContent exists: ${!!messages?.docsContent}`);
+  if (messages?.docsContent) {
+      console.log(`[DEBUG LOG DOCS] sidebar title: ${messages.docsContent.sidebar?.title}`);
+      console.log(`[DEBUG LOG DOCS] body length: ${messages.docsContent.body?.length}`);
+  }
   const mdx = messages.docsContent.body;
 
   return (

@@ -588,18 +588,23 @@
   "faqItems": [
     {
       "id": 1,
-      "quest": "Lorem ipsum dolor sit amet, consectetur",
-      "ans": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences."
+      "quest": "What is Your Uninstaller!?",
+      "ans": "Your Uninstaller! is a professional uninstaller suite designed to remove programs completely and easily. It goes beyond standard uninstallation by scanning for and removing every trace of unwanted programs, including leftover files and registry entries."
     },
     {
       "id": 2,
-      "quest": "Lorem ipsum dolor sit amet, consectetur",
-      "ans": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences."
+      "quest": "Why is it better than the Windows Add/Remove Programs?",
+      "ans": "The built-in Windows uninstaller often leaves behind junk files and registry keys that can slow down your PC. Your Uninstaller! ensures a clean removal, freeing up disk space and maintaining system performance."
     },
     {
       "id": 3,
-      "quest": "Lorem ipsum dolor sit amet, consectetur",
-      "ans": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences."
+      "quest": "Can it remove stubborn or hidden programs?",
+      "ans": "Yes, Your Uninstaller! features a 'Force Uninstall' mode that can detect and remove programs that don't show up in the standard list or refuse to uninstall due to corrupted files."
+    },
+    {
+      "id": 4,
+      "quest": "Is it easy for beginners to use?",
+      "ans": "Definitely. It features a user-friendly interface with a 'one-click' uninstallation process, making it accessible for users of all technical levels."
     }
   ],
   "accessibilityTexts": {

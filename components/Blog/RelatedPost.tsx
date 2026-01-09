@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const RelatedPost = ({ relatedPostTexts }: { relatedPostTexts: any }) => {
+const RelatedPost = ({ relatedPostTexts, posts }: { relatedPostTexts: any; posts: any[] }) => {
   return (
     <>
       <div className="animate_top rounded-md border border-stroke bg-white p-9 shadow-solid-13 dark:border-strokedark dark:bg-blacksection">
@@ -11,7 +11,7 @@ const RelatedPost = ({ relatedPostTexts }: { relatedPostTexts: any }) => {
         </h4>
 
         <div>
-          {relatedPostTexts.posts.map((post: any, key: number) => (
+          {posts.map((post: any, key: number) => (
             <div
               className="mb-7.5 flex flex-wrap gap-4 xl:flex-nowrap 2xl:gap-6"
               key={key}
