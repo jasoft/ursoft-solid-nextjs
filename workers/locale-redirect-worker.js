@@ -181,9 +181,19 @@ const worker = {
       return Response.redirect(wwwUrl, 301);
     }
 
-    // Step 1: Check if already has locale prefix -> pass through
+    // Step 1: Check if already has locale prefix -> pass through & Set Cookie
     if (hasLocalePrefix(pathname)) {
-      return proxyToOrigin(request);
+      const locale = pathname.split("/")[1];
+      const response = await proxyToOrigin(request);
+      
+      // Clone the response to modify headers and set cookie
+      const newResponse = new Response(response.body, response);
+      newResponse.headers.set(
+        "Set-Cookie",
+        `preferredLocale=${locale}; Path=/; Max-Age=31536000; SameSite=Lax`
+      );
+      
+      return newResponse;
     }
 
     // Step 2: Check if excluded path (static assets, API, system files) -> pass through
