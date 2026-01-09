@@ -500,32 +500,34 @@
   },
   "headerMenu": [
     {
-      "label": "Главная",
+      "id": 1,
+      "title": "Главная",
+      "newTab": false,
       "path": "/"
     },
     {
-      "label": "Функции",
+      "id": 2,
+      "title": "Возможности",
+      "newTab": false,
       "path": "/features"
     },
     {
-      "label": "Скачать",
+      "id": 2.05,
+      "title": "Скачать",
+      "newTab": false,
       "path": "/download"
     },
     {
-      "label": "Заказать",
+      "id": 2.06,
+      "title": "Купить",
+      "newTab": false,
       "path": "/order"
     },
     {
-      "label": "Документы",
-      "path": "/docs"
-    },
-    {
-      "label": "Поддержка",
+      "id": 4,
+      "title": "Поддержка",
+      "newTab": false,
       "path": "/support"
-    },
-    {
-      "label": "Блог",
-      "path": "/blog"
     }
   ],
   "headerContent": {
@@ -904,7 +906,13 @@
   "blogDetails": {
     "searchPlaceholder": "Искать здесь...",
     "categoriesTitle": "Категории",
-    "categories": ["Блог", "События", "Сетки", "Новости", "Закругленный"],
+    "categories": [
+      "Блог",
+      "События",
+      "Сетки",
+      "Новости",
+      "Закругленный"
+    ],
     "imageAlt1": "Завод Kobe Steel",
     "title": "Завод Kobe Steel, который поставлял",
     "authorLabel": "Автор:",
@@ -950,41 +958,5 @@
     "title": "Наш блог",
     "subtitle": "Новости, советы и истории",
     "description": "Читайте последние статьи о безопасности, оптимизации и обслуживании ПК."
-  },
-  "headerMenu": [
-    {
-      "id": 1,
-      "title": "Главная",
-      "newTab": false,
-      "path": "/"
-    },
-    {
-      "id": 2,
-      "title": "Возможности",
-      "newTab": false,
-      "path": "/features"
-    },
-    {
-      "id": 2.05,
-      "title": "Скачать",
-      "newTab": false,
-      "path": "/download"
-    },
-    {
-      "id": 2.06,
-      "title": "Купить",
-      "newTab": false,
-      "path": "/order"
-    },
-    {
-      "id": 4,
-      "title": "Поддержка",
-      "newTab": false,
-      "path": "/support"
-    }
-  ],
-  "headerContent": {
-    "logoAlt": "логотип",
-    "hamburgerAriaLabel": "Переключатель меню"
   }
 }
