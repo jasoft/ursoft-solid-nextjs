@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import LanguageRedirect from "@/components/LanguageRedirect";
 import Lines from "@/components/Lines";
 import Providers from "@/components/Providers";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -31,7 +30,6 @@ export default async function LocaleLayout({
   return (
     <Providers>
       <Lines />
-      <LanguageRedirect />
       <Header
         headerMenu={messages.headerMenu}
         headerContent={messages.headerContent}
