@@ -2,7 +2,7 @@
   "heroData": {
     "title": "Your Uninstaller 7",
     "subtitle": "Verwijder elke ongewenste app volledig.",
-    "primaryButton": "Download Nu",
+    "primaryButton": "Nu downloaden",
     "primaryButtonUrl": "https://www.ursoftware.com/dlds/yusetup.exe",
     "description": "Ondersteunt Windows 11. Windows 10. Windows 8. Windows 7. \n\n Huidige versie: 7.5.0",
     "image": "/images/hero/hero2.png"
@@ -10,27 +10,27 @@
   "featuresSection": {
     "title": "Functies",
     "subtitle": "Kernfuncties van Your Uninstaller! 7",
-    "description": "Volledige verwijdering, registeropschoning, opstartbeheer, privacyversnippering en diepe scan — houd Windows schoon, veilig en snel."
+    "description": "Volledige verwijdering, registeropschoning, opstartbeheer, privacyvernietiging en diepe scan — houd Windows schoon, veilig en snel."
   },
   "pricingHeader": {
-    "title": "PRIJSPLANNEN",
+    "title": "TARIEVEN",
     "subtitle": "Eenvoudige, eerlijke licenties",
-    "description": "Kies uw licentie en download direct. Veilige verwijdering met diepe systeemopschoning inbegrepen."
+    "description": "Kies uw licentie en download direct. Veilige verwijdering inclusief diepe systeemopschoning."
   },
   "pricingIntro": {
-    "claimTitle": "Best Selling PC Uninstaller Software Worldwide",
-    "claimStats": "Trusted by millions of users worldwide for over 20 years",
+    "claimTitle": "Bestverkochte verwijderingssoftware wereldwijd",
+    "claimStats": "Vertrouwd door miljoenen gebruikers wereldwijd, al meer dan 20 jaar",
     "bullets": [
-      "Uninstall any app completely.",
-      "Clean registry and disk junk left by other uninstallers.",
-      "Deeply clean your private data.",
-      "Make your PC faster and more secure!",
-      "Automatically update to the latest version",
-      "Premium Technical Support"
+      "Verwijder elke app volledig.",
+      "Ruim register- en schijfresten op die door andere verwijderaars zijn achtergelaten.",
+      "Reinig uw privégegevens grondig.",
+      "Maak uw pc sneller en veiliger!",
+      "Update automatisch naar de nieuwste versie",
+      "Premium technische ondersteuning"
     ],
-    "keyDelivery": "You will receive an email containing your license key within 5 minutes after the payment.",
-    "instantDeliveryLabel": "Instant Delivery",
-    "guarantee": "30-day money-back guarantee!"
+    "keyDelivery": "U ontvangt binnen 5 minuten na betaling een e-mail met uw licentiesleutel.",
+    "instantDeliveryLabel": "Directe levering",
+    "guarantee": "30 dagen geld-terug-garantie!"
   },
   "brandData": [
     {
@@ -81,82 +81,82 @@
   },
   "importantFeatures": [
     {
-      "title": "Keeping your PC clean has always been challenging.",
-      "subTitle": "Now here's the solution. Several uninstall modes make it possible to obliterate every piece of the application.",
-      "description": "Your Uninstaller can scan the entire system for every trace of an application (which takes more time) or call the native uninstaller. It's highly customizable.",
+      "title": "Uw pc schoon houden was nog nooit zo eenvoudig.",
+      "subTitle": "Hier is de oplossing. Meerdere verwijderingsmodi maken het mogelijk om elk stukje van de applicatie volledig te wissen.",
+      "description": "Your Uninstaller kan het hele systeem scannen op elk spoor van een applicatie (wat meer tijd kost) of de oorspronkelijke verwijderaar aanroepen. Het is zeer aanpasbaar.",
       "image": "/images/important/uninstall_modes-1.png"
     },
     {
-      "title": "Find all traces left in a few clicks.",
-      "subTitle": "With our advanced scanning algorithms, Your Uninstaller can find junk files and registry entries related to a particular app.",
-      "description": "By monitoring and analysing the install logs and application behaviors, Your Uninstaller knows all about the application you want to remove. It works like a charm to do its job.",
+      "title": "Vind alle achtergebleven sporen in een paar klikken.",
+      "subTitle": "Met onze geavanceerde scanalgoritmen kan Your Uninstaller ongewenste bestanden en registervermeldingen vinden die betrekking hebben op een bepaalde app.",
+      "description": "Door installatielogs en applicatiegedrag te controleren en analyseren, weet Your Uninstaller alles over de applicatie die u wilt verwijderen. Het werkt fantastisch om zijn taak uit te voeren.",
       "image": "/images/important/junk_found-1.png"
     }
   ],
-  "aboutCtaLabel": "Learn More",
+  "aboutCtaLabel": "Meer informatie",
   "featuresData": [
     {
       "id": 1,
       "icon": "/images/features/complete-uninstall.svg",
-      "title": "Complete Uninstallation",
-      "description": "Uninstall any installed program completely, even corrupted ones. The most exciting part of Your Uninstaller! is: eradicating every aspect of a program. With Your Uninstaller, it's easy to uninstall any installed program - no trace left."
+      "title": "Volledige verwijdering",
+      "description": "Verwijder elk geïnstalleerd programma volledig, zelfs beschadigde. Het spannendste deel van Your Uninstaller! is: elk aspect van een programma uitroeien. Met Your Uninstaller is het eenvoudig om elk geïnstalleerd programma te verwijderen - er blijven geen sporen achter."
     },
     {
       "id": 2,
       "icon": "/images/features/deep-scan.svg",
-      "title": "Deep System Scan",
-      "description": "If you often install/uninstall software, you will inevitably experience corrupted programs. They stay on your program list and fail when you try to eliminate them. Let Your Uninstaller fix them."
+      "title": "Diepe systeemscan",
+      "description": "Als u vaak software installeert/verwijdert, krijgt u onvermijdelijk te maken met beschadigde programma's. Ze blijven in uw programmalijst staan en mislukken wanneer u ze probeert te elimineren. Laat Your Uninstaller ze repareren."
     },
     {
       "id": 3,
       "icon": "/images/features/file-shredder.svg",
-      "title": "Secure File Shredder",
-      "description": "After standard uninstallation, Your Uninstaller scans the system for related traces and removes any 'junk artifacts.' You'd never even know you installed the program on your PC."
+      "title": "Veilige bestandsvernietiger",
+      "description": "Na standaardverwijdering scant Your Uninstaller het systeem op gerelateerde sporen en verwijdert alle 'rommelartefacten'. U zou nooit weten dat u het programma ooit op uw pc hebt geïnstalleerd."
     },
     {
       "id": 4,
       "icon": "/images/features/startup-manager.svg",
-      "title": "Startup Manager",
-      "description": "Some programs are tough to remove, incredibly old-fashioned non-conforming programs. They are not even problems for Your Uninstaller!"
+      "title": "Opstartbeheer",
+      "description": "Sommige programma's zijn moeilijk te verwijderen, ongelooflijk ouderwetse niet-conforme programma's. Ze zijn geen enkel probleem voor Your Uninstaller!"
     },
     {
       "id": 5,
       "icon": "/images/features/disk-cleaner.svg",
-      "title": "Disk Cleaner",
-      "description": "No expert knowledge is required. Usability is always foremost on our minds when we develop products. Your Uninstaller is straightforward to use. No hassles, no confusion."
+      "title": "Schijfopruimer",
+      "description": "Er is geen expertkennis vereist. Gebruiksgemak staat altijd voorop bij het ontwikkelen van producten. Your Uninstaller is eenvoudig in gebruik. Geen gedoe, geen verwarring."
     },
     {
       "id": 6,
       "icon": "/images/features/force-uninstall.svg",
-      "title": "Force Uninstall",
-      "description": "Your Uninstaller supplies several well-designed utilities like Startup Manager, File Shredder, Disk Cleaner, and more. These tools provide excellent support to make Windows solid and fast."
+      "title": "Geforceerd verwijderen",
+      "description": "Your Uninstaller biedt verschillende goed ontworpen hulpprogramma's zoals Opstartbeheer, Bestandsvernietiger, Schijfopruimer en meer. Deze tools bieden uitstekende ondersteuning om Windows solide en snel te maken."
     }
   ],
   "funFactData": [
     {
       "id": 1,
       "value": "67",
-      "title": "Install log analysing modules"
+      "title": "Modules voor installatielogboekanalyse"
     },
     {
       "id": 2,
       "value": "312,940",
-      "title": "Happy clients"
+      "title": "Tevreden klanten"
     },
     {
       "id": 3,
       "value": "20",
-      "title": "Years development experience"
+      "title": "Jaren ontwikkelervaring"
     }
   ],
   "funFactHeader": {
-    "title": "Trusted by Windows Users Worldwide",
-    "description": "Safely uninstall apps, clean leftovers, and keep your PC fast and tidy."
+    "title": "Vertrouwd door Windows-gebruikers wereldwijd",
+    "description": "Verwijder apps veilig, ruim restjes op en houd uw pc snel en netjes."
   },
   "testimonialHeader": {
-    "title": "TESTIMONIALS",
-    "subtitle": "Real users. Real results.",
-    "description": "See how Your Uninstaller keeps Windows clean, fast and secure with deep uninstall and system cleanup."
+    "title": "GEBRUIKERSERVARINGEN",
+    "subtitle": "Echte gebruikers. Echte resultaten.",
+    "description": "Ontdek hoe Your Uninstaller Windows schoon, snel en veilig houdt met diepe verwijdering en systeemopruiming."
   },
   "testimonialData": [
     {
@@ -164,190 +164,190 @@
       "name": "Riccardo S.",
       "designation": "Smart Computing",
       "image": "/images/user/user-01.png",
-      "content": "Your Uninstaller! lets you remove programs that do not appear on the Add/Remove Programs list. You can also use Your Uninstaller! to remove clutter (unnecessary files that programs occasionally leave behind) from your Registry."
+      "content": "Met Your Uninstaller! kunt u programma's verwijderen die niet in de lijst Programma's toevoegen/verwijderen staan. U kunt Your Uninstaller! ook gebruiken om rommel (onnodige bestanden die programma's soms achterlaten) uit uw register te verwijderen."
     },
     {
       "id": 2,
       "name": "Leena R.",
       "designation": "PC Plus",
       "image": "/images/user/user-02.png",
-      "content": "Your Uninstaller! shows you all of your program icons in a huge scrollable window that's easy to navigate. If you want more information about a program before you uninstall it and get it removed completely, it's just two clicks away."
+      "content": "Your Uninstaller! toont al uw programmapictogrammen in een groot scrolbaar venster dat gemakkelijk te navigeren is. Als u meer informatie over een programma wilt voordat u het verwijdert en volledig wist, bent u slechts twee klikken verwijderd."
     },
     {
       "id": 3,
       "name": "Arturo Rivera",
-      "designation": "User",
+      "designation": "Gebruiker",
       "image": "/images/user/user-01.png",
-      "content": "I've been using your Your Unistaller for years and I think it is a great product! It is definitely much much better than the Windows build-in one. I congratulate you for a great product and I really recommend it!!! Thank You."
+      "content": "Ik gebruik uw Your Uninstaller al jaren en ik vind het een geweldig product! Het is zeker veel beter dan de ingebouwde van Windows. Gefeliciteerd met een geweldig product en ik raad het echt aan!!! Bedankt."
     },
     {
       "id": 4,
       "name": "Anthony A. Newlin",
-      "designation": "User",
+      "designation": "Gebruiker",
       "image": "/images/user/user-02.png",
-      "content": "The very best. It's really wonderful. I STRONGLY recommend Your Uninstaller! to EVERYONE who want his computer CLEAN!"
+      "content": "De allerbeste. Het is echt geweldig. Ik raad Your Uninstaller! STERK aan aan IEDEREEN die zijn computer SCHOON wil houden!"
     },
     {
       "id": 5,
       "name": "Carrie R. Powell",
-      "designation": "User",
+      "designation": "Gebruiker",
       "image": "/images/user/user-01.png",
-      "content": "It really saves me time and effort. Your Uninstaller! is exactly what my computer has been lacking. I could probably go into sales for you. Thanks guys, keep up the good work!"
+      "content": "Het bespaart me echt tijd en moeite. Your Uninstaller! is precies wat mijn computer miste. Ik zou waarschijnlijk de verkoop voor jullie kunnen doen. Bedankt jongens, ga zo door!"
     }
   ],
   "ctaData": {
-    "title": "Try out 21-days trial",
-    "description": "It's free to download and try our software for three weeks. The trial version does almost the same as full version except for some tiny restrictions.",
-    "primaryButton": "DOWNLOAD NOW",
-    "secondaryButton": "BUY NOW"
+    "title": "Probeer de 21-daagse proefversie",
+    "description": "Download en probeer gratis gedurende drie weken. De proefversie doet bijna hetzelfde als de volledige versie, op enkele beperkingen na.",
+    "primaryButton": "NU DOWNLOADEN",
+    "secondaryButton": "NU KOPEN"
   },
   "description": {
-    "title": "Why Choose Your Uninstaller?",
-    "callout": "Right-click any desktop icon and select uninstall - it's that simple!",
+    "title": "Waarom kiezen voor Your Uninstaller?",
+    "callout": "Klik met de rechtermuisknop op een bureaubladpictogram en selecteer verwijderen - zo simpel is het!",
     "paragraphs": [
-      "Your Uninstaller is the world's most popular uninstaller utility to manage all programs installed on your computer. It supports Windows 11 (32 and 64bit) and features a straightforward, clean interface.",
-      "Your Uninstaller works the way you think, making it easier to uninstall programs quickly, efficiently, and ultimately. With an advanced system scanning algorithm, Your Uninstaller! can easily remove any program installed on your computer - entirely, no trace left.",
-      "Your Uninstaller also manages applications installed on your PC; you can lock applications from accident removal, change default icons, write comments, save registration keys, and always know newly installed programs.",
-      "Uninstalling programs has never been this easy: right-click on an icon on the desktop and select uninstall; it will be removed, no more actions. Try all the capabilities of Your Uninstaller!"
+      "Your Uninstaller is 's werelds populairste verwijderingsprogramma om alle programma's op uw computer te beheren. Het ondersteunt Windows 11 (32 en 64bit) en heeft een duidelijke, schone interface.",
+      "Your Uninstaller werkt zoals u denkt, waardoor het gemakkelijker is om programma's snel, efficiënt en volledig te verwijderen. Met een geavanceerd systeemscanalgoritme kan Your Uninstaller! elk programma op uw computer eenvoudig verwijderen - geheel, zonder sporen achter te laten.",
+      "Your Uninstaller beheert ook applicaties die op uw pc zijn geïnstalleerd; u kunt applicaties vergrendelen tegen onbedoelde verwijdering, pictogrammen wijzigen, opmerkingen schrijven, registratiesleutels opslaan en altijd op de hoogte zijn van nieuw geïnstalleerde programma's.",
+      "Het verwijderen van programma's is nog nooit zo eenvoudig geweest: klik met de rechtermuisknop op een pictogram op het bureaublad en selecteer verwijderen; het wordt verwijderd, geen verdere acties. Probeer alle mogelijkheden van Your Uninstaller!"
     ]
   },
   "supportContent": {
-    "title": "CONTACT AND SUPPORT – Your Uninstaller! 7",
+    "title": "CONTACT EN ONDERSTEUNING – Your Uninstaller! 7",
     "intro": [
-      "We’re excited to talk to you! Fill out the form below and we’ll be in touch.",
-      "URSoft is committed to providing users and customers with high quality support and assistance. When you encounter a problem, or have a question, or need any other help with our products, you can ask us for help.",
-      "Your message will be carefully handled by our experienced staff, the response normally is within 48 hours."
+      "We horen graag van u! Vul het onderstaande formulier in en we nemen contact met u op.",
+      "URSoft doet er alles aan om gebruikers en klanten hoogwaardige ondersteuning te bieden. Wanneer u een probleem tegenkomt, een vraag heeft of andere hulp nodig heeft bij onze producten, kunt u ons om hulp vragen.",
+      "Uw bericht wordt zorgvuldig behandeld door onze ervaren medewerkers, de reactie is normaal gesproken binnen 48 uur."
     ],
     "lostKeyUrl": "https://cms.ursoftware.com/orders/lostkey",
-    "lostKeyButtonLabel": "Get My Key",
-    "lostKeyHint": "Lost your registration key? Click \"Get My Key\" for instant retrieval."
+    "lostKeyButtonLabel": "Mijn sleutel ophalen",
+    "lostKeyHint": "Uw registratiesleutel kwijt? Klik op \"Mijn sleutel ophalen\" voor direct ophalen."
   },
   "pricingOptions": [
     {
       "price": "$24.99",
-      "title": "Single PC License",
-      "subtitle": "Perfect for individual users",
+      "title": "Licentie voor 1 pc",
+      "subtitle": "Perfect voor individuele gebruikers",
       "bullets": [
-        "Unlimited time. Pay and get it.",
-        "All minor upgrade are free.",
-        "Get major upgrades at 50% cost.",
-        "Allow to install on one PC."
+        "Onbeperkte tijd. Betaal en ontvang het.",
+        "Alle kleine upgrades zijn gratis.",
+        "Krijg grote upgrades tegen 50% van de kosten.",
+        "Installatie toegestaan op één pc."
       ],
       "buyUrl": "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=36254&recommendation=YUFP&cfg=defaultsource"
     },
     {
       "price": "$39.99",
-      "title": "3 PCs License",
-      "subtitle": "Great for families",
-      "badge": "Most Popular",
+      "title": "Licentie voor 3 pc's",
+      "subtitle": "Geweldig voor gezinnen",
+      "badge": "Meest populair",
       "bullets": [
-        "Unlimited time. Pay and get it.",
-        "All minor upgrade are free.",
-        "Get major upgrades at 50% cost.",
-        "You can install it on 3 computers! Even share with your friends."
+        "Onbeperkte tijd. Betaal en ontvang het.",
+        "Alle kleine upgrades zijn gratis.",
+        "Krijg grote upgrades tegen 50% van de kosten.",
+        "U kunt het op 3 computers installeren! Deel het zelfs met uw vrienden."
       ],
       "buyUrl": "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=100687&cfg=defaultsource"
     },
     {
       "price": "$99.99",
-      "title": "Unlimited PCs License",
-      "subtitle": "For businesses & power users",
-      "badge": "Best Value",
+      "title": "Licentie voor onbeperkte pc's",
+      "subtitle": "Voor bedrijven & power users",
+      "badge": "Beste waarde",
       "bullets": [
-        "Unlimited time. Pay and get it.",
-        "All upgrades are free! Including major and minor.",
-        "No computer based limitation. Install it on any number of computers you own."
+        "Onbeperkte tijd. Betaal en ontvang het.",
+        "Alle upgrades zijn gratis! Inclusief grote en kleine.",
+        "Geen computerbeperking. Installeer het op een willekeurig aantal computers dat u bezit."
       ],
       "buyUrl": "https://ursoftware.cleverbridge.com/452/?scope=checkout&cart=248979"
     }
   ],
   "updateContent": {
-    "title": "New Version Available!",
+    "title": "Nieuwe versie beschikbaar!",
     "downloadUrl": "https://www.ursoftware.com/dlds/yusetup.exe"
   },
   "downloadPageContent": {
     "hero": {
       "title": "Your Uninstaller! 7",
-      "description": "The world's most popular uninstaller utility. Completely remove any program from your Windows PC - no trace left behind.",
-      "downloadLabel": "Download Free Trial",
+      "description": "'s Werelds populairste verwijderingsprogramma. Verwijder elk programma volledig van uw Windows-pc - er blijven geen sporen achter.",
+      "downloadLabel": "Gratis proefversie downloaden",
       "logoAlt": "Your Uninstaller Logo",
       "badges": {
         "os": "Windows 11/10/8/7",
-        "trial": "21-day Free Trial",
-        "secure": "Safe & Secure"
+        "trial": "21 dagen gratis proberen",
+        "secure": "Veilig & Beveiligd"
       }
     },
     "features": [
       {
-        "title": "Complete Uninstall",
-        "desc": "Remove programs entirely"
+        "title": "Volledige verwijdering",
+        "desc": "Verwijder programma's volledig"
       },
       {
-        "title": "Registry Cleanup",
-        "desc": "Clean leftover entries"
+        "title": "Registeropschoning",
+        "desc": "Ruim achtergebleven vermeldingen op"
       },
       {
-        "title": "Fast & Efficient",
-        "desc": "Lightning-fast scanning"
+        "title": "Snel & Efficiënt",
+        "desc": "Razendsnel scannen"
       },
       {
-        "title": "App Lock",
-        "desc": "Protect important apps"
+        "title": "App-vergrendeling",
+        "desc": "Bescherm belangrijke apps"
       }
     ],
     "description": {
-      "title": "Why Choose Your Uninstaller?",
-      "callout": "Right-click any desktop icon and select uninstall - it's that simple!",
+      "title": "Waarom kiezen voor Your Uninstaller?",
+      "callout": "Klik met de rechtermuisknop op een bureaubladpictogram en selecteer verwijderen - zo simpel is het!",
       "paragraphs": [
-        "Your Uninstaller is the world's most popular uninstaller utility to manage all programs installed on your computer. It supports Windows 11 (32 and 64bit) and features a straightforward, clean interface.",
-        "Your Uninstaller works the way you think, making it easier to uninstall programs quickly, efficiently, and ultimately. With an advanced system scanning algorithm, Your Uninstaller! can easily remove any program installed on your computer - entirely, no trace left.",
-        "Your Uninstaller also manages applications installed on your PC; you can lock applications from accident removal, change default icons, write comments, save registration keys, and always know newly installed programs.",
-        "Uninstalling programs has never been this easy: right-click on an icon on the desktop and select uninstall; it will be removed, no more actions. Try all the capabilities of Your Uninstaller!"
+        "Your Uninstaller is 's werelds populairste verwijderingsprogramma om alle programma's op uw computer te beheren. Het ondersteunt Windows 11 (32 en 64bit) en heeft een duidelijke, schone interface.",
+        "Your Uninstaller werkt zoals u denkt, waardoor het gemakkelijker is om programma's snel, efficiënt en volledig te verwijderen. Met een geavanceerd systeemscanalgoritme kan Your Uninstaller! elk programma op uw computer eenvoudig verwijderen - geheel, zonder sporen achter te laten.",
+        "Your Uninstaller beheert ook applicaties die op uw pc zijn geïnstalleerd; u kunt applicaties vergrendelen tegen onbedoelde verwijdering, pictogrammen wijzigen, opmerkingen schrijven, registratiesleutels opslaan en altijd op de hoogte zijn van nieuw geïnstalleerde programma's.",
+        "Het verwijderen van programma's is nog nooit zo eenvoudig geweest: klik met de rechtermuisknop op een pictogram op het bureaublad en selecteer verwijderen; het wordt verwijderd, geen verdere acties. Probeer alle mogelijkheden van Your Uninstaller!"
       ]
     },
     "gallery": {
-      "title": "Screenshots Gallery",
+      "title": "Screenshot galerij",
       "items": [
         {
           "src": "/images/download/yu_main_hd.png",
-          "alt": "Main Interface",
-          "title": "Main Interface"
+          "alt": "Hoofdinterface",
+          "title": "Hoofdinterface"
         },
         {
           "src": "/images/download/yu_uninstallmodes.png",
-          "alt": "Uninstall Modes",
-          "title": "Uninstall Modes"
+          "alt": "Verwijderingsmodi",
+          "title": "Verwijderingsmodi"
         },
         {
           "src": "/images/download/yu_scanning.png",
-          "alt": "Scanning",
-          "title": "Deep Scanning"
+          "alt": "Scannen",
+          "title": "Diep scannen"
         },
         {
           "src": "/images/download/yu_startup.png",
-          "alt": "Startup Manager",
-          "title": "Startup Manager"
+          "alt": "Opstartbeheer",
+          "title": "Opstartbeheer"
         },
         {
           "src": "/images/download/yu_diskcleaner.png",
-          "alt": "Disk Cleaner",
-          "title": "Disk Cleaner"
+          "alt": "Schijfopruimer",
+          "title": "Schijfopruimer"
         },
         {
           "src": "/images/download/yu_shredder.png",
-          "alt": "File Shredder",
-          "title": "File Shredder"
+          "alt": "Bestandsvernietiger",
+          "title": "Bestandsvernietiger"
         }
       ],
       "modal": {
-        "closeAriaLabel": "Close"
+        "closeAriaLabel": "Sluiten"
       }
     },
     "cta": {
-      "title": "Try Before You Buy",
-      "description": "We offer a 21-day trial period with all features. If you wish to use the software after that period, please purchase a license.",
-      "primaryLabel": "Download Now",
-      "secondaryLabel": "Purchase License"
+      "title": "Probeer voordat u koopt",
+      "description": "We bieden een proefperiode van 21 dagen met alle functies. Als u de software na die periode wilt gebruiken, schaf dan een licentie aan.",
+      "primaryLabel": "Nu downloaden",
+      "secondaryLabel": "Licentie kopen"
     },
     "assets": {
       "logo": "/images/download/yulogo_96.png"
@@ -355,42 +355,42 @@
   },
   "installedContent": {
     "tips": [
-      "You can find the app to uninstall by typing part of its name in the top search bar.",
-      "Hunter Mode allows you to aim the program and start uninstalling it.",
-      "You can turn off restore points creation in the \"Options\" menu.",
-      "There are several level of uninstall modes, Normal Mode works almost all the time, Super mode is only recommended on some quite annoying software as it will take much longer time than usual.",
-      "The File Shredder tool can help you wipe unwanted files completely! No chance of finding it back. It's 100% unrecoverable.",
-      "Startup Manager can add new startups easily.",
-      "We offer a 30-day money-back guarantee! No questions asked. I you are not satisfied, ask for a refund."
+      "U kunt de te verwijderen app vinden door een deel van de naam in de bovenste zoekbalk te typen.",
+      "Met de Hunter-modus kunt u op het programma richten en beginnen met verwijderen.",
+      "U kunt het maken van herstelpunten uitschakelen in het menu \"Opties\".",
+      "Er zijn verschillende niveaus van verwijderingsmodi: de Normale modus werkt bijna altijd, de Super-modus wordt alleen aanbevolen voor sommige behoorlijk vervelende software, omdat het veel meer tijd kost dan normaal.",
+      "De Bestandsvernietiger-tool kan u helpen ongewenste bestanden volledig te wissen! Geen kans om ze terug te vinden. Het is 100% onherstelbaar.",
+      "Opstartbeheer kan eenvoudig nieuwe opstartitems toevoegen.",
+      "We bieden een geld-terug-garantie van 30 dagen! Geen vragen gesteld. Als u niet tevreden bent, vraag dan om terugbetaling."
     ]
   },
-  "installedMarkdown": "# Thanks for installing Your Uninstaller!\n\n### If you are new to Your Uninstaller, here're some valuable tips for you:\n\n- You can find the app to uninstall by typing part of its name in the top search bar.\n- **Hunter Mode** allows you to aim the program and start uninstalling it.\n- You can turn off restore points creation in the \"Options\" menu.\n- There are several level of uninstall modes, **Normal Mode** works almost all the time, **Super mode** is only recommended on some quite annoying software as it will take much longer time than usual.\n- The **File Shredder** tool can help you wipe unwanted files completely! No chance of finding it back. It's 100% unrecoverable.\n- **Startup Manager** can add new startups easily.\n- We offer a **30-day money-back guarantee!** No questions asked. I you are not satisfied, ask for a refund.\n",
+  "installedMarkdown": "# Bedankt voor het installeren van Your Uninstaller! 7\n\n### Als u nieuw bent bij Your Uninstaller, zijn hier enkele waardevolle tips voor u:\n\n- U kunt de te verwijderen app vinden door een deel van de naam in de bovenste zoekbalk te typen.\n- Met de **Hunter-modus** kunt u op het programma richten en beginnen met verwijderen.\n- U kunt het maken van herstelpunten uitschakelen in het menu \"Opties\".\n- Er zijn verschillende niveaus van verwijderingsmodi: de **Normale modus** werkt bijna altijd, de **Super-modus** wordt alleen aanbevolen voor sommige behoorlijk vervelende software, omdat het veel meer tijd kost dan normaal.\n- De **Bestandsvernietiger**-tool kan u helpen ongewenste bestanden volledig te wissen! Geen kans om ze terug te vinden. Het is 100% onherstelbaar.\n- **Opstartbeheer** kan eenvoudig nieuwe opstartitems toevoegen.\n- We bieden een **geld-terug-garantie van 30 dagen!** Geen vragen gesteld. Als u niet tevreden bent, vraag dan om terugbetaling.\n",
   "installedAssets": {
     "bannerSrc": "/images/installed/installed-banner.svg",
-    "bannerAlt": "Installation successful"
+    "bannerAlt": "Installatie succesvol"
   },
-  "uninstallerUpdateMarkdown": "# New Version Available!\n\nA new version of Uninstaller is available.\n\nYour download will start in a few seconds, just install the downloaded file and your software will be updated to the latest version. If it does not, please click below button to manually download:\n\n[Download Latest Version](https://www.ursoftware.com/dlds/yusetup.exe)",
+  "uninstallerUpdateMarkdown": "# Nieuwe versie beschikbaar!\n\nEr is een nieuwe versie van Uninstaller beschikbaar.\n\nUw download start binnen enkele seconden. Installeer het gedownloade bestand en uw software wordt bijgewerkt naar de nieuwste versie. Als dit niet het geval is, klik dan op de onderstaande knop om handmatig te downloaden:\n\n[Download nieuwste versie](https://www.ursoftware.com/dlds/yusetup.exe)",
   "privacyContent": {
-    "title": "Privacy Policy",
-    "body": "# Privacy Policy\n  We are committed to protecting your privacy and the privacy of information you provide to us. **URSoft,Inc will never sell, rent, lease or even disclose customer information to third parties.** Other terms of URSoft,Inc' privacy policy are as follows:\n\n**Information Collection** When you engage in activities on our Web site like ordering or registering products, downloading trial versions of software or software updates, requesting technical support, or signing up for special offers or newsletters, URSoft may ask you to provide us with information. Information we ask you to provide when purchasing or ordering will only be the information necessary to process your purchase or order. When fulfilling an order we will ask for your name, email address, address (for shipping purposes), telephone number and credit card number, type and expiration date. We will use this information only for matters related to your order unless you request otherwise. Your credit card information will be maintained only for a period reasonably necessary to ensure payment has been received.\n\nAdditional information we may ask you to provide when choosing to engage in other activities on our website or within our products may include name, mailing address, telephone number, facsimile numbers, e-mail address, and other demographic information that will enable us to better understand the requirements of our customers and to continue to provide high quality products and service. This information request will be optional and required only to engage in certain activities. By choosing to enter the requested information when prompted, you may be eligible to receive demonstration versions of new software, extended functionality, user tips and product information, newsletters and special offers.\n\nAny information you post to a chat room or public bulletin is available to all users of that site.\n\n**How We Use Your Information** Any information collected will be used only by URSoft,Inc to improve our products, services and website. URSoft,Inc uses information for internal purposes only and does not sell, lease or rent information to third parties. URSoft,Inc may use information it has collected to provide you with notices which you indicate would be of use or interest to you. This may include notice of an ability to extend a products trial period, newsletters, website update notices, notification of the availability of new products, product updates as well as information on promotions and special offers. You will be entitled to elect not to receive any further notices.\n\nIf you enter into a trial period of URSoft software, we may contact you via email to provide additional information on our products and to survey you on your satisfaction with our software. We may also contact you to provide advance notice of termination of the trial period. Email is our preferred method of communication and we value the privilege to use it.\n\nURSoft,Inc may profile Web site activity and compile data in aggregate form in order to better understand user activities and the success of various ad campaigns. This information is important to us as it enables us to continue to provide products specific to our customer's interests. Site visitor behavior information is compiled in aggregate and does not represent individually identifiable information.\n\nURSoft,Inc may hire certain outside contractors to perform services on our behalf (such as packaging & shipping). We will only provide those companies the personal information they need to complete the desired service. They are not permitted to use customer information for any other purpose.\n\n**Security of Your Personal Information** URSoft,Inc takes the protection of the personal information you provide very seriously. Personal information collected is stored in password-controlled servers with limited access.\n\nInformation submitted to URSoft may be transferred across national boundaries to or from our staff in other countries. Internal data is shared through secured transmissions and maintained in secured databases. URSoft,Inc will only disclose information if required to do so by law, legal process or if in good faith it is deemed necessary for the public interest.\n\nURSoft,Inc may link website visitors to websites operated by third parties who are select partners of URSoft,Inc. URSoft,Inc attempts to select reputable partners but does not guarantee the security of any personal information disclosed on those sites.\n\n**Privacy Issues and Concerns** If you have any questions or concerns regarding our online privacy policy contact us by email at privacy@ursoftware.com\n\n**Cookies** Cookies are a feature of your web browser that allows websites to transfer bits of information to your computer for record-keeping purposes. You may be able to set your web browser to notify you when you receive a cookie or to not accept cookies at all. A cookie stored on your computer can be used to \"remember\" things that will improve the efficiency of your online experience. A cookie is not a piece of code and cannot be used to run programs or deliver viruses to your computer. URSoft,Inc uses cookies on its websites to help us publish content relevant to our customers needs and wants."
+    "title": "Privacybeleid",
+    "body": "# Privacybeleid\n  We zijn toegewijd aan het beschermen van uw privacy en de privacy van informatie die u aan ons verstrekt. **URSoft,Inc zal nooit klantinformatie verkopen, verhuren, leasen of zelfs maar bekendmaken aan derden.** Andere voorwaarden van het privacybeleid van URSoft,Inc zijn als volgt:\n\n**Informatieverzameling** Wanneer u deelneemt aan activiteiten op onze website, zoals het bestellen of registreren van producten, het downloaden van proefversies van software of software-updates, het aanvragen van technische ondersteuning of het aanmelden voor speciale aanbiedingen of nieuwsbrieven, kan URSoft u vragen om ons informatie te verstrekken. Informatie die we u vragen te verstrekken bij het kopen of bestellen, is alleen de informatie die nodig is om uw aankoop of bestelling te verwerken. Bij het uitvoeren van een bestelling vragen we om uw naam, e-mailadres, adres (voor verzenddoeleinden), telefoonnummer en creditcardnummer, type en vervaldatum. We zullen deze informatie alleen gebruiken voor zaken die verband houden met uw bestelling, tenzij u anders verzoekt. Uw creditcardgegevens worden slechts gedurende een redelijke periode bewaard om ervoor te zorgen dat de betaling is ontvangen.\n\nAanvullende informatie die we u kunnen vragen te verstrekken wanneer u ervoor kiest om deel te nemen aan andere activiteiten op onze website of binnen onze producten, kan bestaan uit naam, postadres, telefoonnummer, faxnummers, e-mailadres en andere demografische informatie die ons in staat stelt de behoeften van onze klanten beter te begrijpen en hoogwaardige producten en diensten te blijven leveren. Dit informatieverzoek is optioneel en alleen vereist om deel te nemen aan bepaalde activiteiten. Door ervoor te kiezen de gevraagde informatie in te voeren wanneer daarom wordt gevraagd, komt u mogelijk in aanmerking voor demonstratieversies van nieuwe software, uitgebreide functionaliteit, gebruikerstips en productinformatie, nieuwsbrieven en speciale aanbiedingen.\n\nAlle informatie die u op een chatroom of openbaar bulletin plaatst, is beschikbaar voor alle gebruikers van die site.\n\n**Hoe we uw informatie gebruiken** Alle verzamelde informatie wordt alleen door URSoft,Inc gebruikt om onze producten, diensten en website te verbeteren. URSoft,Inc gebruikt informatie alleen voor interne doeleinden en verkoopt, leaset of verhuurt geen informatie aan derden. URSoft,Inc kan informatie die het heeft verzameld gebruiken om u kennisgevingen te verstrekken waarvan u aangeeft dat ze nuttig of interessant voor u zouden zijn. Dit kan een kennisgeving zijn van de mogelijkheid om de proefperiode van een product te verlengen, nieuwsbrieven, website-updatekennisgevingen, kennisgeving van de beschikbaarheid van nieuwe producten, productupdates evenals informatie over promoties en speciale aanbiedingen. U heeft het recht om ervoor te kiezen geen verdere kennisgevingen te ontvangen.\n\nAls u een proefperiode van URSoft-software ingaat, kunnen we contact met u opnemen via e-mail om aanvullende informatie over onze producten te verstrekken en u te vragen naar uw tevredenheid over onze software. We kunnen ook contact met u opnemen om vooraf kennisgeving te doen van de beëindiging van de proefperiode. E-mail is onze favoriete communicatiemethode en we waarderen het voorrecht om deze te gebruiken.\n\nURSoft,Inc kan websiteactiviteit profilen en gegevens in geaggregeerde vorm samenstellen om gebruikersactiviteiten en het succes van verschillende advertentiecampagnes beter te begrijpen. Deze informatie is belangrijk voor ons omdat het ons in staat stelt producten te blijven leveren die specifiek zijn voor de interesses van onze klanten. Gedragsinformatie van sitebezoekers wordt geaggregeerd samengesteld en vertegenwoordigt geen individueel identificeerbare informatie.\n\nURSoft,Inc kan bepaalde externe contractanten inhuren om diensten namens ons uit te voeren (zoals verpakking en verzending). We zullen die bedrijven alleen de persoonlijke informatie verstrekken die ze nodig hebben om de gewenste service te voltooien. Ze mogen klantinformatie niet voor andere doeleinden gebruiken.\n\n**Beveiliging van uw persoonlijke informatie** URSoft,Inc neemt de bescherming van de persoonlijke informatie die u verstrekt zeer serieus. Verzamelde persoonlijke informatie wordt opgeslagen op wachtwoordbeveiligde servers met beperkte toegang.\n\nInformatie die aan URSoft wordt verstrekt, kan over de landsgrenzen heen worden overgedragen aan of van ons personeel in andere landen. Interne gegevens worden gedeeld via beveiligde transmissies en onderhouden in beveiligde databases. URSoft,Inc zal alleen informatie bekendmaken als dit wettelijk verplicht is, door een juridische procedure of als dit te goeder trouw noodzakelijk wordt geacht voor het algemeen belang.\n\nURSoft,Inc kan websitebezoekers doorverwijzen naar websites die worden beheerd door derden die geselecteerde partners van URSoft,Inc zijn. URSoft,Inc probeert gerenommeerde partners te selecteren, maar garandeert niet de veiligheid van persoonlijke informatie die op die sites wordt onthuld.\n\n**Privacykwesties en zorgen** Als u vragen of opmerkingen heeft over ons online privacybeleid, neem dan contact met ons op via e-mail op privacy@ursoftware.com\n\n**Cookies** Cookies zijn een functie van uw webbrowser waarmee websites stukjes informatie naar uw computer kunnen overbrengen voor registratiedoeleinden. U kunt uw webbrowser mogelijk zo instellen dat u een melding krijgt wanneer u een cookie ontvangt of om cookies helemaal niet te accepteren. Een cookie die op uw computer is opgeslagen, kan worden gebruikt om dingen te \"onthouden\" die de efficiëntie van uw online ervaring verbeteren. Een cookie is geen stukje code en kan niet worden gebruikt om programma's uit te voeren of virussen naar uw computer te sturen. URSoft,Inc gebruikt cookies op zijn websites om ons te helpen inhoud te publiceren die relevant is voor de behoeften en wensen van onze klanten."
   },
   "refundContent": {
-    "title": "Refund Policy",
-    "body": "# Refund Policy\n\n### 1. Scope\nThis policy applies to all licenses of \"Your Uninstaller!\" purchased directly from our website.\n\n### 2. 30-Day Money-Back Guarantee\nWe want you to be fully satisfied with your purchase. If you are not satisfied with the software for any reason, you may request a full refund within **30 days** of your purchase date.\n\n### 3. Eligible Reasons\nWe will generally approve refund requests for the following reasons:\n- The software does not work on your computer as advertised.\n- You are unable to install or activate the software despite support assistance.\n- Accidental duplicate purchases.\n\n### 4. Not Eligible\nRefunds may not be granted in the following cases:\n- Requests made more than 30 days after purchase.\n- \"Change of mind\" if the software has been fully activated and used without technical issues.\n- Purchases from unauthorized resellers.\n- Failure to provide purchase details (e.g., order ID, email).\n\n### 5. How to Request a Refund\nTo request a refund, please email us at **support@ursoftware.com** with the subject \"Refund Request\".\nPlease include:\n- Your Order Number\n- The email address used for the purchase\n- A brief description of the reason for the refund\n\n### 6. Processing Time\nOnce approved, your refund will be processed immediately. The credit may take **5–10 business days** to appear on your statement, depending on your bank or credit card issuer."
+    "title": "Restitutiebeleid",
+    "body": "# Restitutiebeleid\n\n### 1. Bereik\nDit beleid is van toepassing op alle licenties van \"Your Uninstaller!\" die rechtstreeks via onze website zijn gekocht.\n\n### 2. 30 dagen geld-terug-garantie\nWe willen dat u volledig tevreden bent met uw aankoop. Als u om wat voor reden dan ook niet tevreden bent met de software, kunt u binnen **30 dagen** na uw aankoopdatum een volledige terugbetaling aanvragen.\n\n### 3. In aanmerking komende redenen\nWe keuren terugbetalingsverzoeken over het algemeen goed om de volgende redenen:\n- De software werkt niet op uw computer zoals geadverteerd.\n- U kunt de software niet installeren of activeren ondanks hulp van de ondersteuning.\n- Per ongeluk dubbele aankopen.\n\n### 4. Niet in aanmerking komend\nTerugbetalingen worden mogelijk niet verleend in de volgende gevallen:\n- Verzoeken gedaan meer dan 30 dagen na aankoop.\n- \"Van gedachten veranderd\" als de software volledig is geactiveerd en zonder technische problemen is gebruikt.\n- Aankopen bij niet-geautoriseerde wederverkopers.\n- Het niet verstrekken van aankoopgegevens (bijv. bestelnummer, e-mail).\n\n### 5. Hoe een terugbetaling aan te vragen\nOm een terugbetaling aan te vragen, stuurt u ons een e-mail op **support@ursoftware.com** met het onderwerp \"Restitutieverzoek\".\nVermeld het volgende:\n- Uw bestelnummer\n- Het e-mailadres dat voor de aankoop is gebruikt\n- Een korte beschrijving van de reden voor de terugbetaling\n\n### 6. Verwerkingstijd\nZodra goedgekeurd, wordt uw terugbetaling onmiddellijk verwerkt. Het kan **5–10 werkdagen** duren voordat het tegoed op uw afschrift verschijnt, afhankelijk van uw bank of creditcardmaatschappij."
   },
   "deliveryContent": {
-    "title": "Delivery Policy",
-    "body": "\n# Delivery Policy\n### 1. Scope\nThis Delivery Policy (\"Policy\") applies to all customers who purchase licenses or downloads of **\"Your Uninstaller\"** via our website.\n\n### 2. Delivery Method\n- Upon successful payment and order confirmation, the software will be delivered electronically.\n- The customer will receive an email containing a download link (or license key / activation instructions), enabling immediate access to the product.\n- No physical media (CD/USB) will be shipped unless explicitly specified.\n\n### 3. Timing of Delivery\n- Delivery (i.e. email with download link / license) is typically initiated within **5 minutes** of payment confirmation.\n- In rare cases (e.g. payment system delays or manual review), delivery may take up to **24 hours**.\n- If you do not receive the delivery email within the expected timeframe, please contact our support team (see Sections 8).\n\n### 4. License & Activation\n- For licensed copies, the email will include instructions for activation (e.g. license key, account instructions).\n- Use of the software is subject to our **License Agreement / End-User License Terms**.\n\n### 5. Updates and Upgrades\n- Once delivered, the customer is entitled to download any minor updates or patches for the same major release free of charge (e.g. from version 5.1 to 5.2).\n- Major upgrades (e.g. from version 5.1 to version 6.0) may require the purchase of a separate license or upgrade fee.\n\n### 6. Refunds, Returns & Cancellations\n- While digital licenses are generally non-returnable, we provide a **30-day money-back guarantee** to ensure your satisfaction.\n- If you encounter technical issues or are not satisfied, you may request a refund within **30 days** of purchase, subject to the conditions in our Refund Policy.\n- To request a refund, please contact our support team with your order details. Upon refund approval, you must uninstall the software and destroy all copies of the license key.\n\n### 7. Delivery Issues\n- If the delivery email is not received (e.g. due to spam filters), the customer is responsible for checking spam/junk mail and providing a valid email address.\n- If requested, we will resend the download link or license key.\n- We do not assume liability for delays caused by external factors (e.g. email provider, internet outage).\n\n### 8. Support & Contact Information\nIf you experience any issue with delivery, or have not received your software within the stated timeframe, please contact our support team:\n\nEmail: **support@ursoftware.com**\nSubject line: \"Delivery Issue – Your Uninstaller\"\n\nPlease include your order number, date of purchase, and the email address used for purchase.\n\n### 9. Changes to This Policy\nWe reserve the right to modify this Delivery Policy at any time. The latest version will always be available on our website. Changes will apply to new purchases from the date the revised policy is posted."
+    "title": "Leveringsbeleid",
+    "body": "\n# Leveringsbeleid\n### 1. Bereik\nDit Leveringsbeleid (\"Beleid\") is van toepassing op alle klanten die licenties of downloads van **\"Your Uninstaller\"** via onze website kopen.\n\n### 2. Leveringsmethode\n- Na succesvolle betaling en orderbevestiging wordt de software elektronisch geleverd.\n- De klant ontvangt een e-mail met een downloadlink (of licentiesleutel / activeringsinstructies), die direct toegang geeft tot het product.\n- Er worden geen fysieke media (CD/USB) verzonden tenzij expliciet vermeld.\n\n### 3. Leveringstijd\n- Levering (d.w.z. e-mail met downloadlink / licentie) wordt doorgaans binnen **5 minuten** na betalingsbevestiging gestart.\n- In zeldzame gevallen (bijv. vertragingen in het betalingssysteem of handmatige beoordeling) kan de levering tot **24 uur** duren.\n- Als u de leveringsmail niet binnen de verwachte termijn ontvangt, neem dan contact op met ons ondersteuningsteam (zie Sectie 8).\n\n### 4. Licentie & Activering\n- Voor gelicentieerde exemplaren bevat de e-mail instructies voor activering (bijv. licentiesleutel, accountinstructies).\n- Gebruik van de software is onderworpen aan onze **Licentieovereenkomst / Eindgebruikerslicentievoorwaarden**.\n\n### 5. Updates en Upgrades\n- Eenmaal geleverd, heeft de klant recht op het gratis downloaden van kleine updates of patches voor dezelfde hoofdversie (bijv. van versie 5.1 naar 5.2).\n- Grote upgrades (bijv. van versie 5.1 naar versie 6.0) kunnen de aankoop van een aparte licentie of upgradekosten vereisen.\n\n### 6. Restituties, Retouren & Annuleringen\n- Hoewel digitale licenties over het algemeen niet geretourneerd kunnen worden, bieden we een **geld-terug-garantie van 30 dagen** om uw tevredenheid te garanderen.\n- Als u technische problemen ondervindt of niet tevreden bent, kunt u binnen **30 dagen** na aankoop een terugbetaling aanvragen, onderworpen aan de voorwaarden in ons Restitutiebeleid.\n- Om een terugbetaling aan te vragen, neemt u contact op met ons ondersteuningsteam met uw bestelgegevens. Na goedkeuring van de terugbetaling moet u de software verwijderen en alle kopieën van de licentiesleutel vernietigen.\n\n### 7. Leveringsproblemen\n- Als de leveringsmail niet wordt ontvangen (bijv. door spamfilters), is de klant verantwoordelijk voor het controleren van spam/ongewenste e-mail en het verstrekken van een geldig e-mailadres.\n- Op verzoek sturen we de downloadlink of licentiesleutel opnieuw.\n- Wij aanvaarden geen aansprakelijkheid voor vertragingen veroorzaakt door externe factoren (bijv. e-mailprovider, internetstoring).\n\n### 8. Ondersteuning & Contactinformatie\nAls u problemen ondervindt met de levering of uw software niet binnen de vermelde termijn hebt ontvangen, neem dan contact op met ons ondersteuningsteam:\n\nE-mail: **support@ursoftware.com**\nOnderwerp: \"Leveringsprobleem – Your Uninstaller\"\n\nVermeld uw bestelnummer, aankoopdatum en het e-mailadres dat voor de aankoop is gebruikt.\n\n### 9. Wijzigingen in dit beleid\nWe behouden ons het recht voor om dit Leveringsbeleid op elk moment te wijzigen. De nieuwste versie is altijd beschikbaar op onze website. Wijzigingen zijn van toepassing op nieuwe aankopen vanaf de datum waarop het herziene beleid is geplaatst."
   },
   "notFoundContent": {
-    "title": "404 Not Found",
-    "body": "We are sorry, but the page you are looking for does not exist.",
-    "homeButtonText": "Go to Home"
+    "title": "404 Niet gevonden",
+    "body": "Het spijt ons, maar de pagina die u zoekt bestaat niet.",
+    "homeButtonText": "Ga naar Home"
   },
   "integrationHeader": {
-    "title": "System Optimization for Windows",
-    "subtitle": "Clean, secure and fast",
-    "description": "Uninstall apps completely, clean registry leftovers, manage startups and shred privacy traces — all in one."
+    "title": "Systeemoptimalisatie voor Windows",
+    "subtitle": "Schoon, veilig en snel",
+    "description": "Verwijder apps volledig, reinig registerresten, beheer opstartprogramma's en vernietig privacysporen - alles in één."
   },
   "integrationIcons": [
     {
@@ -399,15 +399,15 @@
     },
     {
       "src": "/images/integration/registry.png",
-      "alt": "Registry Editor"
+      "alt": "Register-editor"
     },
     {
       "src": "/images/integration/cleanup.png",
-      "alt": "Cleanup"
+      "alt": "Opruiming"
     },
     {
       "src": "/images/integration/startup.png",
-      "alt": "Startup Manager"
+      "alt": "Opstartbeheer"
     },
     {
       "src": "/images/integration/privacy.png",
@@ -415,58 +415,58 @@
     },
     {
       "src": "/images/integration/speed.png",
-      "alt": "Performance Speed"
+      "alt": "Prestatiesnelheid"
     }
   ],
-  "footerCompanyDescription": "We help Windows users keep PCs clean, fast and secure. Your Uninstaller fully removes apps, clears registry and disk leftovers, manages startup items, and protects privacy with secure shredding. Simple, reliable, and backed by updates and support, it turns maintenance into one click so people stay productive.",
+  "footerCompanyDescription": "We helpen Windows-gebruikers pc's schoon, snel en veilig te houden. Your Uninstaller verwijdert apps volledig, wist register- en schijfresten, beheert opstartitems en beschermt de privacy met veilige vernietiging. Eenvoudig, betrouwbaar en ondersteund door updates en ondersteuning, maakt het onderhoud met één klik mogelijk zodat mensen productief blijven.",
   "footerContent": {
     "logoAlt": "URSoft logo",
     "sections": [
       {
-        "title": "Quick Links",
+        "title": "Snelle links",
         "links": [
           {
             "label": "Home",
             "href": "/"
           },
           {
-            "label": "Features",
+            "label": "Functies",
             "href": "/features"
           },
           {
-            "label": "Download",
+            "label": "Downloaden",
             "href": "/download"
           },
           {
-            "label": "Order",
+            "label": "Bestellen",
             "href": "/order"
           }
         ]
       },
       {
-        "title": "Support",
+        "title": "Ondersteuning",
         "links": [
           {
-            "label": "Support",
+            "label": "Ondersteuning",
             "href": "/support"
           },
           {
-            "label": "Privacy Policy",
+            "label": "Privacybeleid",
             "href": "/privacy"
           },
           {
-            "label": "Refund Policy",
+            "label": "Restitutiebeleid",
             "href": "/refund-policy"
           },
           {
-            "label": "Delivery Policy",
+            "label": "Leveringsbeleid",
             "href": "/delivery-policy"
           }
         ]
       },
       {
-        "title": "Newsletter",
-        "description": "Stay up to date with the latest news and updates.",
+        "title": "Nieuwsbrief",
+        "description": "Blijf op de hoogte van het laatste nieuws en updates.",
         "embed": {
           "uid": "489ef797fa",
           "src": "https://ursoftware.kit.com/489ef797fa/index.js"
@@ -479,19 +479,19 @@
         "href": "/"
       },
       {
-        "label": "Order",
+        "label": "Bestellen",
         "href": "/order"
       },
       {
-        "label": "Support",
+        "label": "Ondersteuning",
         "href": "/support"
       },
       {
-        "label": "Privacy Policy",
+        "label": "Privacybeleid",
         "href": "/privacy"
       },
       {
-        "label": "Delivery Policy",
+        "label": "Leveringsbeleid",
         "href": "/delivery-policy"
       }
     ],
@@ -539,72 +539,72 @@
     "arrow": "Arrow"
   },
   "pricingLabels": {
-    "lifetimeTag": "Lifetime upgrades",
-    "buyButton": "Buy Now",
-    "oneTimeNote": "One-time payment"
+    "lifetimeTag": "Levenslange upgrades",
+    "buyButton": "Nu kopen",
+    "oneTimeNote": "Eenmalige betaling"
   },
   "contactTexts": {
-    "formTitle": "Send a message",
-    "namePlaceholder": "First and Last",
-    "emailPlaceholder": "your.email@domain.tld",
-    "subjectLabel": "Choose",
+    "formTitle": "Bericht verzenden",
+    "namePlaceholder": "Voor- en achternaam",
+    "emailPlaceholder": "uw.email@domein.tld",
+    "subjectLabel": "Kies",
     "subjectOptions": [
       {
         "value": "Pre-purchase Questions",
-        "label": "Pre-purchase Questions"
+        "label": "Vragen vóór aankoop"
       },
       {
         "value": "Lost Key",
-        "label": "Lost Key"
+        "label": "Sleutel verloren"
       },
       {
         "value": "Technical Inquiries",
-        "label": "Technical Inquiries"
+        "label": "Technische vragen"
       },
       {
         "value": "Other",
-        "label": "Other"
+        "label": "Overige"
       }
     ],
-    "messagePlaceholder": "Enter your message here...",
-    "sendButton": "Send Message",
-    "sendAriaLabel": "send message",
+    "messagePlaceholder": "Voer hier uw bericht in...",
+    "sendButton": "Bericht verzenden",
+    "sendAriaLabel": "bericht verzenden",
     "sidebar": {
-      "title": "Find us",
-      "locationTitle": "Our Loaction",
+      "title": "Vind ons",
+      "locationTitle": "Onze locatie",
       "locationValue": "290 Maryam Springs 260, Courbevoie, Paris, France",
-      "emailTitle": "Email Address",
+      "emailTitle": "E-mailadres",
       "emailValue": "yourmail@domainname.com",
-      "phoneTitle": "Phone Number",
+      "phoneTitle": "Telefoonnummer",
       "phoneValue": "+009 42334 6343 843"
     }
   },
   "faqHeaderContent": {
-    "badge": "OUR FAQS",
-    "title": "Frequently Asked",
-    "titleEmphasis": "Questions",
-    "moreLabel": "Know More"
+    "badge": "ONZE VEELGESTELDE VRAGEN",
+    "title": "Veelgestelde",
+    "titleEmphasis": "Vragen",
+    "moreLabel": "Meer weten"
   },
   "faqItems": [
     {
       "id": 1,
       "quest": "Lorem ipsum dolor sit amet, consectetur",
-      "ans": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences."
+      "ans": "Wij bieden digitale ervaringsdiensten aan startups en kleine bedrijven. We helpen onze klanten succesvol te zijn door merkidentiteiten en digitale ervaringen te creëren."
     },
     {
       "id": 2,
       "quest": "Lorem ipsum dolor sit amet, consectetur",
-      "ans": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences."
+      "ans": "Wij bieden digitale ervaringsdiensten aan startups en kleine bedrijven. We helpen onze klanten succesvol te zijn door merkidentiteiten en digitale ervaringen te creëren."
     },
     {
       "id": 3,
       "quest": "Lorem ipsum dolor sit amet, consectetur",
-      "ans": "We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences."
+      "ans": "Wij bieden digitale ervaringsdiensten aan startups en kleine bedrijven. We helpen onze klanten succesvol te zijn door merkidentiteiten en digitale ervaringen te creëren."
     }
   ],
   "accessibilityTexts": {
-    "scrollToTopAria": "scroll to top",
-    "scrollToTopSrOnly": "scroll to top"
+    "scrollToTopAria": "scroll naar boven",
+    "scrollToTopSrOnly": "scroll naar boven"
   },
   "heroAlt": {
     "shape": "shape",
@@ -620,18 +620,18 @@
   },
   "siteMetadata": {
     "home": {
-      "title": "Your Uninstaller! - Uninstall Software, any unwanted app Completely.",
-      "description": "Your Uninstaller! - Free download, award winning uninstaller suite to remove programs, uninstall software completely and easily. Remove every trace of unwanted programs.",
+      "title": "Your Uninstaller! - Verwijder software, elke ongewenste app volledig.",
+      "description": "Your Uninstaller! - Gratis download, bekroonde uninstaller suite om programma's te verwijderen, software volledig en gemakkelijk te verwijderen. Verwijder elk spoor van ongewenste programma's.",
       "keywords": [
         "Your Uninstaller!",
-        "uninstall",
+        "verwijderen",
         "uninstaller",
-        "uninstall program",
+        "programma verwijderen",
         "uninstaller software",
-        "add remove",
-        "add remove programs",
-        "cleanup",
-        "registry",
+        "toevoegen verwijderen",
+        "programma's toevoegen verwijderen",
+        "opruimen",
+        "register",
         "Windows"
       ],
       "openGraph": {
@@ -641,56 +641,56 @@
       }
     },
     "features": {
-      "title": "Features - Your Uninstaller! 7",
-      "description": "Core features of Your Uninstaller! 7"
+      "title": "Functies - Your Uninstaller! 7",
+      "description": "Kernfuncties van Your Uninstaller! 7"
     },
     "order": {
-      "title": "Order - Your Uninstaller! 7",
-      "description": "Choose a license and download instantly. Safe uninstall with deep system cleanup included."
+      "title": "Bestellen - Your Uninstaller! 7",
+      "description": "Kies een licentie en download direct. Veilige verwijdering met diepe systeemopschoning inbegrepen."
     },
     "support": {
-      "title": "Support - Your Uninstaller! 7",
-      "description": "This is Support page for Your Uninstaller! 7"
+      "title": "Ondersteuning - Your Uninstaller! 7",
+      "description": "Dit is de ondersteuningspagina voor Your Uninstaller! 7"
     },
     "privacy": {
-      "title": "Privacy Policy - Your Uninstaller! 7",
-      "description": "Privacy Policy of URSoft, Inc."
+      "title": "Privacybeleid - Your Uninstaller! 7",
+      "description": "Privacybeleid van URSoft, Inc."
     },
     "refundPolicy": {
-      "title": "Refund Policy - Your Uninstaller! 7",
-      "description": "30-day money-back guarantee and refund instructions."
+      "title": "Restitutiebeleid - Your Uninstaller! 7",
+      "description": "30 dagen geld-terug-garantie en restitutie-instructies."
     },
     "deliveryPolicy": {
-      "title": "Delivery Policy - Your Uninstaller! 7",
-      "description": "Electronic delivery timing, license activation and support."
+      "title": "Leveringsbeleid - Your Uninstaller! 7",
+      "description": "Elektronische leveringstijd, licentie-activering en ondersteuning."
     },
     "docs": {
-      "title": "Docs Page - Solid SaaS Boilerplate",
-      "description": "This is Docs page for Solid Pro"
+      "title": "Documentatiepagina - Solid SaaS Boilerplate",
+      "description": "Dit is de Documentatiepagina voor Solid Pro"
     },
     "download": {
-      "title": "Free Download - Your Uninstaller! 7",
-      "description": "Download Your Uninstaller! 7 - the most powerful uninstaller for Windows. 21-day free trial with all features."
+      "title": "Gratis Download - Your Uninstaller! 7",
+      "description": "Download Your Uninstaller! 7 - het krachtigste verwijderingsprogramma voor Windows. 21 dagen gratis uitproberen met alle functies."
     },
     "installed": {
-      "title": "Thanks for Installing Your Uninstaller! 7",
-      "description": "Tips and tricks for new users of Your Uninstaller! 7"
+      "title": "Bedankt voor het installeren van Your Uninstaller! 7",
+      "description": "Tips en trucs voor nieuwe gebruikers van Your Uninstaller! 7"
     },
     "update": {
-      "title": "New Version Available - Your Uninstaller! 7",
-      "description": "Download the latest version of Your Uninstaller! 7"
+      "title": "Nieuwe versie beschikbaar - Your Uninstaller! 7",
+      "description": "Download de nieuwste versie van Your Uninstaller! 7"
     },
     "blog": {
       "title": "Blog - Your Uninstaller! 7",
-      "description": "Read our latest blog posts."
+      "description": "Lees onze laatste blogposts."
     }
   },
   "revSliderContent": {
     "title": "Your Uninstaller! 7",
-    "subtitle": "Uninstall any unwanted app \ncompletely!",
-    "downloadLabel": "DOWNLOAD NOW",
+    "subtitle": "Verwijder elke ongewenste app \nvolledig!",
+    "downloadLabel": "NU DOWNLOADEN",
     "downloadUrl": "https://www.ursoftware.com/dlds/yusetup.exe",
-    "versionInfo": "Supports Windows 11/10/8/7/Vista/XP",
+    "versionInfo": "Ondersteunt Windows 11/10/8/7/Vista/XP",
     "laptopSrc": "/images/hero/hero2_1920_q90.webp",
     "laptopAlt": "Your Uninstaller! 7 - Windows Uninstaller Software"
   },
@@ -698,21 +698,21 @@
     "url": "https://www.ursoftware.com"
   },
   "orderFeatures": {
-    "title": "Why Order Your Uninstaller Now?",
+    "title": "Waarom nu Your Uninstaller bestellen?",
     "items": [
       {
-        "title": "Instant Delivery",
-        "description": "Receive your license key via email immediately after purchase.",
+        "title": "Directe levering",
+        "description": "Ontvang uw licentiesleutel direct na aankoop via e-mail.",
         "icon": "/images/order/delivery-icon.svg"
       },
       {
-        "title": "Secure Payment",
-        "description": "All transactions are protected with advanced encryption.",
+        "title": "Veilige betaling",
+        "description": "Alle transacties worden beschermd met geavanceerde versleuteling.",
         "icon": "/images/order/security-icon.svg"
       },
       {
-        "title": "30-Day Money Back Guarantee",
-        "description": "Not satisfied? Get a full refund within 30 days, no questions asked.",
+        "title": "30 dagen geld-terug-garantie",
+        "description": "Niet tevreden? Krijg binnen 30 dagen een volledige terugbetaling, geen vragen gesteld.",
         "icon": "/images/order/guarantee-icon.svg"
       }
     ]
