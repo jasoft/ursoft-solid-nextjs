@@ -5,6 +5,7 @@ import {
   currentLocaleFromPath,
   detectLocaleByIp,
   withLocalePrefix,
+  locales,
 } from "@/lib/i18n";
 
 const STORAGE_KEY = "preferredLocale";
@@ -15,7 +16,8 @@ export default function LanguageRedirect() {
 
   useEffect(() => {
     if (!pathname) return;
-    const hasLang = /^\/(en|zh|fr|es|ja|pt|de|ru)(\/|$)/i.test(pathname);
+    // Dynamically check against supported locales
+    const hasLang = new RegExp(`^/(${locales.join("|")})(/|$)`, "i").test(pathname);
     if (hasLang) return; // already language-scoped
 
     const stored = localStorage.getItem(STORAGE_KEY);

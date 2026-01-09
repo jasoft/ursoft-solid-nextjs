@@ -10,8 +10,9 @@ export default function LanguageSwitcher() {
   return (
     <div className="flex items-center gap-2 text-sm">
       {locales.map((l) => {
+        const regex = new RegExp(`^/(${locales.join("|")})`);
         const href = withLocalePrefix(
-          pathname ? pathname.replace(/^\/(en|zh|fr|es|ja|pt|de|ru)/, "") : "/",
+          pathname ? pathname.replace(regex, "") : "/",
           l,
         );
         const active = l === current;

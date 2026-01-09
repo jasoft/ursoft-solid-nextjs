@@ -7,6 +7,9 @@ export const locales = [
   "pt",
   "de",
   "ru",
+  "it",
+  "ko",
+  "nl",
 ] as const;
 export type Locale = (typeof locales)[number];
 
@@ -28,6 +31,9 @@ export function normalizeLocale(v: string | null | undefined): Locale {
   if (lower.startsWith("pt")) return "pt";
   if (lower.startsWith("de")) return "de";
   if (lower.startsWith("ru")) return "ru";
+  if (lower.startsWith("it")) return "it";
+  if (lower.startsWith("ko")) return "ko";
+  if (lower.startsWith("nl")) return "nl";
   return "en";
 }
 
@@ -88,6 +94,9 @@ export async function detectLocaleByIp(): Promise<Locale> {
     if (["PT", "BR"].includes(country)) return "pt";
     if (["DE", "AT", "CH", "LI"].includes(country)) return "de";
     if (["RU", "BY", "KZ", "KG"].includes(country)) return "ru";
+    if (["IT", "SM", "VA"].includes(country)) return "it";
+    if (["KR"].includes(country)) return "ko";
+    if (["NL", "AW", "CW", "SX"].includes(country)) return "nl";
     return "en";
   } catch {
     return defaultLocale;
