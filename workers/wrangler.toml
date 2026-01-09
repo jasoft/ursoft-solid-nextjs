@@ -2,15 +2,482 @@ name = "locale-redirect"
 main = "locale-redirect-worker.js"
 compatibility_date = "2024-01-01"
 
+# ==============================================================================
+# 路由绑定优化策略：精确匹配 (Exact Match)
+# ==============================================================================
+
+# --- 1. 根域名 & 无语言前缀的旧路径 ---
+
 [[routes]]
-pattern = "staging.ursoftware.com/*"
+pattern = "www.ursoftware.com/"
 zone_name = "ursoftware.com"
 
-# 生产环境路由 (Pages 构建已完成，正式启用)
 [[routes]]
-pattern = "www.ursoftware.com/*"
+pattern = "www.ursoftware.com/features*"
 zone_name = "ursoftware.com"
 
+[[routes]]
+pattern = "www.ursoftware.com/download*"
+zone_name = "ursoftware.com"
+
+[[routes]]
+pattern = "www.ursoftware.com/order*"
+zone_name = "ursoftware.com"
+
+[[routes]]
+pattern = "www.ursoftware.com/support*"
+zone_name = "ursoftware.com"
+
+[[routes]]
+pattern = "www.ursoftware.com/privacy*"
+zone_name = "ursoftware.com"
+
+[[routes]]
+pattern = "www.ursoftware.com/refund-policy*"
+zone_name = "ursoftware.com"
+
+[[routes]]
+pattern = "www.ursoftware.com/delivery-policy*"
+zone_name = "ursoftware.com"
+
+[[routes]]
+pattern = "www.ursoftware.com/docs*"
+zone_name = "ursoftware.com"
+
+[[routes]]
+pattern = "www.ursoftware.com/blog*"
+zone_name = "ursoftware.com"
+
+[[routes]]
+pattern = "www.ursoftware.com/uninstaller*"
+zone_name = "ursoftware.com"
+
+# --- 2. 带语言前缀的页面 (反向代理) ---
+
+# English (en)
+[[routes]]
+pattern = "www.ursoftware.com/en"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/en/"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/en/features"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/en/download"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/en/order"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/en/support"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/en/privacy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/en/refund-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/en/delivery-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/en/docs*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/en/blog*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/en/uninstaller*"
+zone_name = "ursoftware.com"
+
+# Chinese (zh)
+[[routes]]
+pattern = "www.ursoftware.com/zh"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/zh/"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/zh/features"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/zh/download"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/zh/order"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/zh/support"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/zh/privacy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/zh/refund-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/zh/delivery-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/zh/docs*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/zh/blog*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/zh/uninstaller*"
+zone_name = "ursoftware.com"
+
+# French (fr)
+[[routes]]
+pattern = "www.ursoftware.com/fr"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/fr/"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/fr/features"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/fr/download"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/fr/order"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/fr/support"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/fr/privacy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/fr/refund-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/fr/delivery-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/fr/docs*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/fr/blog*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/fr/uninstaller*"
+zone_name = "ursoftware.com"
+
+# Spanish (es)
+[[routes]]
+pattern = "www.ursoftware.com/es"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/es/"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/es/features"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/es/download"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/es/order"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/es/support"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/es/privacy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/es/refund-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/es/delivery-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/es/docs*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/es/blog*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/es/uninstaller*"
+zone_name = "ursoftware.com"
+
+# Japanese (ja)
+[[routes]]
+pattern = "www.ursoftware.com/ja"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ja/"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ja/features"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ja/download"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ja/order"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ja/support"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ja/privacy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ja/refund-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ja/delivery-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ja/docs*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ja/blog*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ja/uninstaller*"
+zone_name = "ursoftware.com"
+
+# Portuguese (pt)
+[[routes]]
+pattern = "www.ursoftware.com/pt"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/pt/"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/pt/features"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/pt/download"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/pt/order"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/pt/support"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/pt/privacy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/pt/refund-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/pt/delivery-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/pt/docs*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/pt/blog*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/pt/uninstaller*"
+zone_name = "ursoftware.com"
+
+# German (de)
+[[routes]]
+pattern = "www.ursoftware.com/de"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/de/"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/de/features"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/de/download"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/de/order"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/de/support"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/de/privacy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/de/refund-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/de/delivery-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/de/docs*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/de/blog*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/de/uninstaller*"
+zone_name = "ursoftware.com"
+
+# Russian (ru)
+[[routes]]
+pattern = "www.ursoftware.com/ru"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ru/"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ru/features"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ru/download"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ru/order"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ru/support"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ru/privacy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ru/refund-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ru/delivery-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ru/docs*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ru/blog*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ru/uninstaller*"
+zone_name = "ursoftware.com"
+
+# Italian (it)
+[[routes]]
+pattern = "www.ursoftware.com/it"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/it/"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/it/features"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/it/download"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/it/order"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/it/support"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/it/privacy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/it/refund-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/it/delivery-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/it/docs*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/it/blog*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/it/uninstaller*"
+zone_name = "ursoftware.com"
+
+# Korean (ko)
+[[routes]]
+pattern = "www.ursoftware.com/ko"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ko/"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ko/features"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ko/download"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ko/order"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ko/support"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ko/privacy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ko/refund-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ko/delivery-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ko/docs*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ko/blog*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/ko/uninstaller*"
+zone_name = "ursoftware.com"
+
+# Dutch (nl)
+[[routes]]
+pattern = "www.ursoftware.com/nl"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/nl/"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/nl/features"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/nl/download"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/nl/order"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/nl/support"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/nl/privacy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/nl/refund-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/nl/delivery-policy"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/nl/docs*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/nl/blog*"
+zone_name = "ursoftware.com"
+[[routes]]
+pattern = "www.ursoftware.com/nl/uninstaller*"
+zone_name = "ursoftware.com"
+
+# --- 根域名跳转 ---
 [[routes]]
 pattern = "ursoftware.com/*"
+zone_name = "ursoftware.com"
+
+# --- Staging 环境 (保留 /* 方便测试，或者也进行类似限制) ---
+[[routes]]
+pattern = "staging.ursoftware.com/*"
 zone_name = "ursoftware.com"
