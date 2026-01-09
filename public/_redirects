@@ -1,6 +1,7 @@
 /order.php /order 301
 /buy_yu /order 301
 /download.php /download 301
+/downloadredirect.php /download 301
 /privacy.htm /privacy 301
 /ur5update.htm /ur5update-modern.html 301
 /yuupdate5.inf /yuupdate7.inf 301
