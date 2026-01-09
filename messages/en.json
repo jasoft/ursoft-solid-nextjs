@@ -618,29 +618,6 @@
   "integrationAlt": {
     "dotted": "Dotted"
   },
-  "blogData": [
-    {
-      "_id": 1,
-      "mainImage": "/images/blog/blog-01.png",
-      "title": "Free advertising for your online business",
-      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
-      "slug": "blog-details"
-    },
-    {
-      "_id": 2,
-      "mainImage": "/images/blog/blog-02.png",
-      "title": "9 simple ways to improve your design skills",
-      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
-      "slug": "blog-details"
-    },
-    {
-      "_id": 2,
-      "mainImage": "/images/blog/blog-03.png",
-      "title": "Tips to quickly improve your coding speed.",
-      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
-      "slug": "blog-details"
-    }
-  ],
   "siteMetadata": {
     "home": {
       "title": "Your Uninstaller! - Uninstall Software, any unwanted app Completely.",
@@ -695,33 +672,6 @@
       "title": "Free Download - Your Uninstaller! 7",
       "description": "Download Your Uninstaller! 7 - the most powerful uninstaller for Windows. 21-day free trial with all features."
     },
-    "auth": {
-      "signin": {
-        "title": "Sign In to Your Account",
-        "emailLabel": "Email",
-        "emailPlaceholder": "Enter your email",
-        "passwordLabel": "Password",
-        "passwordPlaceholder": "Enter your password",
-        "forgotPassword": "Forgot password?",
-        "rememberMe": "Remember me",
-        "buttonText": "Sign In",
-        "signupLink": "Don't have an account? Sign Up"
-      },
-      "signup": {
-        "title": "Create a New Account",
-        "nameLabel": "Full Name",
-        "namePlaceholder": "Enter your full name",
-        "emailLabel": "Email",
-        "emailPlaceholder": "Enter your email",
-        "passwordLabel": "Password",
-        "passwordPlaceholder": "Enter your password",
-        "confirmPasswordLabel": "Confirm Password",
-        "confirmPasswordPlaceholder": "Confirm your password",
-        "agreeTerms": "I agree to the Terms and Conditions",
-        "buttonText": "Sign Up",
-        "signinLink": "Already have an account? Sign In"
-      }
-    },
     "installed": {
       "title": "Thanks for Installing Your Uninstaller! 7",
       "description": "Tips and tricks for new users of Your Uninstaller! 7"
@@ -729,10 +679,6 @@
     "update": {
       "title": "New Version Available - Your Uninstaller! 7",
       "description": "Download the latest version of Your Uninstaller! 7"
-    },
-    "blogDetails": {
-      "title": "Blog Details - Your Uninstaller! 7",
-      "description": "Read our latest blog posts."
     },
     "blog": {
       "title": "Blog - Your Uninstaller! 7",
@@ -750,39 +696,6 @@
   },
   "site": {
     "url": "https://www.ursoftware.com"
-  },
-  "docsContent": {
-    "sidebar": {
-      "title": "Documentation",
-      "sections": [
-        {
-          "title": "Getting Started",
-          "links": [
-            {
-              "label": "Bootstrap Template",
-              "href": "/docs/bootstrap-template"
-            },
-            {
-              "label": "Tailwind Component",
-              "href": "/docs/tailwind-component"
-            },
-            {
-              "label": "Tailwind Template",
-              "href": "/docs/tailwind-template"
-            },
-            {
-              "label": "Contact Form",
-              "href": "/docs/contact-form"
-            },
-            {
-              "label": "Style Guide",
-              "href": "/docs/style-guide"
-            }
-          ]
-        }
-      ]
-    },
-    "body": "# Bootstrap Template\n\n## Example Heading\n\nThis is a paragraph under an example heading. It demonstrates how standard markdown content would appear.\n\n### Sub-heading\n\nAnother paragraph under a sub-heading. Markdown features like **bold**, *italic*, and `code` are supported.\n\n- List item 1\n- List item 2\n\n```javascript\n// Code block example\nconst greet = (name) => {\n  console.log(`Hello, ${name}!`);\n};\n\ngreet('World');\n```\n\n"
   },
   "orderFeatures": {
     "title": "Why Order Your Uninstaller Now?",
@@ -804,34 +717,6 @@
       }
     ]
   },
-  "featuresTabContent": {
-    "tabs": [
-      {
-        "id": "tabOne",
-        "title": "Clean User Interface",
-        "subtitle": "Intuitive Design",
-        "description": "Our software features a sleek and modern interface, making it easy for users to navigate and perform tasks efficiently. Enjoy a clutter-free experience with clear, concise controls.",
-        "image": "/images/features/features-light-01.svg",
-        "imageDark": "/images/features/features-dark-01.svg"
-      },
-      {
-        "id": "tabTwo",
-        "title": "Essential Business Pages",
-        "subtitle": "Comprehensive Functionality",
-        "description": "Access all vital business functions with dedicated pages for seamless operations. From client management to reporting, everything you need is just a click away.",
-        "image": "/images/features/features-light-02.svg",
-        "imageDark": "/images/features/features-dark-02.svg"
-      },
-      {
-        "id": "tabThree",
-        "title": "Fully Functional Integrations",
-        "subtitle": "Expand Your Capabilities",
-        "description": "Integrate effortlessly with your existing tools and services. Our robust API and pre-built connectors ensure a smooth workflow and enhanced productivity across your ecosystem.",
-        "image": "/images/features/features-light-03.svg",
-        "imageDark": "/images/features/features-dark-03.svg"
-      }
-    ]
-  },
   "seoRoutes": [
     "/",
     "/features",
@@ -841,50 +726,5 @@
     "/privacy",
     "/refund-policy",
     "/delivery-policy"
-  ],
-  "blogDetails": {
-    "searchPlaceholder": "Search Here...",
-    "categoriesTitle": "Categories",
-    "categories": ["Blog", "Events", "Grids", "News", "Rounded"],
-    "imageAlt1": "Kobe Steel plant that supplied",
-    "title": "Kobe Steel plant that supplied",
-    "authorLabel": "Author:",
-    "authorName": "Jhon Doe",
-    "publishedOnLabel": "Published On:",
-    "publishedDate": "July 30, 2023",
-    "categoryLabel": "Category:",
-    "categoryName": "Events",
-    "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum ipsum.",
-    "paragraph2": "Aenean augue ex, condimentum vel metus vitae, aliquam porta elit. Quisque non metus ac orci mollis posuere. Mauris vel ipsum a diam interdum ultricies sed vitae neque. Nulla porttitor quam vitae pulvinar placerat. Nulla fringilla elit sit amet justo feugiat sodales. Morbi eleifend, enim non eleifend laoreet, odio libero lobortis lectus, non porttitor sem urna sit amet metus. In sollicitudin quam est, pellentesque consectetur felis fermentum vitae.",
-    "imageAlt2": "image",
-    "imageAlt3": "image",
-    "heading2": "Nunc elementum elit viverra, tempus quam non",
-    "paragraph3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum ipsum.",
-    "relatedPost": {
-      "title": "Related Posts",
-      "posts": [
-        {
-          "title": "The Impact of AI on Modern Business Strategies",
-          "date": "2023-09-15",
-          "image": "/images/blog/blog-01.png"
-        },
-        {
-          "title": "Cloud Computing: A Deep Dive into Serverless Architectures",
-          "date": "2023-08-22",
-          "image": "/images/blog/blog-02.png"
-        },
-        {
-          "title": "Cybersecurity Best Practices for Small Businesses",
-          "date": "2023-07-10",
-          "image": "/images/blog/blog-03.png"
-        }
-      ]
-    },
-    "sharePost": {
-      "title": "Share This Post:",
-      "facebook": "Facebook",
-      "twitter": "Twitter",
-      "linkedin": "LinkedIn"
-    }
-  }
+  ]
 }

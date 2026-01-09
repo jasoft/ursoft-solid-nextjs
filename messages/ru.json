@@ -640,29 +640,6 @@
   "integrationAlt": {
     "dotted": "Пунктир"
   },
-  "blogData": [
-    {
-      "_id": 1,
-      "mainImage": "/images/blog/blog-01.png",
-      "title": "Бесплатная реклама для вашего онлайн-бизнеса",
-      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
-      "slug": "blog-details"
-    },
-    {
-      "_id": 2,
-      "mainImage": "/images/blog/blog-02.png",
-      "title": "9 простых способов улучшить навыки дизайна",
-      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
-      "slug": "blog-details"
-    },
-    {
-      "_id": 2,
-      "mainImage": "/images/blog/blog-03.png",
-      "title": "Советы, как быстрее прокачать навыки программирования.",
-      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
-      "slug": "blog-details"
-    }
-  ],
   "siteMetadata": {
     "home": {
       "title": "Your Uninstaller! - Удаление программ, любых нежелательных приложений полностью.",
@@ -716,33 +693,6 @@
       "title": "Бесплатная загрузка - Your Uninstaller! 7",
       "description": "Скачайте Your Uninstaller! 7 — самый мощный деинсталлятор для Windows. 21-дневная пробная версия со всеми функциями."
     },
-    "auth": {
-      "signin": {
-        "title": "Войдите в аккаунт",
-        "emailLabel": "Email",
-        "emailPlaceholder": "Введите email",
-        "passwordLabel": "Пароль",
-        "passwordPlaceholder": "Введите пароль",
-        "forgotPassword": "Забыли пароль?",
-        "rememberMe": "Запомнить меня",
-        "buttonText": "Войти",
-        "signupLink": "Нет аккаунта? Зарегистрируйтесь"
-      },
-      "signup": {
-        "title": "Создать новый аккаунт",
-        "nameLabel": "Полное имя",
-        "namePlaceholder": "Введите полное имя",
-        "emailLabel": "Email",
-        "emailPlaceholder": "Введите email",
-        "passwordLabel": "Пароль",
-        "passwordPlaceholder": "Введите пароль",
-        "confirmPasswordLabel": "Подтвердите пароль",
-        "confirmPasswordPlaceholder": "Подтвердите пароль",
-        "agreeTerms": "Я согласен с условиями и положениями",
-        "buttonText": "Зарегистрироваться",
-        "signinLink": "Уже есть аккаунт? Войти"
-      }
-    },
     "installed": {
       "title": "Спасибо за установку Your Uninstaller! 7",
       "description": "Советы и рекомендации для новых пользователей Your Uninstaller! 7"
@@ -750,10 +700,6 @@
     "update": {
       "title": "Доступна новая версия - Your Uninstaller! 7",
       "description": "Скачайте последнюю версию Your Uninstaller! 7"
-    },
-    "blogDetails": {
-      "title": "Детали блога - Your Uninstaller! 7",
-      "description": "Читайте наши последние записи в блоге."
     },
     "blog": {
       "title": "Блог - Your Uninstaller! 7",
@@ -771,39 +717,6 @@
   },
   "site": {
     "url": "https://www.ursoftware.com"
-  },
-  "docsContent": {
-    "sidebar": {
-      "title": "Документация",
-      "sections": [
-        {
-          "title": "Начало работы",
-          "links": [
-            {
-              "label": "Bootstrap Template",
-              "href": "/docs/bootstrap-template"
-            },
-            {
-              "label": "Tailwind Component",
-              "href": "/docs/tailwind-component"
-            },
-            {
-              "label": "Tailwind Template",
-              "href": "/docs/tailwind-template"
-            },
-            {
-              "label": "Contact Form",
-              "href": "/docs/contact-form"
-            },
-            {
-              "label": "Style Guide",
-              "href": "/docs/style-guide"
-            }
-          ]
-        }
-      ]
-    },
-    "body": "# Bootstrap Template\n\n## Example Heading\n\nThis is a paragraph under an example heading. It demonstrates how standard markdown content would appear.\n\n### Sub-heading\n\nAnother paragraph under a sub-heading. Markdown features like **bold**, *italic*, and `code` are supported.\n\n- List item 1\n- List item 2\n\n```javascript\n// Code block example\nconst greet = (name) => {\n  console.log(`Hello, ${name}!`);\n};\n\ngreet('World');\n```\n\n"
   },
   "orderFeatures": {
     "title": "Почему стоит заказать Your Uninstaller прямо сейчас?",
@@ -865,34 +778,6 @@
       "description": "Уничтожайте конфиденциальные файлы навсегда. Никаких следов, никакого восстановления."
     }
   ],
-  "featuresTabContent": {
-    "tabs": [
-      {
-        "id": "tabOne",
-        "title": "Чистый пользовательский интерфейс",
-        "subtitle": "Интуитивный дизайн",
-        "description": "Наше ПО предлагает элегантный и современный интерфейс, позволяющий пользователям эффективно выполнять задачи. Наслаждайтесь аккуратным интерфейсом с понятными элементами управления.",
-        "image": "/images/features/features-light-01.svg",
-        "imageDark": "/images/features/features-dark-01.svg"
-      },
-      {
-        "id": "tabTwo",
-        "title": "Важные бизнес-страницы",
-        "subtitle": "Полная функциональность",
-        "description": "Получите доступ ко всем важным бизнес-функциям через специальные страницы для бесперебойной работы. От управления клиентами до отчетности — все в один клик.",
-        "image": "/images/features/features-light-02.svg",
-        "imageDark": "/images/features/features-dark-02.svg"
-      },
-      {
-        "id": "tabThree",
-        "title": "Полнофункциональные интеграции",
-        "subtitle": "Расширьте свои возможности",
-        "description": "Легко интегрируйтесь с вашими существующими инструментами и сервисами. Наш надежный API и готовые коннекторы обеспечивают плавный рабочий процесс и повышенную продуктивность.",
-        "image": "/images/features/features-light-03.svg",
-        "imageDark": "/images/features/features-dark-03.svg"
-      }
-    ]
-  },
   "seoRoutes": [
     "/",
     "/features",
@@ -903,57 +788,6 @@
     "/refund-policy",
     "/delivery-policy"
   ],
-  "blogDetails": {
-    "searchPlaceholder": "Искать здесь...",
-    "categoriesTitle": "Категории",
-    "categories": [
-      "Блог",
-      "События",
-      "Сетки",
-      "Новости",
-      "Закругленный"
-    ],
-    "imageAlt1": "Завод Kobe Steel",
-    "title": "Завод Kobe Steel, который поставлял",
-    "authorLabel": "Автор:",
-    "authorName": "Джон Доу",
-    "publishedOnLabel": "Опубликовано:",
-    "publishedDate": "30 июля 2023",
-    "categoryLabel": "Категория:",
-    "categoryName": "События",
-    "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum ipsum.",
-    "paragraph2": "Aenean augue ex, condimentum vel metus vitae, aliquam porta elit. Quisque non metus ac orci mollis posuere. Mauris vel ipsum a diam interdum ultricies sed vitae neque. Nulla porttitor quam vitae pulvinar placerat. Nulla fringilla elit sit amet justo feugiat sodales. Morbi eleifend, enim non eleifend laoreet, odio libero lobortis lectus, non porttitor sem urna sit amet metus. In sollicitudin quam est, pellentesque consectetur felis fermentum vitae.",
-    "imageAlt2": "изображение",
-    "imageAlt3": "изображение",
-    "heading2": "Nunc elementum elit viverra, tempus quam non",
-    "paragraph3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum ipsum.",
-    "relatedPost": {
-      "title": "Похожие посты",
-      "posts": [
-        {
-          "title": "Влияние ИИ на современные бизнес-стратегии",
-          "date": "2023-09-15",
-          "image": "/images/blog/blog-01.png"
-        },
-        {
-          "title": "Облачные вычисления: глубокое погружение в бессерверную архитектуру",
-          "date": "2023-08-22",
-          "image": "/images/blog/blog-02.png"
-        },
-        {
-          "title": "Лучшие практики кибербезопасности для малого бизнеса",
-          "date": "2023-07-10",
-          "image": "/images/blog/blog-03.png"
-        }
-      ]
-    },
-    "sharePost": {
-      "title": "Поделиться постом:",
-      "facebook": "Facebook",
-      "twitter": "Twitter",
-      "linkedin": "LinkedIn"
-    }
-  },
   "blogContent": {
     "title": "Наш блог",
     "subtitle": "Новости, советы и истории",

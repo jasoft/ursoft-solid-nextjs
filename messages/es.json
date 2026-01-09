@@ -618,29 +618,6 @@
   "integrationAlt": {
     "dotted": "Punteado"
   },
-  "blogData": [
-    {
-      "_id": 1,
-      "mainImage": "/images/blog/blog-01.png",
-      "title": "Publicidad gratuita para tu negocio en linea",
-      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
-      "slug": "blog-details"
-    },
-    {
-      "_id": 2,
-      "mainImage": "/images/blog/blog-02.png",
-      "title": "9 formas simples de mejorar tus habilidades de diseno",
-      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
-      "slug": "blog-details"
-    },
-    {
-      "_id": 2,
-      "mainImage": "/images/blog/blog-03.png",
-      "title": "Consejos para mejorar rapidamente tu velocidad de programacion.",
-      "metadata": "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
-      "slug": "blog-details"
-    }
-  ],
   "siteMetadata": {
     "home": {
       "title": "Your Uninstaller! - Software de desinstalacion, elimina cualquier app no deseada completamente.",
@@ -695,33 +672,6 @@
       "title": "Descarga gratuita - Your Uninstaller! 7",
       "description": "Descarga Your Uninstaller! 7 - el desinstalador mas potente para Windows. Prueba gratuita de 21 dias con todas las funciones."
     },
-    "auth": {
-      "signin": {
-        "title": "Inicia sesion en tu cuenta",
-        "emailLabel": "Correo",
-        "emailPlaceholder": "Ingresa tu correo",
-        "passwordLabel": "Contrasena",
-        "passwordPlaceholder": "Ingresa tu contrasena",
-        "forgotPassword": "Olvidaste la contrasena?",
-        "rememberMe": "Recordarme",
-        "buttonText": "Iniciar sesion",
-        "signupLink": "No tienes una cuenta? Registrate"
-      },
-      "signup": {
-        "title": "Crea una nueva cuenta",
-        "nameLabel": "Nombre completo",
-        "namePlaceholder": "Ingresa tu nombre completo",
-        "emailLabel": "Correo",
-        "emailPlaceholder": "Ingresa tu correo",
-        "passwordLabel": "Contrasena",
-        "passwordPlaceholder": "Ingresa tu contrasena",
-        "confirmPasswordLabel": "Confirmar contrasena",
-        "confirmPasswordPlaceholder": "Confirma tu contrasena",
-        "agreeTerms": "Acepto los Terminos y Condiciones",
-        "buttonText": "Registrarse",
-        "signinLink": "Ya tienes una cuenta? Inicia sesion"
-      }
-    },
     "installed": {
       "title": "Gracias por instalar Your Uninstaller! 7",
       "description": "Consejos y trucos para nuevos usuarios de Your Uninstaller! 7"
@@ -729,10 +679,6 @@
     "update": {
       "title": "Nueva version disponible - Your Uninstaller! 7",
       "description": "Descarga la ultima version de Your Uninstaller! 7"
-    },
-    "blogDetails": {
-      "title": "Detalle del blog - Your Uninstaller! 7",
-      "description": "Lee nuestras ultimas publicaciones."
     },
     "blog": {
       "title": "Blog - Your Uninstaller! 7",
@@ -750,39 +696,6 @@
   },
   "site": {
     "url": "https://www.ursoftware.com"
-  },
-  "docsContent": {
-    "sidebar": {
-      "title": "Documentacion",
-      "sections": [
-        {
-          "title": "Primeros pasos",
-          "links": [
-            {
-              "label": "Plantilla Bootstrap",
-              "href": "/docs/bootstrap-template"
-            },
-            {
-              "label": "Componente Tailwind",
-              "href": "/docs/tailwind-component"
-            },
-            {
-              "label": "Plantilla Tailwind",
-              "href": "/docs/tailwind-template"
-            },
-            {
-              "label": "Formulario de contacto",
-              "href": "/docs/contact-form"
-            },
-            {
-              "label": "Guia de estilo",
-              "href": "/docs/style-guide"
-            }
-          ]
-        }
-      ]
-    },
-    "body": "# Plantilla Bootstrap\n\n## Encabezado de ejemplo\n\nEste es un parrafo bajo un encabezado de ejemplo. Demuestra como se veria el contenido markdown estandar.\n\n### Subencabezado\n\nOtro parrafo bajo un subencabezado. Las funciones de Markdown como **negrita**, *cursiva* y `codigo` son compatibles.\n\n- Elemento de lista 1\n- Elemento de lista 2\n\n```javascript\n// Ejemplo de bloque de codigo\nconst greet = (name) => {\n  console.log(`Hello, ${name}!`);\n};\n\ngreet('World');\n```\n\n"
   },
   "orderFeatures": {
     "title": "Por que pedir Your Uninstaller ahora?",
@@ -804,34 +717,6 @@
       }
     ]
   },
-  "featuresTabContent": {
-    "tabs": [
-      {
-        "id": "tabOne",
-        "title": "Interfaz limpia",
-        "subtitle": "Diseno intuitivo",
-        "description": "Nuestro software cuenta con una interfaz elegante y moderna, lo que facilita a los usuarios navegar y realizar tareas de manera eficiente. Disfruta una experiencia sin desorden con controles claros y concisos.",
-        "image": "/images/features/features-light-01.svg",
-        "imageDark": "/images/features/features-dark-01.svg"
-      },
-      {
-        "id": "tabTwo",
-        "title": "Paginas esenciales de negocio",
-        "subtitle": "Funcionalidad integral",
-        "description": "Accede a todas las funciones vitales del negocio con paginas dedicadas para operaciones fluidas. Desde la gestion de clientes hasta informes, todo lo que necesitas esta a un clic.",
-        "image": "/images/features/features-light-02.svg",
-        "imageDark": "/images/features/features-dark-02.svg"
-      },
-      {
-        "id": "tabThree",
-        "title": "Integraciones totalmente funcionales",
-        "subtitle": "Amplia tus capacidades",
-        "description": "Integra facilmente con tus herramientas y servicios existentes. Nuestra API robusta y conectores preconstruidos garantizan un flujo de trabajo fluido y mayor productividad en todo tu ecosistema.",
-        "image": "/images/features/features-light-03.svg",
-        "imageDark": "/images/features/features-dark-03.svg"
-      }
-    ]
-  },
   "seoRoutes": [
     "/",
     "/features",
@@ -841,50 +726,5 @@
     "/privacy",
     "/refund-policy",
     "/delivery-policy"
-  ],
-  "blogDetails": {
-    "searchPlaceholder": "Buscar aqui...",
-    "categoriesTitle": "Categorias",
-    "categories": ["Blog", "Eventos", "Cuadriculas", "Noticias", "Redondeado"],
-    "imageAlt1": "Planta de acero Kobe que suministro",
-    "title": "Planta de acero Kobe que suministro",
-    "authorLabel": "Autor:",
-    "authorName": "Jhon Doe",
-    "publishedOnLabel": "Publicado el:",
-    "publishedDate": "30 de julio de 2023",
-    "categoryLabel": "Categoria:",
-    "categoryName": "Eventos",
-    "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum ipsum.",
-    "paragraph2": "Aenean augue ex, condimentum vel metus vitae, aliquam porta elit. Quisque non metus ac orci mollis posuere. Mauris vel ipsum a diam interdum ultricies sed vitae neque. Nulla porttitor quam vitae pulvinar placerat. Nulla fringilla elit sit amet justo feugiat sodales. Morbi eleifend, enim non eleifend laoreet, odio libero lobortis lectus, non porttitor sem urna sit amet metus. In sollicitudin quam est, pellentesque consectetur felis fermentum vitae.",
-    "imageAlt2": "imagen",
-    "imageAlt3": "imagen",
-    "heading2": "Nunc elementum elit viverra, tempus quam non",
-    "paragraph3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus quam sed condimentum. Curabitur vel turpis in dolor volutpat imperdiet in ut mi. Integer non volutpat nulla. Nunc elementum elit viverra, tempus quam non, interdum ipsum.",
-    "relatedPost": {
-      "title": "Publicaciones relacionadas",
-      "posts": [
-        {
-          "title": "El impacto de la IA en las estrategias empresariales modernas",
-          "date": "2023-09-15",
-          "image": "/images/blog/blog-01.png"
-        },
-        {
-          "title": "Computacion en la nube: un analisis profundo de arquitecturas sin servidor",
-          "date": "2023-08-22",
-          "image": "/images/blog/blog-02.png"
-        },
-        {
-          "title": "Mejores practicas de ciberseguridad para pequenas empresas",
-          "date": "2023-07-10",
-          "image": "/images/blog/blog-03.png"
-        }
-      ]
-    },
-    "sharePost": {
-      "title": "Comparte esta publicacion:",
-      "facebook": "Facebook",
-      "twitter": "Twitter",
-      "linkedin": "LinkedIn"
-    }
-  }
+  ]
 }
