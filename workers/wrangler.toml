@@ -1,13 +1,15 @@
-name = "locale-redirect"
-main = "locale-redirect-worker.js"
-compatibility_date = "2024-01-01"
+
 
 # ==============================================================================
 # 路由绑定优化策略：精确匹配 (Exact Match)
 # ==============================================================================
 
+
 # --- 1. 根域名 & 无语言前缀的旧路径 ---
 
+name = "locale-redirect"
+main = "locale-redirect-worker.js"
+compatibility_date = "2024-01-01"
 [[routes]]
 pattern = "www.ursoftware.com/"
 zone_name = "ursoftware.com"
@@ -17,27 +19,27 @@ pattern = "www.ursoftware.com/features*"
 zone_name = "ursoftware.com"
 
 [[routes]]
-pattern = "www.ursoftware.com/download*"
+pattern = "www.ursoftware.com/download"
 zone_name = "ursoftware.com"
 
 [[routes]]
-pattern = "www.ursoftware.com/order*"
+pattern = "www.ursoftware.com/order"
 zone_name = "ursoftware.com"
 
 [[routes]]
-pattern = "www.ursoftware.com/support*"
+pattern = "www.ursoftware.com/support"
 zone_name = "ursoftware.com"
 
 [[routes]]
-pattern = "www.ursoftware.com/privacy*"
+pattern = "www.ursoftware.com/privacy"
 zone_name = "ursoftware.com"
 
 [[routes]]
-pattern = "www.ursoftware.com/refund-policy*"
+pattern = "www.ursoftware.com/refund-policy"
 zone_name = "ursoftware.com"
 
 [[routes]]
-pattern = "www.ursoftware.com/delivery-policy*"
+pattern = "www.ursoftware.com/delivery-policy"
 zone_name = "ursoftware.com"
 
 [[routes]]
@@ -481,3 +483,18 @@ zone_name = "ursoftware.com"
 [[routes]]
 pattern = "staging.ursoftware.com/*"
 zone_name = "ursoftware.com"
+
+[observability]
+enabled = false
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
+invocation_logs = true
+
+[observability.traces]
+enabled = false
+persist = true
+head_sampling_rate = 1
