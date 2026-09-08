@@ -15,6 +15,14 @@ pattern = "www.ursoftware.com/"
 zone_name = "ursoftware.com"
 
 [[routes]]
+pattern = "www.ursoftware.com/robots.txt"
+zone_name = "ursoftware.com"
+
+[[routes]]
+pattern = "www.ursoftware.com/sitemap.xml"
+zone_name = "ursoftware.com"
+
+[[routes]]
 pattern = "www.ursoftware.com/features*"
 zone_name = "ursoftware.com"
 

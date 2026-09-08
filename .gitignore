@@ -36,3 +36,4 @@ yarn-error.log*
 .vercel
 /old_site/
 .open-next/
+.wrangler/

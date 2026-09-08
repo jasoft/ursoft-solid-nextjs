@@ -175,7 +175,31 @@ const worker = {
     const pathname = url.pathname;
     const hostname = url.hostname;
 
-    // Step 0: Canonical Domain Redirect (root -> www)
+    // Step 0: Handle robots.txt and sitemap.xml directly for all domains (prevent 301 on robots.txt)
+    if (pathname === "/robots.txt") {
+      const robotsTxt = `User-Agent: *
+Allow: /
+Disallow: /api/
+
+User-Agent: Googlebot
+Allow: /
+
+Sitemap: https://www.ursoftware.com/sitemap.xml
+`;
+      return new Response(robotsTxt, {
+        status: 200,
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8",
+          "Cache-Control": "public, max-age=3600, must-revalidate",
+        },
+      });
+    }
+
+    if (pathname === "/sitemap.xml") {
+      return proxyToOrigin(request);
+    }
+
+    // Step 1: Canonical Domain Redirect (root -> www)
     if (hostname === "ursoftware.com") {
       const wwwUrl = `https://www.ursoftware.com${pathname}${url.search}`;
       return Response.redirect(wwwUrl, 301);
