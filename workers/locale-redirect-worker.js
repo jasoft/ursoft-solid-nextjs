@@ -60,6 +60,7 @@ const EXCLUDED_PATHS = [
   "/favicon",
   "/robots.txt",
   "/sitemap.xml",
+  "/ads.txt",
 ];
 
 /**
@@ -175,7 +176,7 @@ const worker = {
     const pathname = url.pathname;
     const hostname = url.hostname;
 
-    // Step 0: Handle robots.txt and sitemap.xml directly for all domains (prevent 301 on robots.txt)
+    // Step 0: Handle robots.txt, sitemap.xml, and ads.txt directly for all domains (prevent 301 redirects)
     if (pathname === "/robots.txt") {
       const robotsTxt = `User-Agent: *
 Allow: /
@@ -187,6 +188,17 @@ Allow: /
 Sitemap: https://www.ursoftware.com/sitemap.xml
 `;
       return new Response(robotsTxt, {
+        status: 200,
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8",
+          "Cache-Control": "public, max-age=3600, must-revalidate",
+        },
+      });
+    }
+
+    if (pathname === "/ads.txt") {
+      const adsTxt = `google.com, pub-2639112246778369, DIRECT, f08c47fec0942fa0\n`;
+      return new Response(adsTxt, {
         status: 200,
         headers: {
           "Content-Type": "text/plain; charset=utf-8",

@@ -23,6 +23,10 @@ pattern = "www.ursoftware.com/sitemap.xml"
 zone_name = "ursoftware.com"
 
 [[routes]]
+pattern = "www.ursoftware.com/ads.txt"
+zone_name = "ursoftware.com"
+
+[[routes]]
 pattern = "www.ursoftware.com/features*"
 zone_name = "ursoftware.com"
 
